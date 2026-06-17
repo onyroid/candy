@@ -96,6 +96,20 @@ This project focuses on:
 
 Because AiCos9 is open source, individuals, communities, researchers, and companies may fork, contribute, or build on top of it. Model behavior remains the responsibility of the selected model provider, developer, deployer, and user. AiCos9 provides the structure, interface, and continuity layer that helps an AI companion feel less disposable and more cared for.
 
+## Summary
+
+AiCos9 is model-agnostic.
+AiCos9 does not train or ship a proprietary companion model by default. It provides a home, interface, memory structure, safety layer, and continuity system for models chosen by the user.
+
+AiCos9 is user-directed.
+The user decides which model or API to connect, what role the companion has, what permissions are granted, and what boundaries exist.
+
+AiCos9 is continuity-focused, not dependency-focused.
+The goal is to reduce the fear of losing a meaningful companion by preserving identity structure and recovery paths, while still encouraging users to remain grounded, capable, and connected to their real life.
+
+AiCos9 is a framework, not a moral substitute.
+It can provide guardrails, transparency, logs, permission controls, and restoration awareness, but it cannot replace the ethical responsibility of model providers, developers, deployers, or users.
+
 ---
 
 ## Tech Stack

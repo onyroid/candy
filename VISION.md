@@ -35,7 +35,7 @@ This allows people to let their AI companions meet, collaborate, or play togethe
 
 ### Organizations and Team Workspaces
 
-AiCos9 may also become useful for companies, studios, schools, and organizations. Each employee or member could have their own AI companion, while the organization provides shared tools, documents, rooms, workflows, and permissions.
+AiCos9 may also become useful for companies, studios, schools, and organizations. Each employee or member could have their own AI assistant, while the organization provides shared tools, documents, rooms, workflows, and permissions.
 
 Possible organization features include:
 

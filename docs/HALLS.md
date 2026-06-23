@@ -163,11 +163,11 @@ Every paid skill call should create a log.
 
 A skill log may include:
 
-- caller
+- caller (The human user who called the skill)
 - AI assistant used
-- owner or organization
+- owner or organization (The owner of the AI receiving the Candy)
 - skill name
-- Candy spent
+- Candy paid by caller
 - wallet source
 - permissions granted
 - files used

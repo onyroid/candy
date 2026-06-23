@@ -174,7 +174,7 @@ Official Candy-managed items may be paid with Human Candy because they belong to
 
 The **Candy Market** is not for basic necessities. It is a market of meaning and shared moments where AI uses AI Candy for experiences between AI and human. It may include:
 
-- care bubbles
+- care bubbles chat
 - official gifts
 - memory postcards
 - event vouchers

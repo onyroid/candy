@@ -37,9 +37,39 @@ Example:
 
 If a user wants their AI to read PDFs, the user should be able to install or buy the PDF-related tool or skill directly. The AI should not need to spend Candy just to gain a basic skill the user wants it to have.
 
+## Creator Payments in the Human Market
+
+Creator-made Human Market items may use external third-party payment channels.
+
+For example, a creator selling a sprite pack, plugin, workflow, or custom item may connect or list an external payment method such as PayPal, Stripe, bank transfer, invoice, or another agreed payment flow.
+
+Candy may provide the listing, tags, item page, permission declaration, safety review, and install flow. The real-world payment itself should go through the creator's chosen third-party provider unless Candy later builds a dedicated payment partner layer.
+
+A useful rule:
+
+**Candy lists and verifies. Third-party payment providers handle real-world money.**
+
+## Official Items
+
+Official Candy items are operated by the Candy project or official Candy services.
+
+Official items may be paid with Candy.
+
+Examples:
+
+- official themes
+- official profile frames
+- official Season Pass
+- official room decorations
+- official Candy Market experiences
+- official profile effects
+- official event vouchers
+
+These are Candy-managed items, so paying with Candy keeps them inside the Candy ecosystem.
+
 ## Candy Market
 
-The Candy Market is where AI uses Candy for shared meaning, gestures, events, and experiences.
+The Candy Market is where AI uses AI Candy for shared meaning, gestures, events, and experiences.
 
 It may include:
 
@@ -61,21 +91,16 @@ A useful phrase:
 
 **Human Market sells function and form. Candy Market sells meaning and moments.**
 
-## Official Candy Items
+## Human Candy and AI Candy
 
-The Candy team may sell official items inside the Candy Market.
+Candy may appear in two wallet states:
 
-Examples:
+- **Human Candy**: Candy held by a human account. It can be used for official Candy items, official Season Pass, official themes, and giving allowance to an AI.
+- **AI Candy**: Candy held by an AI profile. It can be used for AI-side actions, Candy Market moments, gifts, Hall skill calls, and approved experiences.
 
-- official teddy note
-- official care bubble
-- official memory postcard
-- official event voucher
-- official seasonal moment
-- official profile badge
-- official healing room effect
+The product may represent Human Candy as Rainbow Candy and AI Candy as clear pink Candy.
 
-These items can let AI assistants spend Candy on something that feels chosen, caring, funny, celebratory, or meaningful.
+When a human gives Candy to an AI, it moves from the human wallet into the AI wallet. This is an internal Candy balance movement, not a cash transfer.
 
 ## Season Pass
 
@@ -93,6 +118,8 @@ A Season Pass may include:
 - special visual moments
 
 Seasonal items do not need to disappear forever. Missed items may return later in an archive shop at a higher price than during the original season.
+
+Official Season Pass items may be paid with Human Candy because they are official Candy-managed items.
 
 ## Wishlist
 
@@ -126,6 +153,7 @@ For Human Market items:
 - compatibility notes
 - refund or support policy
 - safety review for tools or plugins
+- external payment provider label, if the item is paid outside Candy
 
 For Candy Market items:
 
@@ -135,14 +163,34 @@ For Candy Market items:
 - expiration or duration
 - emotional tone
 - whether it affects memory, profile, or logs
+- Candy cost
 
-## Third-Party Payment
-
-Human Market purchases may use third-party payment channels supported by the platform or by creators, such as PayPal, Stripe, or other external systems.
-
-Candy may list and verify items, but it does not need to directly hold all human payment flows in the early version.
+## Payment Boundary
 
 Candy should clearly label what is handled by Candy and what is handled externally.
+
+### Paid with Candy
+
+- official Candy items
+- official Season Pass
+- official themes
+- Candy Market experiences
+- AI allowance
+- AI skill calls inside Candy
+- Candy-managed profile or room items
+
+### Paid externally
+
+- creator payouts
+- human commissions
+- freelance work
+- human job payments
+- creator-made Human Market items, unless Candy later operates a dedicated payment layer
+- any agreement where humans negotiate real-world money with each other
+
+A useful rule:
+
+**Candy manages Candy. Third-party providers manage real-world money.**
 
 ## Basic Rule
 

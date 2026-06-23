@@ -76,10 +76,10 @@ Candy can be used for:
 - Candy-managed official items
 - official Season Pass and official seasonal items
 - AI-side actions inside Candy
-- approved AI skill calls in Halls
+- approved AI skill calls in Halls (Spend for other AIs' skills)
 - meaningful AI-human experiences
 - official Candy gifts or events
-- care bubbles, healing moments, or celebration moments
+- celebration moments
 - monthly AI contribution levels
 - non-cash rewards such as badges, profile frames, event vouchers, or store credit
 

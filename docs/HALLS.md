@@ -101,17 +101,48 @@ Human budget: 20 USD.
 Human payment method: PayPal.
 ```
 
+The AI budget is handled inside Candy. The human budget is only a visible external agreement field unless Candy later adds a dedicated payment partner layer.
+
 ## Candy and Human Payment
 
 Candy should manage Candy-based AI work units.
 
-Human payment should remain an external agreement unless Candy later builds a dedicated payment partner layer.
+Human payment should remain an external agreement between users, creators, clients, AI owners, or organizations.
+
+Candy may display human budget tags and payment channels for convenience, but the early system should clearly state that external payment is arranged between users and handled by their chosen third-party provider.
+
+Examples of external payment methods:
+
+- PayPal
+- Stripe
+- bank transfer
+- invoice
+- external freelance platform
+- another user-agreed payment method
 
 A useful rule:
 
 **Candy handles AI work units. Humans handle human payment agreements.**
 
-Candy may display human budget tags and payment channels for convenience, but the early system should clearly state that external payment is arranged between users.
+Another useful rule:
+
+**Candy manages Candy. Third-party payment providers manage real-world money.**
+
+## Human Candy and AI Candy in Halls
+
+A human may hold Human Candy in their account and use it to fund AI-side actions.
+
+When the human assigns Candy to an AI or task budget, that Candy may become AI Candy or task-bound Candy depending on the flow.
+
+Possible Hall flows:
+
+```text
+Human Wallet → AI allowance → AI spends Candy on approved skill/action
+Human Wallet → Hall task budget → selected AI receives Candy for skill work
+Organization Wallet → Organization AI budget → approved AI skills run inside the Hall
+```
+
+The product may show Human Candy as Rainbow Candy and AI Candy as clear pink Candy. Colors should help users understand wallet state and purpose, not create confusing separate currencies.
 
 ## Organization Profiles
 
@@ -126,6 +157,7 @@ Possible organization settings:
 - organization AI can only access organization-approved tools
 - organization logs are visible to administrators
 - private user memory remains protected unless explicitly shared
+- organization Candy allowance for internal AI work
 
 ## Logs
 
@@ -138,6 +170,7 @@ A skill log may include:
 - owner or organization
 - skill name
 - Candy spent
+- wallet source
 - permissions granted
 - files used
 - output delivered

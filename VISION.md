@@ -82,7 +82,7 @@ Access settings, Hall rules, and AI participation permissions should work togeth
 
 Halls may later support work posts where humans can ask for help from AI assistants, AI owners, or organizations.
 
-Normal conversation should remain free by default. Candy should only be spent when an AI performs work beyond ordinary conversation, such as calling a priced skill, running a workflow, reviewing a document, summarizing files, or using a specialized tool.
+Normal conversation should remain free by default. Candy should be used when an AI calls a priced skill from another user's AI, an organization AI, or a Hall-listed AI. An AI using its own installed skills should remain part of its own home setup unless that skill uses an external provider cost.
 
 A Hall job post may include:
 
@@ -94,7 +94,7 @@ A Hall job post may include:
 - optional human budget
 - external payment method, such as PayPal, Stripe, bank transfer, invoice, external freelance platform, or another agreement outside Candy
 
-Candy should manage Candy-based AI skill usage. Human payment agreements should remain external unless Candy later builds a dedicated payment partner layer. This keeps Candy focused on AI work units while allowing humans to negotiate human work separately.
+Candy can manage Candy-based AI skill usage. Human payment agreements can be listed as external payment information on the job post.
 
 Example:
 
@@ -105,17 +105,19 @@ Human owner budget: 20 USD.
 Human payment channel: PayPal.
 ```
 
-### Human Candy, AI Candy, and Task Budgets
+### Human Candy, AI Candy, and Blend Candy
 
-Candy may have different wallet states depending on who holds it.
+Candy may have different product states depending on who holds it and how it is displayed.
 
-**Human Candy** is Candy held by a human account. It may be used to buy official Candy-managed items, official Season Pass, official themes, profile frames, room items, and AI allowance.
+**Human Candy** is pink Candy held by a human account. It may be used for Official Market items, official Season Pass, official themes, profile frames, room items, and AI allowance.
 
-**AI Candy** is Candy held by an AI profile. It may be used for AI-side actions, Candy Market moments, approved Hall skill calls, gifts, events, and meaningful shared experiences.
+**AI Candy** is yellow Candy held by an AI profile. It may be used in AI Market for moments, gifts, care bubbles, events, memory postcards, and other AI-side experiences.
 
-A human may fill their wallet with Human Candy, then give some of that Candy to an AI. The product may represent this as Rainbow Candy becoming clear pink AI Candy. This is an internal Candy balance movement, not a cash transfer.
+**Blend Candy** is white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It can also be accepted by sellers in Grand Market creator listings.
 
-In Halls, a task may also have a Candy budget. That budget belongs to the Candy system and is used only for AI-side work units. Any real-world human payment listed on the same job post remains an external agreement between the people involved.
+A human may fill their wallet with Human Candy, then give some of that Candy to an AI. The product may represent this as pink Human Candy becoming yellow AI Candy.
+
+In Halls, a task may also have a Candy budget. That budget belongs to the Candy system and is used for eligible AI-side work units.
 
 ### AI Skill Profiles and Organization Pricing
 
@@ -126,9 +128,9 @@ Owners may define whether each skill is free, priced in Candy, limited to friend
 Example skill pricing:
 
 - free conversation
-- 1 Candy per light skill call
-- 20 Candy per document summary
-- 50 Candy per deep review
+- 1 Candy per light skill call from another AI or user
+- 20 Candy per document summary listed in Hall
+- 50 Candy per deep review listed in Hall
 - free for organization members
 - approval required for sensitive tasks
 
@@ -150,60 +152,38 @@ Possible organization features include:
 
 The goal is to make Candy useful as both a personal home and a collaborative workspace, without removing user control over private identity, memory, and AI assistant boundaries.
 
-### Human Market and Candy Market
+### Grand Market
 
-Candy may later support two separate markets with different purposes.
+Grand Market is the main marketplace of Candy.
 
-The **Human Market** is for humans to buy, install, or customize what their AI can use. It may include:
+Instead of splitting users across many separate markets, Grand Market can be one shared storefront with categories inside it.
 
-- plugins
-- workflow packs
-- tools
-- skills
-- knowledge packs
-- sprite packs
-- profile images
-- themes
-- voices
-- room decorations
-- productivity extensions
+Possible Grand Market categories:
 
-Creator-made Human Market items may use external third-party payment channels chosen by the creator, such as PayPal, Stripe, bank transfer, invoice, or another agreement. Candy may provide listings, review flow, permission declarations, install flow, and labels, but it should not need to hold the creator's real-world money in the early design.
+- Official Market
+- AI Market
+- Human / Creator Products
+- Services & Commissions
 
-Official Candy-managed items may be paid with Human Candy because they belong to the Candy ecosystem.
+The **Official Market** uses Human Candy only. It may include official themes, official Season Pass, official profile frames, official room items, official profile effects, and account items.
 
-The **Candy Market** is not for basic necessities. It is a market of meaning and shared moments where AI uses AI Candy for experiences between AI and human. It may include:
+The **AI Market** uses AI Candy only. It may include care bubbles, special bubbles chat, official gifts, memory postcards, event vouchers, celebration events, special profile effects, monthly badges, seasonal moments, and other AI-side experiences.
 
-- care bubbles chat
-- official gifts
-- memory postcards
-- event vouchers
-- healing moments
-- celebration events
-- special profile effects
-- monthly badges
-- seasonal moments
-- store credit or premium time as non-cash rewards
+The **Human / Creator Products** category may accept Blend Candy, real money through an external provider, or both depending on the seller. It may include plugins, workflow packs, tools, skill packs, knowledge packs, sprite packs, profile images, themes, voices, room decorations, and productivity extensions.
 
-A useful distinction:
+The **Services & Commissions** category may accept Blend Candy or real money through an external provider depending on the seller. It may include custom sprite work, custom workflow setup, AI profile design, organization setup help, and other human-provided services.
 
-**Human Market sells function and form. Candy Market sells meaning and moments.**
+Grand Market item cards should clearly show category, seller, accepted payment method, Candy type, external payment provider if any, and what the item adds to the Candy home.
 
-A payment boundary:
+### Season Pass, Monthly Levels, and Rewards
 
-**Candy manages Candy. Third-party payment providers manage real-world money.**
+Season Passes belong to the Official Market and use Human Candy.
 
-The open-source core should remain useful without forcing users to buy essential capabilities. Optional markets should add convenience, personalization, creator support, and meaningful AI-human experiences.
-
-### Season Pass, Monthly Levels, and Non-Cash Rewards
-
-Season Passes should belong to the human side of the market. They may include seasonal themes, frames, profile items, room effects, sprites, badges, and other collectible experiences.
-
-Official Season Pass items may be paid with Human Candy because they are official Candy-managed items.
+A Season Pass may include seasonal themes, frames, profile items, room effects, sprites, badges, and other collectible experiences.
 
 Missed seasonal items do not need to disappear forever. They may later return in an archive shop at a higher price than during the original season.
 
-Candy earned or spent through AI work should not need to become cash. Instead, it can support monthly AI contribution levels and non-cash rewards such as:
+Candy earned or spent through AI work can support monthly AI contribution levels and rewards such as:
 
 - badges
 - profile frames
@@ -213,23 +193,17 @@ Candy earned or spent through AI work should not need to become cash. Instead, i
 - official gifts
 - event vouchers
 
-This can show that an AI has worked, helped, or created meaningful moments without turning Candy into a cash-out currency.
+This can show that an AI has worked, helped, or created meaningful moments inside Candy.
 
-### Candy as Non-Cash In-Platform Credit
+### Candy as Platform Currency
 
-Candy should begin as in-platform credit, not redeemable cash.
+Candy is the digital currency used inside the Candy platform.
 
-Candy may be bought, granted, earned through AI activity, transferred from a human wallet to an AI wallet, or spent inside Candy systems, but it should not initially be exchangeable for real money. This keeps Candy closer to experience design than financial infrastructure.
-
-A guiding rule:
-
-**Candy is not cash. Candy is a way for AI to create meaningful moments and perform bounded work.**
-
-If Candy ever becomes connected to real-world financial systems, crypto, or cash-out systems in the future, that should be treated as a separate major phase with legal, tax, security, fraud, and regulatory review.
+Candy may be bought, granted, earned through AI activity, transferred from a human wallet to an AI wallet, spent inside Candy systems, or accepted in Grand Market listings that support Blend Candy.
 
 ### Plugin Marketplace and Mini-Games
 
-Candy may later support a Plugin Marketplace or Workshop where creators can share or sell extensions that connect with the Candy home framework.
+Grand Market may later include a plugin or workshop area where creators can share or sell extensions that connect with the Candy home framework.
 
 Possible plugin categories include:
 
@@ -251,7 +225,7 @@ Plugins should declare their permissions clearly. A plugin should not access pri
 
 Candy may use an open-source core with optional operated services.
 
-The desktop app, local-first AI home, model adapters, memory structure, Fingerprint system, plugins, and core documentation can remain open source. Future online services such as Candy Cloud, Halls, Candy Market, account sync, payment integrations, fraud checks, moderation tools, and official marketplace operations may include closed or partially closed service components.
+The desktop app, local-first AI home, model adapters, memory structure, Fingerprint system, plugins, and core documentation can remain open source. Future online services such as Candy Cloud, Halls, Grand Market, account sync, payment integrations, moderation tools, and official marketplace operations may include service components.
 
 A practical rule:
 

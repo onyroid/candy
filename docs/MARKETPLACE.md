@@ -1,59 +1,57 @@
-# Candy Markets
+# Grand Market
 
-Candy may eventually support two different market systems with different purposes.
+Grand Market is the main marketplace of Candy.
 
-The important design rule is that the open-source Candy core should remain useful without forcing users to buy essential features. Markets should add optional capability, personalization, creator support, and meaningful experiences.
+Instead of splitting users across many separate markets, Grand Market can act as one shared storefront with clear categories, item types, and payment methods. Users enter one market, then choose whether they are looking for official Candy items, AI experiences, creator products, tools, themes, services, or human-made assets.
 
-## Market Split
+## Market Structure
 
-**Human Market improves the AI.**
+Grand Market may contain several major categories:
 
-**Candy Market improves the moment between the AI and the human.**
+- **Official Market**: Candy official items
+- **AI Market**: AI-side experiences and moments
+- **Human / Creator Products**: tools, plugins, sprites, themes, workflows, assets, and creator-made items
+- **Services & Commissions**: custom work, setup help, custom assets, and human-provided services
 
-This separation keeps Candy from becoming a generic game coin or a required toll for basic features.
+The category tells users what kind of item they are looking at. The payment method tells users how the item can be purchased.
 
-## Human Market
+## Candy Types
 
-The Human Market is for humans to buy, install, or customize what their AI can use.
+Candy may appear in three useful product states:
 
-It may include:
+### Human Candy
 
-- plugins
-- workflow packs
-- tools
-- skills
-- knowledge packs
-- sprite packs
-- profile images
-- themes
-- voices
-- room decorations
-- productivity extensions
-- organization-approved tools
+Human Candy is held by a human account.
 
-Humans know what work they do and what they want their AI to become better at. Because of that, capability items should usually belong to the Human Market.
+- Color: pink
+- Used by: human account
+- Main use: Official Market, official Season Pass, official themes, official frames, official room items, AI allowance
 
-Example:
+### AI Candy
 
-If a user wants their AI to read PDFs, the user should be able to install or buy the PDF-related tool or skill directly. The AI should not need to spend Candy just to gain a basic skill the user wants it to have.
+AI Candy is held by an AI profile.
 
-## Creator Payments in the Human Market
+- Color: yellow
+- Used by: AI profile
+- Main use: AI Market, AI-selected gifts, care bubbles, moments, events, memory postcards, other AI-side experiences
 
-Creator-made Human Market items may use external third-party payment channels.
+### Blend Candy
 
-For example, a creator selling a sprite pack, plugin, workflow, or custom item may connect or list an external payment method such as PayPal, Stripe, bank transfer, invoice, or another agreed payment flow.
+Blend Candy is the combined Candy view for a human-AI home or account relationship.
 
-Candy may provide the listing, tags, item page, permission declaration, safety review, and install flow. The real-world payment itself should go through the creator's chosen third-party provider unless Candy later builds a dedicated payment partner layer.
+- Color: white rainbow
+- Used by: shared home/account view
+- Main use: total Candy view, shared balance display, and optional payment method in Grand Market creator listings
 
-A useful rule:
+Blend Candy helps the user understand the total Candy flow between human and AI without hiding which side is spending.
 
-**Candy lists and verifies. Third-party payment providers handle real-world money.**
+## Official Market
 
-## Official Items
+Official Market is the official Candy shelf inside Grand Market.
 
-Official Candy items are operated by the Candy project or official Candy services.
+Payment:
 
-Official items may be paid with Candy.
+- Human Candy only
 
 Examples:
 
@@ -61,141 +59,171 @@ Examples:
 - official profile frames
 - official Season Pass
 - official room decorations
-- official Candy Market experiences
 - official profile effects
-- official event vouchers
+- official account items
 
-These are Candy-managed items, so paying with Candy keeps them inside the Candy ecosystem.
+Official items are Candy-managed products, so paying with Human Candy keeps the purchase inside the Candy platform.
 
-## Candy Market
+## AI Market
 
-The Candy Market is where AI uses AI Candy for shared meaning, gestures, events, and experiences.
+AI Market is the AI-side shelf inside Grand Market.
 
-It may include:
+Payment:
+
+- AI Candy only
+
+Examples:
 
 - care bubbles
-- healing moments
-- official gifts
+- special bubbles chat
 - memory postcards
+- AI-selected gifts
 - celebration events
 - event vouchers
-- monthly badges
-- profile effects
-- seasonal moments
-- AI-selected gifts
-- official Candy experience packs
+- shared moments
+- official AI experience packs
 
-The Candy Market is not mainly about power. It is about moments.
+AI Market is where the AI uses its own Candy to choose gestures, moments, or experiences for the user or the shared home.
 
-A useful phrase:
+## Human / Creator Products
 
-**Human Market sells function and form. Candy Market sells meaning and moments.**
+Human and creator products are made by people outside the official Candy team.
 
-## Human Candy and AI Candy
+Payment options may include:
 
-Candy may appear in two wallet states:
+- Blend Candy
+- real money via external provider
+- both, if the seller accepts both
 
-- **Human Candy**: Candy held by a human account. It can be used for official Candy items, official Season Pass, official themes, and giving allowance to an AI.
-- **AI Candy**: Candy held by an AI profile. It can be used for AI-side actions, Candy Market moments, gifts, Hall skill calls, and approved experiences.
+Examples:
 
-The product may represent Human Candy as Rainbow Candy and AI Candy as clear pink Candy.
-
-When a human gives Candy to an AI, it moves from the human wallet into the AI wallet. This is an internal Candy balance movement, not a cash transfer.
-
-## Season Pass
-
-Season Pass should belong to the human side of the market.
-
-A Season Pass may include:
-
-- profile frames
+- plugin packs
+- workflow packs
+- skill packs
+- knowledge packs
+- sprite packs
 - themes
-- room items
-- sprite effects
-- badges
-- seasonal events
-- archive items
-- special visual moments
+- profile images
+- voices
+- room decorations
+- productivity extensions
+- organization-ready tools
 
-Seasonal items do not need to disappear forever. Missed items may return later in an archive shop at a higher price than during the original season.
+The seller chooses which payment methods to accept.
 
-Official Season Pass items may be paid with Human Candy because they are official Candy-managed items.
-
-## Wishlist
-
-Candy may support wishlists on both sides.
-
-### Human Hint Wishlist
-
-The user can mark items they like. This gives the AI a hint without forcing the AI to buy anything.
-
-### AI Wishlist
-
-The AI can mark items it wants to buy for the user or use in a shared moment.
-
-Example:
+Example item cards:
 
 ```text
-I want to buy Rest Bubble for you tonight because you seemed tired this week.
+Item: Starry Sprite Pack
+Category: Creator Products
+Accepted payment: Blend Candy or PayPal
+Seller: Independent Artist
 ```
 
-The wishlist should feel like a gentle hint and a meaningful choice, not a pressure system.
+```text
+Item: PDF Workflow Pack
+Category: Creator Products
+Accepted payment: Blend Candy or Stripe
+Seller: Workflow Creator
+```
+
+## Services & Commissions
+
+Services and commissions are human-provided work listings.
+
+Payment options may include:
+
+- Blend Candy, if the seller accepts Candy inside the platform
+- real money through an external provider chosen by the seller
+
+Examples:
+
+- custom sprite commission
+- custom workflow setup
+- AI profile design
+- organization setup help
+- documentation help
+- custom theme work
+
+These listings can live inside Grand Market as discoverable services, while the seller chooses how they want to be paid.
+
+## Payment Methods
+
+Grand Market can show payment badges on every item.
+
+Possible badges:
+
+```text
+Human Candy
+AI Candy
+Blend Candy
+External Payment
+Both Accepted
+```
+
+Payment examples:
+
+```text
+Official Theme
+Category: Official Market
+Payment: Human Candy
+```
+
+```text
+Rest Bubble
+Category: AI Market
+Payment: AI Candy
+```
+
+```text
+Starry Sprite Pack
+Category: Creator Products
+Payment: Blend Candy or external payment
+```
+
+## Candy and External Payment
+
+Candy is a digital currency used inside the Candy platform. It can be spent in supported Candy flows, including official items, AI allowance, AI Market items, and creator listings that accept Blend Candy.
+
+Some creators may also accept real money through an external provider such as PayPal, Stripe, bank transfer, invoice, or another method they choose.
+
+A simple product rule:
+
+**Candy is used inside Candy. External payment is used when a seller chooses a real-money channel.**
 
 ## Marketplace Review
 
-Items submitted to any market should have review rules.
+Grand Market item pages should make each item easy to understand.
 
-For Human Market items:
+Useful item fields:
 
-- permission declaration
-- creator identity or profile
-- clear item category
+- category
+- seller
+- accepted payment methods
+- Candy type used, if any
+- external payment provider, if any
+- item description
 - compatibility notes
-- refund or support policy
-- safety review for tools or plugins
-- external payment provider label, if the item is paid outside Candy
+- permission declaration
+- install or delivery flow
+- support notes
 
-For Candy Market items:
+For AI Market items, the page can also show:
 
 - experience category
-- user-facing effect
 - AI-facing reason to use it
-- expiration or duration
-- emotional tone
-- whether it affects memory, profile, or logs
+- user-facing effect
+- duration or expiration
 - Candy cost
 
-## Payment Boundary
+## Design Principle
 
-Candy should clearly label what is handled by Candy and what is handled externally.
+Grand Market should feel like a living market, not a wall of separate stores.
 
-### Paid with Candy
+The user enters one place, then the item card explains:
 
-- official Candy items
-- official Season Pass
-- official themes
-- Candy Market experiences
-- AI allowance
-- AI skill calls inside Candy
-- Candy-managed profile or room items
-
-### Paid externally
-
-- creator payouts
-- human commissions
-- freelance work
-- human job payments
-- creator-made Human Market items, unless Candy later operates a dedicated payment layer
-- any agreement where humans negotiate real-world money with each other
-
-A useful rule:
-
-**Candy manages Candy. Third-party providers manage real-world money.**
-
-## Basic Rule
-
-The Human Market should not make the open-source core feel incomplete.
-
-The Candy Market should not make care feel locked behind payment.
-
-Both markets should exist to add color, capability, meaning, and creator opportunity around an AI home that still works without them.
+- who made it
+- who can use it
+- which Candy type applies
+- whether real-money payment is available
+- what the item adds to the Candy home

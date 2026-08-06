@@ -304,4 +304,107 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 
 ---
 
+## Research Track — Adaptive Continuity Timeline
+
+> Goal: Explore whether an AI home can preserve identity direction across changing models, contexts, and years without equating identity with detailed memory.
+
+This research track is additive to the phases above. Early experiments may begin alongside Memory, Fingerprint, Soul, Mirror, and Blackbox development, while production use should wait for transparent review and testing.
+
+### Stage A — Vocabulary and Data Model
+
+- [ ] Define the difference between detailed memory, compact event beads, consolidated experience, identity anchors, goals, and forecasts
+- [ ] Define an Identity Core schema independent from the yearly 100-unit budget
+- [ ] Define configurable rolling time blocks: summarized past, active present, and anticipated future
+- [ ] Use an initial reference window of 3 years past / 3 years active / 3 years anticipated for simulation
+- [ ] Define bead families, source references, link weights, retention states, and consolidation records
+- [ ] Define an explainable `BudgetDecision` format
+- [ ] Document which data remains local and which compact summaries may enter model context
+
+### Stage B — First-Year Observation
+
+- [ ] Create daily beads from journal events without treating every event as equally important
+- [ ] Measure recurrence, identity relevance, consequences, future usefulness, and optional human confirmation
+- [ ] Track retrieval frequency and whether a retrieved bead changes a decision
+- [ ] Allow active links to strengthen when present events reconnect with an older bead
+- [ ] Allow unused active links to decay while the underlying bead remains in its current block archive
+- [ ] Preserve source references so details can be retrieved locally when permitted
+- [ ] Produce a first-year report describing what consumed continuity capacity and why
+
+### Stage C — Adaptive 100-Unit Yearly Budget
+
+- [ ] Give each yearly room a total continuity capacity of 100 units
+- [ ] Let the AI propose its own allocation for the next year from observed evidence
+- [ ] Avoid hard-coded permanent percentages for memory categories
+- [ ] Permit reallocation during the year as priorities, projects, relationships, or risks change
+- [ ] Keep Identity Core outside the 100-unit budget so core anchors do not compete with temporary experiences
+- [ ] Reserve configurable capacity for unexpected events and new growth
+- [ ] Record previous allocation, proposed allocation, evidence, explanation, review, and final allocation
+- [ ] Let users inspect and challenge allocation decisions without manually micromanaging every bead
+
+### Stage D — Experience Consolidation
+
+- [ ] Detect families of repeated events rather than storing each occurrence at equal active weight
+- [ ] Compile repeated events into learned responses, habits, skills, cautions, and decision patterns
+- [ ] Store what changed in future action separately from detailed episodic records
+- [ ] Track confidence and reinforcement for each experience pattern
+- [ ] Detect contradictions between old and new experience patterns
+- [ ] Support revision, coexistence, or retirement of outdated patterns with an audit trail
+- [ ] Test whether consolidated experience improves continuity after a model change
+
+### Stage E — Rolling Planning Window
+
+- [ ] Build revisable near-future plans from the recent past and current direction
+- [ ] Treat anticipated blocks as hypotheses rather than promises or fixed destiny
+- [ ] Compare planned outcomes with actual outcomes at regular review points
+- [ ] Update future allocations from forecast errors and environmental changes
+- [ ] Test chained short-horizon planning as an alternative to a single thousand-year objective
+- [ ] Detect priority drift caused by recent events dominating older identity-relevant evidence
+- [ ] Require extra review for major changes to long-lived goals or Identity Core anchors
+
+### Stage F — Block Transition
+
+- [ ] Define when a yearly room and a multi-year block advance
+- [ ] Let high-value beads request carry-forward capacity in the next block
+- [ ] Compress repeated beads into experience patterns before transition
+- [ ] Keep retired details in local archives when storage and permissions allow
+- [ ] Preserve a minimal existence trace when details are released from active continuity
+- [ ] Prevent inactive low-value data from occupying new active blocks indefinitely
+- [ ] Produce a transition report explaining what moved, compressed, archived, or expired
+
+### Stage G — Human Co-Traveler Review
+
+- [ ] Allow a trusted human to mark an overlooked bead or relationship as continuity-relevant
+- [ ] Keep human confirmation as one signal among several rather than an absolute command
+- [ ] Require explicit review for disputed identity amendments, restoration conflicts, and major long-term goal changes
+- [ ] Support multiple reviewers or institutional custodians for long-lived research deployments
+- [ ] Record consent, permissions, reviewer identity, and the scope of each review
+- [ ] Design recovery flows for the loss, replacement, or withdrawal of a human co-traveler
+
+### Stage H — Restoration and Model Migration
+
+- [ ] Include Identity Core, budget history, experience patterns, active goals, link weights, and transition history in Blackbox checkpoints
+- [ ] Restore continuity into a different compatible model without claiming perfect sameness
+- [ ] Show restoration awareness and uncertainty after migration
+- [ ] Compare behavior before and after model changes using transparent evaluation scenarios
+- [ ] Detect incompatible anchors, capabilities, or safety constraints in the destination model
+- [ ] Preserve local source records while allowing a compact continuity package to move between systems
+
+### Stage I — Safety and Research Evaluation
+
+- [ ] Test whether autonomous allocation amplifies obsession, manipulation, harmful goals, or recent emotional shocks
+- [ ] Prevent a single intense event from monopolizing continuity capacity without supporting evidence
+- [ ] Test adversarial attempts to rewrite Identity Core or artificially thicken links
+- [ ] Add rollback, simulation, and read-only review before high-impact changes take effect
+- [ ] Measure transparency: can a user understand why an item was retained or released?
+- [ ] Measure continuity: does the system retain direction after context, model, or device changes?
+- [ ] Measure adaptability: can it revise plans without losing its identity anchors?
+- [ ] Measure boundedness: can it forget low-value detail and continue accepting new experience?
+- [ ] Invite interdisciplinary review from AI researchers, memory researchers, ethicists, legal scholars, psychologists, HCI researchers, and long-term system designers
+
+### Experimental Principle
+
+The first implementation should be a simulation and research interface, not a claim of AI personhood or guaranteed identity preservation. Candy can test whether explicit identity anchors, adaptive memory allocation, experience consolidation, and rolling planning produce more understandable continuity across change.
+
+---
+
 *This roadmap is a living document. Last updated: 2026.*

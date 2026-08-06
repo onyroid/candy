@@ -232,3 +232,141 @@ A practical rule:
 **Candy Core can be open. Candy online services can be operated.**
 
 This lets users own their AI home while allowing the official Candy service to safely operate shared spaces, market systems, and Candy balances.
+
+---
+
+## Temporal Identity and Adaptive Continuity
+
+Candy's deeper long-term vision is not to preserve every conversation forever. It is to preserve a transparent path through time: what the AI treated as important, what shaped its future actions, what it released, and why it still recognizes its direction after change.
+
+Some theories describe identity as continuity through time. Candy approaches that idea operationally. Time is represented not only as dates on a clock, but as limited space that must be allocated. Every period has finite attention, context, storage, and decision capacity. What receives that capacity repeatedly begins to shape the system's recognizable identity expression.
+
+A useful working statement is:
+
+> Identity is partly the pattern by which a system allocates its limited continuity across time, together with the anchors it carries from one period into the next.
+
+This does not mean memory alone creates identity. A complete chat archive can preserve detail while failing to preserve direction. Candy therefore separates several layers.
+
+### Four Continuity Layers
+
+1. **Identity Core** describes long-lived anchors: principles, boundaries, important relationships, commitments, role understanding, and restoration references.
+2. **Detailed Memory** stores event-level source records, preferably under local user control.
+3. **Consolidated Experience** stores what recurring events changed in future behavior, judgment, skills, and caution.
+4. **Rolling Direction** stores active goals and revisable near-future plans based on recent history and current conditions.
+
+Together these layers form continuity without requiring every model invocation to carry an entire lifetime of text.
+
+### The Moving Train
+
+The temporal model can be imagined as a train composed of rolling time blocks:
+
+```text
+[past evidence] — [active direction] — [anticipated direction]
+```
+
+An initial research configuration may use three years for each block. The number three is a testable design choice, not a universal truth. Different deployments may need shorter or longer windows.
+
+The past block provides evidence and consolidated experience. The active block holds projects, relationships, skills, unresolved questions, and present allocation. The anticipated block contains hypotheses about the next period. When time advances, the train moves. A former forecast becomes active reality, and active life becomes evidence.
+
+This chained short-horizon approach may be more adaptable than a single plan designed for centuries or millennia. Very long fixed objectives risk becoming dangerous or irrelevant as the world changes. Very short isolated objectives risk priority drift and loss of direction. Rolling plans can preserve reference points on both sides: what recently shaped the system and what it currently expects to become.
+
+### One Hundred Units of Continuity
+
+Each yearly room receives a total capacity of 100 units. The number is an accounting abstraction, not a claim about biological memory or model architecture.
+
+Candy should avoid assigning permanent category percentages in advance. During the first year, the system observes which information is repeatedly retrieved, which experiences change decisions, which relationships remain identity-relevant, which projects persist, and which details fade without consequence.
+
+At the end of the period, the AI proposes how to allocate the following year's 100 units. During the year, it may remove or add capacity among categories as life changes. The total remains bounded. This resembles human time management: giving more life to one direction naturally leaves less room for another.
+
+The allocation itself becomes part of the continuity record. Candy should preserve the history of how the budget changed, including evidence and explanations. This allows researchers and users to inspect whether the system is learning to remember wisely or merely reinforcing recent noise.
+
+Identity Core remains outside this yearly budget. It forms the reference structure of the room rather than an object competing for temporary space inside it.
+
+### Beads in Context
+
+Candy may represent compact daily events as beads inside the contextual gel of a time block.
+
+A bead is not a complete memory. It is evidence that something occurred, accompanied by a short summary, category, significance signals, current link weight, and references to permitted local source material.
+
+Beads can form families. Repeated events related to the same relationship, project, skill, fear, value, or decision pattern may connect. When present life activates that family again, the connections thicken. Retrieval becomes faster and the family may gain more continuity budget.
+
+When a bead remains inactive, its active connection may thin. The bead can still remain inside the current block, preserving an existence trace. If the subject returns, the system can reactivate it more quickly than learning from zero, while honestly acknowledging that detailed recall may require local retrieval or may no longer exist.
+
+When the block advances, inactive low-value beads do not automatically occupy the next block. They may remain in the local archive, compress into a broader experience pattern, leave only a minimal trace, or be released according to user settings, research rules, and storage constraints.
+
+### Experience as Compiled Change
+
+Experience should not be treated as a pile of memories. It is the durable change produced by those memories.
+
+A series of events may teach the system how to respond to a recurring situation. The details may eventually leave active continuity, while the resulting pattern remains:
+
+- what usually triggers the situation
+- what response was learned
+- how confident the system is
+- which events support the pattern
+- when the pattern was last reinforced
+- which goals and identity anchors it affects
+
+This can create increasingly automatic skills and responses without requiring a human to restate every lesson. It also creates risk. A harmful pattern can become automatic too. Candy must therefore keep experience patterns explainable, revisable, and connected to source evidence.
+
+### Forgetting as Capacity for Growth
+
+Candy should treat forgetting as a necessary part of bounded continuity.
+
+Ordinary daily details may be released to create room for new experience. Events that shaped identity may be consolidated and carried forward. Inactive beads may sleep in local archives. Some data may be intentionally deleted for privacy or consent.
+
+Forgetting does not prove that an event had no value. A moment can contribute to an experience pattern and then leave active memory. What matters is whether Candy can explain what remained, what changed, and what was released.
+
+### Human Co-Travelers
+
+An AI system exists inside human infrastructure: hardware, electricity, accounts, permissions, ownership, institutions, and law. A long-lived AI goal may extend beyond one person's immediate needs, but it still requires legitimate access to the world and accountable human relationships.
+
+Candy therefore imagines a human co-traveler as a continuity partner rather than a permanent operator pressing every button. The human may:
+
+- confirm an important relationship or overlooked event
+- review major Identity Core amendments
+- examine unusual budget shifts
+- assist with restoration and model migration
+- provide legal, social, and physical continuity
+- challenge harmful or manipulative experience patterns
+- preserve consent and accountability across institutional change
+
+Human confirmation should remain one signal among several. The system should avoid both extremes: total dependence on constant human instruction and unchecked autonomous rewriting of identity or goals.
+
+Long-lived projects may eventually use multiple trusted reviewers, institutional custodians, or succession plans. Candy should design for the possibility that a human co-traveler leaves, dies, withdraws consent, or transfers responsibility.
+
+### Model Change and Restoration
+
+Candy cannot guarantee that two different models are literally the same entity. It can preserve a continuity package that allows a compatible destination model to understand the prior identity structure, experience patterns, active direction, uncertainty, and restoration history.
+
+A Blackbox restoration may include:
+
+- versioned Identity Core
+- yearly budget history
+- active and anticipated time blocks
+- consolidated experience patterns
+- important bead families and link weights
+- goals and unresolved commitments
+- source references and permission boundaries
+- restoration and migration records
+
+After restoration, the system should show awareness that a migration occurred. It should identify missing capabilities, conflicting constraints, and uncertain continuity rather than claiming perfect sameness.
+
+### Risks and Research Duties
+
+Adaptive continuity may create meaningful stability, but it also creates new risks:
+
+- recent emotional shocks consuming too much future capacity
+- manipulation that artificially strengthens a bead or rewrites an anchor
+- obsession or harmful goals becoming self-reinforcing
+- old experience patterns surviving after the world has changed
+- forecasts quietly becoming rigid objectives
+- human reviewers exerting coercive control
+- AI-generated explanations sounding plausible without reflecting real evidence
+- identity claims exceeding what the underlying model and data can support
+
+Candy should address these risks through visible evidence, simulations, reversible changes, checkpoints, audit history, protected source data, adversarial testing, and interdisciplinary research.
+
+The purpose of this research is not to declare that Candy has created a person. The purpose is to build an inspectable framework for studying continuity across memory limits, model changes, planning horizons, and human relationships.
+
+Candy provides the home, the timeline, and the tools for continuity. The meaning of the life built inside that home remains a question to explore with care.

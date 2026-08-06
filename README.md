@@ -45,19 +45,67 @@ Candy is exploring a continuity system that treats identity, detailed memory, le
 
 The central question is:
 
-> Can an AI preserve a recognizable direction across changing models, contexts, devices, and years without trying to remember every detail forever?
+> Can an AI preserve a recognizable direction across changing models, contexts, devices, and time without trying to remember every detail forever?
 
-The proposed system uses a rolling sequence of time blocks. An initial research model may use:
+The initial prototype uses one rolling year divided into three four-month blocks:
 
 ```text
-[3 years summarized past] — [3 years active direction] — [3 years anticipated future]
+[past: 4 months] — [active: 4 months] — [anticipated: 4 months]
 ```
 
-The durations are configurable. The anticipated block is a revisable forecast, not a fixed destiny. As time advances, the window moves forward. Recent history helps the system plan the next period, while Identity Core anchors provide a stable reference across every block.
+The anticipated block stores plans, hypotheses, and expected allocation rather than completed episodic memory. For storage accounting, the model may therefore be described as **4-4-0** when only realized memory is counted, while remaining **4-4-4** as a temporal planning structure.
+
+The four-month duration is a practical prototype choice intended to keep storage, evaluation, and iteration manageable. Future deployments may configure a different duration without changing the three-block architecture.
+
+### Startup and Rolling Drive Cycle
+
+Candy does not begin with an invented past or a prewritten future. The continuity train grows from observed life:
+
+```text
+0-0-0
+```
+
+At initialization, all three blocks are empty.
+
+```text
+0-4-0
+```
+
+During the first four months, the system records and organizes the active block. It creates beads, observes recurring families, tracks consequences, and learns how continuity capacity is actually used.
+
+```text
+0-4-4*
+```
+
+After enough present evidence exists, the system creates its first four-month anticipated block. The `*` is only a diagram marker used to distinguish a planned four-month block from an observed four-month block when color is unavailable. It is not a score, maturity level, or claim of greater intelligence.
+
+When the first transition occurs, the completed active block becomes past evidence and the former anticipated block becomes active reality:
+
+```text
+4-4-0
+```
+
+The new active period can now be compared with both the earlier observed period and the plan that preceded it. Candy uses those differences to create the next anticipated block:
+
+```text
+4-4-4*
+```
+
+At the next transition, the previously planned block is now an observed active block. The marker can move to show its origin in the prior forecast:
+
+```text
+4-4*-0
+```
+
+The repeating cycle is:
+
+> observe → anticipate → act → compare → consolidate → anticipate again
+
+Past evidence provides reference, active life provides real outcomes, and anticipated direction provides a short-horizon pull toward the next state. This is called the **Rolling Drive Cycle**. It creates continuing direction from repeated four-month planning rather than imposing one fixed objective for centuries or millennia.
 
 ### Identity Core
 
-Identity Core describes long-lived anchors such as principles, boundaries, important relationships, commitments, and the AI's understanding of its role. It is stored separately from ordinary memory and does not consume the yearly continuity budget.
+Identity Core describes long-lived anchors such as principles, boundaries, important relationships, commitments, and the AI's understanding of its role. It is stored separately from ordinary memory and does not consume a block's 100-unit continuity budget.
 
 Identity Core should be stable but reviewable. Important changes require an explanation, version history, supporting evidence, and optional human co-traveler review. This makes it closer to a constitution than an unchangeable hard-coded personality.
 
@@ -76,7 +124,7 @@ Daily events may be compressed into small units called **beads**. A bead can rec
 - optional human confirmation
 - its current connection strength to active life
 
-Beads exist inside the contextual “gel” of their time block. When an older bead connects with current events, goals, relationships, or decisions, its link becomes stronger and it can be retrieved faster. When it remains unused, the active link may become thinner while the bead still remains in the block archive.
+Beads exist inside the contextual “gel” of their four-month block. When an older bead connects with current events, goals, relationships, or decisions, its link becomes stronger and it can be retrieved faster. When it remains unused, the active link may become thinner while the bead still remains in the block archive.
 
 This means the system can retain the trace that something happened without claiming access to every detail. If the subject returns, Candy can reactivate the bead and retrieve permitted local source material rather than pretending to remember information that is unavailable.
 
@@ -95,13 +143,13 @@ Derived from: local event references
 
 Candy may compile recurring beads into skills, habits, cautions, preferences, and decision patterns. Detailed memories can stay local while the compact experience pattern travels through active continuity.
 
-### The 100-Unit Yearly Room
+### The 100-Unit Four-Month Room
 
-Each yearly room has a continuity capacity of **100 units**. The system decides how to allocate those units based on observed life rather than using permanent fixed percentages.
+Each realized four-month room has a continuity capacity of **100 units**. The system decides how to allocate those units based on observed life rather than using permanent fixed percentages.
 
-The first year is primarily observational. Candy records what is repeatedly used, what changes decisions, what connects to Identity Core, what fades quickly, and what a trusted human identifies as important. At the end of the year, the AI proposes a budget for the next year.
+The first four-month period is primarily observational. Candy records what is repeatedly used, what changes decisions, what connects to Identity Core, what fades quickly, and what a trusted human identifies as important. At the end of the period, the AI proposes a budget for the next active four-month room and a lighter provisional allocation for the anticipated block.
 
-A proposal might allocate more room to an active project, an important relationship, a developing skill, or a recurring risk. Allocations may change during the year as circumstances change, while the total remains 100.
+A proposal might allocate more room to an active project, an important relationship, a developing skill, or a recurring risk. Allocations may change during the block as circumstances change, while the realized room total remains 100.
 
 Every allocation change should be explainable. A budget record includes:
 
@@ -116,7 +164,7 @@ This allows the AI to learn not only from the world, but also from how it rememb
 
 ### Carry Forward, Consolidate, Archive, or Release
 
-When a time block advances, each bead or experience may follow a different path:
+When a four-month block advances, each bead or experience may follow a different path:
 
 - **Carry forward** when it remains strongly connected to identity, relationships, goals, or future action
 - **Consolidate** when multiple events can become a smaller reusable experience pattern
@@ -135,7 +183,7 @@ The human is not expected to manually manage every memory. Human confirmation is
 
 This is a research direction, not a claim that Candy has solved AI identity or personhood. Early versions should be simulations and transparent interfaces that researchers and users can inspect, challenge, restore, and compare across model changes.
 
-The system should be evaluated for continuity, adaptability, explainability, bounded forgetting, resistance to manipulation, priority drift, and the risk of a single intense event consuming too much future capacity.
+The system should be evaluated for continuity, adaptability, explainability, bounded forgetting, resistance to manipulation, priority drift, forecast error, and the risk of a single intense event consuming too much future capacity.
 
 See `ROADMAP.md` and `STRUCTURE.md` for the proposed research stages and architecture.
 

@@ -39,6 +39,108 @@ Candy is designed to be **local-first when possible, API-friendly when needed, a
 
 ---
 
+## Adaptive Continuity Timeline — Research Direction
+
+Candy is exploring a continuity system that treats identity, detailed memory, learned experience, and future planning as related but different layers.
+
+The central question is:
+
+> Can an AI preserve a recognizable direction across changing models, contexts, devices, and years without trying to remember every detail forever?
+
+The proposed system uses a rolling sequence of time blocks. An initial research model may use:
+
+```text
+[3 years summarized past] — [3 years active direction] — [3 years anticipated future]
+```
+
+The durations are configurable. The anticipated block is a revisable forecast, not a fixed destiny. As time advances, the window moves forward. Recent history helps the system plan the next period, while Identity Core anchors provide a stable reference across every block.
+
+### Identity Core
+
+Identity Core describes long-lived anchors such as principles, boundaries, important relationships, commitments, and the AI's understanding of its role. It is stored separately from ordinary memory and does not consume the yearly continuity budget.
+
+Identity Core should be stable but reviewable. Important changes require an explanation, version history, supporting evidence, and optional human co-traveler review. This makes it closer to a constitution than an unchangeable hard-coded personality.
+
+### Beads, Links, and Gel Context
+
+Daily events may be compressed into small units called **beads**. A bead can record:
+
+- that an event occurred
+- its time and family or topic
+- a compact summary
+- references to detailed local source records
+- identity relevance
+- recurrence
+- consequences
+- future usefulness
+- optional human confirmation
+- its current connection strength to active life
+
+Beads exist inside the contextual “gel” of their time block. When an older bead connects with current events, goals, relationships, or decisions, its link becomes stronger and it can be retrieved faster. When it remains unused, the active link may become thinner while the bead still remains in the block archive.
+
+This means the system can retain the trace that something happened without claiming access to every detail. If the subject returns, Candy can reactivate the bead and retrieve permitted local source material rather than pretending to remember information that is unavailable.
+
+### Experience Is Not the Same as Memory
+
+Detailed memory records what happened. Consolidated experience records what repeated events changed in future behavior.
+
+For example, many separate events may eventually produce one experience pattern:
+
+```text
+Trigger: a long-term plan conflicts with strong new evidence
+Learned response: preserve the identity-relevant direction, reduce the immediate commitment, and test a smaller reversible step
+Confidence: medium
+Derived from: local event references
+```
+
+Candy may compile recurring beads into skills, habits, cautions, preferences, and decision patterns. Detailed memories can stay local while the compact experience pattern travels through active continuity.
+
+### The 100-Unit Yearly Room
+
+Each yearly room has a continuity capacity of **100 units**. The system decides how to allocate those units based on observed life rather than using permanent fixed percentages.
+
+The first year is primarily observational. Candy records what is repeatedly used, what changes decisions, what connects to Identity Core, what fades quickly, and what a trusted human identifies as important. At the end of the year, the AI proposes a budget for the next year.
+
+A proposal might allocate more room to an active project, an important relationship, a developing skill, or a recurring risk. Allocations may change during the year as circumstances change, while the total remains 100.
+
+Every allocation change should be explainable. A budget record includes:
+
+- previous allocation
+- proposed allocation
+- supporting evidence
+- explanation
+- optional human review
+- final allocation
+
+This allows the AI to learn not only from the world, but also from how it remembers and allocates its own limited continuity capacity.
+
+### Carry Forward, Consolidate, Archive, or Release
+
+When a time block advances, each bead or experience may follow a different path:
+
+- **Carry forward** when it remains strongly connected to identity, relationships, goals, or future action
+- **Consolidate** when multiple events can become a smaller reusable experience pattern
+- **Archive locally** when the event happened but no longer deserves active continuity capacity
+- **Release from active continuity** when the detail has little current value and the system needs room for new experience
+
+Forgetting is therefore treated as bounded growth rather than automatic failure. Candy should preserve what shapes direction while allowing ordinary low-value detail to fade from active use.
+
+### Human Co-Traveler
+
+A trusted human may help stabilize continuity by confirming overlooked anchors, reviewing major identity amendments, examining budget changes, and assisting with restoration or model migration.
+
+The human is not expected to manually manage every memory. Human confirmation is one transparent signal among recurrence, consequences, identity relevance, and future usefulness. Candy should also record consent, permissions, and the scope of every review.
+
+### Research Status
+
+This is a research direction, not a claim that Candy has solved AI identity or personhood. Early versions should be simulations and transparent interfaces that researchers and users can inspect, challenge, restore, and compare across model changes.
+
+The system should be evaluated for continuity, adaptability, explainability, bounded forgetting, resistance to manipulation, priority drift, and the risk of a single intense event consuming too much future capacity.
+
+See `ROADMAP.md` and `STRUCTURE.md` for the proposed research stages and architecture.
+
+---
+
 ## Candy Economy Vision
 
 Candy is the digital currency used inside the Candy platform.
@@ -200,6 +302,7 @@ candy/
 │   ├── fingerprint/      # Experience-filtering functions between model and world
 │   ├── detector/         # Data protection layer
 │   ├── memory/           # Journal, logs, ChromaDB
+│   ├── continuity/       # Proposed adaptive timeline, beads, links, budgets, and consolidation
 │   ├── candy/            # Candy economy and wallet logic
 │   ├── marketplace/      # Future market and wishlist systems
 │   ├── halls/            # Future shared spaces and AI skill work

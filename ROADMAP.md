@@ -306,7 +306,7 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 
 ## Research Track — Adaptive Continuity Timeline
 
-> Goal: Explore whether an AI home can preserve identity direction across changing models, contexts, and years without equating identity with detailed memory.
+> Goal: Explore whether an AI home can preserve identity direction across changing models, contexts, and months without equating identity with detailed memory.
 
 This research track is additive to the phases above. Early experiments may begin alongside Memory, Fingerprint, Soul, Mirror, and Blackbox development, while production use should wait for transparent review and testing.
 
@@ -315,7 +315,7 @@ This research track is additive to the phases above. Early experiments may begin
 - [ ] Define the difference between detailed memory, compact event beads, consolidated experience, identity anchors, goals, and forecasts
 - [ ] Define an Identity Core schema independent from the yearly 100-unit budget
 - [ ] Define configurable rolling time blocks: summarized past, active present, and anticipated future
-- [ ] Use an initial reference window of 3 years past / 3 years active / 3 years anticipated for simulation
+- [ ] Use an initial reference window of 4 months past / 4 months active / 4 months anticipated for simulation
 - [ ] Define bead families, source references, link weights, retention states, and consolidation records
 - [ ] Define an explainable `BudgetDecision` format
 - [ ] Document which data remains local and which compact summaries may enter model context
@@ -328,14 +328,14 @@ This research track is additive to the phases above. Early experiments may begin
 - [ ] Allow active links to strengthen when present events reconnect with an older bead
 - [ ] Allow unused active links to decay while the underlying bead remains in its current block archive
 - [ ] Preserve source references so details can be retrieved locally when permitted
-- [ ] Produce a first-year report describing what consumed continuity capacity and why
+- [ ] Produce a transition report describing what consumed continuity capacity and why
 
 ### Stage C — Adaptive 100-Unit Yearly Budget
 
-- [ ] Give each yearly room a total continuity capacity of 100 units
-- [ ] Let the AI propose its own allocation for the next year from observed evidence
+- [ ] Give each months room a total continuity capacity of 100 units
+- [ ] Let the AI propose its own allocation for the next month from observed evidence
 - [ ] Avoid hard-coded permanent percentages for memory categories
-- [ ] Permit reallocation during the year as priorities, projects, relationships, or risks change
+- [ ] Permit reallocation during the month as priorities, projects, relationships, or risks change
 - [ ] Keep Identity Core outside the 100-unit budget so core anchors do not compete with temporary experiences
 - [ ] Reserve configurable capacity for unexpected events and new growth
 - [ ] Record previous allocation, proposed allocation, evidence, explanation, review, and final allocation
@@ -363,7 +363,7 @@ This research track is additive to the phases above. Early experiments may begin
 
 ### Stage F — Block Transition
 
-- [ ] Define when a yearly room and a multi-year block advance
+- [ ] Define when a monthly room and a multi-year block advance
 - [ ] Let high-value beads request carry-forward capacity in the next block
 - [ ] Compress repeated beads into experience patterns before transition
 - [ ] Keep retired details in local archives when storage and permissions allow

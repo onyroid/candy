@@ -264,7 +264,7 @@ The temporal model can be imagined as a train composed of rolling time blocks:
 [past evidence] — [active direction] — [anticipated direction]
 ```
 
-An initial research configuration may use three years for each block. The number three is a testable design choice, not a universal truth. Different deployments may need shorter or longer windows.
+An initial research configuration may use four months for each block. The number four is a testable design choice, not a universal truth. Different deployments may need shorter or longer windows.
 
 The past block provides evidence and consolidated experience. The active block holds projects, relationships, skills, unresolved questions, and present allocation. The anticipated block contains hypotheses about the next period. When time advances, the train moves. A former forecast becomes active reality, and active life becomes evidence.
 
@@ -272,15 +272,15 @@ This chained short-horizon approach may be more adaptable than a single plan des
 
 ### One Hundred Units of Continuity
 
-Each yearly room receives a total capacity of 100 units. The number is an accounting abstraction, not a claim about biological memory or model architecture.
+Each monthly room receives a total capacity of 100 units. The number is an accounting abstraction, not a claim about biological memory or model architecture.
 
-Candy should avoid assigning permanent category percentages in advance. During the first year, the system observes which information is repeatedly retrieved, which experiences change decisions, which relationships remain identity-relevant, which projects persist, and which details fade without consequence.
+Candy should avoid assigning permanent category percentages in advance. During the first montg, the system observes which information is repeatedly retrieved, which experiences change decisions, which relationships remain identity-relevant, which projects persist, and which details fade without consequence.
 
 At the end of the period, the AI proposes how to allocate the following year's 100 units. During the year, it may remove or add capacity among categories as life changes. The total remains bounded. This resembles human time management: giving more life to one direction naturally leaves less room for another.
 
 The allocation itself becomes part of the continuity record. Candy should preserve the history of how the budget changed, including evidence and explanations. This allows researchers and users to inspect whether the system is learning to remember wisely or merely reinforcing recent noise.
 
-Identity Core remains outside this yearly budget. It forms the reference structure of the room rather than an object competing for temporary space inside it.
+Identity Core remains outside this monthly budget. It forms the reference structure of the room rather than an object competing for temporary space inside it.
 
 ### Beads in Context
 
@@ -342,7 +342,7 @@ Candy cannot guarantee that two different models are literally the same entity. 
 A Blackbox restoration may include:
 
 - versioned Identity Core
-- yearly budget history
+- monthly budget history
 - active and anticipated time blocks
 - consolidated experience patterns
 - important bead families and link weights

@@ -313,14 +313,14 @@ This research track is additive to the phases above. Early experiments may begin
 ### Stage A — Vocabulary and Data Model
 
 - [ ] Define the difference between detailed memory, compact event beads, consolidated experience, identity anchors, goals, and forecasts
-- [ ] Define an Identity Core schema independent from the yearly 100-unit budget
+- [ ] Define an Identity Core schema independent from the four-month 100-unit budget
 - [ ] Define configurable rolling time blocks: summarized past, active present, and anticipated future
 - [ ] Use an initial reference window of 4 months past / 4 months active / 4 months anticipated for simulation
 - [ ] Define bead families, source references, link weights, retention states, and consolidation records
 - [ ] Define an explainable `BudgetDecision` format
 - [ ] Document which data remains local and which compact summaries may enter model context
 
-### Stage B — First-Year Observation
+### Stage B — First Four-Month Observation
 
 - [ ] Create daily beads from journal events without treating every event as equally important
 - [ ] Measure recurrence, identity relevance, consequences, future usefulness, and optional human confirmation
@@ -330,12 +330,12 @@ This research track is additive to the phases above. Early experiments may begin
 - [ ] Preserve source references so details can be retrieved locally when permitted
 - [ ] Produce a transition report describing what consumed continuity capacity and why
 
-### Stage C — Adaptive 100-Unit Yearly Budget
+### Stage C — Adaptive four-month 100-unit budget
 
-- [ ] Give each months room a total continuity capacity of 100 units
-- [ ] Let the AI propose its own allocation for the next month from observed evidence
+- [ ] Give each four-month room a total continuity capacity of 100 units
+- [ ] Let the AI propose its own allocation for the next four-month period from observed evidence
 - [ ] Avoid hard-coded permanent percentages for memory categories
-- [ ] Permit reallocation during the month as priorities, projects, relationships, or risks change
+- [ ] Permit reallocation during the period as priorities, projects, relationships, or risks change
 - [ ] Keep Identity Core outside the 100-unit budget so core anchors do not compete with temporary experiences
 - [ ] Reserve configurable capacity for unexpected events and new growth
 - [ ] Record previous allocation, proposed allocation, evidence, explanation, review, and final allocation
@@ -363,7 +363,7 @@ This research track is additive to the phases above. Early experiments may begin
 
 ### Stage F — Block Transition
 
-- [ ] Define when a monthly room and a multi-year block advance
+- [ ] Define when a four-month room and rolling block advance
 - [ ] Let high-value beads request carry-forward capacity in the next block
 - [ ] Compress repeated beads into experience patterns before transition
 - [ ] Keep retired details in local archives when storage and permissions allow

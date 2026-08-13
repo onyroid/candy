@@ -342,7 +342,7 @@ Candy cannot guarantee that two different models are literally the same entity. 
 A Blackbox restoration may include:
 
 - versioned Identity Core
-- monthly budget history
+- four-month continuity budget history
 - active and anticipated time blocks
 - consolidated experience patterns
 - important bead families and link weights

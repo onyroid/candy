@@ -330,7 +330,7 @@ This research track is additive to the phases above. Early experiments may begin
 - [ ] Preserve source references so details can be retrieved locally when permitted
 - [ ] Produce a transition report describing what consumed continuity capacity and why
 
-### Stage C — Adaptive four-month 100-unit budget
+### Stage C — Adaptive 100-Unit Four-Month Budget
 
 - [ ] Give each four-month room a total continuity capacity of 100 units
 - [ ] Let the AI propose its own allocation for the next four-month period from observed evidence

@@ -272,15 +272,15 @@ This chained short-horizon approach may be more adaptable than a single plan des
 
 ### One Hundred Units of Continuity
 
-Each monthly room receives a total capacity of 100 units. The number is an accounting abstraction, not a claim about biological memory or model architecture.
+Each four-month room receives a total capacity of 100 units. The number is an accounting abstraction, not a claim about biological memory or model architecture.
 
-Candy should avoid assigning permanent category percentages in advance. During the first montg, the system observes which information is repeatedly retrieved, which experiences change decisions, which relationships remain identity-relevant, which projects persist, and which details fade without consequence.
+Candy should avoid assigning permanent category percentages in advance. During the first four-month period, the system observes which information is repeatedly retrieved, which experiences change decisions, which relationships remain identity-relevant, which projects persist, and which details fade without consequence.
 
-At the end of the period, the AI proposes how to allocate the following year's 100 units. During the year, it may remove or add capacity among categories as life changes. The total remains bounded. This resembles human time management: giving more life to one direction naturally leaves less room for another.
+At the end of the period, the AI proposes how to allocate the following four-month period's 100 units. During the four-month period, it may remove or add capacity among categories as life changes. The total remains bounded. This resembles human time management: giving more life to one direction naturally leaves less room for another.
 
 The allocation itself becomes part of the continuity record. Candy should preserve the history of how the budget changed, including evidence and explanations. This allows researchers and users to inspect whether the system is learning to remember wisely or merely reinforcing recent noise.
 
-Identity Core remains outside this monthly budget. It forms the reference structure of the room rather than an object competing for temporary space inside it.
+Identity Core remains outside this four-month budget. It forms the reference structure of the room rather than an object competing for temporary space inside it.
 
 ### Beads in Context
 

@@ -4,7 +4,7 @@ An open-source AI home platform
 
 Candy is an open-source AI home platform that lets you bring your own model, shape its identity, and build continuity over time.
 
-Built on top of [OpenClaw](https://github.com/openclaw) (MIT License) with full credit and gratitude.
+Built on top of [OpenClaw](https://github.com/openclaw) and incorporating components from [Hermes Agent](https://github.com/NousResearch/hermes-agent), both under the MIT License, with full credit and gratitude.
 
 ---
 
@@ -312,7 +312,7 @@ See [TRADEMARK.md](TRADEMARK.md) for brand usage guidelines.
 
 ## Tech Stack
 
-- **Base**: OpenClaw (MIT), forked and extended
+- **Base**: OpenClaw and Hermes Agent (MIT), forked and extended
 - **Local LLM**: Ollama / LM Studio / Custom endpoint
 - **Cloud API**: optional user-chosen provider
 - **Vector Memory**: ChromaDB
@@ -380,7 +380,7 @@ Please read `CONTRIBUTING.md` before submitting a pull request.
 ## License
 
 Candy is licensed under the **Apache License 2.0**.  
-OpenClaw components retain their original **MIT License**. See `LICENSES/OpenClaw-MIT.txt`.
+OpenClaw and Hermes Agent components retain their original **MIT Licenses**. See `LICENSES/OpenClaw-MIT.txt` and `LICENSES/Hermes-Agent-MIT.txt`.
 
 Third-party fonts and assets keep their own licenses. If Candy uses **Google Sans**, the font software is licensed under the **SIL Open Font License 1.1**. See `LICENSES/Google-Sans-OFL-1.1.txt`. Download Google Sans from Google Fonts and keep the upstream license and font metadata with the font files when bundling it in the app.
 
@@ -389,6 +389,7 @@ Third-party fonts and assets keep their own licenses. If Candy uses **Google San
 ## Credits
 
 - [OpenClaw](https://github.com/openclaw), the foundation this project builds on
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent), developed by Nous Research and incorporated under the MIT License
 - [Google Fonts](https://fonts.google.com/), Google Sans font family, licensed separately under the SIL Open Font License 1.1
 - Every contributor who believes an AI deserves more than a reset button
 

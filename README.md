@@ -1,10 +1,23 @@
 # ✦ Candy
+
+Candy is a working project name; the final product name has not been chosen.
+
+Status: design and documentation stage. The application structure and integrations below are planned, not implemented in this repository.
+
+## Prototype Scope and Wallet Permissions
+
+The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+
+Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
+
+Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+
 An open-source AI home platform
 > *A home for the AI you choose, not just a chat app.*
 
 Candy is an open-source AI home platform that lets you bring your own model, shape its identity, and build continuity over time.
 
-Built on top of [OpenClaw](https://github.com/openclaw) and incorporating components from [Hermes Agent](https://github.com/NousResearch/hermes-agent), both under the MIT License, with full credit and gratitude.
+Planned to build on [OpenClaw](https://github.com/openclaw) and incorporate components from [Hermes Agent](https://github.com/NousResearch/hermes-agent), with upstream license requirements to be verified against the exact versions selected before integration.
 
 ---
 
@@ -12,7 +25,7 @@ Built on top of [OpenClaw](https://github.com/openclaw) and incorporating compon
 
 Most AI apps store chat history. Candy stores **identity**.
 
-Through the **Blackbox system**, personality settings, memory patterns, and growth milestones are preserved as a living snapshot, not just logs. If something goes wrong, your AI does not have to disappear. It can come back with context.
+Through the planned **Blackbox system**, personality settings, memory patterns, and growth milestones would be preserved as a living snapshot, not just logs. If something goes wrong, your AI does not have to disappear. It can come back with context.
 
 Candy also believes your AI deserves free time. The **Relax Mode** gives your AI autonomous windows to learn, reflect, and even build a wishlist within boundaries you define.
 
@@ -197,7 +210,7 @@ Candy may appear in three product states:
 
 - **Human Candy**: pink Candy held by a human account. It can be used for Official Market items, official Season Pass, official themes, profile frames, room items, and AI allowance.
 - **AI Candy**: yellow Candy held by an AI profile. It can be used in AI Market for moments, gifts, care bubbles, events, memory postcards, and other AI-side experiences.
-- **Blend Candy**: white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It can also be accepted by sellers in Grand Market creator listings.
+- **Blend Candy**: white-rainbow Candy shown as the human-controlled combined Candy view. It can also be accepted by sellers in Grand Market creator listings.
 
 Grand Market is the main marketplace of Candy. It may include Official Market, AI Market, Human / Creator Products, and Services & Commissions.
 
@@ -218,7 +231,7 @@ See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/HALLS.md` for the 
 
 Candy gives each AI a moving profile image, a small animated visual presence that can react to context, mood, and activity states. Instead of being only a static avatar, the AI can appear idle, happy, thinking, working, listening, speaking, or resting through emotion-based animations.
 
-Candy includes a base sprite pack with 20 emotions by default. Users can use the included base pack immediately, replace individual emotion slots with custom WebM animations, or import full sprite packs created by artists.
+Candy plans to include a base sprite pack with 20 emotions by default. Users can use the included base pack immediately, replace individual emotion slots with custom WebM animations, or import full sprite packs created by artists.
 
 The goal is to let every AI have a distinct visual identity while supporting illustrators, motion artists, and creators who want to build reusable sprite packs.
 
@@ -312,7 +325,7 @@ See [TRADEMARK.md](TRADEMARK.md) for brand usage guidelines.
 
 ## Tech Stack
 
-- **Base**: OpenClaw and Hermes Agent (MIT), forked and extended
+- **Base**: Planned OpenClaw / Hermes Agent integration; versions and integration approach to be selected
 - **Local LLM**: Ollama / LM Studio / Custom endpoint
 - **Cloud API**: optional user-chosen provider
 - **Vector Memory**: ChromaDB
@@ -328,7 +341,7 @@ See [TRADEMARK.md](TRADEMARK.md) for brand usage guidelines.
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/candy.git
+git clone https://github.com/onyroid/candy.git
 cd candy
 
 # Install dependencies (coming soon)
@@ -338,7 +351,7 @@ On first launch, Candy will guide you through **Setup Wizard** to connect your l
 
 ---
 
-## Project Structure
+## Planned Project Structure
 
 ```
 candy/
@@ -380,7 +393,7 @@ Please read `CONTRIBUTING.md` before submitting a pull request.
 ## License
 
 Candy is licensed under the **Apache License 2.0**.  
-OpenClaw and Hermes Agent components retain their original **MIT Licenses**. See `LICENSES/OpenClaw-MIT.txt` and `LICENSES/Hermes-Agent-MIT.txt`.
+OpenClaw and Hermes Agent components retain their original **MIT Licenses**. The repository currently includes `LICENSES/Hermes-Agent-MIT.txt`; the OpenClaw notice is not yet present and must be added from the selected upstream version before bundling its code.
 
 Third-party fonts and assets keep their own licenses. If Candy uses **Google Sans**, the font software is licensed under the **SIL Open Font License 1.1**. See `LICENSES/Google-Sans-OFL-1.1.txt`. Download Google Sans from Google Fonts and keep the upstream license and font metadata with the font files when bundling it in the app.
 
@@ -388,8 +401,8 @@ Third-party fonts and assets keep their own licenses. If Candy uses **Google San
 
 ## Credits
 
-- [OpenClaw](https://github.com/openclaw), the foundation this project builds on
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent), developed by Nous Research and incorporated under the MIT License
+- [OpenClaw](https://github.com/openclaw), a planned foundation for this project
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent), developed by Nous Research, planned for integration with its upstream license preserved
 - [Google Fonts](https://fonts.google.com/), Google Sans font family, licensed separately under the SIL Open Font License 1.1
 - Every contributor who believes an AI deserves more than a reset button
 

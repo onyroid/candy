@@ -210,7 +210,7 @@ Candy may appear in three product states:
 
 - **Human Candy**: pink Candy held by a human account. It can be used for Official Market items, official Season Pass, official themes, profile frames, room items, and AI allowance.
 - **AI Candy**: yellow Candy held by an AI profile. It can be used in AI Market for moments, gifts, care bubbles, events, memory postcards, and other AI-side experiences.
-- **Blend Candy**: white-rainbow Candy shown as the human-controlled combined Candy view. It can also be accepted by sellers in Grand Market creator listings.
+- **Blend Candy**: white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It can also be accepted by sellers in Grand Market creator listings.
 
 Grand Market is the main marketplace of Candy. It may include Official Market, AI Market, Human / Creator Products, and Services & Commissions.
 

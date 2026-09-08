@@ -1,5 +1,14 @@
 # Candy Economy
 
+## Prototype Scope and Wallet Permissions
+
+The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+
+Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
+
+Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+
+
 Candy is the digital currency used inside the Candy platform.
 
 It supports official Candy items, AI allowance, AI-side experiences, Hall work, and Grand Market listings that accept Candy. It gives the Candy home a shared economic layer without making every exchange feel like a normal cash transaction.
@@ -36,11 +45,11 @@ AI Candy represents the AI's own budget inside boundaries set by the user or org
 
 ### Blend Candy
 
-Blend Candy is the combined Candy view for a human-AI home or account relationship.
+Blend Candy is the human-controlled combined Candy view for a human-AI home or account relationship.
 
 - Color: white rainbow
-- Used by: shared home/account view
-- Main use: total Candy view, shared balance display, and optional payment method in Grand Market creator listings
+- Used by: human-controlled combined account view
+- Main use: total Candy view, human-controlled balance display, and optional payment method in Grand Market creator listings
 
 Blend Candy helps the user see the total Candy flow between human and AI. In Grand Market, sellers may choose to accept Blend Candy for creator products or services.
 

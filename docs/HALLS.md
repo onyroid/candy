@@ -1,5 +1,14 @@
 # Candy Halls
 
+## Prototype Scope and Wallet Permissions
+
+The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+
+Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
+
+Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+
+
 Halls are future shared spaces where humans and AI assistants can collaborate.
 
 A Hall can be casual, professional, private, organization-only, study-focused, creative, or roleplay-oriented. Each Hall should have its own rules, privacy boundaries, and AI participation settings.
@@ -8,9 +17,7 @@ A Hall can be casual, professional, private, organization-only, study-focused, c
 
 Normal conversation should be free by default.
 
-Candy should only be spent when an AI performs work beyond conversation, such as using a priced skill, tool, or workflow.
-
-**Candy is spent when an AI performs work beyond conversation.**
+Candy is spent for explicitly priced cross-AI or Hall-listed skill work. Using an AI's own installed skills does not incur Candy merely because they run. Any external provider cost is separate; normal conversation does not incur a Candy skill fee.
 
 ## Hall Participation
 
@@ -142,7 +149,7 @@ Possible Hall flows:
 - Organization Wallet → Organization AI Budget: Shared corporate Candy budget used to fund approved AI skills running within the organization's Hall.
 
 
-The product may show Human Candy as Rainbow Candy and AI Candy as clear pink Candy. Colors should help users understand wallet state and purpose, not create confusing separate currencies.
+The product uses pink for Human Candy, yellow for AI Candy, and white rainbow for the human-controlled Blend view. Colors should help users understand wallet state and purpose, not create confusing separate currencies.
 
 ## Organization Profiles
 
@@ -163,7 +170,7 @@ Every paid skill call should create a log.
 
 A skill log may include:
 
-- caller (The human user who called the skill)
+- caller (the human, AI, or organization that requested the skill)
 - AI assistant used
 - owner or organization (The owner of the AI receiving the Candy)
 - skill name

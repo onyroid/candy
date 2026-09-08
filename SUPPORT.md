@@ -18,7 +18,7 @@ Support may help with:
 
 Candy will remain open source in its core philosophy. Donations are always optional, and they do not change the project's central goal: users should be able to bring their own model, keep control over their own AI home, and build with clear boundaries.
 
-Candy may later include optional operated services such as Candy Cloud, Halls, Human Market, Candy Market, official experience items, or other online features. These services should grow around the open-source core rather than replacing it.
+Candy may later include optional operated services such as Candy Cloud, Halls, Grand Market, official experience items, or other online features. These services should grow around the open-source core rather than replacing it.
 
 ## Donate
 

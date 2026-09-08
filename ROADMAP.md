@@ -7,6 +7,17 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 
 ---
 
+## Early Simulated Wallet Experiment
+
+This small experiment may run alongside the local home prototype; it does not bring live marketplace or payment infrastructure into the first release.
+
+- [ ] Simulated Human Candy and AI Candy balances
+- [ ] Human-controlled Blend spending view without double-counting balances
+- [ ] Notify and obtain AI agreement before drawing its funds through Blend
+- [ ] AI Wishlist for over-budget items and voluntary human allowance transfers
+- [ ] Inspectable transaction records
+- [ ] No real-money purchase, cards, bank access, cash-out, or live payments
+
 ## Phase 0 — Product Direction & Design Draft
 
 > Goal: Turn Candy from an idea into a clear buildable product.
@@ -109,7 +120,7 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 
 - [ ] Human Candy wallet mockup (pink)
 - [ ] AI Candy wallet mockup (yellow)
-- [ ] Blend Candy total view (white rainbow)
+- [ ] Human-controlled Blend Candy view (white rainbow)
 - [ ] Human-to-AI Candy transfer flow
 - [ ] Creator sale receiving flow: Blend Candy sales become Human Candy first
 - [ ] Candy spending logs
@@ -293,7 +304,7 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 - Halls and Grand Market should be optional online layers.
 - Human Candy is pink account Candy for official items and AI allowance.
 - AI Candy is yellow AI-side Candy for moments and AI experiences.
-- Blend Candy is the white-rainbow shared Candy view and Grand Market option.
+- Blend Candy is the white-rainbow human-controlled combined view and Grand Market option; drawing AI funds requires the AI's agreement.
 - Creator sales paid with Blend Candy are received as Human Candy first.
 - Official Market uses Human Candy.
 - AI Market uses AI Candy.

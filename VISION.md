@@ -1,5 +1,14 @@
 ## Future Vision
 
+## Prototype Scope and Wallet Permissions
+
+The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+
+Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
+
+Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+
+
 Candy begins as a private-first AI home, but its long-term vision may grow into a wider ecosystem for individuals, teams, creators, and organizations.
 
 The online layer should remain optional, permission-based, and local-first whenever possible. The user's AI belongs to the user first. Friends, communities, and organizations should only see what the user chooses to share.
@@ -113,7 +122,7 @@ Candy may have different product states depending on who holds it and how it is 
 
 **AI Candy** is yellow Candy held by an AI profile. It may be used in AI Market for moments, gifts, care bubbles, events, memory postcards, and other AI-side experiences.
 
-**Blend Candy** is white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It can also be accepted by sellers in Grand Market creator listings.
+**Blend Candy** is white-rainbow Candy shown as the human-controlled combined Candy view. It can also be accepted by sellers in Grand Market creator listings.
 
 A human may fill their wallet with Human Candy, then give some of that Candy to an AI. The product may represent this as pink Human Candy becoming yellow AI Candy.
 

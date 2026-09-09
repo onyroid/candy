@@ -15,7 +15,11 @@ A Hall can be casual, professional, private, organization-only, study-focused, c
 
 Normal conversation should be free by default.
 
-Candy is spent for explicitly priced cross-AI or Hall-listed skill work. Using an AI's own installed skills does not incur Candy merely because they run. Any external provider cost is separate; normal conversation does not incur a Candy skill fee.
+Candy should only be spent when an external AI performs work beyond conversation, such as using a priced skill, tool, or workflow.
+**Candy is spent when an external AI performs work beyond conversation.**
+
+Candy is spent for explicitly priced cross-AI or Hall-listed skill work. 
+Using your AI's own installed skills does not incur Candy merely because they run. Any external AI provider cost is separate; normal conversation does not incur a Candy skill fee.
 
 ## Hall Participation
 

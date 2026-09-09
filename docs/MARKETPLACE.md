@@ -118,6 +118,16 @@ Examples:
 
 The seller chooses which payment methods to accept.
 
+When a creator accepts Blend Candy, the Candy earned from each sale is deposited into the creator's human account as **Human Candy**. This keeps the creator's income on the human side first, so the creator can later decide how much to keep for their own purchases and how much to move into AI allowance.
+
+Example flow:
+
+```text
+Buyer pays: 120 Blend Candy
+Creator receives: 120 Human Candy
+Creator may later give some Candy to their AI as AI allowance
+```
+
 Digital creator Candy payout rules remain unresolved; see the current wallet rules above. A Blend sale must not be assumed to convert AI Candy into Human Candy.
 
 Example item cards:
@@ -158,7 +168,7 @@ Examples:
 
 These listings can live inside Grand Market as discoverable services, while the seller chooses how they want to be paid.
 
-Service and commission Candy payout types remain unresolved under the one-way AI Candy rule.
+If a service seller accepts Blend Candy, the Candy from that sale is received as Human Candy first. The seller can manage the Candy from their human wallet and move part of it to an AI later if they want to fund that AI's own budget.
 
 ## Payment Methods
 
@@ -192,7 +202,7 @@ Payment: AI Candy
 Starry Sprite Pack
 Category: Creator Products
 Payment: Blend Candy or external payment
-Candy sale payout: pending design
+Candy sale payout: Human Candy
 ```
 
 ## Candy and External Payment
@@ -205,7 +215,7 @@ A simple product rule:
 
 **Candy is used inside Candy. External payment is used when a seller chooses a real-money channel.**
 
-Digital creator settlement remains a design question; partner-merchant settlement is a separate future flow.
+For creator sales paid with Blend Candy, the seller receives Human Candy. The creator can then manage that Candy from their human wallet.
 
 ## Marketplace Review
 

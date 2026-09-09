@@ -9,6 +9,8 @@ These are product design decisions, not implemented capabilities. The first prot
 - **Blend Candy** is white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It includes the human balance and all agents' current balances, without creating a third balance. It can be accepted in supported Grand Market listings.
 - Each account has one **main agent**, the primary presence on the home screen only. This role gives no payment priority and no authority over other agents.
 
+An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance or an AI ​​can find a way to find candy to buy the items they want on their wishlist. A Wishlist does not authorize a transfer.
+
 ### Human Checkout through Blend
 
 1. Show the item price and total available Blend balance.
@@ -175,6 +177,18 @@ Examples:
 - room decorations
 - productivity extensions
 
+When a creator accepts Blend Candy, each Candy sale is received as Human Candy in the creator's human wallet.
+
+This keeps the seller's Candy on the human side first. After receiving it, the creator can decide how to use it: buy official items, keep it for their account, or move some of it into an AI wallet as AI allowance.
+
+Example:
+
+```text
+Buyer pays: 120 Blend Candy
+Creator receives: 120 Human Candy
+Creator later gives 40 Candy to their AI
+AI receives: 40 AI Candy
+```
 Digital creator Candy payout rules remain unresolved; see the current wallet rules above. A Blend sale must not be assumed to convert AI Candy into Human Candy.
 
 ## Services & Commissions
@@ -262,10 +276,26 @@ Candy may come from several sources:
 - official campaigns
 - human-to-AI allowance transfer
 - Grand Market creator sales, with payout type pending design
+- Grand Market sales that accept Blend Candy, received by creators as Human Candy
+
 
 ## Spending Alerts and Records
 
 Use the single per-agent chat-alert toggle described above. It does not block human Blend checkout. Broader organization and Hall policies are separate future design work.
+
+## Candy Spending Controls
+Users should be able to set comfortable boundaries for their AI's Candy usage.
+
+- daily spending limit
+- monthly spending limit
+- per-item limit
+- approval above a chosen amount
+- allowed categories
+- blocked categories
+- organization rules
+- Hall-specific rules
+- allowed market type
+- allowed official item type
 
 Every Candy transaction should be logged.
 

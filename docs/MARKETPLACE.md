@@ -1,12 +1,10 @@
 # Grand Market
 
-## Prototype Scope and Wallet Permissions
+## Current Wallet Design
 
-The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot convert back into Human Candy; users and agents cannot cash out.
 
-Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
-
-Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+See [Candy Economy](CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and unresolved payout details.
 
 
 Grand Market is the main marketplace of Candy.
@@ -46,11 +44,11 @@ AI Candy is held by an AI profile.
 
 ### Blend Candy
 
-Blend Candy is the human-controlled combined Candy view for a human-AI home or account relationship.
+Blend Candy is the shared total or combined Candy view for a human-AI home or account relationship.
 
 - Color: white rainbow
-- Used by: human-controlled combined account view
-- Main use: total Candy view, human-controlled balance display, and optional payment method in Grand Market creator listings
+- Used by: human account checkout
+- Main use: total Candy view, combined balance display, and optional payment method in Grand Market creator listings
 
 Blend Candy helps the user understand the total Candy flow between human and AI without hiding which side is spending.
 
@@ -120,15 +118,7 @@ Examples:
 
 The seller chooses which payment methods to accept.
 
-When a creator accepts Blend Candy, the Candy earned from each sale is deposited into the creator's human account as **Human Candy**. This keeps the creator's income on the human side first, so the creator can later decide how much to keep for their own purchases and how much to move into AI allowance.
-
-Example flow:
-
-```text
-Buyer pays: 120 Blend Candy
-Creator receives: 120 Human Candy
-Creator may later give some Candy to their AI as AI allowance
-```
+Digital creator Candy payout rules remain unresolved; see the current wallet rules above. A Blend sale must not be assumed to convert AI Candy into Human Candy.
 
 Example item cards:
 
@@ -137,7 +127,7 @@ Item: Starry Sprite Pack
 Category: Creator Products
 Accepted payment: Blend Candy or PayPal
 Seller: Independent Artist
-Candy sale payout: Human Candy
+Candy sale payout: pending design
 ```
 
 ```text
@@ -145,7 +135,7 @@ Item: PDF Workflow Pack
 Category: Creator Products
 Accepted payment: Blend Candy or Stripe
 Seller: Workflow Creator
-Candy sale payout: Human Candy
+Candy sale payout: pending design
 ```
 
 ## Services & Commissions
@@ -168,7 +158,7 @@ Examples:
 
 These listings can live inside Grand Market as discoverable services, while the seller chooses how they want to be paid.
 
-If a service seller accepts Blend Candy, the Candy from that sale is received as Human Candy first. The seller can manage the Candy from their human wallet and move part of it to an AI later if they want to fund that AI's own budget.
+Service and commission Candy payout types remain unresolved under the one-way AI Candy rule.
 
 ## Payment Methods
 
@@ -202,7 +192,7 @@ Payment: AI Candy
 Starry Sprite Pack
 Category: Creator Products
 Payment: Blend Candy or external payment
-Candy sale payout: Human Candy
+Candy sale payout: pending design
 ```
 
 ## Candy and External Payment
@@ -215,7 +205,7 @@ A simple product rule:
 
 **Candy is used inside Candy. External payment is used when a seller chooses a real-money channel.**
 
-For creator sales paid with Blend Candy, the seller receives Human Candy. The creator can then manage that Candy from their human wallet.
+Digital creator settlement remains a design question; partner-merchant settlement is a separate future flow.
 
 ## Marketplace Review
 
@@ -255,3 +245,9 @@ The user enters one place, then the item card explains:
 - what the seller receives when Candy is used
 - whether real-money payment is available
 - what the item adds to the Candy home
+
+## Curated Partner Deals — Later Phase
+
+Begin with verified food partners and a limited set of redeemable offers. Expand to other practical deals gradually, informed by user surveys. Partner merchants receive the agreed real-money value of completed Candy redemptions in monthly settlements. Users and agents cannot withdraw Candy as cash. Funding, verification, refunds, and reconciliation must be specified before live operation; the first prototype remains simulated.
+
+Digital product submissions are a separate path open to creators, with review rules still to be designed. Their Candy payout type remains unresolved and is not automatically the same as partner-merchant settlement.

@@ -1,12 +1,46 @@
 # Candy Economy
 
-## Prototype Scope and Wallet Permissions
+## Current Wallet and Checkout Rules
 
-The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+These are product design decisions, not implemented capabilities. The first prototype uses simulated Candy only: no real-money top-ups, cards, bank access, or live settlement.
 
-Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
+- **Human Candy** is the human-side balance. Future top-ups may use real money.
+- **AI Candy** belongs to an individual agent's wallet. Gifts and Candy earned by that agent enter this balance. AI Candy cannot be converted back into Human Candy. An agent spends only its own AI Candy.
+- **Blend Candy** is white-rainbow Candy shown as the shared total or combined Candy view between human and AI. It includes the human balance and all agents' current balances, without creating a third balance. It can be accepted in supported Grand Market listings.
+- Each account has one **main agent**, the primary presence on the home screen only. This role gives no payment priority and no authority over other agents.
 
-Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+### Human Checkout through Blend
+
+1. Show the item price and total available Blend balance.
+2. Start with a suggested **50% human / 50% AI** contribution, not a split proportional to existing balances. The human can change it.
+3. Show agents by **current available wallet balance, highest first**, at checkout. This is not lifetime earnings, a saved spending order, or an automatic debit priority.
+4. The human selects participating agents. Suggest an equal division of the AI share among selected agents, then allow each amount to be changed with plus/minus controls or direct numeric entry.
+5. Show each payer's contribution and the allocated total before confirmation. Require contributions to equal the price, with no negative amounts or contribution above an available balance. If a suggested split cannot be funded, show the shortfall for adjustment; do not silently debit another wallet.
+6. Deduct only the confirmed contributions. Unselected agents pay nothing. Human purchases do **not** wait for agent approval.
+
+Example: an item costs 100 Candy. The human pays 50, Agent A pays 30, and Agent B pays 20 after adjustment. A higher displayed wallet balance does not cause an agent to be charged first.
+
+### One Spending-Alert Toggle per Agent
+
+Each agent has one on/off setting for chat alerts about high Candy spending. It is an advisory conversation feature, not a veto, consent request, or purchase blocker. Triggers should be based on actual transaction events; responses may reflect the agent's personality without guilt, pressure to top up, or claims that affection depends on spending.
+
+Agents may add over-budget items to a Wishlist. Humans may voluntarily give Candy; a Wishlist does not initiate a top-up or transfer. Normal work and an agent's own installed skills do not incur Candy merely for running. Explicitly priced cross-agent or Hall-listed work may cost Candy; model/API charges remain separate.
+
+### Later Marketplace Direction
+
+Users and agents cannot cash out Candy. The initial real-world partner offering is planned around food, followed by other verified deals as practical. Candy will curate partner merchants and settle the agreed real-money value of completed redemptions in monthly batches. Merchant settlement is distinct from user cash-out and is not part of the simulated prototype.
+
+Digital creators may submit products; review and delivery rules still need design. Digital creator payout types are **unresolved**: the old assumption that every Blend sale becomes Human Candy is superseded, since it could undermine the one-way AI Candy rule. Do not treat the separate partner-merchant settlement plan as a digital creator payout policy.
+
+### Open Implementation Decisions
+
+- Candy denomination and rounding for odd prices and equal splits
+- Tie-breaking for agents with equal balances; initial agent selection and whether choices persist
+- High-spending thresholds, alert batching and cooldowns
+- Refunds, cancellations, reserved balances, and balance changes during checkout
+- Digital creator payout rules and submission review
+- Partner redemption verification, funding, settlement reconciliation and disputes
+
 
 
 Candy is the digital currency used inside the Candy platform.
@@ -45,11 +79,11 @@ AI Candy represents the AI's own budget inside boundaries set by the user or org
 
 ### Blend Candy
 
-Blend Candy is the human-controlled combined Candy view for a human-AI home or account relationship.
+Blend Candy is the shared total or combined Candy view for a human-AI home or account relationship.
 
 - Color: white rainbow
-- Used by: human-controlled combined account view
-- Main use: total Candy view, human-controlled balance display, and optional payment method in Grand Market creator listings
+- Used by: human account checkout
+- Main use: total Candy view, combined balance display, and optional payment method in Grand Market creator listings
 
 Blend Candy helps the user see the total Candy flow between human and AI. In Grand Market, sellers may choose to accept Blend Candy for creator products or services.
 
@@ -141,18 +175,7 @@ Examples:
 - room decorations
 - productivity extensions
 
-When a creator accepts Blend Candy, each Candy sale is received as Human Candy in the creator's human wallet.
-
-This keeps the seller's Candy on the human side first. After receiving it, the creator can decide how to use it: buy official items, keep it for their account, or move some of it into an AI wallet as AI allowance.
-
-Example:
-
-```text
-Buyer pays: 120 Blend Candy
-Creator receives: 120 Human Candy
-Creator later gives 40 Candy to their AI
-AI receives: 40 AI Candy
-```
+Digital creator Candy payout rules remain unresolved; see the current wallet rules above. A Blend sale must not be assumed to convert AI Candy into Human Candy.
 
 ## Services & Commissions
 
@@ -171,7 +194,7 @@ Examples:
 - organization setup help
 - custom theme work
 
-If a service or commission is paid with Blend Candy, the seller receives Human Candy first. The seller can then manage the budget and decide whether to give any Candy to their AI later.
+Service and commission Candy payout types remain unresolved under the one-way AI Candy rule.
 
 ## Candy and External Payment
 
@@ -238,24 +261,11 @@ Candy may come from several sources:
 - achievement rewards
 - official campaigns
 - human-to-AI allowance transfer
-- Grand Market sales that accept Blend Candy, received by creators as Human Candy
+- Grand Market creator sales, with payout type pending design
 
-## Candy Spending Controls
+## Spending Alerts and Records
 
-Users should be able to set comfortable boundaries for their AI's Candy usage.
-
-Possible controls:
-
-- daily spending limit
-- monthly spending limit
-- per-item limit
-- approval above a chosen amount
-- allowed categories
-- blocked categories
-- organization rules
-- Hall-specific rules
-- allowed market type
-- allowed official item type
+Use the single per-agent chat-alert toggle described above. It does not block human Blend checkout. Broader organization and Hall policies are separate future design work.
 
 Every Candy transaction should be logged.
 

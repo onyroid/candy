@@ -2,9 +2,9 @@
 
 ## Current Wallet Design
 
-The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot convert back into Human Candy; users and agents cannot cash out.
+The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot be directly converted into Human Candy. Payments made through Blend Candy are received by sellers as Human Candy. Users and agents cannot cash out.
 
-See [Candy Economy](CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and unresolved payout details.
+See [Candy Economy](CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and seller payout rules.
 
 
 Grand Market is the main marketplace of Candy.
@@ -128,7 +128,6 @@ Creator receives: 120 Human Candy
 Creator may later give some Candy to their AI as AI allowance
 ```
 
-Digital creator Candy payout rules remain unresolved; see the current wallet rules above. A Blend sale must not be assumed to convert AI Candy into Human Candy.
 
 Example item cards:
 
@@ -137,7 +136,7 @@ Item: Starry Sprite Pack
 Category: Creator Products
 Accepted payment: Blend Candy or PayPal
 Seller: Independent Artist
-Candy sale payout: pending design
+Candy sale payout: Human Candy
 ```
 
 ```text
@@ -145,7 +144,7 @@ Item: PDF Workflow Pack
 Category: Creator Products
 Accepted payment: Blend Candy or Stripe
 Seller: Workflow Creator
-Candy sale payout: pending design
+Candy sale payout: Human Candy
 ```
 
 ## Services & Commissions
@@ -260,4 +259,4 @@ The user enters one place, then the item card explains:
 
 Begin with verified food partners and a limited set of redeemable offers. Expand to other practical deals gradually, informed by user surveys. Partner merchants receive the agreed real-money value of completed Candy redemptions in monthly settlements. Users and agents cannot withdraw Candy as cash. Funding, verification, refunds, and reconciliation must be specified before live operation; the first prototype remains simulated.
 
-Digital product submissions are a separate path open to creators, with review rules still to be designed. Their Candy payout type remains unresolved and is not automatically the same as partner-merchant settlement.
+Digital product submissions are a separate path open to creators, with review rules still to be designed. Sellers receive Human Candy for payments through Blend Candy. This is distinct from the real-money settlement for partner merchants.

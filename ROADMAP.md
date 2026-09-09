@@ -130,7 +130,6 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Candy spending logs
 - [ ] Candy receiving logs
 - [ ] One spending-alert toggle per agent
-- [ ] User-defined AI Candy limits
 - [ ] Daily and monthly AI spending controls
 - [ ] Approval threshold rules
 - [ ] Define high-spending chat trigger thresholds and cooldowns

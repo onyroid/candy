@@ -126,7 +126,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] AI Candy wallet mockup (yellow)
 - [ ] Blend Candy total view (white rainbow)
 - [ ] Human-to-AI Candy transfer flow
-- [ ] Resolve digital creator payout types without converting AI Candy back into Human Candy
+- [ ] Implement Human Candy receipts for sellers paid through Blend, distinct from prohibited direct AI-to-Human Candy conversion
 - [ ] Candy spending logs
 - [ ] Candy receiving logs
 - [ ] One spending-alert toggle per agent
@@ -192,8 +192,8 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Creator Products section
 - [ ] Services & Commissions section
 - [ ] Seller choice: Blend Candy, external payment, or both
-- [ ] Digital creator payout flow after its rules are resolved
-- [ ] Creator wallet handling after payout types are resolved
+- [ ] Digital creator payout flow: Blend payments are received as Human Candy
+- [ ] Creator Human Candy wallet handling and optional transfers to AI allowance
 - [ ] External payment labels: PayPal, Stripe, bank transfer, invoice, or custom agreement
 - [ ] Season Pass concept page
 - [ ] Seasonal profile frames
@@ -309,7 +309,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - Human Candy is pink account Candy for official items and AI allowance.
 - AI Candy is yellow AI-side Candy for moments and AI experiences.
 - Blend Candy is the white-rainbow combined human and AI balance with selectable payers and editable contributions.
-- Digital creator payout types remain unresolved; AI Candy does not convert back into Human Candy.
+- Sellers receive Human Candy for Blend payments; direct AI-to-Human Candy conversion is not supported.
 - Official Market uses Human Candy.
 - AI Market uses AI Candy.
 - Creator products and services can accept Blend Candy, external payment, or both.

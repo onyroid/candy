@@ -6,9 +6,9 @@ Status: design and documentation stage. The application structure and integratio
 
 ## Current Wallet Design
 
-The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot convert back into Human Candy; users and agents cannot cash out.
+The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot be directly converted into Human Candy. Payments made through Blend Candy are received by sellers as Human Candy. Users and agents cannot cash out.
 
-See [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and unresolved payout details.
+See [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and seller payout rules.
 
 An open-source AI home platform
 > *A home for the AI you choose, not just a chat app.*

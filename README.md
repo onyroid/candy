@@ -4,13 +4,11 @@ Candy is a working project name; the final product name has not been chosen.
 
 Status: design and documentation stage. The application structure and integrations below are planned, not implemented in this repository.
 
-## Prototype Scope and Wallet Permissions
+## Current Wallet Design
 
-The first prototype uses simulated Candy only, with no real-money purchase, card connection, bank access, cash-out, or live payment integration. Real-money and marketplace payment examples below describe possible later phases, not current capabilities.
+The prototype uses simulated Candy only. Blend is the combined human and AI balance. Human checkout starts at an editable 50/50 human-AI split, with agent selection and per-agent amounts. Agents are displayed by current balance, highest first; main agent is a home-screen role only. Spending alerts are optional per agent and do not block human purchases or require AI approval. AI Candy cannot convert back into Human Candy; users and agents cannot cash out.
 
-Human Candy is spent by the human. AI Candy is the AI's own spending budget. Blend Candy is a human-controlled combined spending view, not a third balance and not permission for the AI to spend Human Candy. Before a Blend purchase draws from AI Candy, the AI must be notified and explicitly agree to that proposed deduction; no response or refusal means that portion is not deducted. An AI can add an over-budget item to its Wishlist, and the human may choose to transfer Human Candy to its AI Candy balance. A Wishlist does not authorize a transfer.
-
-Exact deduction order, consent expiry, refunds, and transaction implementation remain open design questions.
+See [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checkout-rules) for the current checkout rules, future partner settlement direction, and unresolved payout details.
 
 An open-source AI home platform
 > *A home for the AI you choose, not just a chat app.*

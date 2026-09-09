@@ -9,14 +9,18 @@ Candy should grow in layers: first a local AI home that works, then optional onl
 
 ## Early Simulated Wallet Experiment
 
-This small experiment may run alongside the local home prototype; it does not bring live marketplace or payment infrastructure into the first release.
+Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checkout-rules). These are planned features, not completed work.
 
-- [ ] Simulated Human Candy and AI Candy balances
-- [ ] Human-controlled Blend spending view without double-counting balances
-- [ ] Notify and obtain AI agreement before drawing its funds through Blend
-- [ ] AI Wishlist for over-budget items and voluntary human allowance transfers
-- [ ] Inspectable transaction records
-- [ ] No real-money purchase, cards, bank access, cash-out, or live payments
+- [ ] Simulated human and per-agent wallets; one-way Human-to-AI transfer
+- [ ] One main agent for the home screen, independent of payment selection
+- [ ] Blend total across the human and all agents
+- [ ] Editable 50/50 human-AI checkout split
+- [ ] Select agents, sorted by current available balance descending
+- [ ] Editable per-agent amounts, selected-agent equal-split suggestion, and confirmation summary
+- [ ] Validate exact total and balances; no automatic fallback to other wallets
+- [ ] One chat spending-alert toggle per agent; no agent approval gate for human purchases
+- [ ] Wishlist and voluntary allowance transfers
+- [ ] Transaction records; no real-money payments in the prototype
 
 ## Phase 0 — Product Direction & Design Draft
 
@@ -122,12 +126,12 @@ This small experiment may run alongside the local home prototype; it does not br
 - [ ] AI Candy wallet mockup (yellow)
 - [ ] Blend Candy total view (white rainbow)
 - [ ] Human-to-AI Candy transfer flow
-- [ ] Creator sale receiving flow: Blend Candy sales become Human Candy first
+- [ ] Resolve digital creator payout types without converting AI Candy back into Human Candy
 - [ ] Candy spending logs
 - [ ] Candy receiving logs
-- [ ] User-defined AI Candy limits
-- [ ] Daily and monthly AI spending controls
-- [ ] Approval threshold rules
+- [ ] One spending-alert toggle per agent
+- [ ] Define high-spending chat trigger thresholds and cooldowns
+- [ ] Human Blend checkout without an agent approval gate
 - [ ] AI spending explanation: why the AI wants to spend Candy
 - [ ] Candy wishlist prototype
 - [ ] Monthly AI contribution level prototype
@@ -188,8 +192,8 @@ This small experiment may run alongside the local home prototype; it does not br
 - [ ] Creator Products section
 - [ ] Services & Commissions section
 - [ ] Seller choice: Blend Candy, external payment, or both
-- [ ] Blend Candy sale payout: creator receives Human Candy
-- [ ] Creator budget management: creator can later move Human Candy into AI allowance
+- [ ] Digital creator payout flow after its rules are resolved
+- [ ] Creator wallet handling after payout types are resolved
 - [ ] External payment labels: PayPal, Stripe, bank transfer, invoice, or custom agreement
 - [ ] Season Pass concept page
 - [ ] Seasonal profile frames
@@ -304,8 +308,8 @@ This small experiment may run alongside the local home prototype; it does not br
 - Halls and Grand Market should be optional online layers.
 - Human Candy is pink account Candy for official items and AI allowance.
 - AI Candy is yellow AI-side Candy for moments and AI experiences.
-- Blend Candy is the white-rainbow shown as the shared total or combined Candy view between human and AI view and Grand Market option.
-- Creator sales paid with Blend Candy are received as Human Candy first.
+- Blend Candy is the white-rainbow combined human and AI balance with selectable payers and editable contributions.
+- Digital creator payout types remain unresolved; AI Candy does not convert back into Human Candy.
 - Official Market uses Human Candy.
 - AI Market uses AI Candy.
 - Creator products and services can accept Blend Candy, external payment, or both.
@@ -419,3 +423,11 @@ The first implementation should be a simulation and research interface, not a cl
 ---
 
 *This roadmap is a living document. Last updated: 2026.*
+
+## Later Verified Partner Redemptions
+
+- [ ] Start with curated, verifiable food offers; expand gradually using user feedback
+- [ ] Completed-redemption records and monthly real-money partner settlements
+- [ ] Define settlement funding, failed redemption handling, refunds and reconciliation
+- [ ] Keep merchant settlement separate from user/agent cash-out, which is not supported
+- [ ] Design digital-product submission review separately

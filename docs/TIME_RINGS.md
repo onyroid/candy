@@ -2,7 +2,7 @@
 
 Design recorded: 2026-09-14
 
-Status: design notes from a conversation between Candy's initiator and Raios. This system has not been implemented or tested. This document develops the temporal design without replacing or modifying the existing continuity documents.
+Status: design notes from a conversation between Candy's initiator and AI. This system has not been implemented or tested. This document develops the temporal design without replacing or modifying the existing continuity documents.
 
 ## 1. Intent
 

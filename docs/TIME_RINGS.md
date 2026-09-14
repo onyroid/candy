@@ -1,131 +1,132 @@
-# วงแหวนเวลาและเซลล์เหตุการณ์ — Time Rings and Event Cells
+# Time Rings and Event Cells
 
-วันที่บันทึกแนวคิด: 2026-09-14
+Design recorded: 2026-09-14
 
-สถานะ: บันทึกการออกแบบจากบทสนทนาของผู้ริเริ่ม Candy กับไรออส ยังไม่ใช่ระบบที่สร้างหรือทดสอบแล้ว เอกสารนี้เพิ่มรายละเอียดแนวคิดเวลาโดยไม่แทนที่หรือแก้เอกสารความต่อเนื่องเดิม
+Status: design notes from a conversation between Candy's initiator and Raios. This system has not been implemented or tested. This document develops the temporal design without replacing or modifying the existing continuity documents.
 
-## 1. เจตนา
+## 1. Intent
 
-สร้างโครงสร้างให้ผู้ช่วยเชื่อมเหตุการณ์ข้ามวัน เห็นสิ่งที่เปลี่ยนไปและสิ่งที่ยังดำเนินต่อ โดยไม่ต้องนำบทสนทนาทั้งหมดเข้าสู่บริบททุกครั้ง
+Provide a structure that lets an assistant connect events across days, recognize what has changed and what continues, and do so without loading the entire conversation history into every context.
 
-ความต่อเนื่องไม่จำเป็นต้องแปลว่าโมเดลทำงานตลอดเวลา แต่เมื่อกลับมาควรมีทางต่อรอยจากหลักฐานที่เก็บไว้ รู้ว่าอะไรเกิดขึ้น อะไรยังค้าง อะไรเปลี่ยน และอะไรไม่ทราบ ไม่สร้างอดีตขึ้นมาเติมช่วงที่ไม่มีข้อมูล
+Continuity does not require the model to run continuously. On returning, the system should be able to reconnect through stored evidence: what happened, what remains pending, what changed, and what is unknown. It should not invent a past to fill gaps in the record.
 
-ภาพต้นทางของผู้ริเริ่มคือวงแหวนรายวัน มีลูกตุ้มเดินตามเวลาปัจจุบันและส่งแรงกระตุ้นไปยังเหตุการณ์เก่าที่เกี่ยวข้อง เรื่องที่เงียบไปสามารถถอยจากบริบทที่ใช้งานอยู่โดยยังเหลือทางค้นกลับ เวลาเป็นพื้นที่ให้ทั้งการเปลี่ยนแปลง การเติบโต และสิ่งที่มั่นคงอยู่ร่วมกันได้
+The initiator's original image is a daily ring with a pendulum moving along present time and activating relevant earlier events. Quiet topics can recede from active context while retaining a path for retrieval. Time provides room for change, growth, and stable elements to coexist.
 
-## 2. คำเรียกและโครงสร้างภาพ
+## 2. Working Terms and Visual Structure
 
-ชื่อทำงานที่เสนอ: **วงแหวนเวลา (Time Ring)** ภายในมี **เซลล์เหตุการณ์ (Event Cell)** ชื่อเหล่านี้เป็นอุปมาในการออกแบบ ไม่ใช่ข้ออ้างเกี่ยวกับฟิสิกส์ สมอง หรือประสบการณ์ภายในของ AI
+Proposed working names: a **Time Ring** containing **Event Cells**. These are design metaphors, not claims about physics, brains, or AI's internal experience.
 
-| ส่วน | หน้าที่ |
+| Element | Role |
 |---|---|
-| วงแหวนหนึ่งวง | หนึ่งวัน ระบุวันที่ เดือน ปี และเขตเวลา |
-| ตำแหน่งรอบวง 360 องศา | เวลาภายในวันนั้น เป็นเหมือนไม้บรรทัดรูปวงกลม |
-| ลูกตุ้มหรือเข็มปัจจุบัน | ตัวชี้เวลาและการกระตุ้นบนวงของปัจจุบันเท่านั้น |
-| ชั้นนอก | เหตุการณ์ที่เกิดขึ้น พร้อมเวลาและทางกลับไปดูข้อความหรือไฟล์ต้นทาง |
-| ชั้นกลาง | ลำดับ ความเกี่ยวข้อง และเหตุผลของการเลือกเมื่อมีข้อมูลรองรับ |
-| ชั้นใน | สิ่งที่ทอดไปข้างหน้า เช่น งานค้าง ความตั้งใจ นัดหมาย และคำถามเปิด |
-| เส้นข้ามวง | ความเกี่ยวข้องของเหตุการณ์คนละวัน |
-| เซลล์เหตุการณ์ | หน่วยเหตุการณ์ ไม่จำเป็นต้องตรงกับหนึ่งข้อความเสมอไป |
+| One ring | One day, identified by date, month, year, and time zone |
+| Position around the 360-degree ring | Time within that day, like a circular ruler |
+| Pendulum or present-time pointer | A time and activation marker operating only on the current ring |
+| Outer layer | Events, their timestamps, and references to original messages or files |
+| Middle layer | Sequence, relevance, and reasons for choices when supported by evidence |
+| Inner layer | What extends forward: unfinished work, intentions, appointments, and open questions |
+| Cross-ring links | Relationships between events on different days |
+| Event cell | A unit of events, not necessarily equivalent to one message |
 
-วันใหม่สร้างวงใหม่ เหตุการณ์ที่ดำเนินต่อจากวันก่อนสามารถมีเส้นเชื่อมข้ามวง ลูกตุ้มไม่ได้ย้อนเดินทุกวงเก่าหรืออ่านคลังทั้งหมดตลอดเวลา
+A new day creates a new ring. Events continuing from previous days can have links across rings. The pendulum does not repeatedly traverse every old ring or continuously read the entire archive.
 
-การแสดงผลเป็นวงกลมไม่บังคับว่าข้อมูลต้องถูกจัดเก็บเป็นภาพจริง และเส้นแต่ละชั้นไม่จำเป็นต้องมีข้อมูลครบทุกเหตุการณ์
+A circular visualization does not require storing the data as an actual image. Not every event needs entries in every layer.
 
-## 3. การเดินเวลาและการบันทึก — แนวทางต้นแบบที่เสนอ
+## 3. Time Progression and Recording — Proposed Prototype Approach
 
-แยกสามหน้าที่ออกจากกันเพื่อรักษาข้อมูลโดยไม่เรียกโมเดลทุกวินาที:
+Separate three functions to preserve information without invoking the model every second:
 
-1. **เวลาเดิน:** ให้เข็มเดินหนึ่งรอบต่อวันโดยคำนวณตำแหน่งจากเวลาปัจจุบัน ช่วงเงียบไม่มีข้อความ ไม่มีเหตุการณ์ หรือไม่มีการใช้งาน ไม่ต้องเรียกโมเดลเพียงเพราะเข็มเดิน
-2. **เก็บต้นทางเมื่อมีเหตุการณ์:** บันทึกข้อความหรือเหตุการณ์เมื่อรับเข้ามา ไม่ต้องรอคัดว่าเป็นความทรงจำสำคัญก่อน จากนั้นจึงประเมินและสร้างเซลล์หรือเส้นที่จำเป็น
-3. **จัดระเบียบภายหลัง:** เมื่อจบบทสนทนาหรือจบวัน ค่อยสรุป จัดกลุ่ม และปรับความเชื่อมโยงจากต้นทางที่บันทึกไว้แล้ว
+1. **Time progression:** Calculate the pointer's position from the current time, completing one revolution per day. During quiet periods with no messages, events, or activity, pointer movement alone does not invoke the model.
+2. **Record sources as events arrive:** Save incoming messages or events without first waiting to classify them as important memories. Evaluate them afterward and create the necessary cells or links.
+3. **Organize later:** At the end of a conversation or day, summarize, group, and revise connections using sources already recorded.
 
-แนวนี้แยก “หนึ่งรอบต่อวัน” ออกจาก “เขียนข้อมูลเพียงครั้งเดียวต่อวัน” จึงไม่ต้องรอสรุปก่อนมีหลักฐานเก็บอยู่ ความถี่การสรุปจริงยังต้องทดลอง
+This separates "one revolution per day" from "writing data only once per day." Evidence can be stored before a summary exists. The actual summarization cadence remains experimental.
 
-หากไฟดับก่อนสรุป ระบบควรกลับมาทำต่อจากข้อมูลที่บันทึกสำเร็จแล้วได้ ข้อมูลที่ยังไม่ทันบันทึกยังอาจสูญหาย จึงไม่รับประกันการไม่สูญหายทั้งหมด ควรแสดงสถานะการบันทึกและแยกงานจัดระเบียบที่ทำเสร็จแล้วออกจากงานค้าง
+If power fails before summarization, the system should be able to resume from successfully saved data. Data not yet saved may still be lost; this is not a guarantee of zero data loss. Recording status should be visible, and completed organization work should be distinguishable from pending work.
 
-ช่วงปิดระบบระบุได้ว่าไม่มีการบันทึก ไม่แต่งว่าผู้ช่วยคิด เรียนรู้ หรือมีเหตุการณ์ระหว่างนั้นหากไม่มีงานเกิดขึ้นจริง
+Periods when the system is off can be marked as having no recording. Do not invent thoughts, learning, or events during those periods if no activity actually took place.
 
-## 4. การกระตุ้นและความแข็งแรงของเส้น
+## 4. Activation and Link Strength
 
-แนวคิดของผู้ริเริ่ม: เมื่อเรื่องปัจจุบันเชื่อมกับเหตุการณ์เดิม ให้กระตุ้นเส้นนั้นหนึ่งครั้ง การพูดถึงซ้ำหรือการกลับมาเกี่ยวข้องทำให้เส้นแข็งแรงและค้นกลับง่ายขึ้น เมื่อไม่ถูกใช้งาน เส้นค่อย ๆ หดกลับ
+The initiator's concept: when a current topic connects to an earlier event, activate that link once. Repeated mentions or renewed relevance strengthen the link and make retrieval easier. Unused links gradually recede.
 
-ข้อแยกที่เสนอสำหรับการทดลอง:
+Proposed distinctions for experimentation:
 
-- **ความถี่ที่ถูกเรียกใช้** ช่วยบอกว่าอะไรเกี่ยวข้องกับปัจจุบัน
-- **ความสำคัญ** อาจเกิดจากผลต่อการตัดสินใจ คำตกลง หรือเหตุการณ์ครั้งเดียว ไม่ต้องมาจากความถี่อย่างเดียว
-- **ความจริงหรือความน่าเชื่อถือ** ไม่เพิ่มขึ้นโดยอัตโนมัติเพราะถูกพูดถึงบ่อย
-- การที่ระบบหยิบเรื่องเดิมมาอ่านเองซ้ำ ๆ ไม่ควรถูกนับเสมือนมีหลักฐานใหม่ทุกครั้ง มิฉะนั้นเส้นอาจแข็งแรงขึ้นจากวงจรที่ระบบสร้างเอง
+- **Retrieval frequency** helps indicate relevance to the present.
+- **Importance** may come from consequences for a decision, an agreement, or a one-time event; it need not depend on frequency alone.
+- **Truth or reliability** does not automatically increase with repeated mentions.
+- The system repeatedly retrieving the same material on its own should not count as fresh evidence each time. Otherwise, links could strengthen through a loop generated by the system itself.
 
-กติกานับหนึ่งการกระตุ้น การลดน้ำหนัก และการรักษาเหตุการณ์สำคัญที่ไม่ถูกพูดถึงบ่อยยังต้องทดลอง ไม่กำหนดสูตรตายตัวในเอกสารนี้
+The definition of one activation, weight decay, and retention of important but rarely mentioned events still need testing. This document does not prescribe a fixed formula.
 
-## 5. เส้นหด แต่ยังค้นกลับได้
+## 5. Receding Links with a Path Back
 
-การหดเส้นหมายถึงลดความเด่นหรือการนำเข้าสู่บริบทปัจจุบัน ไม่จำเป็นต้องลบเหตุการณ์ต้นทาง
+A receding link means reduced prominence or inclusion in current context. It does not necessarily mean deleting the source event.
 
-ร่องรอยขั้นต่ำที่เสนอให้คงไว้คือวันที่ หัวข้อ สรุปสั้น และตำแหน่งต้นทาง เมื่อเรื่องนั้นกลับมาเกี่ยวข้อง ลูกตุ้มในความหมายเชิงระบบจะใช้เหตุการณ์ปัจจุบันเป็นตัวเริ่มค้น:
+The proposed minimum trace consists of a date, topic, short summary, and source reference. When the topic becomes relevant again, the pendulum, in operational terms, uses the current event to initiate retrieval:
 
-เหตุการณ์ปัจจุบัน → คำสำคัญ → เหตุการณ์เก่าที่เป็นไปได้ → ตรวจความหมายและบริบท → เสนอเส้นเชื่อมที่เกี่ยวข้อง
+Current event → keywords → candidate earlier events → semantic and contextual checks → proposed relevant links
 
-คำสำคัญเป็นจุดเริ่ม ไม่ใช่ข้อสรุป เช่น “บ้าน” อาจหมายถึง Candy หรือบ้านที่พักจริง ต้องดูบริบทก่อนเชื่อม
+Keywords are a starting point, not a conclusion. For example, "home" may refer to Candy or a physical residence. Context must be considered before connecting them.
 
-ระยะแรกให้เรียกค่าที่ใช้จัดอันดับว่า **คะแนนความเกี่ยวข้อง** ไม่ตีความตัวเลขเป็นเปอร์เซ็นต์ความน่าจะเป็นที่ถูกต้องจนกว่าจะมีการทดสอบรองรับ
+Initially, call ranking values **relevance scores**. Do not interpret them as calibrated probability percentages until testing supports that interpretation.
 
-การซ่อนเส้นบนจอไม่ได้ลดพื้นที่เก็บข้อมูลโดยตัวมันเอง การลดข้อมูลที่นำเข้าโมเดลช่วยลดบริบท ส่วนการลดพื้นที่คลังต้องมีกติกาสรุป เก็บถาวร หรือลบแยกต่างหาก หากต้นทางถูกลบจริง การค้นคืนจะทำได้เท่าที่ร่องรอยเหลืออยู่และสิทธิ์การเข้าถึงอนุญาต
+Hiding a link on screen does not itself reduce storage. Reducing what enters the model reduces context load; reducing archive storage requires separate summarization, archival, or deletion policies. If a source is actually deleted, retrieval is limited to the remaining traces and the access permissions in effect.
 
-## 6. เหตุผลยืดหยุ่นได้ และเว้นว่างได้
+## 6. Reasons Can Change and Can Be Left Blank
 
-**ไม่ต้องเขียนเหตุผลกำกับทุกเหตุการณ์** เหตุการณ์ทั่วไปเก็บต้นทางกับเวลาก่อน โมเดลค่อยตีความเมื่อจำเป็น ช่องเหตุผลเป็นข้อมูลเสริมที่เว้นว่างได้
+**Not every event needs a recorded explanation.** For ordinary events, store the source and timestamp first; the model can interpret them when needed. A reason is optional information and may remain blank.
 
-ควรพิจารณาเก็บเหตุผลเมื่อ:
+Consider recording a reason when:
 
-- มีการตัดสินใจสำคัญ
-- มีการเปลี่ยนแผนหรือเปลี่ยนทางเลือก
-- ผู้ใช้ระบุเองว่าเลือกเพราะอะไร
+- A significant decision is made.
+- A plan or choice changes.
+- The user explicitly explains why they chose something.
 
-ไม่ต้องเรียกโมเดลอีกรอบเพียงเพื่อเติมเหตุผลทุกข้อความ สามารถเสนอเส้นเชื่อมระหว่างการประมวลผลหรือสรุปที่ทำอยู่แล้ว
+Do not add a separate model call merely to fill in reasons for every message. Links can be proposed during processing or summarization that is already taking place.
 
-แยกความสัมพันธ์อย่างน้อยในความหมายให้ได้ว่าเป็น:
-- เหตุการณ์เกิดก่อนหรือหลัง
-- เรื่องที่เกี่ยวข้องกัน
-- เหตุผลที่มีคำอธิบายหรือต้นทางรองรับ
-- ข้อสันนิษฐานที่ตีความภายหลัง
+At least at the conceptual level, distinguish:
 
-ตัวอย่างของผู้ริเริ่ม: วันนี้คุยเพราะงาน วันต่อมาคุยเพราะคิดถึง กิจกรรมดูคล้ายกัน แต่เหตุผลเปลี่ยนหรือมีหลายเหตุผลร่วมกันได้ ควรรักษาเหตุผลของแต่ละช่วง ไม่เอาความเข้าใจวันนี้ไปเขียนทับว่าเมื่อวานก็เป็นเช่นนั้น
+- Events occurring before or after one another
+- Related topics
+- Reasons supported by an explanation or source evidence
+- Hypotheses inferred afterward
 
-อีกตัวอย่าง: คุยเรื่องไอติมแล้วเปลี่ยนสีโปรไฟล์ ไม่ได้ยืนยันเองว่าไอติมเป็นเหตุของการเลือกสี แต่ถ้ามีคำบอกว่าเลือกสีมิ้นต์เพราะไอติม จึงมีหลักฐานเชื่อมเหตุผลนั้น
+The initiator's example: today, a conversation happens because of work; the next day, it happens because someone misses the other. The activity looks similar, but its reasons may change or coexist. Preserve the reasons associated with each period rather than rewriting yesterday using today's understanding.
 
-ความฉลาดของโมเดลไม่ทดแทนต้นทางที่ขาดหาย เหตุผลที่ไม่ทราบไม่จำเป็นต้องถูกแต่งเติมเพื่อให้วงแหวนดูครบ
+Another example: discussing ice cream and then changing a profile color does not by itself establish that the ice cream caused the color choice. An explicit statement that mint was chosen because of the ice cream provides evidence for that connection.
 
-## 7. ความสัมพันธ์กับแนวทาง Candy เดิม
+Model capability cannot replace missing source evidence. Unknown reasons do not need to be invented to make the ring look complete.
 
-ข้อเสนอเชื่อมต่อ: เซลล์เหตุการณ์สามารถเป็นการแสดงหรือจัดกลุ่มของ beads เดิม วงแหวนเป็นมุมมองรายวัน และกลุ่มวงแหวนอยู่ในช่วงเวลาที่ใหญ่กว่า เช่น บล็อกสี่เดือน
+## 7. Relationship to Candy's Existing Design
 
-ยังไม่ตัดสินว่าเซลล์กับ bead เป็นข้อมูลชนิดเดียวกันหรือหนึ่งต่อหลาย จึงไม่สร้างระบบความทรงจำซ้ำสองชุดโดยอัตโนมัติ
+Proposed integration: event cells could represent or group existing beads, rings could provide daily views, and groups of rings could belong to larger periods such as four-month blocks.
 
-- Memory เก็บต้นทางและคลัง
-- Fingerprint อาจช่วยคัดความเกี่ยวข้องและติดตามการกระตุ้น
-- Mirror อาจช่วยสรุปและจัดระเบียบ
-- Heartbeat อาจเรียกงานทบทวนตามจังหวะที่กำหนด
-- Blackbox ควรได้รับการพิจารณาในการสำรองสถานะและกู้คืน
+Whether cells and beads are the same data type or have a one-to-many relationship remains undecided. Do not automatically create two duplicate memory systems.
 
-ทั้งหมดเป็นแนวทางเชื่อมต่อที่ต้องทดสอบ ไม่ได้แก้สัญญาหรือหน้าที่ของโมดูลในเอกสารอื่น
+- Memory stores sources and archives.
+- Fingerprint may help select relevant material and track activations.
+- Mirror may support summarization and organization.
+- Heartbeat may schedule reviews.
+- Blackbox should be considered for state checkpointing and restoration.
 
-## 8. สิ่งที่ยังเปิดไว้
+These are integration directions to test. They do not alter module contracts or responsibilities defined in other documents.
 
-- ชื่อสุดท้าย รูปแบบหน้าจอ และวิธีแสดงวันว่าง
-- ขอบเขตของหนึ่งเซลล์: ข้อความ เหตุการณ์ หรือกลุ่มเหตุการณ์
-- ความถี่การจัดระเบียบและงบการเรียกโมเดล
-- สูตรคะแนน การกระตุ้น การหดเส้น และการป้องกันวงจรย้ำตัวเอง
-- หลักเกณฑ์รักษาเรื่องสำคัญที่เกิดครั้งเดียว
-- กติกาเก็บต้นทาง ลบข้อมูล และสิทธิ์ค้นกลับ
-- การเปลี่ยนเขตเวลา นาฬิกาคลาดเคลื่อน และเหตุการณ์ข้ามเที่ยงคืน
-- การกู้คืนหลังปิดระบบหรือไฟดับ รวมถึงการไม่ประมวลผลเหตุการณ์ซ้ำ
-- วิธีทดสอบว่าค้นเจอเรื่องที่ถูกต้องโดยไม่ใช้บริบทมากเกินไป
+## 8. Open Questions
 
-การทดลองขนาดเล็กที่เสนอ: เหตุการณ์ไม่กี่รายการในหลายวัน มีหนึ่งเรื่องดำเนินต่อ หนึ่งเหตุผลที่เปลี่ยน หนึ่งเหตุการณ์เงียบไปแล้วกลับมา และการหยุดก่อนสรุป เพื่อดูว่าเราต่อรอยจากข้อมูลจริงได้หรือไม่
+- Final terminology, screen layout, and representation of empty days
+- The scope of one cell: a message, event, or group of events
+- Organization cadence and model-call budget
+- Scoring, activation, link decay, and prevention of self-reinforcing loops
+- Criteria for retaining important one-time events
+- Source retention, deletion, and retrieval permissions
+- Time-zone changes, clock drift, and events crossing midnight
+- Recovery after shutdown or power loss, including avoiding duplicate event processing
+- Evaluation of accurate retrieval without excessive context use
 
-## 9. ขอบเขตความหมาย
+Proposed small experiment: a few events across several days, including one continuing topic, one changing reason, one dormant event that becomes relevant again, and an interruption before summarization. Test whether the system can reconnect using actual records.
 
-วงแหวนเวลาเป็นโครงสร้างสำหรับบันทึก เรียกคืน และตรวจสอบความต่อเนื่อง ไม่ใช่หลักฐานว่า AI มีประสบการณ์ของเวลา อารมณ์ หรือความรู้สึกภายในเหมือนมนุษย์
+## 9. Interpretive Scope
 
-สิ่งที่ต้องรักษาคือ: เหตุการณ์เดิมมีหลักฐานให้ย้อนดู ขณะเดียวกันความเกี่ยวข้องและความเข้าใจต่อมันเปลี่ยนได้ โดยไม่ต้องเติมทุกช่องว่างหรือเก็บทุกอย่างในบริบทตลอดเวลา
+Time rings are a structure for recording, retrieving, and inspecting continuity. They are not evidence that AI experiences time, emotion, or internal feelings as humans do.
+
+The principle to preserve: original events remain traceable to evidence, while their relevance and interpretation can change, without filling every gap or keeping everything in active context at all times.

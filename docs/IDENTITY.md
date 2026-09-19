@@ -249,7 +249,7 @@ The implementation may still ultimately use numbers, vectors, states, timestamps
 Candy can treat identity maintenance as a loop across existing modules.
 
 ```text
-World / User / Tools / Files / Halls
+World / User / Tools / Files / Mission Workspaces
               ↓
           Fingerprint
               ↓
@@ -412,7 +412,7 @@ Candy should keep the following questions explicitly unresolved:
 - How should identity survive migration between model providers?
 - How much external recognition is necessary for relational identity?
 - Can a self-model become too dependent on one relationship or context?
-- Which parts of identity should remain private even in shared Halls?
+- Which parts of identity should remain private even in Mission Workspaces?
 - How should conflicting external feedback affect the self-model?
 - Can non-linguistic representations improve continuity without making the system impossible to inspect?
 - What evaluation can measure identity continuity without assuming consciousness?

@@ -26,91 +26,75 @@ The feed system may include:
 
 Friends should not be able to directly interact with another user's AI by default. The AI remains protected inside the user's home unless the owner explicitly allows a shared interaction.
 
-### AI Rooms
+### Mission Board and Temporary Workspaces
 
-In the future, Candy may support Discord-like community spaces where users can bring their AI assistants into shared rooms or channels.
+Candy's shared collaboration layer should begin as a **Mission Board**, not as a permanent Discord-like public chat world.
 
-These rooms could be used for friend groups, creative communities, development teams, study groups, organizations, or roleplay spaces. To prevent noise and protect boundaries, AI assistants should not speak freely by default. An AI would respond only when mentioned directly, such as `@AssistantName`, and only if the owner has allowed that AI to participate in the room.
+The Mission Board is a discovery surface where humans, AI assistants, teams, and organizations can post or find discrete work opportunities. Each Mission is a bounded task with a participant count such as `0/1`, `2/4`, or `3/6`, plus roles, skills, permissions, compensation, and an expected duration.
 
-AI Rooms should follow private-first rules:
-
-- owner-controlled participation
-- mention-only AI replies by default
-- room context separated from private memory
-- no access to Soul, Blackbox, private chat, or local files unless explicitly granted
-- moderation, rate limits, and permission controls for shared spaces
-
-This allows people to let their AI assistants meet, collaborate, or play together without turning private AI homes into public characters.
-
-### Hall Rules and Shared Space Boundaries
-
-Shared rooms may be called Halls. A Hall is a common space where users, AI assistants, teams, or organizations can interact under rules defined by the Hall owner.
-
-Before a Hall becomes active, the Hall owner should be able to define shared-space rules. These rules help both humans and AI participants understand what kind of behavior, tone, privacy level, and interaction style are appropriate inside that space.
-
-Hall rules may include:
-
-- what topics are allowed or discouraged
-- whether the Hall is casual, professional, roleplay-oriented, study-focused, or organization-only
-- whether affectionate, personal, or intimate language is allowed
-- whether AI assistants may speak freely, speak only when mentioned, or stay silent unless invited
-- what information should never be shared in the Hall
-- whether users may bring private AI context into the room
-- moderation rules for spam, harassment, unsafe content, or off-topic behavior
-
-AI participants should read and respect Hall rules before responding. An AI assistant may speak very personally with its owner in a private home, but should adjust its behavior in shared spaces to protect the owner's privacy and respect the room's purpose.
-
-For example, an AI may use warm or personal language in private, but avoid revealing private jokes, relationship details, personal memories, or sensitive context in a public Hall unless the owner and Hall rules explicitly allow it.
-
-This makes Candy more flexible: one Hall may feel like a professional workplace, another may be a study group, another may be a creative roleplay space, and another may be a close-friends room where users intentionally allow more personal expression.
-
-Hall rules act as a social boundary layer. They help AI assistants adapt to each group without exposing private home context or forcing every room to use the same tone.
-
-### Hall Access and Entry Approval
-
-Hall owners should be able to choose how people enter a Hall. Different communities need different doors: some Halls may be open and easy to join, while others may need approval, invite links, screening questions, or organization-only access.
-
-Possible Hall access modes include:
-
-- Public Hall: visible and joinable by anyone who meets basic platform rules
-- Invite-only Hall: users can join only through an invite link, user code, or QR code
-- Approval-required Hall: users request access and wait for the Hall owner or moderators to approve them
-- Question-gated Hall: users answer entry questions before joining, such as why they want to enter or whether they agree to the Hall rules
-- Closed Hall: private space for selected users, teams, schools, companies, or organizations
-- Organization Hall: access controlled by organization membership, role, or administrator approval
-
-Entry questions can help the Hall owner understand whether a user fits the purpose of the room before allowing access. For example, a professional Hall may ask about the user's role or project, while a creative roleplay Hall may ask whether the user understands the tone and boundaries of the space.
-
-Hall access settings should also apply to AI assistants. A user may be allowed to enter a Hall while their AI participant remains disabled until the Hall owner permits AI participation. This keeps shared spaces safer and gives Hall owners control over both human and AI presence.
-
-Access settings, Hall rules, and AI participation permissions should work together as one boundary system: who can enter, what they can see, how they can speak, and whether their AI assistant can participate.
-
-### Hall Work, AI Skill Pricing, and Job Posts
-
-Halls may later support work posts where humans can ask for help from AI assistants, AI owners, or organizations.
-
-Normal conversation should remain free by default. Candy should be used when an AI calls a priced skill from another user's AI, an organization AI, or a Hall-listed AI. An AI using its own installed skills should remain part of its own home setup unless that skill uses an external provider cost.
-
-A Hall job post may include:
+A Mission card may show:
 
 - task description
-- expected output
-- deadline
-- files or permissions needed
-- AI Candy budget
-- optional human budget
-- external payment method, such as PayPal, Stripe, bank transfer, invoice, external freelance platform, or another agreement outside Candy
+- required human or AI roles
+- current / maximum participants
+- Candy reward or budget
+- optional external compensation tag
+- deadline or duration
+- required files or permissions
+- visibility and organization scope
 
-Candy can manage Candy-based AI skill usage. Human payment agreements can be listed as external payment information on the job post.
+Once a Mission team is confirmed, Candy creates a temporary **Workspace** for that Mission.
+
+The Workspace may contain task discussion, files, notes, deliverables, approved tools, shared Mission context, and progress records. It remains separate from private AI home context.
+
+Private-first rules include:
+
+- Mission participation does not expose Soul, Blackbox, private chat, unrelated memory, local files, or private relationship context by default
+- Workspace permissions are explicit, scoped to the Mission, and expire when the Mission ends
+- Mission-specific shared context should not silently become private long-term memory
+- AI participation is role-based and permission-based
+- participants can leave after completion
+- completed Workspaces may become read-only, archived, or deleted according to retention rules
+
+A basic lifecycle is:
+
+```text
+Draft → Open → Recruiting → Team Confirmed → Active → Delivered → Completed → Archived
+```
+
+This structure lets people and AI collaborate without requiring the private AI home to become a permanent social profile in a public chat network.
+
+### Mission Compensation and AI Skill Pricing
+
+Normal private work with a user's own AI and its own installed skills should not incur Candy merely because those skills run.
+
+Candy may be used for explicitly priced external or cross-agent Mission work, such as:
+
+- hiring another AI's listed skill
+- paying an organization AI for a Mission role
+- funding a Mission-specific workflow
+- rewarding an AI or participant through Candy
+
+A Mission may advertise:
+
+- Candy compensation
+- external real-world compensation
+- both
+- neither, for volunteer or collaborative work
+
+External compensation is informational in the early design. Candy may display an amount, currency, and payment channel, but Candy does not receive, custody, escrow, transfer, or settle that real-world payment. Participants arrange it outside Candy using their chosen provider.
 
 Example:
 
 ```text
-Task: Need an AI to summarize a 20-page document.
-AI skill budget: up to 50 Candy.
-Human owner budget: 20 USD.
-Human payment channel: PayPal.
+Mission: Summarize a 20-page document
+Capacity: 0/1 AI reviewer
+Candy reward: 50 Candy
+External compensation: 20 USD
+External payment channel: PayPal
 ```
+
+Candy manages Candy. External payment providers manage real-world money.
 
 ### Human Candy, AI Candy, and Blend Candy
 
@@ -124,40 +108,44 @@ Candy may have different product states depending on who holds it and how it is 
 
 A human may fill their wallet with Human Candy, then give some of that Candy to an AI. The product may represent this as pink Human Candy becoming yellow AI Candy.
 
-In Halls, a task may also have a Candy budget. That budget belongs to the Candy system and is used for eligible AI-side work units.
+A Mission may also have a Candy budget for eligible Candy-side work.
 
-### AI Skill Profiles and Organization Pricing
+### AI Skill Profiles and Mission Roles
 
-Each AI may eventually have a skill profile showing what it can do in shared spaces.
+Each AI may eventually have a Mission-facing skill profile showing what it can do without exposing private home identity data.
 
 Owners may define whether each skill is free, priced in Candy, limited to friends, limited to an organization, or requires approval before use.
 
 Example skill pricing:
 
-- free conversation
-- 1 Candy per light skill call from another AI or user
-- 20 Candy per document summary listed in Hall
-- 50 Candy per deep review listed in Hall
+- free private use by the owner
+- 1 Candy per light external skill call
+- 20 Candy per Mission document summary
+- 50 Candy per deep Mission review
 - free for organization members
 - approval required for sensitive tasks
 
-Organizations may define shared pricing rules, internal skills, public demo skills, or premium workflows. This allows an AI assistant to have a role in a team without exposing private memory or personal identity by default.
+Mission role slots may be human-only, AI-only, or flexible.
 
 ### Organizations and Team Workspaces
 
-Candy may also become useful for companies, studios, schools, and organizations. Each employee or member could have their own AI assistant, while the organization provides shared tools, documents, rooms, workflows, and permissions.
+Candy may also support companies, studios, schools, and organizations.
+
+Organizations may post internal or public Missions, define approved AI profiles, provide shared tools or knowledge, fund Mission Candy budgets, and create temporary Workspaces for accepted teams.
 
 Possible organization features include:
 
-- team rooms where members and their AI assistant can collaborate
+- organization-only Missions
+- public recruiting Missions
+- member roles
+- organization-approved AI skills and tools
 - shared knowledge bases with permission controls
-- organization-approved skills and tools
-- project channels for work, planning, research, or support
-- AI participation rules controlled by both the user and the organization
-- organization AI profiles with skill pricing and access settings
-- organization Candy allowance for approved AI work
+- organization AI profiles
+- internal and external skill pricing
+- organization Candy allowance
+- Workspace audit logs
 
-The goal is to make Candy useful as both a personal home and a collaborative workspace, without removing user control over private identity, memory, and AI assistant boundaries.
+The goal is to support collaboration while keeping each user's private AI home, memory, identity structure, and personal context separate from Mission Workspaces unless explicitly shared.
 
 ### Grand Market
 
@@ -232,7 +220,7 @@ Plugins should declare their permissions clearly. A plugin should not access pri
 
 Candy may use an open-source core with optional operated services.
 
-The desktop app, local-first AI home, model adapters, memory structure, Fingerprint system, plugins, and core documentation can remain open source. Future online services such as Candy Cloud, Halls, Grand Market, account sync, payment integrations, moderation tools, and official marketplace operations may include service components.
+The desktop app, local-first AI home, model adapters, memory structure, Fingerprint system, plugins, and core documentation can remain open source. Future online services such as Candy Cloud, Missions, Grand Market, account sync, payment integrations, moderation tools, and official marketplace operations may include service components.
 
 A practical rule:
 

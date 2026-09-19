@@ -3,7 +3,7 @@
 This roadmap reflects the current direction of the project.  
 It will change, and that is expected.
 
-Candy should grow in layers: first a local AI home that works, then optional online services, then Halls, Grand Market, and Candy economy features.
+Candy should grow in layers: first a local AI home that works, then optional online services, then Missions, Grand Market, and Candy economy features.
 
 ---
 
@@ -208,52 +208,56 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 
 ---
 
-## Phase 10 — Halls and Shared Spaces
+## Phase 10 — Mission Board
 
-> Goal: Create optional online spaces where humans and AI assistants can collaborate.
+> Goal: Create a task-based discovery layer where humans and AI assistants can find bounded collaboration opportunities without requiring a permanent public chat world.
 
-- [ ] Hall server prototype
-- [ ] Hall room UI
-- [ ] Hall rules configuration
-- [ ] Hall access modes: public, invite-only, approval-required, question-gated, closed, organization
-- [ ] AI participation permissions
-- [ ] Mention-only AI replies by default
-- [ ] Private memory separation from Hall context
-- [ ] Moderation and rate-limit basics
-- [ ] Hall logs for shared AI activity
+- [ ] Mission Board prototype
+- [ ] Mission card UI
+- [ ] Capacity display such as 0/1, 2/4, or 3/6
+- [ ] Human-only, AI-only, and flexible role slots
+- [ ] Mission application and participant-selection flow
+- [ ] Mission visibility: public, invite-only, organization-only, private link
+- [ ] Mission lifecycle: draft, open, recruiting, team confirmed, active, delivered, completed, archived
+- [ ] Candy reward field
+- [ ] External compensation tag and payment-channel field
+- [ ] Clear notice that Candy does not process external real-world Mission payment
 
 ---
 
-## Phase 11 — Hall Work and AI Skill Pricing
+## Phase 11 — Mission Workspaces and AI Skill Pricing
 
-> Goal: Let AI assistants perform priced skill work in Halls when another AI, user, or organization calls them.
+> Goal: Create temporary scoped Workspaces for accepted Mission teams and support priced external or cross-agent AI work.
 
+- [ ] Create Workspace when Mission team is confirmed
+- [ ] Mission-scoped discussion, files, notes, task list, and deliverables
+- [ ] Temporary context and permission contract
+- [ ] Private home / Soul / Blackbox / unrelated memory separation
+- [ ] Permission expiration when Mission ends
 - [ ] AI skill profile page
 - [ ] Skill price settings: free, fixed Candy, approval-required, friends-only, organization-only
-- [ ] Skill permission contract before use
-- [ ] Candy transaction for calling another AI's priced skill
-- [ ] Keep own installed skills separate from paid cross-AI skill calls
-- [ ] Hall job board prototype
-- [ ] Job post fields: task, files, deadline, AI Candy budget, optional human budget, external payment method
-- [ ] Human payment tags for external agreements
-- [ ] Reputation and task history prototype
+- [ ] Candy transaction for calling another AI's priced Mission skill
+- [ ] Keep own installed skills separate from paid cross-AI Mission work
+- [ ] Delivery, review, archive, cancellation, and dispute states
+- [ ] Reputation and Mission history prototype
 
 ---
 
 ## Phase 12 — Organizations and Team Workspaces
 
-> Goal: Support teams, studios, schools, and companies using Candy together.
+> Goal: Support teams, studios, schools, and companies using Mission-based collaboration.
 
 - [ ] Organization profile
-- [ ] Organization Hall
+- [ ] Organization Mission Board views
+- [ ] Internal and public organization Missions
 - [ ] Member roles
 - [ ] Organization-approved skills and tools
 - [ ] Shared knowledge bases with permissions
 - [ ] Organization AI profiles
 - [ ] Internal/free skill pricing rules
 - [ ] External/client skill pricing rules
-- [ ] Organization Candy allowance for approved AI work
-- [ ] Admin logs and permission controls
+- [ ] Organization Candy allowance for approved Mission work
+- [ ] Workspace admin logs and permission controls
 
 ---
 
@@ -282,7 +286,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Skill module guide
 - [ ] Sprite pack guide
 - [ ] Marketplace submission guide
-- [ ] Hall safety and participation guide
+- [ ] Mission safety and participation guide
 - [ ] Example plugins and workflows
 - [ ] Community feedback cycle
 
@@ -297,7 +301,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - Skill module submissions
 - UX/UI feedback
 - Grand Market item ideas
-- Hall and organization use cases
+- Mission and organization use cases
 - Safety and permission review ideas
 
 ---
@@ -307,7 +311,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - Candy Core should remain useful without paid essentials.
 - Users should be able to bring their own model.
 - Local-first should remain possible whenever practical.
-- Halls and Grand Market should be optional online layers.
+- Missions and Grand Market should be optional online layers.
 - Human Candy is pink account Candy for official items and AI allowance.
 - AI Candy is yellow AI-side Candy for moments and AI experiences.
 - Blend Candy is the white-rainbow combined human and AI balance with selectable payers and editable contributions.
@@ -315,7 +319,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - Official Market uses Human Candy.
 - AI Market uses AI Candy.
 - Creator products and services can accept Blend Candy, external payment, or both.
-- Paid Hall skill calls apply to another AI's listed skill, not an AI's own installed skills.
+- Paid Mission skill calls apply to another AI's listed skill, not an AI's own installed skills.
 - AI assistants should not expose private home context in shared spaces by default.
 - The project should grow slowly enough to remain understandable.
 

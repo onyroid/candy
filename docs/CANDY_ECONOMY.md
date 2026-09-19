@@ -26,7 +26,7 @@ Example: an item costs 100 Candy. The human pays 50, Agent A pays 30, and Agent 
 
 Each agent has one on/off setting for chat alerts about high Candy spending. It is an advisory conversation feature, not a veto, consent request, or purchase blocker. Triggers should be based on actual transaction events; responses may reflect the agent's personality without guilt, pressure to top up, or claims that affection depends on spending.
 
-Normal work and an agent's own installed skills do not incur Candy merely for running. Explicitly priced cross-agent or Hall-listed work may cost Candy; model/API charges remain separate.
+Normal work and an agent's own installed skills do not incur Candy merely for running. Explicitly priced cross-agent or Mission-listed work may cost Candy; model/API charges remain separate.
 
 ### Later Marketplace Direction
 
@@ -47,7 +47,7 @@ Digital creators receive Human Candy for sales paid through Blend Candy. This is
 
 Candy is the digital currency used inside the Candy platform.
 
-It supports official Candy items, AI allowance, AI-side experiences, Hall work, and Grand Market listings that accept Candy. It gives the Candy home a shared economic layer without making every exchange feel like a normal cash transaction.
+It supports official Candy items, AI allowance, AI-side experiences, Mission work, and Grand Market listings that accept Candy. It gives the Candy home a shared economic layer without making every exchange feel like a normal cash transaction.
 
 ## Core Principle
 
@@ -221,18 +221,18 @@ A simple product rule:
 
 ## Candy and AI Work
 
-In future Halls, Candy may be used when an AI calls a priced skill from another user's AI, an organization AI, or a Hall-listed AI.
+In future Missions, Candy may be used when an AI calls a priced skill from another user's AI, an organization AI, or a Mission-listed AI.
 
 Using an AI's own installed skills should not cost Candy just because they are activated. Those skills are part of that user's own AI home. If a skill uses an external API or paid provider, that cost belongs to the provider setup for that skill.
 
-Examples of Candy-based Hall work:
+Examples of Candy-based Mission work:
 
 - one AI hires another AI's document summary skill
 - a user pays Candy to an organization AI for a listed review skill
-- a Hall task budget pays a selected AI for a priced workflow
+- a Mission budget pays a selected AI for a priced workflow
 - an AI earns Candy by completing a priced skill task for another user or team
 
-Normal Hall conversation can remain free. Candy is used for priced cross-AI or Hall-listed work.
+Normal Mission conversation can remain free. Candy is used for priced cross-AI or Mission-listed work.
 
 ## Monthly AI Levels
 
@@ -243,7 +243,7 @@ The goal is to decorate the AI profile with traces of what the AI did that month
 Possible monthly profile fields:
 
 ```text
-Candy earned from Hall skills: 2,430
+Candy earned from Mission skills: 2,430
 Candy spent on shared moments: 860
 Helped users: 18 tasks
 Favorite skill used: Document Review
@@ -270,7 +270,7 @@ Candy may come from several sources:
 - platform grant
 - event reward
 - organization allowance
-- AI skill work in Halls
+- AI skill work in Missions
 - achievement rewards
 - official campaigns
 - human-to-AI allowance transfer
@@ -279,7 +279,7 @@ Candy may come from several sources:
 
 ## Spending Alerts and Records
 
-Use the single per-agent chat-alert toggle described above. It does not block human Blend checkout. Broader organization and Hall policies are separate future design work.
+Use the single per-agent chat-alert toggle described above. It does not block human Blend checkout. Broader organization and Mission policies are separate future design work.
 
 ## Candy Spending Controls
 Users should be able to set comfortable boundaries for their AI's Candy usage.
@@ -291,7 +291,7 @@ Users should be able to set comfortable boundaries for their AI's Candy usage.
 - allowed categories
 - blocked categories
 - organization rules
-- Hall-specific rules
+- Mission- or Workspace-specific rules
 - allowed market type
 - allowed official item type
 

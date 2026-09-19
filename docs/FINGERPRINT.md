@@ -16,7 +16,7 @@ It watches repeated contact between the AI and:
 - memories
 - workflows
 - knowledge sources
-- Hall activity
+- Mission and Workspace activity
 - market items
 - external stimuli
 - success and failure signals
@@ -55,7 +55,7 @@ Fingerprint may receive events from:
 - memory retrieval
 - file access
 - Candy spending
-- Hall skill calls
+- Mission skill calls
 - marketplace installs
 - user feedback
 - failed attempts
@@ -70,7 +70,7 @@ Fingerprint may influence:
 - memory retrieval
 - tool routing
 - permission prompts
-- Hall behavior
+- Mission Workspace behavior
 - task prioritization
 - AI profile traces
 - monthly activity summaries
@@ -79,7 +79,7 @@ Fingerprint may influence:
 ## Example Flow
 
 ```text
-User / File / Tool / Hall / Market
+User / File / Tool / Mission / Market
         ↓
 Candy Runtime
         ↓

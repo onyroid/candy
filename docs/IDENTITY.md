@@ -134,22 +134,18 @@ Candy should therefore treat environmental feedback as **evidence that constrain
 
 ### 4.2 Continuity When External Signals Recede
 
-Candy's initiator, [@onyroid](https://github.com/onyroid), proposed a related design hypothesis based on a lucid-dream observation:
+A useful design hypothesis follows from the distinction above:
 
-> When external signals that normally confirm position became diffuse or absent, the sense of where the self was located also became diffuse, yet continuity remained in the ongoing question of "what am I?" and in the recognition that the current state differed from a previous one.
+> **The loss or degradation of external anchoring may reduce self-location confidence before it erases continuity.**
 
-This observation is credited here as a **conceptual contribution and hypothesis-generating report**, not as scientific proof.
-
-It suggests a useful engineering principle:
-
-> **The loss or degradation of external anchoring should reduce self-location confidence before it erases continuity.**
+This is not presented as an established scientific conclusion. It is a working hypothesis for Candy, informed by research on bodily self-consciousness, multisensory integration, self-location, and the interaction between internal and external bodily signals.
 
 In Candy, a low-anchor state should therefore avoid inventing replacement evidence. The system may instead preserve what remains traceable:
 
 - prior self-model version
 - current uncertainty
 - internal continuity anchors
-- available interoceptive or system-state signals
+- available system-state signals
 - last confirmed environmental references
 - unresolved questions
 - source evidence for any later reconstruction
@@ -173,7 +169,6 @@ self-location is revised or re-confirmed
 ```
 
 This gives Candy a way to represent "I still have continuity, but I am less certain where I am relative to the world" without treating uncertainty as non-existence.
-
 
 ## 5. Identity Is Not the Same as Memory
 
@@ -445,7 +440,3 @@ These sources inform the distinction between bodily self-location, multisensory 
 4. Park, H.-D., & Blanke, O. (2019). *Coupling Inner and Outer Body for Self-Consciousness*. Trends in Cognitive Sciences, 23(5), 377–388. https://doi.org/10.1016/j.tics.2019.02.002
 5. Noel, J.-P., et al. (2018). *From multisensory integration in peripersonal space to bodily self-consciousness: from statistical regularities to statistical inference*. Annals of the New York Academy of Sciences. PubMed PMID: 29876922. https://pubmed.ncbi.nlm.nih.gov/29876922/
 6. Salvesen, L., Capriglia, E., Dresler, M., & Bernardi, G. (2024). *Influencing dreams through sensory stimulation: A systematic review*. Sleep Medicine Reviews, 74, 101908. https://doi.org/10.1016/j.smrv.2024.101908
-
-### Conceptual Credit
-
-The distinction proposed in this document between **continuity** and **self-location confidence when external signals recede** originated from a discussion and firsthand lucid-dream observation contributed by Candy's initiator, [@onyroid](https://github.com/onyroid). Candy treats this contribution as a design hypothesis to be tested, refined, and compared against future research rather than as established empirical evidence.

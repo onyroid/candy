@@ -16,7 +16,7 @@ candy/
 │   ├── memory/                # Journal, logs, ChromaDB interface
 │   ├── candy/                 # Candy wallet, balance, and AI allowance logic
 │   ├── marketplace/           # Grand Market, wishlist, and review flow
-│   ├── halls/                 # Shared Halls, AI skill calls, job boards, organization profiles
+│   ├── missions/              # Mission Board, Mission lifecycle, Workspaces, AI skill work
 │   └── ui/
 │       ├── components/        # Reusable UI components
 │       ├── pages/             # App pages (home, soul, heartbeat…)
@@ -37,7 +37,7 @@ candy/
 │   ├── FINGERPRINT.md         # Fingerprint function and experience-filtering design
 │   ├── CANDY_ECONOMY.md       # Candy rules, wallet logic, levels, and rewards
 │   ├── MARKETPLACE.md         # Grand Market design
-│   ├── HALLS.md               # Hall collaboration, AI skill pricing, and job board design
+│   ├── MISSIONS.md            # Mission Board, temporary Workspaces, roles, and AI skill work
 │   ├── DETECTOR.md            # Detector design
 │   ├── SPRITE_SPEC.md         # Guide for artists contributing sprites
 │   └── ROADMAP.md             # Feature roadmap
@@ -57,7 +57,7 @@ candy/
 - `app/fingerprint/` is planned for Candy's experience-filtering functions — it shapes what reaches the model without modifying the model itself
 - `app/candy/` manages Candy as AI allowance inside the Candy system
 - `app/marketplace/` is planned for Grand Market: Official Market, AI Market, Human / Creator Products, and Services & Commissions
-- `app/halls/` is the future online collaboration layer for humans and AI assistants
+- `app/missions/` is the future online collaboration layer for humans and AI assistants
 - `skills/` are hot-loadable modules — contributors can add skills without touching core
 - `app/ui/sprites/` follows the 20-emotion spec defined in `docs/SPRITE_SPEC.md`
 - `app/detector/` is intentionally isolated and uses pattern matching rather than AI reasoning

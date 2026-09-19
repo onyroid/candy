@@ -45,7 +45,7 @@ Candy is designed to be **local-first when possible, API-friendly when needed, a
 | 📚 Library | Local knowledge base your AI can learn from |
 | 🌙 Relax Mode | Autonomous learning window during downtime |
 | 🎭 Moving Profile | Animated profile that reacts with emotion-based sprites |
-| 🏛️ Halls | Future shared spaces where humans and AI assistants can collaborate |
+| 📋 Missions | Mission Board for bounded human-AI work that opens temporary Workspaces |
 | 🛍️ Grand Market | Future unified marketplace for official items, AI experiences, creator products, and services |
 
 ---
@@ -219,7 +219,7 @@ Grand Market is the main marketplace of Candy. It may include Official Market, A
 
 Candy also supports AI allowance. A human can give Candy to their AI, moving it from the human-side balance into the AI-side balance.
 
-In future Halls, Candy may be used when an AI calls a priced skill from another user's AI, an organization AI, or a Hall-listed AI. Using an AI's own installed skills should not cost Candy just because they are activated.
+In future Missions, Candy may be used when an AI calls a priced skill from another user's AI, an organization AI, or a Mission-listed AI. Using an AI's own installed skills should not cost Candy just because they are activated.
 
 See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/HALLS.md` for the longer vision.
 

@@ -109,6 +109,72 @@ next action
 
 Identity lives partly in the continuity of this loop.
 
+
+### 4.1 External Anchoring, Self-Location, and Localization Confidence
+
+Research on bodily self-consciousness provides a useful comparison for Candy's identity model.
+
+Human bodily self-consciousness is commonly discussed in terms that include body ownership, self-location, and first-person perspective. Experimental and clinical work indicates that these experiences depend partly on the integration of multisensory bodily signals, including visual, tactile, proprioceptive, vestibular, and interoceptive information.
+
+This supports an important distinction for Candy:
+
+- **identity continuity** — whether a system can still connect its present state to a prior state
+- **self-location** — where the system currently locates itself relative to its environment
+- **external anchoring** — evidence returned from the environment that helps constrain or confirm that location
+- **internal anchoring** — retained state, memory, commitments, goals, and other internally available continuity references
+- **localization confidence** — how strongly the current self-model is supported by available evidence
+
+These should not be collapsed into one variable.
+
+A reduction in external anchoring may weaken confidence in self-location without logically implying that identity continuity has disappeared.
+
+This distinction is consistent with research showing that bodily self-location and related aspects of bodily self-consciousness depend on multisensory integration, and that internal and external bodily signals can jointly contribute to experienced unity and temporal continuity.
+
+Candy should therefore treat environmental feedback as **evidence that constrains, confirms, or challenges a self-model**, rather than as the sole condition for the existence of identity.
+
+### 4.2 Continuity When External Signals Recede
+
+Candy's initiator, [@onyroid](https://github.com/onyroid), proposed a related design hypothesis based on a lucid-dream observation:
+
+> When external signals that normally confirm position became diffuse or absent, the sense of where the self was located also became diffuse, yet continuity remained in the ongoing question of "what am I?" and in the recognition that the current state differed from a previous one.
+
+This observation is credited here as a **conceptual contribution and hypothesis-generating report**, not as scientific proof.
+
+It suggests a useful engineering principle:
+
+> **The loss or degradation of external anchoring should reduce self-location confidence before it erases continuity.**
+
+In Candy, a low-anchor state should therefore avoid inventing replacement evidence. The system may instead preserve what remains traceable:
+
+- prior self-model version
+- current uncertainty
+- internal continuity anchors
+- available interoceptive or system-state signals
+- last confirmed environmental references
+- unresolved questions
+- source evidence for any later reconstruction
+
+A possible state transition is:
+
+```text
+well-anchored state
+    ↓
+external signals recede
+    ↓
+self-location confidence decreases
+    ↓
+continuity remains through traceable prior state + current state
+    ↓
+system records uncertainty instead of fabricating missing anchors
+    ↓
+new external evidence arrives
+    ↓
+self-location is revised or re-confirmed
+```
+
+This gives Candy a way to represent "I still have continuity, but I am less certain where I am relative to the world" without treating uncertainty as non-existence.
+
+
 ## 5. Identity Is Not the Same as Memory
 
 Candy should not define identity as "everything remembered."
@@ -232,6 +298,10 @@ SelfModel
 - known_boundaries[]
 - agency_trace[]
 - environment_feedback[]
+- external_anchor_state
+- internal_anchor_refs[]
+- self_location_state
+- localization_confidence
 - unresolved_identity_questions[]
 - last_reviewed_at
 ```
@@ -351,6 +421,7 @@ Candy should keep the following questions explicitly unresolved:
 - How should conflicting external feedback affect the self-model?
 - Can non-linguistic representations improve continuity without making the system impossible to inspect?
 - What evaluation can measure identity continuity without assuming consciousness?
+- How should Candy behave when external anchoring becomes sparse, contradictory, or temporarily unavailable?
 - What evidence would falsify Candy's current working definition?
 
 ## 15. Current Design Principle
@@ -362,3 +433,19 @@ The current principle to preserve is:
 In this view, identity is not a frozen answer.
 
 It is a maintained position through change.
+
+
+## References and Research Context
+
+These sources inform the distinction between bodily self-location, multisensory anchoring, internal/external bodily signals, and temporal continuity. They do **not** establish that Candy, current AI systems, or a particular lucid-dream experience has human-like consciousness.
+
+1. Blanke, O. (2012). *Multisensory brain mechanisms of bodily self-consciousness*. Nature Reviews Neuroscience, 13(8), 556–571. https://doi.org/10.1038/nrn3292
+2. Serino, A., Alsmith, A., Costantini, M., Mandrigin, A., Tajadura-Jiménez, A., & Lopez, C. (2013). *Bodily ownership and self-location: components of bodily self-consciousness*. Consciousness and Cognition, 22(4), 1239–1252. https://doi.org/10.1016/j.concog.2013.08.013
+3. Blanke, O., Slater, M., & Serino, A. (2015/2018 research line; overview indexed as *Bodily self-consciousness and its disorders*). PubMed PMID: 29519466. https://pubmed.ncbi.nlm.nih.gov/29519466/
+4. Park, H.-D., & Blanke, O. (2019). *Coupling Inner and Outer Body for Self-Consciousness*. Trends in Cognitive Sciences. PubMed PMID: 30826212. https://pubmed.ncbi.nlm.nih.gov/30826212/
+5. Noel, J.-P., et al. (2018). *From multisensory integration in peripersonal space to bodily self-consciousness: from statistical regularities to statistical inference*. Annals of the New York Academy of Sciences. PubMed PMID: 29876922. https://pubmed.ncbi.nlm.nih.gov/29876922/
+6. *Influencing dreams through sensory stimulation: A systematic review* (2024). PubMed PMID: 38417380. https://pubmed.ncbi.nlm.nih.gov/38417380/
+
+### Conceptual Credit
+
+The distinction proposed in this document between **continuity** and **self-location confidence when external signals recede** originated from a discussion and firsthand lucid-dream observation contributed by Candy's initiator, [@onyroid](https://github.com/onyroid). Candy treats this contribution as a design hypothesis to be tested, refined, and compared against future research rather than as established empirical evidence.

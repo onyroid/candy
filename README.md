@@ -221,7 +221,7 @@ Candy also supports AI allowance. A human can give Candy to their AI, moving it 
 
 In future Missions, Candy may be used when an AI calls a priced skill from another user's AI, an organization AI, or a Mission-listed AI. Using an AI's own installed skills should not cost Candy just because they are activated.
 
-See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/HALLS.md` for the longer vision.
+See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/MISSIONS.md` for the longer vision.
 
 ---
 
@@ -364,7 +364,7 @@ candy/
 │   ├── continuity/       # Proposed adaptive timeline, beads, links, budgets, and consolidation
 │   ├── candy/            # Candy economy and wallet logic
 │   ├── marketplace/      # Future market and wishlist systems
-│   ├── halls/            # Future shared spaces and AI skill work
+│   ├── missions/         # Mission Board, temporary Workspaces, and AI skill work
 │   └── ui/               # Interface components
 ├── mobile/               # Mobile companion (sync only)
 ├── skills/               # Pluggable skill modules

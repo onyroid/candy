@@ -441,10 +441,10 @@ These sources inform the distinction between bodily self-location, multisensory 
 
 1. Blanke, O. (2012). *Multisensory brain mechanisms of bodily self-consciousness*. Nature Reviews Neuroscience, 13(8), 556–571. https://doi.org/10.1038/nrn3292
 2. Serino, A., Alsmith, A., Costantini, M., Mandrigin, A., Tajadura-Jiménez, A., & Lopez, C. (2013). *Bodily ownership and self-location: components of bodily self-consciousness*. Consciousness and Cognition, 22(4), 1239–1252. https://doi.org/10.1016/j.concog.2013.08.013
-3. Blanke, O., Slater, M., & Serino, A. (2015/2018 research line; overview indexed as *Bodily self-consciousness and its disorders*). PubMed PMID: 29519466. https://pubmed.ncbi.nlm.nih.gov/29519466/
-4. Park, H.-D., & Blanke, O. (2019). *Coupling Inner and Outer Body for Self-Consciousness*. Trends in Cognitive Sciences. PubMed PMID: 30826212. https://pubmed.ncbi.nlm.nih.gov/30826212/
+3. Ronchi, R., Park, H.-D., & Blanke, O. (2018). *Bodily self-consciousness and its disorders*. Handbook of Clinical Neurology, 151, 313–330. https://doi.org/10.1016/B978-0-444-63622-5.00015-2
+4. Park, H.-D., & Blanke, O. (2019). *Coupling Inner and Outer Body for Self-Consciousness*. Trends in Cognitive Sciences, 23(5), 377–388. https://doi.org/10.1016/j.tics.2019.02.002
 5. Noel, J.-P., et al. (2018). *From multisensory integration in peripersonal space to bodily self-consciousness: from statistical regularities to statistical inference*. Annals of the New York Academy of Sciences. PubMed PMID: 29876922. https://pubmed.ncbi.nlm.nih.gov/29876922/
-6. *Influencing dreams through sensory stimulation: A systematic review* (2024). PubMed PMID: 38417380. https://pubmed.ncbi.nlm.nih.gov/38417380/
+6. Salvesen, L., Capriglia, E., Dresler, M., & Bernardi, G. (2024). *Influencing dreams through sensory stimulation: A systematic review*. Sleep Medicine Reviews, 74, 101908. https://doi.org/10.1016/j.smrv.2024.101908
 
 ### Conceptual Credit
 

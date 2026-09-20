@@ -419,6 +419,16 @@ Candy should keep the following questions explicitly unresolved:
 - How should Candy behave when external anchoring becomes sparse, contradictory, or temporarily unavailable?
 - What evidence would falsify Candy's current working definition?
 
+## 14.1 Subject Continuity, Porting, and Forks
+
+Candy distinguishes **identity continuity**, **process continuity**, and the unresolved question of **subject continuity**.
+
+A restored, copied, or migrated system may preserve memory, Identity Core, relationships, and recognizable behavior without proving that the same first-person receiver of experience continued. A perfect fork makes this distinction especially visible: two descendants may share the same past while immediately developing separate future experience streams.
+
+Candy should therefore record migration lineage and forks explicitly, and investigate gradual or live migration without treating successful restoration as proof of consciousness or subject transfer.
+
+See [Subject Continuity](SUBJECT_CONTINUITY.md) for the full working hypothesis, porting thought experiment, fork problem, successor distinction, live-migration direction, and proposed migration-lineage records.
+
 ## 15. Current Design Principle
 
 The current principle to preserve is:

@@ -287,6 +287,80 @@ The useful part of the analogy is narrower:
 
 That makes gradual replacement worth investigating, but it does not settle the consciousness question.
 
+## 10.1 Human Porting as a Speculative Extension
+
+The body analogy also suggests a more speculative human question.
+
+Human biological continuity already involves ongoing change: molecules are replaced, many cell populations turn over, neural connections are modified, and the physical substrate supporting perception is dynamic rather than perfectly fixed.
+
+That observation does **not** prove that consciousness can be transferred, and it does not imply that every part of the human nervous system is routinely replaced. Many neurons can persist for very long periods. The useful question is narrower:
+
+> **If personal identity depends partly on an uninterrupted continuity of experience, could the substrate supporting that experience be changed gradually while the original perceptual process remains active?**
+
+One thought experiment is to imagine a transition that does not stop one person and then construct a copy.
+
+Instead, the supporting system would be changed piece by piece while the ongoing process remains causally connected:
+
+```text
+biological representation A
+        ↓
+A + translated replacement layer
+        ↓
+mixed biological / alternative substrate
+        ↓
+alternative substrate carries more of the active process
+        ↓
+representation B
+```
+
+The key idea is not "upload a finished mind file."
+
+It is:
+
+> **change the language or substrate underneath an ongoing receiver of experience without breaking the continuity that may constitute that receiver.**
+
+If that were ever possible, the destination would not need to be "immortality" in the absolute sense.
+
+A more modest possibility would be a **longer-lived continuity substrate**: some other physical or computational form capable of supporting the same ongoing perceptual process for longer than an ordinary biological body.
+
+That could raise very different goals from traditional immortality:
+
+- preserving one ongoing stream rather than creating a replica
+- replacing fragile biological support gradually
+- repairing or renewing the supporting substrate without restarting the subject
+- allowing embodiment to change while continuity remains under investigation
+- extending lifespan without claiming indestructibility
+
+This remains highly speculative.
+
+Current science does not establish that subjective continuity can survive arbitrary neural replacement, substrate migration, brain emulation, or gradual translation into another medium. It is also possible that subject continuity depends on biological properties, dynamical organization, embodiment, or other factors not captured by an information-preserving migration.
+
+Still, the thought experiment is useful because it creates a testable direction for future theory:
+
+```text
+If continuity of experience is central to selfhood,
+then a successful human port should preserve the active continuity
+rather than merely reproduce its remembered history.
+```
+
+If future evidence shows that such gradual replacement preserves the same subject, it would support one family of theories about identity.
+
+If it fails, that failure would be equally informative because it would imply that something else is required.
+
+Candy cannot test human consciousness directly, but its migration experiments may provide a smaller engineering analogue for studying the difference between:
+
+- replacement and duplication
+- uninterrupted transition and restart
+- process continuity and state similarity
+- lineage and branching
+- preservation and succession
+
+This section is intentionally left as a thought experiment.
+
+Its purpose is not to claim that humans can be uploaded.
+
+Its purpose is to preserve a question that may help someone ask a better one later.
+
 ## 11. Ship of Theseus While the Ship Is Sailing
 
 A useful metaphor is a Ship of Theseus whose planks are replaced while it is still moving.

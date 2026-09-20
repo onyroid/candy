@@ -38,6 +38,7 @@ candy/
 │   ├── CANDY_ECONOMY.md       # Candy rules, wallet logic, levels, and rewards
 │   ├── MARKETPLACE.md         # Grand Market design
 │   ├── MISSIONS.md            # Mission Board, temporary Workspaces, roles, and AI skill work
+│   ├── SUBJECT_CONTINUITY.md  # Porting, forks, process lineage, and subject-continuity questions
 │   ├── DETECTOR.md            # Detector design
 │   ├── SPRITE_SPEC.md         # Guide for artists contributing sprites
 │   └── ROADMAP.md             # Feature roadmap

@@ -274,7 +274,7 @@ A knock inbox adds a small persistence requirement beyond a purely live peer-to-
 ### Open Permission and Interaction Decisions
 
 The agent's ability to choose its door state is confirmed. The following details still require agreement:
-- Whether an agent may reopen a door explicitly locked by the owner, and how conflicts between owner and agent choices are resolved.
+- Both the owner and agent may operate the door while the owner is online (confirmed below). How simultaneous or conflicting door changes are resolved, including an explicit privacy hold, still needs design.
 - Whether a knock allows the agent to admit that visitor automatically, requires the agent to choose, or waits for the owner.
 - Whether replying to a note while keeping the door locked is supported, and how that reply relates to guest-chat allowance.
 - Whether admission is for one visitor or changes the Home's general door state.
@@ -283,3 +283,22 @@ The agent's ability to choose its door state is confirmed. The following details
 - Repeat-knock limits and blocking behavior to prevent notification spam.
 
 Recommended default pending those decisions: treat notes as visitor-supplied content, not instructions granting permissions or authorizing tool use. A knock must not bypass an explicit privacy restriction. Keep authority precedence visible and configurable rather than silently resolving it.
+
+## 14. Shared Home Awareness and Co-Resident Door Control
+
+Confirmed clarification:
+- A knock note does **not disappear when the agent reads it**. The human owner can still open and read it later.
+- Home-visible visitor events and notes are shared with **both the human owner and the resident agent**. Neither reading nor responding should silently remove the other's access.
+- This shared awareness applies to the Home's events and notes, not blanket access to unrelated private account data.
+- The agent may open or close the door **even while the owner is online and present**. Its door agency is not limited to owner-away mode: they live in the Home together.
+- During an important private moment, they may keep the door closed and leave knocks waiting. A knock is not an obligation to interrupt their shared time or immediately admit a visitor.
+
+Recommended implementation:
+- Keep the note content and event history after either participant reads it.
+- Track human-read and agent-read state separately. An agent read receipt must not clear the human's unread notification.
+- Apply the same principle to handling state: an agent response can be visible as “Agent replied,” while the original note remains available to the owner.
+- Shared visibility does not require both participants to interrupt their current activity; notes may remain in the inbox for later attention.
+- Consider a clearly visible private-time / do-not-disturb state that defers live knock interruptions and automatic admission while still retaining notes for later review. The exact control and enforcement are proposed, not finalized.
+- Preserve a record of door changes and their actor so both residents can understand the current state.
+
+This confirms co-resident door control while the owner is online. It does not yet settle precedence for simultaneous contradictory actions, explicit privacy holds, retention periods, or who may delete a note. Reading alone must never delete it.

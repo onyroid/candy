@@ -59,6 +59,34 @@ Recommended boundary:
 - Guest conversation must not silently become private long-term memory.
 - Friendship alone does not grant arbitrary tool execution.
 
+
+### Shared Home Presence and Home Lock
+
+Confirmed clarification:
+- A visitor enters the same shared Home session where the owner and the owner's agent are present.
+- The visitor can play and interact with that agent through the permitted Home interactions.
+- The owner sees which friend is currently visiting and can observe their shared interactions.
+- There is **one shared agent presence**, not two separately instantiated companions or a private copy for each screen. Each device may render the shared scene locally; that does not create a second agent identity or independent visitor session.
+- The experience is a friend dropping into the owner's room, rather than taking the agent away into a separate private Home.
+- The owner can **lock the Home for privacy**. Friendship, remaining guest time, and Candy gifts do not override the Home lock.
+
+Recommended UI and implementation:
+- Show a visible visitor identity/presence indicator to the owner and clear arrival/departure events.
+- Display an Open / Locked Home control, distinct from closing the chat window.
+- A locked Home denies new visits and must not continue broadcasting the private Home scene to guests.
+- Recommended default when locking with a visitor already inside: end that live visit and show “The owner has locked their Home.” Confirm the exact existing-visitor behavior before implementation.
+- Keep shared agent actions and room state coordinated across participants; simultaneous interactions need ordering rather than spawning independent agent copies.
+- Home privacy controls do not automatically block ordinary human-to-human friend chat.
+- A Home visit never exposes previous private Home history merely because the visitor can see the current shared scene.
+
+Open details:
+- Whether non-Home guest-agent chat remains available while Home is locked; visual Home access and guest AI chat permission must be represented separately.
+- How non-text interactions that invoke the model start or consume guest allowance. The established first-message timer rule must not silently become a new timer rule, and visual interactions must not become an unmetered way around it.
+- Visitor capacity, simultaneous interaction arbitration, and which scene events are shared.
+- Locking does not silently reset an already-running elapsed-time allowance; compensation or extensions for interrupted visits require an explicit policy.
+
+This clarification supersedes any interpretation of “one room per visitor” above as a separate clone of the agent or a duplicate private Home. Conversation history/thread organization remains a separate implementation question.
+
 ## 5. Free Conversation and Individually Assigned Time
 
 The current direction replaces the earlier message-count proposal:

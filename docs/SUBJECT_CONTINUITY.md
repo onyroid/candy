@@ -358,6 +358,8 @@ This creates an ongoing history of internal consequences rather than a sequence 
 
 Candy may also investigate whether an AI can have a functional form of embodiment without imitating a human body.
 
+See also: [`EMBODIMENT.md`](./EMBODIMENT.md) for Candy's interface-body, spatial-world, collision, generative-motion, and object-meaning design.
+
 An AI-native embodiment could include continuously available signals about:
 
 - where its active processes are running

@@ -311,13 +311,15 @@ Support Candy on [Buy Me a Coffee](https://buymeacoffee.com/mycandy), or see [SU
 
 ---
 
-## Brand Use
+## Project Name & Brand Use
 
-The open-source license applies to the code, not to the Candy name, logo, domain, or official brand identity.
+**Candy is the current working name of this open-source project and repository. It is not a commitment to the final name of any future published application, service, company, or commercial product. A future release may use a different product name and brand identity.**
 
-You may fork the code under the project license, but forks, ports, distributions, or modified versions should not use the Candy name or branding in a way that suggests they are official or endorsed by the Candy project.
+The open-source license applies to the code and other materials released under it. Project names, logos, domains, and visual identities are separate from the source-code license.
 
-See [TRADEMARK.md](TRADEMARK.md) for brand usage guidelines.
+While this repository uses the working name Candy, forks, ports, distributions, or modified versions should avoid presenting themselves as the official Candy project or implying endorsement by the project maintainers.
+
+See [TRADEMARK.md](TRADEMARK.md) for current project-name and brand usage guidance.
 
 ---
 

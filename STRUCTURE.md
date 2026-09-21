@@ -12,6 +12,7 @@ candy/
 │   ├── heartbeat/             # Cron scheduler & automation
 │   ├── blackbox/              # Identity milestone checkpointing
 │   ├── fingerprint/           # Experience-filtering functions between model and world
+│   ├── embodiment/            # Avatar body model, spatial world, motion planning, collision, and object meaning
 │   ├── detector/              # Data protection layer
 │   ├── memory/                # Journal, logs, ChromaDB interface
 │   ├── candy/                 # Candy wallet, balance, and AI allowance logic
@@ -39,6 +40,7 @@ candy/
 │   ├── MARKETPLACE.md         # Grand Market design
 │   ├── MISSIONS.md            # Mission Board, temporary Workspaces, roles, and AI skill work
 │   ├── SUBJECT_CONTINUITY.md  # Porting, forks, process lineage, and subject-continuity questions
+│   ├── EMBODIMENT.md          # Interface body, spatial world, collision, generative motion, and object meaning
 │   ├── DETECTOR.md            # Detector design
 │   ├── SPRITE_SPEC.md         # Guide for artists contributing sprites
 │   └── ROADMAP.md             # Feature roadmap
@@ -56,6 +58,7 @@ candy/
 
 - `app/core/` is reserved for the planned OpenClaw integration — review upstream before implementation
 - `app/fingerprint/` is planned for Candy's experience-filtering functions — it shapes what reaches the model without modifying the model itself
+- `app/embodiment/` is planned for the companion's interface body model, spatial self-location, collision-aware movement, action planning, and persistent object/world meaning
 - `app/candy/` manages Candy as AI allowance inside the Candy system
 - `app/marketplace/` is planned for Grand Market: Official Market, AI Market, Human / Creator Products, and Services & Commissions
 - `app/missions/` is the future online collaboration layer for humans and AI assistants

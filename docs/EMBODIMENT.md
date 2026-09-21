@@ -167,6 +167,116 @@ HomeCameraState
 Camera behavior should remain an interface feature, not a claim that the companion literally perceives only what is inside the user's viewport.
 
 The companion's world model and the user's camera can overlap without being identical.
+## 1.2 Window-as-POV Interaction
+
+Candy's Home can treat the display as a **window between the user's world and the companion's Home**.
+
+The user does not need a full persistent avatar body for this to feel embodied. Instead, Candy may use a first-person point of view with a lightweight **contextual hand layer** that appears when interaction benefits from having a visible body reference.
+
+This gives the user a small amount of embodiment without requiring a full 3D player character.
+
+Possible hand interactions include:
+
+- reaching toward the companion
+- holding hands
+- receiving an offered object
+- giving an object
+- touching the window boundary
+- petting or patting the companion's head
+- touching a shoulder or arm
+- pointing at an object
+- moving lightweight interface objects
+- participating in close interaction scenes
+
+The hand layer should be optional and context-sensitive rather than permanently occupying the screen.
+
+### Contextual Appearance
+
+The user's hands may appear when:
+
+- the user initiates a compatible touch interaction
+- the companion offers a hand or object
+- the system enters a close-interaction mode
+- an object requires direct manipulation
+- the user explicitly enables persistent first-person hands
+
+When no hand interaction is relevant, the hands can fade or move out of frame so the Home remains visually clean.
+
+### Window Boundary
+
+The screen edge can act as a meaningful interaction boundary rather than pretending that both people physically occupy the same simulated room.
+
+For example:
+
+```text
+user side                         companion side
+real-world input  →  window  →   Candy Home
+        hand      ↔ contact ↔    companion hand
+```
+
+The companion may approach the window, look toward the user, place a hand against it, offer something toward it, or respond to the user's first-person hand.
+
+This preserves the idea that the user and companion exist on opposite sides of one shared interface while still allowing touch-like interaction to be represented visually.
+
+### Hand Contact as an Interaction State
+
+A hand-touch should not be only a decorative animation.
+
+Candy can represent it as an interaction state with properties such as:
+
+```text
+POVHandInteraction
+- interaction_id
+- hand: left | right | both
+- target
+- intent
+- contact_type
+- started_at
+- active_contact
+- companion_response
+- object_transfer
+- user_input_source
+- scene_context
+- relationship_refs[]
+- memory_refs[]
+- ended_at
+```
+
+This allows an interaction such as holding hands to participate in the same action-consequence and memory systems as other embodied actions.
+
+### User Intent Should Remain Primary
+
+The first-person hand represents the user's interaction intent, not an autonomous hidden avatar.
+
+The system should distinguish between:
+
+- user initiated touch
+- companion initiated invitation
+- mutual contact
+- object manipulation
+- accidental pointer movement
+- camera navigation
+
+This reduces false interpretations and helps keep touch interactions deliberate.
+
+### Compatibility With 2.5D
+
+The first-person hand layer can remain lightweight.
+
+It may use:
+
+- illustrated hand poses
+- rigged 2.5D hand sprites
+- inverse-kinematic positioning within a limited interaction zone
+- authored contact animations
+- procedural blending between a small number of reliable poses
+
+This is sufficient for early interactions such as hand-holding, head-patting, receiving objects, and touching the window without requiring a full user-body simulation.
+
+### Design Principle
+
+> **The user should be able to look through the window, reach through the interface, and be met by the companion without Candy pretending that a complete physical user body exists in the simulated room.**
+
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.
@@ -686,6 +796,7 @@ Candy can approach this gradually.
 - 2.5D / VTuber-style default companion renderer
 - layered interior Home scene with lightweight spatial metadata
 - companion-follow camera with manual free-look and gentle idle return
+- contextual first-person user hand layer for touch, hand-holding, and object exchange
 - fixed avatar skeleton
 - joint limits
 - authored animation clips

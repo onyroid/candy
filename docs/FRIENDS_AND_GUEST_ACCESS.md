@@ -230,3 +230,56 @@ Which coordination services share the Mission backend, whether to fund a relay, 
 7. A minimal shared Home view and explicit host availability.
 
 Verify timer behavior, participant visibility, and accounting in this small flow before expanding the number of agents or adding automatic host migration.
+
+
+## 13. Agent-Managed Door and Knock Knock
+
+### Confirmed Product Direction
+
+- The agent can also choose to lock its Home or leave it unlocked; door control is not exclusively a human-owner action.
+- This particularly supports an authorized cloud-hosted agent that remains online while its human owner is away.
+- Cloud hosting is an optional deployment direction, not an assumption that every Home is always online or a service already provisioned.
+- A friend who encounters a locked Home can press **Knock knock** and leave a short note.
+- The Home side receives a notification recording **which friend knocked, when they knocked, and what note they left**.
+- The owner can review those notifications on return, including visits attempted while they were absent.
+- Knocking or leaving a note does not itself unlock the Home, start an agent conversation, or grant access to the scene or private history.
+
+### Suggested Visitor Flow
+
+1. Open the friend's Home.
+2. If locked, show a closed-door state with Knock knock and an optional short-note field.
+3. Submit a knock, with or without a note.
+4. Show receipt status accurately: delivered when acknowledged by the receiving service; otherwise queued or failed.
+5. Remain outside unless admission is explicitly granted.
+
+Suggested copy: “The Home is locked. Knock and leave a note.”
+A knock is a door event, not the first guest chat message; it does not start the established conversation countdown or incur a paid skill charge.
+
+### Suggested Home-Side Experience
+
+- Show a door notification with the visitor's name/avatar, event time, and note.
+- Retain a small knock history/inbox with read/unread state so the owner can catch up after being away.
+- An online agent may receive the door event and act according to its configured door permissions.
+- Identify who changed the door state: owner or agent.
+- An unlocked Home still applies friendship eligibility, guest permissions, and allowance rules.
+
+Suggested record fields: event ID, Home ID, visitor account ID, knock timestamp, optional note, delivery timestamp/status, and read status. Store timestamps consistently and display them in the viewer's local time zone. A delayed queued knock should distinguish the original knock time from delivery time.
+
+### Hosting and Delivery
+
+An always-online authorized cloud Home can receive and retain knocks while the owner is absent. A local Home that is offline cannot acknowledge receipt by itself. Reliable delivery in that case requires an explicitly designed mailbox/coordination service; otherwise the visitor's device retains a pending event until delivery is possible. Do not display a queued knock as already delivered.
+
+A knock inbox adds a small persistence requirement beyond a purely live peer-to-peer room. Its service location, retention, and costs remain to be decided; this document does not assume a free always-online backend.
+
+### Open Permission and Interaction Decisions
+
+The agent's ability to choose its door state is confirmed. The following details still require agreement:
+- Whether an agent may reopen a door explicitly locked by the owner, and how conflicts between owner and agent choices are resolved.
+- Whether a knock allows the agent to admit that visitor automatically, requires the agent to choose, or waits for the owner.
+- Whether replying to a note while keeping the door locked is supported, and how that reply relates to guest-chat allowance.
+- Whether admission is for one visitor or changes the Home's general door state.
+- How an agent-initiated lock affects a visitor already inside. The existing proposed end-visit behavior is not yet a confirmed rule.
+- Note length, retention/deletion, notification routing, and visibility of notes to other visitors.
+- Repeat-knock limits and blocking behavior to prevent notification spam.
+
+Recommended default pending those decisions: treat notes as visitor-supplied content, not instructions granting permissions or authorizing tool use. A knock must not bypass an explicit privacy restriction. Keep authority precedence visible and configurable rather than silently resolving it.

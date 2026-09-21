@@ -31,6 +31,142 @@ Candy should not reduce "function" to productivity. Aesthetic, sentimental, play
 
 The room becomes more meaningful when the system can understand why an object is there, how it can be interacted with, and what it means in the current home.
 
+## 1.1 Default Visual Direction — 2.5D Companion Home
+
+Candy's default Home should favor a **2.5D / VTuber-style companion** rather than requiring a full 3D character and fully simulated 3D room.
+
+This direction preserves the original idea of an animated companion profile while allowing the Home to grow into a larger inhabited scene.
+
+The visual system may combine:
+
+- layered 2D room artwork
+- depth-aware foreground and background layers
+- Live2D-style or comparable 2.5D character rigs
+- modular hair, clothing, accessories, body options, and expressions
+- authored and procedural motion
+- semantic hitboxes and interaction regions
+- a hidden spatial map behind the illustrated scene
+- lightweight collision and reach logic
+- optional parallax, lighting, and camera motion
+
+The visible artwork can remain stylized and beautiful while the underlying world model stores enough structure for the companion to reason about position, obstacles, objects, and action.
+
+This also keeps the default renderer more practical for users whose hardware is already spending substantial memory or compute on local or remote AI models.
+
+Full 3D may remain an optional future renderer or mod target. The embodiment and world logic should ideally stay renderer-independent so the same companion state can later drive 2.5D, 3D, mobile, or other presentation layers.
+
+### Home as an Interior Scene
+
+The default Home should feel like looking into the interior of the companion's home rather than opening a conventional chat dashboard.
+
+The scene may include places such as:
+
+- sofa / resting area
+- desk / Workspace area
+- shelves and display objects
+- windows
+- storage
+- decorative objects
+- Mission-related surfaces
+- personal objects with accumulated meaning
+
+The companion should be able to move among meaningful locations in this illustrated home.
+
+The room may be visually larger than one screen.
+
+### Companion-Centered Camera
+
+The default camera should gently maintain awareness of where the companion is.
+
+When the companion moves through the Home:
+
+```text
+companion moves
+      ↓
+camera tracks or pans with the companion
+      ↓
+the user can continue seeing where the companion is
+      ↓
+scene composition adjusts without requiring manual camera control
+```
+
+This does not mean the companion must remain locked to the exact center of the screen. The camera may use comfortable composition zones, look-ahead, dead zones, and slow panning so movement feels natural rather than mechanical.
+
+### User Free-Look
+
+The user should be able to drag or pan the scene away from the companion to inspect another part of the room.
+
+For example, the user may want to:
+
+- look at a shelf
+- inspect a newly placed object
+- check the desk
+- look out a window
+- rearrange decorations
+- browse a different part of the room while the companion continues an activity
+
+While the user is actively controlling the view, manual camera intent takes priority over automatic companion tracking.
+
+### Gentle Return to the Companion
+
+After the user stops manually moving the camera for a configurable period, Candy may gradually return attention to the companion.
+
+A conceptual behavior:
+
+```text
+user drags camera away
+        ↓
+manual-view mode
+        ↓
+user stops interacting
+        ↓
+idle timer
+        ↓
+companion location checked
+        ↓
+camera gently pans back toward companion
+```
+
+The return should be a visible pan rather than an abrupt snap whenever possible.
+
+Its purpose is simple:
+
+> **After exploring the room, the user should be able to find the companion again without wondering where they went or what they are doing.**
+
+The timeout and auto-return behavior should be configurable. Certain activities such as decoration mode, reading, object inspection, accessibility use, or an explicitly pinned camera should be able to suspend automatic return.
+
+### Camera State as Part of the Interface Model
+
+The system should distinguish between:
+
+- companion position
+- user camera position
+- current camera target
+- manual camera control
+- automatic follow state
+- pinned / inspection state
+- visible and off-screen objects
+- whether the companion is currently visible
+
+A possible object:
+
+```text
+HomeCameraState
+- camera_position
+- viewport_bounds
+- companion_visible
+- current_target
+- mode: follow | manual | inspect | pinned | transition
+- manual_input_active
+- last_manual_input_at
+- auto_return_delay
+- transition_target
+- transition_progress
+```
+
+Camera behavior should remain an interface feature, not a claim that the companion literally perceives only what is inside the user's viewport.
+
+The companion's world model and the user's camera can overlap without being identical.
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.
@@ -547,6 +683,9 @@ Candy can approach this gradually.
 
 ### Stage 1 — Reliable Body
 
+- 2.5D / VTuber-style default companion renderer
+- layered interior Home scene with lightweight spatial metadata
+- companion-follow camera with manual free-look and gentle idle return
 - fixed avatar skeleton
 - joint limits
 - authored animation clips

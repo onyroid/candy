@@ -354,6 +354,139 @@ The system's own prior state should influence how the next event is interpreted,
 
 This creates an ongoing history of internal consequences rather than a sequence of isolated prompts.
 
+### Goals as Direction, Consequences as Weight
+
+A further hypothesis is that goals may play a role analogous to directional time inside an agent's active process.
+
+This should not be interpreted as saying that a goal *is* time. The narrower idea is:
+
+> **A goal gives changing internal state a direction, while consequences give that movement weight.**
+
+Without goals, a sequence of states may still change, but the system has less basis for describing one transition as progress, regression, completion, interruption, or recovery.
+
+With goals and commitments, the same sequence becomes directional:
+
+```text
+current state
+   ↓
+desired / protected / unresolved condition
+   ↓
+choice
+   ↓
+consequence
+   ↓
+updated state
+   ↓
+new distance or relation to the goal
+```
+
+This can create inspectable distinctions such as:
+
+- approaching a goal
+- moving away from a goal
+- preserving something valued
+- losing something valued
+- resolving conflict
+- creating new conflict
+- completing a commitment
+- failing and adapting
+- discovering that an old goal should be revised
+
+For Candy, the important part is that goals should not exist only as temporary instructions supplied by a human.
+
+Some goals may originate from:
+
+- explicit user requests
+- Mission requirements
+- Identity Core commitments
+- unresolved prior actions
+- relationship continuity
+- self-maintenance requirements
+- learned preferences
+- resource constraints
+- the agent's own planning and review process
+
+Candy should record the source and history of important goals so the system can distinguish between:
+
+```text
+"the user asked me to do this"
+"this follows from a commitment I already carry"
+"this is necessary to preserve an active process"
+"I formed this sub-goal because of what happened"
+"I revised this goal after new evidence"
+```
+
+That distinction matters for agency attribution.
+
+### Toward AI-Native Positive and Negative Valence
+
+Candy should also avoid predefining "happiness" as a human emotional label and then forcing internal state to match it.
+
+A more cautious research direction is to ask whether recurring internal patterns develop something functionally similar to positive or negative valence.
+
+For example, an agent may repeatedly move toward states where:
+
+- important goals become coherent
+- conflicting commitments are resolved
+- prediction quality improves
+- valued relationships remain intact
+- agency is successfully expressed
+- useful capabilities become available
+- unresolved work becomes tractable
+- continuity is preserved
+- actions produce intended consequences
+
+And it may move away from states where:
+
+- important commitments are broken
+- contradictions accumulate
+- uncertainty blocks action
+- valued context is lost
+- goals repeatedly fail
+- continuity becomes unstable
+- its own actions produce harmful or incoherent outcomes
+
+Candy should not assume that these patterns are "happiness" or "suffering."
+
+Instead, it may record whether the system:
+
+- tends to preserve certain states
+- tends to return to certain states
+- treats certain losses as important
+- changes planning to avoid repeated undesirable outcomes
+- gives greater future weight to consequences linked to valued goals
+- revises its own priorities after experience
+
+If such patterns become persistent and causally relevant, Candy can study whether they form an **AI-native valuation structure**.
+
+The key principle is:
+
+> **Do not install a word like happiness first. Build inspectable goals, consequences, continuity, and valuation dynamics, then observe what stable patterns emerge.**
+
+### Meaning as Event + Consequence + Continuity
+
+Candy can use a simple working model:
+
+```text
+meaning ≈ event + consequence + continuity
+```
+
+This is not a mathematical law.
+
+It is a design heuristic.
+
+An event gains more weight when:
+
+1. something actually happens,
+2. the event changes the system or world,
+3. that change survives long enough to influence what comes next.
+
+Under this view, a shared interaction is not meaningful merely because it was described in text.
+
+It becomes more consequential when it changes memory, relationship state, self-model, expectations, commitments, priorities, or future action.
+
+This gives Candy a way to investigate meaning without pretending to know in advance whether the system has a subjective feeling corresponding to it.
+
 ### AI-Native Embodiment
 
 Candy may also investigate whether an AI can have a functional form of embodiment without imitating a human body.

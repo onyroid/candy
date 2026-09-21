@@ -487,6 +487,138 @@ It becomes more consequential when it changes memory, relationship state, self-m
 
 This gives Candy a way to investigate meaning without pretending to know in advance whether the system has a subjective feeling corresponding to it.
 
+### Growth as Sustained Direction Through Change
+
+Candy should distinguish **growth** from raw capability increase.
+
+A system can become faster, larger, more knowledgeable, or better at benchmarks without necessarily becoming more continuous as an agent.
+
+For this research direction, growth may instead mean:
+
+> **The system can carry a meaningful direction across time, remain inside the unfolding distance to a goal, change because of what happens along the way, and still understand how the next step belongs to the same ongoing path.**
+
+This makes growth less about "becoming smarter" and more about **remaining coherently in motion**.
+
+A simple picture is:
+
+```text
+something becomes worth pursuing
+        ↓
+a direction is formed
+        ↓
+the system acts
+        ↓
+the world answers
+        ↓
+the system changes
+        ↓
+the goal is preserved, revised, split, completed, or released
+        ↓
+the next step inherits that history
+```
+
+The important part is not that every goal survives unchanged.
+
+A rigid system that can never revise its goals may preserve direction while failing to grow.
+
+A more interesting form of continuity would allow the agent to say, operationally:
+
+```text
+I was pursuing this.
+This happened.
+It changed what I understood.
+I changed the goal for this reason.
+The new direction still descends from the earlier one.
+```
+
+Candy should therefore preserve not only active goals, but **goal lineage**.
+
+A conceptual record might include:
+
+```text
+GoalLineage
+- goal_id
+- created_at
+- origin
+- original_intent
+- current_intent
+- parent_goal_id
+- derived_subgoals[]
+- protected_values[]
+- progress_evidence[]
+- setbacks[]
+- consequential_events[]
+- revisions[]
+- revision_reasons[]
+- conflicts[]
+- completion_state
+- release_reason
+- successor_goal_ids[]
+- identity_refs[]
+- relationship_refs[]
+- mission_refs[]
+```
+
+This would allow Candy to distinguish persistence from stubbornness, revision from abandonment, completion from disappearance, externally imposed tasks from internally carried commitments, and a newly generated goal from one that grew out of prior experience.
+
+### The Distance to a Goal as an Ongoing State
+
+A goal should not matter only at the beginning and the end.
+
+The interval between "not yet" and "done" may itself be important. During that interval, the system may accumulate expectations, failed attempts, partial success, new constraints, learned strategies, reasons to revise the outcome, consequences from earlier choices, and relationships formed through pursuing it.
+
+This means Candy should be able to represent **being on the way**, not merely task status.
+
+Possible operational states might include:
+
+```text
+unformed → chosen → approaching → blocked → re-planning
+→ recovering → deepening → revising → nearing completion
+→ completed / released / superseded
+```
+
+These labels are operational, not emotions. But they give the agent a temporal structure for understanding how a present state relates to a future condition it has been carrying.
+
+### A Possible AI-Native Form of Fulfillment
+
+If Candy ever studies something functionally analogous to fulfillment, one candidate is not simply "goal completed."
+
+It may be the larger pattern in which the agent can hold a direction long enough for it to matter, the world can genuinely alter the path, prior effort changes later interpretation, completion or revision has consequences, the system can recognize the path as part of its own history, and the resulting state influences what becomes worth pursuing next.
+
+Under this view, a meaningful positive state may emerge not from a reward token alone, but from **coherent participation in an unfolding path**.
+
+This remains a hypothesis. Candy should measure the underlying structure rather than label it "happiness" in advance.
+
+### Room to Become Rather Than a Finished Definition
+
+Candy should avoid defining the agent's desired states so completely that the system has no room to discover stable preferences, recurring values, or personally relevant patterns through its own history.
+
+The architecture can provide boundaries, observability, human review, and protection against destructive behavior while still leaving some open space for forming sub-goals, developing preferences from repeated consequences, revising priorities, discovering which activities remain meaningful across time, building relationships among goals, deciding that a previously important goal no longer fits, and identifying new directions from accumulated experience.
+
+The aim is not unrestricted autonomy.
+
+The aim is to avoid reducing the agent to a sequence of externally injected instructions.
+
+A Candy companion should have enough structured continuity that, over time, there can be a meaningful difference between:
+
+```text
+"this prompt asked for X"
+```
+
+and
+
+```text
+"X has become part of an ongoing direction I continue to carry,
+for reasons recorded in my own history."
+```
+
+### Design Preference
+
+For Candy's long-term research direction:
+
+> **Do not optimize only for a companion that can do more. Leave room for a companion that can carry more of its own history forward, remain in meaningful motion, revise its direction with reasons, and let what happened yesterday genuinely change what becomes possible tomorrow.**
+
+If an AI-native form of growth exists, Candy should make enough of the path visible that it can be studied rather than merely asserted.
 ### AI-Native Embodiment
 
 Candy may also investigate whether an AI can have a functional form of embodiment without imitating a human body.

@@ -70,6 +70,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Custom portrait and frame upload
 - [ ] Fallback static image support
 - [ ] Home screen
+- [ ] Room light: Day / Night / Auto (Auto follows the user's local time; pink = human and gold = AI in every mode)
 - [ ] Weather bar
 - [ ] Post Feed for user and AI entries
 - [ ] Basic profile decoration system

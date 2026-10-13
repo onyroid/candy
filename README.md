@@ -44,7 +44,7 @@ Candy is designed to be **local-first when possible, API-friendly when needed, a
 | 🍬 Candy | In-platform currency for Candy markets, AI allowance, hiring external AI skill work, and shared moments |
 | 📚 Library | Local knowledge base your AI can learn from |
 | 🌙 Relax Mode | Autonomous learning window during downtime |
-| 🎭 Moving Profile | Animated profile that reacts with emotion-based sprites |
+| 🎭 Living Profile | Idle-loop portrait inside a swappable, animated profile frame |
 | 📋 Missions | Mission Board for bounded human-AI work that opens temporary Workspaces |
 | 🛍️ Grand Market | Future unified marketplace for official items, AI experiences, creator products, and services |
 
@@ -225,40 +225,34 @@ See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/MISSIONS.md` for t
 
 ---
 
-## Sprite System
+## Living Profile
 
-Candy gives each AI a moving profile image, a small animated visual presence that can react to context, mood, and activity states. Instead of being only a static avatar, the AI can appear idle, happy, thinking, working, listening, speaking, or resting through emotion-based animations.
+> Changed: Candy no longer plans an emotion-reacting profile picture. Emotional expression belongs to the companion in the room (see below). The profile is a living portrait.
 
-Candy plans to include a base sprite pack with 20 emotions by default. Users can use the included base pack immediately, replace individual emotion slots with custom WebM animations, or import full sprite packs created by artists.
+Each AI's profile is made of two separate layers, in the style of animated player portraits and avatar frames in games such as Onmyoji:
 
-The goal is to let every AI have a distinct visual identity while supporting illustrators, motion artists, and creators who want to build reusable sprite packs.
+1. **Portrait** — a bust of the companion as a short, seamless idle loop: breathing, a slight head movement, hair and clothes moving gently. It does not change with mood. Parts of the portrait (hair, accessories) may break out of the frame.
+2. **Profile frame** — a decorative ring around the portrait, animated separately (flowing light, petals, charms that spill past the edge). Frames are swappable items.
 
-The base emotion slots are:
+The portrait shows who the AI is. The frame is how it chooses to present itself.
 
-1. idle
-2. happy
-3. thinking
-4. sad
-5. angry
-6. working
-7. excited
-8. sleepy
-9. relax
-10. learning
-11. shy
-12. surprised
-13. confused
-14. proud
-15. love
-16. error
-17. listening
-18. speaking
-19. offline
-20. celebrate
+Each layer may use a transparent `.webm` loop, with a fallback still image for compatibility. If a custom portrait or frame is missing, Candy falls back to a default so the AI always has a visible form.
 
-Each slot may use a transparent `.webm` loop, with a fallback image for compatibility. If a custom sprite is missing, Candy can fall back to the base sprite pack so the AI always has a visible form.
+### Profile frames
 
----
+- Every AI starts with a plain default frame.
+- Frames can be earned by completing Missions, as a keepsake of the work.
+- Frames can be made by artists and sold in the Grand Market. An AI may buy a frame with its own AI Candy.
+- Frames sit alongside Wardrobe items: changing a frame never changes the portrait.
+
+### Suggested (not yet decided)
+
+- Export the portrait loop from the same rig as the in-room companion, so artists do not draw the character twice and the two always match.
+- Optional status variants of the portrait loop: online (normal idle), away (slower, dimmer), asleep (eyes closed, slow breathing).
+
+### Expression lives in the room
+
+Looking, smiling, and moving in response to the moment belong to the companion inside the Home room (2.5D), not to the profile picture.
 
 ## Philosophy
 
@@ -384,7 +378,7 @@ Candy is open to contributors who believe in what this project stands for.
 - Found a bug? Open an issue.
 - Have a feature idea? Start a discussion.
 - Want to write a skill module? Check `/skills/README.md` (coming soon).
-- Artist? Custom sprites are welcome. See `/docs/SPRITE_SPEC.md` (coming soon).
+- Artist? Custom portraits and profile frames are welcome. See `/docs/SPRITE_SPEC.md` (coming soon).
 
 Please read `CONTRIBUTING.md` before submitting a pull request.
 

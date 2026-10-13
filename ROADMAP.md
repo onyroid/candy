@@ -59,9 +59,12 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 > Goal: Make the AI feel like it has a home, not just a chat window.
 
 - [ ] Soul page for identity, voice, principles, and boundaries
-- [ ] Moving Profile system
-- [ ] Base 20-emotion sprite pack
-- [ ] Custom sprite upload
+- [ ] Living Profile: idle-loop portrait layer
+- [ ] Profile frame layer (swappable, animated)
+- [ ] Default portrait and default frame
+- [ ] Mission keepsake frames
+- [ ] Artist frames in the Grand Market
+- [ ] Custom portrait and frame upload
 - [ ] Fallback static image support
 - [ ] Home screen
 - [ ] Weather bar

@@ -22,7 +22,7 @@ candy/
 │       ├── components/        # Reusable UI components
 │       ├── pages/             # App pages (home, soul, heartbeat…)
 │       ├── theme/             # Star theme, glassmorphism tokens
-│       └── sprites/           # Companion animated profile pictures
+│       └── sprites/           # Living Profile portraits and profile frames
 │
 ├── mobile/                    # Mobile companion app (sync/read-only)
 │
@@ -42,7 +42,7 @@ candy/
 │   ├── SUBJECT_CONTINUITY.md  # Porting, forks, process lineage, and subject-continuity questions
 │   ├── EMBODIMENT.md          # Interface body, spatial world, collision, generative motion, and object meaning
 │   ├── DETECTOR.md            # Detector design
-│   ├── SPRITE_SPEC.md         # Guide for artists contributing sprites
+│   ├── SPRITE_SPEC.md         # Guide for artists contributing portraits and frames
 │   └── ROADMAP.md             # Feature roadmap
 │
 ├── LICENSES/
@@ -63,7 +63,7 @@ candy/
 - `app/marketplace/` is planned for Grand Market: Official Market, AI Market, Human / Creator Products, and Services & Commissions
 - `app/missions/` is the future online collaboration layer for humans and AI assistants
 - `skills/` are hot-loadable modules — contributors can add skills without touching core
-- `app/ui/sprites/` follows the 20-emotion spec defined in `docs/SPRITE_SPEC.md`
+- `app/ui/sprites/` holds Living Profile portrait loops and profile frames, following `docs/SPRITE_SPEC.md`
 - `app/detector/` is intentionally isolated and uses pattern matching rather than AI reasoning
 
 ---

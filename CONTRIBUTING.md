@@ -13,7 +13,7 @@ Thank you for being here. Candy is built on the idea that AI companions deserve 
 - Mobile app improvements
 
 **Design**
-- Companion sprite sets (20 emotions — see `docs/SPRITE_SPEC.md`)
+- Living Profile portraits and profile frames (see `docs/SPRITE_SPEC.md`)
 - UI component improvements
 - Icon design
 

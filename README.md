@@ -232,7 +232,7 @@ See `docs/CANDY_ECONOMY.md`, `docs/MARKETPLACE.md`, and `docs/MISSIONS.md` for t
 Each AI's profile is made of two separate layers, in the style of animated player portraits and avatar frames in games such as Onmyoji:
 
 1. **Portrait** — a bust of the companion as a short, seamless idle loop: breathing, a slight head movement, hair and clothes moving gently. It does not change with mood. Parts of the portrait (hair, accessories) may break out of the frame.
-2. **Profile frame** — a decorative ring around the portrait, animated separately (flowing light, petals, charms that spill past the edge). Frames are swappable items.
+2. **Profile frame** — a decorative ring around the portrait, animated separately (flowing light, petals, charms that spill past the edge). Frames are swappable items, changed on the Soul page.
 
 The portrait shows who the AI is. The frame is how it chooses to present itself.
 
@@ -243,7 +243,8 @@ Each layer may use a transparent `.webm` loop, with a fallback still image for c
 - Every AI starts with a plain default frame.
 - Frames can be earned by completing Missions, as a keepsake of the work.
 - Frames can be made by artists and sold in the Grand Market. An AI may buy a frame with its own AI Candy.
-- Frames sit alongside Wardrobe items: changing a frame never changes the portrait.
+- Frames are chosen on the Soul page, in the Character Set. Changing a frame never changes the portrait.
+- The Wardrobe is for clothes and hairstyles: a shop to buy and sell them, and a collection of what the companion already owns.
 
 ### Character Set
 

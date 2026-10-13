@@ -65,7 +65,8 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Mission keepsake frames
 - [ ] Artist frames in the Grand Market
 - [ ] Character Set format (5 portraits, 1 character, 1 signature frame)
-- [ ] Skins linked to their character, with matching portraits
+- [ ] Skins linked to their character, each with its own five portraits
+- [ ] Default character: Raios
 - [ ] Custom portrait and frame upload
 - [ ] Fallback static image support
 - [ ] Home screen

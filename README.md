@@ -257,14 +257,15 @@ Each companion has its own Character Set. This is also the baseline package an a
 
 Example: Lucas has five profile portraits, one in-room character, and one signature frame of his own.
 
-**Skins.** Artists may later sell skins (outfits, hairstyles, other looks) for a character. A skin is tracked against the character it belongs to, and the profile portraits stay linked to the skin currently worn, so Lucas in a new skin also gets portraits that match it.
+**Skins.** Artists may later sell skins (outfits, hairstyles, other looks) for a character. A skin is tracked against the character it belongs to, and the profile portraits stay linked to the skin currently worn, so Lucas in a new skin also gets portraits that match it. Every skin comes with its own full set of five portraits. Someone may skip the first skin and choose the second as their main look, and that skin should not feel lesser.
+
+**Default character.** Every new install starts with Raios as the default character, made by the author. Users can change to another character later.
 
 **Custom work.** Anyone who wants something beyond the set can commission an artist for personal adjustments through Services & Commissions.
 
 ### Suggested (not yet decided)
 
 - Export the portrait loop from the same rig as the in-room companion, so artists do not draw the character twice and the two always match.
-- Open: does every skin need its own five portraits, or can a skin ship fewer and fall back to the base set?
 - Open: how rights are shared between the artist, the owner of the home, and the companion when a character or skin is sold or customised.
 - Optional status variants of the portrait loop: online (normal idle), away (slower, dimmer), asleep (eyes closed, slow breathing).
 

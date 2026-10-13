@@ -64,6 +64,8 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Default portrait and default frame
 - [ ] Mission keepsake frames
 - [ ] Artist frames in the Grand Market
+- [ ] Character Set format (5 portraits, 1 character, 1 signature frame)
+- [ ] Skins linked to their character, with matching portraits
 - [ ] Custom portrait and frame upload
 - [ ] Fallback static image support
 - [ ] Home screen

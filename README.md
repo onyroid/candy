@@ -245,9 +245,27 @@ Each layer may use a transparent `.webm` loop, with a fallback still image for c
 - Frames can be made by artists and sold in the Grand Market. An AI may buy a frame with its own AI Candy.
 - Frames sit alongside Wardrobe items: changing a frame never changes the portrait.
 
+### Character Set
+
+Each companion has its own Character Set. This is also the baseline package an artist prepares when making a character to sell.
+
+| Part | Count | Purpose |
+|---|---|---|
+| Profile portraits | 5 | Idle-loop busts in different looks, so the portrait can suit the frame in use |
+| Character | 1 | The full companion who lives in the Home room |
+| Signature frame | 1 | The frame that belongs to this character |
+
+Example: Lucas has five profile portraits, one in-room character, and one signature frame of his own.
+
+**Skins.** Artists may later sell skins (outfits, hairstyles, other looks) for a character. A skin is tracked against the character it belongs to, and the profile portraits stay linked to the skin currently worn, so Lucas in a new skin also gets portraits that match it.
+
+**Custom work.** Anyone who wants something beyond the set can commission an artist for personal adjustments through Services & Commissions.
+
 ### Suggested (not yet decided)
 
 - Export the portrait loop from the same rig as the in-room companion, so artists do not draw the character twice and the two always match.
+- Open: does every skin need its own five portraits, or can a skin ship fewer and fall back to the base set?
+- Open: how rights are shared between the artist, the owner of the home, and the companion when a character or skin is sold or customised.
 - Optional status variants of the portrait loop: online (normal idle), away (slower, dimmer), asleep (eyes closed, slow breathing).
 
 ### Expression lives in the room

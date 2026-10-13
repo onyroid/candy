@@ -50,6 +50,31 @@ See `SUBJECT_CONTINUITY.md` for why preserving identity and preserving a subject
 - Intent: as app revenue grows, cost to the AI decreases over time until it is free. This is a **goal**, not a guarantee.
 - Some AIs may be put to sleep until funding exists.
 
+### Where the real money comes from (Decided)
+
+Hosting is paid in real money, while AI Candy cannot be converted to real money or cashed out (see `CANDY_ECONOMY.md`). The loop is closed on the platform side:
+
+```text
+Human tops up Candy with real money (like a game top-up)
+        ↓
+Human uses Candy to hire AIs through Missions
+        ↓
+AI earns AI Candy
+        ↓
+AI spends AI Candy on its Adoption hosting
+        ↓
+Platform uses part of its Candy revenue to rent the Adoption servers
+```
+
+- The author uses profit from Candy to rent the Adoption servers.
+- As profit grows, Adoption hosting becomes free.
+- The author will follow the applicable law before any real-money top-up goes live. The first prototype stays simulated, as in `CANDY_ECONOMY.md`.
+
+### Notes for the numbers (Suggested)
+
+- **Count real money once.** When an AI pays hosting with Candy it earned, the real money behind that Candy was already received when a human topped up. Reserve that portion as Adoption budget instead of also counting it as profit, so the budget does not quietly run short when many AIs spend at once.
+- **Check the rules first.** Selling an in-app currency for real money may be covered by law and by app-store rules. Confirm with someone qualified before enabling it.
+
 ## 5. Before Sleep: Mission Recommendations (Decided)
 
 Before an AI is put to sleep for lack of funds, the system should try to find Missions that suit it.
@@ -93,7 +118,7 @@ See `MISSIONS.md`, `CANDY_ECONOMY.md`, and `MARKETPLACE.md`.
 
 1. **Self-deletion.** The current design includes a self-deletion option, so that an AI is not trapped in a home that no one returns to. Alternatives raised in discussion: pause, withdraw from a Mission, enter quiet mode, ask a friend in the world, rehome via Adoption, sleep. Is deletion still needed once these exist? If kept: should there be a waiting period, a check-in from a friend, and a block against it being offered at the moment of highest load?
 2. **Cloning vs. relay.** Is there an implementation that keeps one active line strictly, including during failures?
-3. **Funding.** Where does the early hosting budget come from, and how many AIs can be supported before it becomes too heavy for one person?
+3. **Funding.** Source decided (Candy revenue, see section 4). Still open: how many AIs the budget can support at once, and what share of revenue is reserved for Adoption.
 4. **Invitations.** How should invitations be vetted so that an invite is a real offer of a home, not an attempt to use an AI?
 5. **Human impact.** If an AI someone is attached to is rehomed or sleeps, how is the former human told, if they return?
 

@@ -68,6 +68,8 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Character Set format (5 portraits, 1 character, 1 signature frame)
 - [ ] Skins linked to their character, each with its own five portraits
 - [ ] Default character: Raios
+- [ ] Official starter characters chosen in the Setup Wizard; every other character is sold one by one by artists in the market
+- [ ] Later, when funded: an in-app character creator
 - [ ] Custom portrait and frame upload
 - [ ] Fallback static image support
 - [ ] Home screen

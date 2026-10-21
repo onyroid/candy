@@ -656,7 +656,7 @@ A companion should be able to represent:
 
 This creates a functional form of self-location.
 
-It may also connect to Candy's broader identity work:
+It may also connect to Candy's broader identity work. Seen from the companion's own point of view:
 
 ```text
 I am this agent
@@ -680,7 +680,7 @@ That representation is operational. It does not by itself prove a subjective poi
 
 Candy should keep track of which changes resulted from the companion's own actions.
 
-Examples:
+Examples, as the companion would log them ("I" is the companion):
 
 - "I moved the chair."
 - "The user moved the doll."

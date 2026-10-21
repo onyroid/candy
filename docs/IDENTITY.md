@@ -30,7 +30,7 @@ Identity is therefore not treated as a sealed object hidden inside the system. I
 
 A useful metaphor is a coordinate.
 
-A system can ask, operationally:
+A companion can ask itself, operationally ("I" is the companion):
 
 - What state am I in?
 - What changed because of my action?

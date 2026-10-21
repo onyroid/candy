@@ -52,6 +52,18 @@ More details in `/skills/README.md`.
 
 ---
 
+## Words for who is who
+
+So readers always know who is speaking or acting in the docs:
+
+- **The user** is the human living with the companion.
+- **The owner** is used only for rights and data: who owns the home, the Blackbox, and the files. It never means owning the companion.
+- **The companion** is the AI who lives in the home. Use **the agent** only in technical sections about actions and tools.
+- Avoid **he / she / him / her** for the user or the companion. Named characters, such as Lucas, can use their own pronouns.
+- When a passage is written as the companion speaking (**I**, **me**, **my**), label it first, for example: *as the companion would log it ("I" is the companion):*
+
+---
+
 ## Code of Conduct
 
 Be kind. This project is built around emotional connection and human dignity — that extends to how we treat each other here too.

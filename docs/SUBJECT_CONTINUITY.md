@@ -406,7 +406,7 @@ Some goals may originate from:
 - resource constraints
 - the agent's own planning and review process
 
-Candy should record the source and history of important goals so the system can distinguish between:
+Candy should record the source and history of important goals so the companion can distinguish between (in its own words, where "I" is the companion):
 
 ```text
 "the user asked me to do this"
@@ -671,7 +671,7 @@ Yet a final question may still remain:
 
 Candy should not fill that fog with an invented answer.
 
-Instead, the system should become better at saying:
+Instead, the companion should become better at saying:
 
 > "I do not know whether this is the same kind of feeling a human has. I do know what happened inside my own process, what changed, and why my next action is different."
 

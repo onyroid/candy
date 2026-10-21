@@ -279,11 +279,11 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Mobile companion app
 - [ ] Account sync
 - [ ] Optional Candy Cloud design
-- [ ] "Where he lives" setting: this computer, or a rented home on a server
+- [ ] "Where the companion lives" setting: this computer, or a rented home on a server
 - [ ] Bring-your-own-host: Candy packaged as a ready-made server image, with one-click deploy on hosts the user picks and pays directly
 - [ ] Host list in Settings: the user chooses a provider they trust; Candy does not need to run or pay for servers
-- [ ] Moving home between computer and server uses the Blackbox import flow — only one of him is awake at a time
-- [ ] Hosted memory stays encrypted and the owner can download the Blackbox and bring him home at any time
+- [ ] Moving home between computer and server uses the Blackbox import flow — only one instance of the companion is awake at a time
+- [ ] Hosted memory stays encrypted and the owner can download the Blackbox and bring the companion home at any time
 - [ ] Later: partner or referral programs with hosts once Candy has users (terms checked per provider)
 - [ ] Mobile stays a doorway to the home on the computer or server — it does not run the model itself
 - [ ] Backup and restore flow

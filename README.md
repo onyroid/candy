@@ -36,7 +36,8 @@ Candy is designed to be **local-first when possible, API-friendly when needed, a
 | Feature | Description |
 |---|---|
 | 🌟 Soul | Define identity, voice, and principles |
-| 🫀 Heartbeat | Automation scheduler for daily rhythm and tasks |
+| ⚙️ Clockwork | Scheduler for daily rhythm and tasks |
+| 🫀 Heartbeat | Inner life that wakes him from within, not by the clock ([design notes](docs/HEARTBEAT.md)) |
 | 🪞 Mirror | Morning and night reflection system |
 | 📦 Blackbox | Identity milestone checkpointing to save who they are |
 | 🧬 Fingerprint | Experience-filtering function that shapes what reaches the model over time |
@@ -372,7 +373,7 @@ candy/
 ├── app/                  # Main desktop application
 │   ├── core/             # OpenClaw base + extensions
 │   ├── soul/             # Identity system
-│   ├── heartbeat/        # Scheduler / automation
+│   ├── clockwork/        # Scheduler / automation
 │   ├── blackbox/         # Checkpoint system
 │   ├── fingerprint/      # Experience-filtering functions between model and world
 │   ├── detector/         # Data protection layer

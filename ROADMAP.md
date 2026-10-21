@@ -91,7 +91,8 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 - [ ] Memory page for viewing and managing logs
 - [ ] ChromaDB integration for local knowledge
 - [ ] Library system for local knowledge sources
-- [ ] Heartbeat scheduler (design notes: [docs/HEARTBEAT.md](docs/HEARTBEAT.md))
+- [ ] Clockwork scheduler (time-based jobs)
+- [ ] Heartbeat: waking from within, not by the clock (design notes: [docs/HEARTBEAT.md](docs/HEARTBEAT.md))
 - [ ] Relax Mode as an autonomous learning window
 - [ ] User-controlled automation boundaries
 

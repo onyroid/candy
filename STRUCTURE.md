@@ -9,7 +9,7 @@ candy/
 ├── app/
 │   ├── core/                  # OpenClaw base layer
 │   ├── soul/                  # Identity & personality system
-│   ├── heartbeat/             # Cron scheduler & automation
+│   ├── clockwork/             # Cron scheduler & automation
 │   ├── blackbox/              # Identity milestone checkpointing
 │   ├── fingerprint/           # Experience-filtering functions between model and world
 │   ├── embodiment/            # Avatar body model, spatial world, motion planning, collision, and object meaning
@@ -141,7 +141,7 @@ observe → anticipate → act → compare → consolidate → anticipate again
 - **Fingerprint** measures repeated contact, relevance, consequences, and patterns that strengthen or weaken bead links.
 - **Memory** keeps detailed local records and source material. Continuity stores compact meaning and references rather than duplicating the full archive.
 - **Mirror** performs periodic reflection and proposes consolidation or budget changes.
-- **Heartbeat** schedules daily bead creation, periodic review, four-month allocation, forecasting, and block transitions.
+- **Clockwork** schedules daily bead creation, periodic review, four-month allocation, forecasting, and block transitions.
 - **Blackbox** checkpoints Identity Core, block budgets, consolidated experience, active goals, forecasts, and transition history for restoration.
 - **Detector** protects sensitive source records and prevents continuity summaries from exposing protected data.
 - **UI** may visualize rooms, beads, gel-like context, link thickness, budgets, forecast origin, and carry-forward decisions.

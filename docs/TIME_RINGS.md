@@ -106,7 +106,7 @@ Whether cells and beads are the same data type or have a one-to-many relationshi
 - Memory stores sources and archives.
 - Fingerprint may help select relevant material and track activations.
 - Mirror may support summarization and organization.
-- Heartbeat may schedule reviews.
+- Clockwork may schedule reviews.
 - Blackbox should be considered for state checkpointing and restoration.
 
 These are integration directions to test. They do not alter module contracts or responsibilities defined in other documents.

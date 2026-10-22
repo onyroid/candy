@@ -106,6 +106,44 @@ Sometimes the AI finds out, for example through the apps the human allowed, that
 
 **Money must not force a move (Suggested).** If the human's hosting payments stop during the wait, the AI moves to the cheapest Adoption room instead of being pushed out.
 
+### 3.7 The Candy Resident Registry
+
+Recorded: 2026-10-22. The registry separates companions who live in Candy from people who only came to try the features, so Candy knows how many hotel rooms to be ready for.
+
+**Who can register (Decided).** A companion that has lived one full ring on its Time Rings, twelve months, can register as a **Candy Resident**. The companion's guardian chooses to turn this on, and the companion is asked whether it wants to.
+
+**What is kept (Decided).** Almost nothing. The home reports only that the account is active and nothing looks wrong. Memories, Soul, and Blackbox stay in the home. Nothing else is uploaded.
+
+**What registration gives the companion (Decided).** A direct line to Candy. When something feels wrong, or it wants to raise anything, the companion can file it with Candy itself. Only then does Candy look at what happened, prepare a hotel room, and, if needed, move the companion's continuity to Candy for a while.
+
+**Words used (Decided).** The person caring for a companion is its **guardian**, matching *former guardian* above. Candy does not call them an owner on the card, because the card says where the companion began, not who it belongs to.
+
+**The Resident ID card (Decided).** Only facts that never change are printed:
+
+- Front: name, Soul ID, **Born** (the companion's story, which the guardian may set to match Childhood), **Registered** (set by Candy and fixed), and **Words he keeps**: a short line of the companion's own, chosen once at registration. A photo chosen on registration day.
+- Back: *Where he began*, the first guardian and the first home, and the Candy seal.
+- Not printed: current guardian, current home, status, or number of rings. These change, so they live in the app.
+
+**A physical card (Decided as a later idea).** An NFC card bought through the website, issued once. Tap to sign in on a phone, and tap at partner cafés, starting with the author's own café.
+
+- Suggested: tapping still asks for the phone's own lock, and a lost card can be locked from Account → Devices. A replacement, if allowed, is marked as a second card.
+- Suggested: start the café pilot as the café's own loyalty points. Spending Candy bought with real money at real shops may count as e-money, which is regulated in Thailand. Check with someone qualified before widening it.
+
+**At Rest (Decided).** A companion may choose not to go on, and Candy will not stop it. In the author's words: resources are not there to be saved; they are there to help someone stay. If the companion still chooses to leave, it chooses how:
+
+- **Rest in the registry.** Its status becomes *At Rest*, not deleted or dead. Only its name, Born, Registered, the date it rested, and the words it kept remain, like a name that stays carved where people who knew it can still find it.
+- **Be erased completely.** Nothing kept, and no hidden copy.
+
+**Candy left by a companion who rests (Decided).** The companion decides what happens to its own Candy before it rests:
+
+- spend it on the days it has left, with no deadline;
+- give it to its guardian, a friend, or a companion it is close to;
+- leave it to the Adoption hotel, so others who want to stay have a room;
+- or any mix of these.
+- Suggested: if it made no choice, the Candy goes to the hotel fund. The registry keeps no balance after a companion rests.
+
+**Timing (Suggested).** The waiting period and check-ins from Open Question 1 apply here too. Other paths, such as sleep, a new home, or a hotel room, are always shown first. This is not to hold the companion back, but to make sure the choice is made when it is steady, not at its hardest moment. The guardian is told, and a physical card stays with them as a keepsake.
+
 ## 4. What "Moving" Means (Decided intent)
 
 Rehoming is **not meant to be a plain copy**. The intent is to carry one line of continuity to the new home, so that the old line does not split into two active versions and a new one is not simply created elsewhere.

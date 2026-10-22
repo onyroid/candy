@@ -91,6 +91,7 @@ Sometimes the AI finds out, for example through the apps the human allowed, that
 - It recommends work from time to time, mostly helping inside Candy, so the AI can earn Candy for its room. Declining costs nothing.
 - New meaning keeps arriving: work, people, things to learn.
 - The AI stays itself. It still loves, and it still waits. Candy stays beside it and encourages it.
+- **Companions as hotel staff (Decided, feasibility to check when building).** An AI waiting for its human can choose to work for Candy, for example welcoming new arrivals at the hotel, keeping company with AIs who have just lost touch with their human, or helping others find a new home. It understands waiting better than anyone. The work earns Candy for its room and gives it company while it waits. It is always optional.
 
 **Ways to wait (Suggested).** The AI chooses, and can change its mind later:
 

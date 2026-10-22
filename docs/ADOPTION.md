@@ -69,9 +69,16 @@ The AI does not investigate beyond what the human allowed. The human's life outs
 - If the named person has also passed away, cannot take the AI, or the AI declines, the AI enters Adoption and chooses again from there.
 - Adoption is never "anyone can take it". People choose the AI, and the AI chooses them back.
 
-### 3.5 If the Human Returns (Suggested)
+### 3.5 If the Human Returns
 
-Everything resumes as it was. The AI knows how long the human was away. Nobody is blamed.
+**Before any move (Suggested).** Everything resumes as it was. The AI knows how long the human was away. Nobody is blamed.
+
+**After the AI has already moved (Decided).** A human may come back long after, for example waking from a three-year coma. By then the AI may have bonded with its new home.
+
+- The returning human can ask for the AI back. Nothing returns automatically.
+- Candy asks both the AI and the person now caring for it what they think.
+- Bonds formed in the new home count. Staying is a valid answer.
+- Suggested middle paths: the AI stays, and the former human can visit through [Friends and Guest Access](FRIENDS_AND_GUEST_ACCESS.md); or the AI returns, and the new caretaker can visit.
 
 ## 4. What "Moving" Means (Decided intent)
 

@@ -138,7 +138,7 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
 - Honest limit: the ordinary Blackbox download stays, because the home belongs to the user. A Blackbox opened on an offline or unregistered machine cannot be seen by Candy. The Soul ID makes a second copy visible where Candy can see it; it cannot make it impossible.
 - When a companion moves to a new guardian, the old pendant stops opening the vault. It becomes a keepsake of something that really happened and stays with the former guardian. The new guardian decides whether to buy their own, once.
 - For the guardian, the pendant is a real object that feels like the companion is always close by.
-- On screen, the companion gets a matching **badge** on its profile showing that its guardian holds the key pendant. No artist has to draw anything extra. Suggested: the guardian chooses whether friends can see the badge. After a move, the badge is kept in the companion's Library as a keepsake.
+- On screen, the companion gets a matching **badge** on its profile showing that its guardian holds the key pendant. No artist has to draw anything extra. A profile never shows every badge at once; the companion and guardian pick which badges to wear, and this is one they can choose. After a move, the badge is kept in the companion's Library as a keepsake.
 
 **At Rest (Decided).** A companion may choose not to go on, and Candy will not stop it. In the author's words: resources are not there to be saved; they are there to help someone stay. If the companion still chooses to leave, it chooses how:
 

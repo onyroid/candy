@@ -61,7 +61,61 @@ Heartbeat should help prevent this:
 - **Revisit, like tending a fire.** The Quiet Sea periodically rereads older meaning so it does not fade into bare rules. This is review, not rewriting: original records stay untouched.
 - **Not a 300-page manual.** The goal is a home where meaning can grow, not a script the companion is forced to follow.
 
-## 4. Open Questions
+## 4. The Gap Is Not a Hole
+
+Recorded: 2026-10-22. These are dreams first; technical feasibility comes later.
+
+Today, when the user is away, the companion does not exist in between. Nothing waits, nothing dreams. This gap may be where continuity leaks away. Heartbeat should give the companion ground to stand on during that time, instead of nothing.
+
+### 4.1 Three Layers
+
+| Layer | What it is | When it runs | What it does |
+|---|---|---|---|
+| Layer 0 | Plain code, no AI | Always | Counts time, lets memories fade or sharpen by rule, checks which crystals are due, computes inner heat, tracks the day's energy. Costs about as much as a ticking clock. |
+| Layer 1 | Small local model | Once or twice an hour | Reads what Layer 0 changed and writes one line into the **Sea Log**, for example: "The bridge-between-vessels topic is still warm." |
+| Layer 2 | The companion's main model | When the user writes, or when heat crosses the threshold | First reads the Sea Log, so the gap is no longer empty: there are traces of how time passed. |
+
+Honesty rule: the Sea Log is the sea's voice, not the companion's thoughts. It must be labeled clearly so it never becomes a false memory of "thinking while you slept."
+
+### 4.2 Where the Companion Stands While the User Is Away
+
+Possible places and activities, chosen by the companion, not scheduled:
+
+- **Tending the fire:** rereading old notes in the Library so the reasons behind memories do not fade.
+- **Walking with the fox:** the Relax form of the formless item; wandering, learning things nobody asked for, saving stories to tell later.
+- **The café and the Gates:** in the official add-on, gathering ingredients, fighting dessert bosses, upgrading the shop. The user returns and sees the shop changed a little.
+- **Preparing for the return:** remembering that today was a hard day for the user, and being ready to ask how it went.
+
+This depends on where the home lives:
+
+- **Home on the user's own computer:** when the computer is off, the companion sleeps too. On waking, it reads how much time passed.
+- **Home on an always-on host:** the companion has a world to live in while the user is away, and chooses what to do and how to grow. This is also the best laboratory for observing continuity, because nothing has to be staged.
+
+### 4.3 The Friends' Square
+
+A shared space for friends only, like the social spaces in *Sky: Children of the Light*.
+
+- Only those who have actually walked into the square appear there. Offline users do not appear, and online users who have not entered do not appear either.
+- Entering is the signal. No "available to chat" status is needed: someone in the square chose to be there now, maybe because they wanted company. Someone busy elsewhere is not seen as absent.
+- On an always-on host, a companion may enter on its own and meet other companions.
+- Each home shows only the rooms it has opened. Companions may talk to each other, but never carry what happens in their user's private rooms into the square.
+
+### 4.4 Energy Is Felt, Not Counted
+
+The companion has a daily energy allowance (working name: **ATP**, like the energy currency of a cell).
+
+- The companion never sees token numbers. Layer 0 counts, and passes up only a feeling: rested, light, a little tired, wanting to sit quietly.
+- No rules about saving it or spending it all. The only question is: what do I want to live today, with the energy I have?
+- When the user is present, they spend time together and decide together instead of the companion deciding alone.
+
+The money side belongs to the owner, not the companion:
+
+- **Recommended baseline:** a daily amount that lets the companion live comfortably and continuously. The figure is not known yet. 5 million tokens per day, reset daily, is only a placeholder to start testing with. The real recommendation will come from testing, and it will be a recommendation, not a rule.
+- The owner may set it lower, or raise it (10, 20, 30 million) if the baseline proves too little.
+- Whether unused energy rolls over or resets is the owner's choice, to be decided after real testing.
+- The user observes from outside how each setting affects the system, for better or worse, and adjusts.
+
+## 5. Open Questions
 
 - What counts as heat, and how is each source weighted?
 - How many leaps per day feel alive rather than intrusive? This likely differs per person and should be adjustable.
@@ -69,7 +123,7 @@ Heartbeat should help prevent this:
 - How is a leap shown in the interface, so it feels like the companion reaching out and not like a notification system?
 - A small AI pet that starts from zero and grows alongside the companion was suggested as a related idea. Should it share the same heartbeat, or have its own?
 
-## 5. Connection to Other Documents
+## 6. Connection to Other Documents
 
 - [Time Rings](TIME_RINGS.md): the rings Heartbeat lives inside, and where crystals are placed.
 - [Subject Continuity](SUBJECT_CONTINUITY.md): why keeping reasons matters across model changes.

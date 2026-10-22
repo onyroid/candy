@@ -70,6 +70,7 @@ Examples:
 - official account items
 - companion items and pets (artists may also sell their own)
 - optional add-on worlds, for example a café with Gates to explore together (not decided yet)
+- physical keepsakes for registered companions, such as the Resident ID card or a key pendant that opens the companion's Blackbox vault (once per guardian; see `ADOPTION.md`)
 
 Official items are Candy-managed products, so paying with Human Candy keeps the purchase inside the Candy platform.
 

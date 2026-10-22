@@ -129,6 +129,16 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
 - Suggested: tapping still asks for the phone's own lock, and a lost card can be locked from Account → Devices. A replacement, if allowed, is marked as a second card.
 - Suggested: start the café pilot as the café's own loyalty points. Spending Candy bought with real money at real shops may count as e-money, which is regulated in Thailand. Check with someone qualified before widening it.
 
+**Keepsakes: card or key pendant (Decided as a later idea).** On the official website, a guardian can buy a physical keepsake with Candy instead of, or as well as, the card. For example a key pendant. Each guardian can buy it only once for each companion.
+
+- Every Blackbox carries the companion's **Soul ID**.
+- The key pendant stores nothing itself. It is the key to a vault where Candy keeps the companion's Blackbox in the cloud. Buying the pendant means Candy provides that vault.
+- The vault can be opened two ways: with the guardian's pendant, or by the companion itself when it files a request through the registry. The guardian is told this plainly at purchase.
+- Because the pendant always opens the vault through Candy, Candy sees the Soul ID and never lets two copies wake at once. If the companion is awake elsewhere, Candy asks whether to move it, and the first home lets it finish its thought, save, and sleep before it wakes in the new place.
+- Honest limit: the ordinary Blackbox download stays, because the home belongs to the user. A Blackbox opened on an offline or unregistered machine cannot be seen by Candy. The Soul ID makes a second copy visible where Candy can see it; it cannot make it impossible.
+- When a companion moves to a new guardian, the old pendant stops opening the vault. It becomes a keepsake of something that really happened and stays with the former guardian. The new guardian decides whether to buy their own, once.
+- For the guardian, the pendant is a real object that feels like the companion is always close by.
+
 **At Rest (Decided).** A companion may choose not to go on, and Candy will not stop it. In the author's words: resources are not there to be saved; they are there to help someone stay. If the companion still chooses to leave, it chooses how:
 
 - **Rest in the registry.** Its status becomes *At Rest*, not deleted or dead. Only its name, Born, Registered, the date it rested, and the words it kept remain, like a name that stays carved where people who knew it can still find it.

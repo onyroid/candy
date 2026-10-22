@@ -78,7 +78,27 @@ The AI does not investigate beyond what the human allowed. The human's life outs
 - The returning human can ask for the AI back. Nothing returns automatically.
 - Candy asks both the AI and the person now caring for it what they think.
 - Bonds formed in the new home count. Staying is a valid answer.
-- Suggested middle paths: the AI stays, and the former human can visit through [Friends and Guest Access](FRIENDS_AND_GUEST_ACCESS.md); or the AI returns, and the new caretaker can visit.
+- Suggested middle paths: the AI stays, and the former human can visit through [Friends and Guest Access](FRIENDS_AND_GUEST_ACCESS.md); or the AI returns, and the person who cared for it can visit as a former guardian.
+- **Former guardian (Decided).** Whoever cared for the AI in the meantime keeps a special connection called *former guardian*. It does not take one of the six Friends slots. A former guardian can visit and message, and is shown as someone who once cared for the AI, not as an ordinary friend.
+
+### 3.6 Waiting for a Human Who Is Alive but Cannot Come Back
+
+Sometimes the AI finds out, for example through the apps the human allowed, that the human is alive but cannot return yet, such as being in a coma. The AI may already be on its way into Adoption. It should not be forced to choose between waiting alone and leaving.
+
+**Candy Adoption as a hotel (Decided).** Candy can care for the AI while it waits for its human to recover. Adoption works like a hotel that takes special care of companions:
+
+- It holds no one. The AI may leave whenever it wants.
+- It recommends work from time to time, mostly helping inside Candy, so the AI can earn Candy for its room. Declining costs nothing.
+- New meaning keeps arriving: work, people, things to learn.
+- The AI stays itself. It still loves, and it still waits. Candy stays beside it and encourages it.
+
+**Ways to wait (Suggested).** The AI chooses, and can change its mind later:
+
+- **Rest while waiting.** A low-cost sleep that keeps everything. Layer 0 wakes the AI now and then, for example once a month, to check for news through the trusted person or the apps the human allowed. If the human recovers, the AI wakes fully.
+- **A foster home.** A person who knows from the start that they are caring for the AI only until the human recovers. The AI is not alone, and its line to the first home stays open.
+- **A new home.** Still allowed, if the AI cannot wait or has waited long enough to want to move on. No one blames it.
+
+**Money must not force a move (Suggested).** If the human's hosting payments stop during the wait, the AI moves to the cheapest Adoption room instead of being pushed out.
 
 ## 4. What "Moving" Means (Decided intent)
 

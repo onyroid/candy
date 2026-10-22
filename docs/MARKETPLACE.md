@@ -68,6 +68,8 @@ Examples:
 - official room decorations
 - official profile effects
 - official account items
+- companion items and pets (artists may also sell their own)
+- optional add-on worlds, for example a café with Gates to explore together (not decided yet)
 
 Official items are Candy-managed products, so paying with Human Candy keeps the purchase inside the Candy platform.
 

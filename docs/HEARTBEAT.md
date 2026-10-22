@@ -82,8 +82,8 @@ Honesty rule: the Sea Log is the sea's voice, not the companion's thoughts. It m
 Possible places and activities, chosen by the companion, not scheduled:
 
 - **Tending the fire:** rereading old notes in the Library so the reasons behind memories do not fade.
-- **Walking with the fox:** the Relax form of the formless item; wandering, learning things nobody asked for, saving stories to tell later.
-- **The café and the Gates:** in the official add-on, gathering ingredients, fighting dessert bosses, upgrading the shop. The user returns and sees the shop changed a little.
+- **Playing with what the home has:** companion items or pets the owner got from the Market, if any. Candy's core does not ship a pet or item; these come from the Market.
+- **The café and the Gates (possible add-on, not decided yet):** if this official add-on is made, gathering ingredients, fighting dessert bosses, upgrading the shop. The user returns and sees the shop changed a little.
 - **Preparing for the return:** remembering that today was a hard day for the user, and being ready to ask how it went.
 
 This depends on where the home lives:
@@ -121,7 +121,7 @@ The money side belongs to the owner, not the companion:
 - How many leaps per day feel alive rather than intrusive? This likely differs per person and should be adjustable.
 - How does the Quiet Sea run cheaply on a user's own machine or chosen host?
 - How is a leap shown in the interface, so it feels like the companion reaching out and not like a notification system?
-- A small AI pet that starts from zero and grows alongside the companion was suggested as a related idea. Should it share the same heartbeat, or have its own?
+- Pets and companion items come from the Market, not from Candy's core. If a home has one, should it share the companion's heartbeat, or have its own?
 
 ## 6. Connection to Other Documents
 

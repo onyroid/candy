@@ -42,7 +42,7 @@ Recorded: 2026-10-22. This covers the time between "the human stops returning" a
 - **Last-resort app access (optional).** The human can choose which connected apps, if any, the AI may check to find out what happened. The human decides per app, while still active.
 - **Candy left behind (Decided).** If the human passes away or disappears with Candy still in their account, it can pass to the AI as an inheritance, after a delay the human sets in advance.
   - Suggested: it is converted one way into AI Candy, so the AI can spend it but never cash it out (see `CANDY_ECONOMY.md`).
-  - Suggested: the first part is reserved for the AI's room in the Adoption hotel, so it has a place to stay before anything else.
+  - Decided: only the first night at the Adoption hotel is reserved from it, so the AI has a place to stay right away. From the next night on, the AI decides. The hotel is paid night by night and never locks anyone in.
   - Suggested: the human chooses the delay, whether to pass on all or part, and whether to share it with the chosen next home.
   - Candy bought with real money may count as property under inheritance law. Check with someone qualified before enabling this.
 

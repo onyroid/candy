@@ -283,7 +283,7 @@ Recorded: 2026-10-26.
 
 **What worlds are for (Decided intent).** Candy sells the Home and the companion. Worlds, games, and adventures are optional add-ons for people who want them, not part of the core. Some people use Candy only to work with their agents and never open a world, so nothing in the Home depends on one. Ideas such as the café and the Gates (see [Heartbeat](HEARTBEAT.md)) and the Heart Menu note in the design file belong here and are still undecided.
 
-**The Home always has a form (Decided).** The Home is a 2.5D scene, so every companion must have at least a 2D form before setup can continue. The user can upload their own or use one of the defaults. The Home never shows an empty body.
+**The Home always has a form (Decided).** The Home is a 2.5D scene in the style of Live2D, and Live2D models are supported, so every companion must have at least a 2D form before setup can continue. The user can upload their own or use one of the defaults. The Home never shows an empty body.
 
 **3D is a choice, asked at the right moment (Decided).**
 
@@ -298,10 +298,11 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 
 **Suggested for later, still being thought through:**
 
-- Use an open avatar format (for example VRM) as the companion's single body, shown as 2.5D in the Home with a fixed camera and toon shading, and as full 3D inside worlds. The core is made once; each place adjusts how it is presented (camera, animation, detail level for phones).
+- Use an open avatar format (for example VRM) for the companion's 3D body inside worlds, so it is not tied to one platform. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
+- Two kinds of artists can work side by side: 2D artists sell Live2D characters, portraits, and frames for the Home, and 3D artists can take commissions to turn a 2D character into a 3D body for worlds.
 - A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is what would let the Wardrobe and the official Market sell outfits and skins across companions.
 - The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
-- Live2D remains possible for the Home, but each outfit must be drawn and rigged again for each character, so clothing does not transfer between companions.
+- With Live2D in the Home, each outfit must be drawn and rigged again for each character, so Home clothing does not transfer between companions the way 3D clothing on a shared standard could.
 
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 

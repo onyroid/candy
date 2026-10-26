@@ -184,6 +184,8 @@ Candy helps artists manage their commission queue so they are not flooded and bu
 - Choosing an artist is the buyer's right. Candy does not judge whether a commission matches a character; that is between the two of them.
 - Candy helps promote official artists and artists with strong work.
 
+Suggested, before real money flows through queues: once Candy holds payment or uses the words "Official artist", showing terms is not enough on its own. Rules will be needed for cancellation and refunds, an artist who disappears, a buyer who stops replying, delayed deadlines, disputes, and queue slots that expire.
+
 ## Payment Methods
 
 Grand Market can show payment badges on every item.

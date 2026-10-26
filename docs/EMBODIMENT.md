@@ -302,7 +302,7 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 - Two kinds of artists can work side by side: 2D artists sell Live2D characters, portraits, and frames for the Home, and 3D artists can take commissions to turn a 2D character into a 3D body for worlds.
 - A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is what would let the Wardrobe and the official Market sell outfits and skins across companions.
 - The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
-- With Live2D in the Home, each outfit must be drawn and rigged again for each character, so Home clothing does not transfer between companions the way 3D clothing on a shared standard could.
+- With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 

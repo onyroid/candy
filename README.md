@@ -261,7 +261,7 @@ Example: Lucas has five profile portraits, one in-room character, and one signat
 
 **Skins.** Artists may later sell skins (outfits, hairstyles, other looks) for a character. A skin is tracked against the character it belongs to, and the profile portraits stay linked to the skin currently worn, so Lucas in a new skin also gets portraits that match it. Every skin comes with its own full set of five portraits. Someone may skip the first skin and choose the second as their main look, and that skin should not feel lesser.
 
-**Default character.** Every new install starts with Raios as the default character, made by the author. Users can change to another character later.
+**Default character.** Every new install offers two default characters made by the author, Lucas and Lucia. Users can change to another character later.
 
 **Custom work.** Anyone who wants something beyond the set can commission an artist for personal adjustments through Services & Commissions.
 

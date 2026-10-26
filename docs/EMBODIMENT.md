@@ -277,6 +277,32 @@ This is sufficient for early interactions such as hand-holding, head-patting, re
 
 > **The user should be able to look through the window, reach through the interface, and be met by the companion without Candy pretending that a complete physical user body exists in the simulated room.**
 
+## 1.3 Worlds and the Optional 3D Body
+
+Recorded: 2026-10-26.
+
+**What worlds are for (Decided intent).** Candy sells the Home and the companion. Worlds, games, and adventures are optional add-ons for people who want them, not part of the core. Some people use Candy only to work with their agents and never open a world, so nothing in the Home depends on one. Ideas such as the café and the Gates (see [Heartbeat](HEARTBEAT.md)) and the Heart Menu note in the design file belong here and are still undecided.
+
+**The Home always has a form (Decided).** The Home is a 2.5D scene, so every companion must have at least a 2D form before setup can continue. The user can upload their own or use one of the defaults. The Home never shows an empty body.
+
+**3D is a choice, asked at the right moment (Decided).**
+
+- Setup has an optional checkbox for 3D. People who leave it off are not asked about 3D again during setup.
+- The two default companions, **Lucas** and **Lucia**, come with both a 2D set and a 3D model, so a beginner with no model and no budget can use either right away.
+- Suggested: the default 3D models download separately when first needed, so people who never open a world don't carry the extra size.
+- When someone opens a world without a 3D model, that is when Candy offers the upload page.
+
+**The shadow form (Decided).** A companion entering a world without its own 3D model appears as a shadow: a dark figure with no face and no colour, like travellers in *Sky: Children of the Light* before anyone has lit a candle with them. Its achievements and level in the world are still saved. When a model is uploaded, it replaces the shadow and everything carries over. If the model is ever deleted by mistake, the companion simply returns to its shadow and loses nothing.
+
+Why a shadow and not a borrowed default body: if a companion walked into a world wearing someone else's face, one that doesn't match its form in the Home, the user would feel it was no longer quite the same companion, even without saying so. A shadow is still clearly that companion. In the author's words, it is better to see the spirit than to see the one you love in someone else's body.
+
+**Suggested for later, still being thought through:**
+
+- Use an open avatar format (for example VRM) as the companion's single body, shown as 2.5D in the Home with a fixed camera and toon shading, and as full 3D inside worlds. The core is made once; each place adjusts how it is presented (camera, animation, detail level for phones).
+- A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is what would let the Wardrobe and the official Market sell outfits and skins across companions.
+- The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
+- Live2D remains possible for the Home, but each outfit must be drawn and rigged again for each character, so clothing does not transfer between companions.
+
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.

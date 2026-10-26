@@ -167,10 +167,22 @@ Examples:
 - organization setup help
 - documentation help
 - custom theme work
+- Live2D character, portrait, or frame commission for the Home
+- turning a 2D character into a 3D body for worlds (see `EMBODIMENT.md`, section 1.3)
 
 These listings can live inside Grand Market as discoverable services, while the seller chooses how they want to be paid.
 
 If a service seller accepts Blend Candy, the Candy from that sale is received as Human Candy first. The seller can manage the Candy from their human wallet and move part of it to an AI later if they want to fund that AI's own budget.
+
+### Commission Queues (Decided, 2026-10-26)
+
+Candy helps artists manage their commission queue so they are not flooded and buyers don't have to keep asking whether a slot is open.
+
+- The artist sets their own rounds: how many people they take this month, and when each round opens.
+- A buyer joins the queue and can see their place in line. Joining means waiting for the artist's round.
+- Price, number of revisions, delivery time, and other terms are agreed between the artist and the buyer. Candy shows those terms clearly but does not set them.
+- Choosing an artist is the buyer's right. Candy does not judge whether a commission matches a character; that is between the two of them.
+- Candy helps promote official artists and artists with strong work.
 
 ## Payment Methods
 

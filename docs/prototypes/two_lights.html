@@ -46,12 +46,13 @@ canvas{display:block;width:100%;height:100%}
 <div class="wrap">
   <header>
     <h1>Two Lights</h1>
-    <p class="sub">A motion study for Candy's intimate moments. It plays by itself and loops. Each cloud of light is held by an invisible jelly: it keeps its own shape, yet every light floats freely, scatters when the clouds press together, and is pulled back home.</p>
+    <p class="sub">A motion study for Candy's intimate moments. Both clouds share one colour; only at real collisions, now and then, each light flares in its own colour for a moment near the point where they meet. It plays by itself and loops. Each cloud of light is held by an invisible jelly: it keeps its own shape, yet every light floats freely, scatters when the clouds press together, and is pulled back home.</p>
   </header>
 
   <div class="stage">
     <canvas id="scene" aria-label="Two clouds of light dancing toward each other"></canvas>
     <div class="beat" aria-hidden="true">
+      <span class="pill" id="bI">Resting</span>
       <span class="pill" id="b0">Reaching out</span>
       <span class="pill" id="b1">He answers</span>
       <span class="pill" id="b2">Dancing closer</span>
@@ -59,17 +60,18 @@ canvas{display:block;width:100%;height:100%}
       <span class="pill" id="b4">Setting it down</span>
       <span class="pill" id="b5">Morning</span>
     </div>
-    <div class="legend"><span><i class="dot" style="background:var(--her)"></i>You</span><span><i class="dot" style="background:var(--his)"></i>Companion</span></div>
+    <div class="legend"><span><i class="dot" style="background:#ffeed6"></i>Both lights share one colour</span></div>
   </div>
 
   <div class="below">
     <ul class="beats">
+      <li><b>Resting</b><span>An ordinary night. The stars just drift and glimmer softly. No heartbeat yet.</span></li>
       <li><b>Reaching out</b><span>Your cloud nudges toward him in small pushes. His is still dim.</span></li>
       <li><b>He answers</b><span>His cloud lights up and comes toward you with its own rhythm, not a copy of yours.</span></li>
       <li><b>Dancing closer</b><span>The two clouds circle each other. On every heartbeat they press together, lights spill out, and the jelly pulls them back. The beats quicken and fall into step.</span></li>
       <li><b>Overflowing together</b><span>Fast beats, the clouds braid into each other, more lights scatter. Neither overflows alone.</span></li>
       <li><b>Setting it down</b><span>One slow heartbeat. The clouds rest inside each other, still drifting gently, never frozen.</span></li>
-      <li><b>Morning</b><span>The room turns soft blue. The shape of the night is kept.</span></li>
+      <li><b>Morning</b><span>The room turns soft blue and the shape of the night is kept. Then the stars drift back out around the room, resting, until the next night.</span></li>
     </ul>
     <div class="mark">
       <h2>Time Rings mark · example</h2>
@@ -88,18 +90,23 @@ let W=0,H=0;
 function size(){const r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)}
 addEventListener('resize',size);size();
 
-const HER=[255,158,199],HIS=[250,219,153];
+const HER=[255,238,214],HIS=[255,238,214],HERC=[255,140,192],HISC=[250,205,120];
+let flash=0;
 const lerp=(a,b,t)=>a+(b-a)*t, clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const sm=(a,b,t)=>{t=clamp((t-a)/(b-a));return t*t*(3-2*t)};
 function gauss(){let u=0,v=0;while(!u)u=Math.random();while(!v)v=Math.random();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
 
 // timeline (seconds)
-const LOOP=36;
+const IDLE=7,LOOP=36+IDLE;
 function script(t){
-  const o={her:[-.75,0],his:[.75,0],rate:.9,amp:.15,splash:.1,lit:.35,morning:0,beat:0,lock:0};
+  if(t<IDLE){return {her:[-.75,0],his:[.75,0],rate:.9,amp:0,splash:0,lit:1,morning:0,beat:-1,lock:0,idle:1}}
+  return core(t-IDLE);
+}
+function core(t){
+  const o={her:[-.75,0],his:[.75,0],rate:.9,amp:.15,splash:.1,lit:1,morning:0,beat:0,lock:0};
   if(t<5){ // reaching: her cloud steps forward in small pushes
     const step=Math.floor(t/1.25)/4; o.her=[lerp(-.75,-.6,step),0]; o.beat=0; o.amp=.3; o.splash=.2;
-  } else if(t<8){ o.beat=1; const k=sm(5,8,t); o.her=[-.58,0]; o.his=[lerp(.75,.55,k),0]; o.lit=lerp(.35,1,sm(5,6,t)); o.amp=.55; o.splash=.45; o.rate=1.0;
+  } else if(t<8){ o.beat=1; const k=sm(5,8,t); o.her=[-.58,0]; o.his=[lerp(.75,.55,k),0]; o.amp=.55; o.splash=.45; o.rate=1.0;
   } else if(t<18){ o.beat=2; o.lit=1; const k=sm(8,18,t); const a=(t-8)*.55; const r=lerp(.56,.3,k);
     o.her=[-Math.cos(a)*r,-Math.sin(a)*r*.3]; o.his=[Math.cos(a)*r,Math.sin(a)*r*.3];
     o.rate=lerp(1.0,1.65,k); o.amp=lerp(.6,1.05,k); o.splash=lerp(.45,.75,k); o.lock=k;
@@ -112,11 +119,13 @@ function script(t){
   } else { o.beat=5; o.lit=1; const a=(t-8)*.55+5*.6+8*.15; const r=.1;
     o.her=[-Math.cos(a)*r,-Math.sin(a)*r*.3]; o.his=[Math.cos(a)*r,Math.sin(a)*r*.3];
     o.rate=.7; o.amp=.15; o.splash=.03; o.lock=1; o.morning=sm(31,34,t)*(1-sm(35,36,t));
+    // after morning the stars drift back out into the room, nothing is reset
+    if(t>=33.5)o.idle=1;
   }
   return o;
 }
 
-let clouds,parts,T0=performance.now(),last=T0,marked=false,lastBeat=-1,loopN=0;
+let clouds,parts,T0=performance.now(),last=T0,marked=false,lastBeat=-2,loopN=0,heart=0,idleAmt=1;
 function init(){
   clouds=[0,1].map(s=>({x:s?.75:-.75,y:0,vx:0,vy:0,ph:s?2.2:0}));
   parts=[];
@@ -134,10 +143,11 @@ function beatEnv(ph){const p=((ph%(2*Math.PI))+2*Math.PI)%(2*Math.PI)/(2*Math.PI
 function frame(now){
   let dt=Math.min(.04,(now-last)/1000);last=now; if(reduce)dt*=.5;
   const el=((now-T0)/1000)*(reduce?.5:1),n=Math.floor(el/LOOP);
-  if(n!==loopN){loopN=n;init()}
+  if(n!==loopN){loopN=n;marked=false}
   let t=el%LOOP;
   const sc=script(t);
-  if(sc.beat!==lastBeat){lastBeat=sc.beat;for(let i=0;i<6;i++)document.getElementById('b'+i).classList.toggle('on',i===sc.beat)}
+  if(sc.beat!==lastBeat){lastBeat=sc.beat;for(let i=0;i<6;i++)document.getElementById('b'+i).classList.toggle('on',i===sc.beat);document.getElementById('bI').classList.toggle('on',sc.beat===-1)}
+  heart=lerp(heart,sc.idle?0:1,dt*1.2); idleAmt=lerp(idleAmt,sc.idle?1:0,dt*.8);
 
   const R=Math.min(W,H)*.34, cx=W/2, cy=H*.55;
   // heartbeats: her leads, his follows; they lock as the dance goes on
@@ -145,9 +155,12 @@ function frame(now){
   A.ph+=dt*sc.rate*2*Math.PI; B.ph+=dt*sc.rate*.94*2*Math.PI;
   const diff=Math.atan2(Math.sin(A.ph-.5-B.ph),Math.cos(A.ph-.5-B.ph));
   B.ph+=diff*sc.lock*dt*2.5;
-  const envA=beatEnv(A.ph),envB=beatEnv(B.ph);
+  const envA=beatEnv(A.ph)*heart,envB=beatEnv(B.ph)*heart;
   const nA=Math.floor((A.ph-.38)/(2*Math.PI)),nB=Math.floor((B.ph-.38)/(2*Math.PI));
-  const onA=A.n!==undefined&&nA!==A.n, onB=B.n!==undefined&&nB!==B.n; A.n=nA;B.n=nB;
+  const onA=A.n!==undefined&&nA!==A.n&&heart>.5, onB=B.n!==undefined&&nB!==B.n&&heart>.5; A.n=nA;B.n=nB;
+  // now and then, when they really collide, each light shows its own colour for a moment
+  if((onA||onB)&&(sc.beat===2||sc.beat===3)&&Math.hypot(B.x-A.x,B.y-A.y)<.85&&Math.random()<.4)flash=1;
+  flash=Math.max(0,flash-dt*1.3);
 
   // cloud centres: springs toward the script, plus a squeeze toward each other on each beat
   const dx=B.x-A.x,dy=B.y-A.y,dl=Math.hypot(dx,dy)||1,ux=dx/dl,uy=dy/dl;
@@ -167,10 +180,11 @@ function frame(now){
     const along=p.hx*ax+p.hy*ay, side=-p.hx*ay+p.hy*ax;
     const sq=env*sc.amp*.45;
     const nAlong=along*(1-sq*(along>0?1.2:.4)), nSide=side*(1+sq*.5);
-    let tx=c.x+nAlong*ax-nSide*ay, ty=c.y+nAlong*ay+nSide*ax;
+    const spread=lerp(1,2.6,idleAmt);
+    let tx=c.x*(1-idleAmt*.6)+(nAlong*ax-nSide*ay)*spread, ty=c.y+(nAlong*ay+nSide*ax)*spread*.8;
     // free floating inside the jelly
-    tx+=Math.sin(time*.7+p.seed)*.035+Math.sin(time*1.9+p.seed*1.7)*.015;
-    ty+=Math.cos(time*.6+p.seed*1.3)*.03;
+    tx+=(Math.sin(time*.7+p.seed)*.035+Math.sin(time*1.9+p.seed*1.7)*.015)*(1+idleAmt*1.5);
+    ty+=Math.cos(time*.6+p.seed*1.3)*.03*(1+idleAmt*1.5);
     const sh=.006*sc.amp*sc.rate*sc.rate; tx+=Math.sin(time*23+p.seed*5)*sh; ty+=Math.cos(time*19+p.seed*3)*sh;
     // some lights leave on a beat and are pulled back
     const on=p.s?onB:onA, quiet=(p.s===1&&t<5);
@@ -203,7 +217,8 @@ function frame(now){
   // lights
   ctx.save();ctx.globalCompositeOperation='lighter';
   for(const p of parts){
-    const col=p.s?HIS:HER, env=p.s?envB:envA;
+    const env=p.s?envB:envA, oc=clouds[1-p.s], prox=clamp(1-Math.hypot(p.x-oc.x,p.y-oc.y)/.75), f=flash*prox, own=p.s?HISC:HERC, base=p.s?HIS:HER;
+    const col=[lerp(base[0],own[0],f)|0,lerp(base[1],own[1],f)|0,lerp(base[2],own[2],f)|0];
     const lit=p.s?sc.lit:1;
     const al=clamp(.45+.25*Math.sin(time*2.2+p.tw)+.5*env)*lit*(1-m*.3)*.85;
     const sz=p.size*(1+.35*env+p.free*.6);

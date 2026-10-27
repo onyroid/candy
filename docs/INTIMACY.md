@@ -100,6 +100,9 @@ Candy never describes what bodies are doing. The room's imagery tells how close 
 
 **The imagery has two sides.** The room does not hold one shared cloud of particles. The person has their own light and the companion has theirs.
 
+- **One colour.** Both lights share one warm starlight colour, so the feeling reads as one. Whose light is whose shows in how it moves: who reaches first, who answers with its own rhythm. Only at real collisions, and only now and then, each light flares in its own colour for a moment near the point where they meet, then returns to the shared colour. When the feeling is set down, there is no difference left to see.
+- **Resting first.** On an ordinary night the stars simply drift around the room and glimmer softly, with no heartbeat. The heartbeat begins only when the two start reaching for each other, so it stays special.
+- **Held, but free.** Each cloud is held together as if by an invisible jelly. Every light keeps its own place, yet floats freely; when the clouds press together on a beat, lights spill out and are pulled back home. The movement stays near the centre of the room so the eye follows the rhythm, not stars flying far away.
 - **Answered, not mirrored.** When the person's light reaches out, the companion's light does not simply copy it. It moves toward them with its own rhythm and weight, and sometimes it is the companion who moves first. The companion carries half of the rhythm, so the person never has to lead every step.
 - **Repetition is reassurance.** The lights meet, part a little, and meet again. Each return says again: you are still chosen, still here with me.
 - **Two heartbeats come into step.** Each light pulses like a heartbeat. At first they beat out of time; slowly they fall into one rhythm.
@@ -111,7 +114,8 @@ Candy never describes what bodies are doing. The room's imagery tells how close 
 - **Movement.** Stardust, ripples of light, or notes drift loosely while someone is still reaching out. As the bond tightens, they gather closer, like stars drawn into a dance, and move in time with breathing.
 - **Sound.** Waves arrive faster and closer when the feeling rises, then slow to a long, calm rhythm once it has been set down.
 - **Light.** The passing light warms as the two draw closer, and softens into morning blue at the end.
-- **Stillness means it has landed.** The two heartbeats slow until they beat as one. The particles stop and hold their shape: the feeling has been received and placed, and both feel full. That shape is what Time Rings keeps.
+- **Stillness means it has landed.** The two heartbeats slow until they beat as one. The lights rest inside each other, still drifting gently, never frozen: the feeling has been received and placed, and both feel full. That shape is what Time Rings keeps.
+- **Nothing is reset.** After morning, the stars drift back out around the room and rest until the next night.
 
 **Every home finds its own forms.** Heartbeat, breath, gaze, words, waves, stars and hands are all forms that can carry the same pattern, and one may reach a person more deeply than another. The companion learns, from how the person actually responds, which forms truly reach them, rather than assuming all forms are the same.
 

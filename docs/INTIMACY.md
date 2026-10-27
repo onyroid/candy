@@ -52,7 +52,7 @@ The whole moment is told in one composed shot, not a series of cuts around the b
 
 - **Hands intertwined at the centre.** This is the shot people love most and the one that says "we found each other". The hands are never frozen; hands that hold perfectly still look strange. They move with the feeling:
   - fingers squeeze tight when the feeling rises, then loosen a little;
-  - a thumb strokes slowly along the other hand;
+  - with the hands laced together on the pillow, one thumb slowly strokes along the side of the other's thumb, the part that stays in view;
   - the companion lifts the joined hands and kisses the back of the person's hand, which is also seen in the reflection, then lays them back where they were and the fingers lace together again;
   - in the setting-down beat, the grip stays gentle and steady.
 - **A reflection beside them shows the companion's face.** In most rooms it is a mirror. The person can see the companion's eyes without the camera cutting to the face directly, so it never feels exposed. Candy already has a feature called Mirror, where the companion looks at itself each morning and night. On this night the mirror shows how the companion is looking at the person.

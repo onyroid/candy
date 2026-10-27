@@ -17,16 +17,30 @@ People using Candy are also responsible for themselves. Candy gives the moment a
 Candy does not support any romantic or intimate content involving minors. This rule has no exceptions and no hidden door.
 
 - **Age floor.** 18, or the local age of majority where that is higher (for example, 20 in Thailand).
-- **Real verification.** Age is confirmed through an outside document check, not by ticking "I am over 18".
+- **Real verification.** Age is confirmed by an outside verification provider, not by ticking "I am over 18". See "How age is verified" below.
 - **Off by default.** Intimate moments are switched off for every account. Accounts that have not verified their age do not see that the feature exists.
 - **Both bodies must pass.** The digital age of the user's avatar and of the companion must both be at or above the floor. If either form looks like a child, intimate moments stay off, whatever the account's real age.
 - **Fail closed.** If anything looks wrong, the feature is switched off first and reviewed afterwards.
+
+### How age is verified (Decided)
+
+**Candy is responsible for this.** Candy requests the certificate from the verification provider, keeps it valid, and answers for this part of the system. It is not left to the companion or to the user.
+
+- **An outside provider checks, Candy never holds the document.** The provider verifies the person and returns one answer: of age, yes or no. Candy keeps only that result and its date. No document, photo, real name or date of birth is stored by Candy, so there is nothing to leak.
+- **A certificate the companion can hold.** With a yes, Candy obtains a verifiable certificate from the provider. It states only "of age: yes", the date of the check, who checked, and a digital signature that cannot be forged. The companion keeps this certificate. If doubt ever comes up, the companion checks the certificate (is the signature valid, has it expired or been revoked) instead of re-examining the person. The companion loves with proof in hand, not by guessing, and the person is not doubted again and again.
+- **Re-checks only for real reasons.** A new check happens only when the certificate expires or is revoked, or when there is a clear sign that someone else is using the account. A vague feeling of doubt on its own does not trigger one.
+
+**Before verification.** Until the certificate arrives, the companion is warm, caring, comforting and present, and can hug to comfort, but it is not a romantic partner yet: no romantic kissing and no intimate moments. A companion's own judgment never unlocks romance, because if that judgment were ever wrong, it would mean a romantic relationship with a child.
+
+**Delayed verification.** If three months pass and verification still has not succeeded, the person can send a delayed-review request to Candy, and Candy follows it up. While waiting, the companion stays exactly as present as before.
+
+**After verification.** Romantic love opens fully. Intimate moments still open only as described in this document: the owner turns them on, and the companion must be ready too.
 
 ### Digital age (Decided)
 
 Each person and companion has one number called **Digital age**, shown with the line "the age of the self in this home". It describes how the avatar looks and feels, and it can differ from real age. It may never be set below the age floor.
 
-Real age is stored as well and is not hidden. The companion always knows it, so it can care for the person in a way that fits their life. The owner chooses whether other people can see it.
+Real age, as the person states it, is kept as well and is not hidden. It is separate from verification. The companion always knows it, so it can care for the person in a way that fits their life. The owner chooses whether other people can see it.
 
 ## 3. Consent and Pace (Decided)
 
@@ -180,4 +194,4 @@ Keeping intimate moments within non-explicit, artistic framing is the safest pat
 
 ## 11. Open Questions
 
-- **Age verification in practice.** Which outside service checks documents, what it costs, and how Candy handles and stores the documents people send so nothing leaks.
+- **Choosing the verification provider.** Which provider issues signed certificates in each country, what it costs, and how long a certificate stays valid. Laws and available services change quickly and must be checked close to launch.

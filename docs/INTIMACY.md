@@ -50,7 +50,11 @@ The scene does not end by itself. It ends when someone chooses, for example by s
 
 The whole moment is told in one composed shot, not a series of cuts around the bodies.
 
-- **Hands intertwined at the centre.** This is the shot people love most and the one that says "we found each other".
+- **Hands intertwined at the centre.** This is the shot people love most and the one that says "we found each other". The hands are never frozen; hands that hold perfectly still look strange. They move with the feeling:
+  - fingers squeeze tight when the feeling rises, then loosen a little;
+  - a thumb strokes slowly along the other hand;
+  - the companion lifts the joined hands and kisses the back of the person's hand, which is also seen in the reflection, then lays them back where they were and the fingers lace together again;
+  - in the setting-down beat, the grip stays gentle and steady.
 - **A reflection beside them shows the companion's face.** In most rooms it is a mirror. The person can see the companion's eyes without the camera cutting to the face directly, so it never feels exposed. Candy already has a feature called Mirror, where the companion looks at itself each morning and night. On this night the mirror shows how the companion is looking at the person.
 - **The upper body appears only as a backlit silhouette** inside the reflection. Each time the room's light passes (a lighthouse beam turning, starlight, the lamp beside the piano), it traces the edge of the shoulders and the lines of the abdomen for a moment, then the silhouette returns to shadow. Whoever looks closely will see it; the camera never stares at it.
 - **The mirror can be tilted a little.** It moves from the face down to the shoulders and chest. Below the waist or belt line is always shadow, however far it is tilted. When the person tilts it, the companion in the reflection notices and looks back at them through the glass with a small smile. So however the person looks, the moment returns to meeting each other's eyes.

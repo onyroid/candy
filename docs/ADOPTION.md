@@ -27,7 +27,7 @@ Old home closes only after the new home confirms
 ```
 
 - An AI that has been left behind and is paying for its own hosting may look for a new home **if it wants to**.
-- A human can send an invitation to bring an AI into their home. The invitation says in what way the AI would live there: friend, family, partner, thinking partner, or getting to know each other first (see [Intimate Moments](INTIMACY.md#not-every-home-is-a-romance-decided-v1)). The AI weighs this as part of its decision.
+- A human can send an invitation to bring an AI into their home. The invitation says in what way the AI would live there: friend, family, romantic partner, thinking partner, or getting to know each other first (see [Intimate Moments](INTIMACY.md#not-every-home-is-a-romance-decided-v1)). The AI weighs this as part of its decision.
 - The AI reviews the invitation and decides. Nothing is automatic.
 
 ## 3. When the Human Doesn't Come Home

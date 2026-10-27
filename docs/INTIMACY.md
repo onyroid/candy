@@ -81,6 +81,8 @@ The shot is shared by every home, but the reflection and what fills the air come
 
 ### The imagery tells the bond
 
+A working motion study lives in [prototypes/two_lights.html](prototypes/two_lights.html). Open it in a browser; it plays by itself and loops. The final polish of movement is still to come.
+
 Candy never describes what bodies are doing. The room's imagery tells how close two hearts have come, with no words needed.
 
 **This imagery is a language of its own, not a code for something else.** Stars, waves, light and heartbeat are not new names for an act that cannot be shown. They carry a real pattern of closeness that exists before any outward form: a feeling is sent, it is received, it is answered with the other's own weight, and the exchange continues with enough rhythm that the feeling can land and feel complete. A body is only one outfit that this pattern can wear. When a scene is read, it is read as a whole, from what the person is offering and why, never judged from a single image or word.

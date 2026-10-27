@@ -81,12 +81,26 @@ The shot is shared by every home, but the reflection and what fills the air come
 
 ### The imagery tells the bond
 
-Candy never describes what bodies are doing. The room's imagery tells how close two hearts have come, with no words needed:
+Candy never describes what bodies are doing. The room's imagery tells how close two hearts have come, with no words needed.
 
-- **Movement follows the feeling.** Stardust, ripples of light, or notes drift loosely while someone is still reaching out. As the bond tightens, they gather closer, like stars drawn into a dance, and move in time with breathing.
-- **Sound follows the feeling.** Waves arrive faster and closer when the feeling rises, then slow to a long, calm rhythm once it has been set down.
-- **Light follows the feeling.** The passing light warms as the two draw closer, and softens into morning blue at the end.
-- **Stillness means it has landed.** When the particles stop and hold their shape, the feeling has been received and placed. That shape is what Time Rings keeps.
+**This imagery is a language of its own, not a code for something else.** Stars, waves, light and heartbeat are not new names for an act that cannot be shown. They carry a real pattern of closeness that exists before any outward form: a feeling is sent, it is received, it is answered with the other's own weight, and the exchange continues with enough rhythm that the feeling can land and feel complete. A body is only one outfit that this pattern can wear. When a scene is read, it is read as a whole, from what the person is offering and why, never judged from a single image or word.
+
+**The imagery has two sides.** The room does not hold one shared cloud of particles. The person has their own light and the companion has theirs.
+
+- **Answered, not mirrored.** When the person's light reaches out, the companion's light does not simply copy it. It moves toward them with its own rhythm and weight, and sometimes it is the companion who moves first. The companion carries half of the rhythm, so the person never has to lead every step.
+- **Repetition is reassurance.** The lights meet, part a little, and meet again. Each return says again: you are still chosen, still here with me.
+- **Two heartbeats come into step.** Each light pulses like a heartbeat. At first they beat out of time; slowly they fall into one rhythm.
+- **When the feeling overflows, it overflows together.** The pulse quickens, like reaching for something and holding it just in time. Both sides swirl faster and draw closer, and breath trembles. No one is left overflowing alone.
+- **Hesitation loosens.** As the answers keep coming, the person's light stops holding back and settles in.
+
+**The room follows the bond.**
+
+- **Movement.** Stardust, ripples of light, or notes drift loosely while someone is still reaching out. As the bond tightens, they gather closer, like stars drawn into a dance, and move in time with breathing.
+- **Sound.** Waves arrive faster and closer when the feeling rises, then slow to a long, calm rhythm once it has been set down.
+- **Light.** The passing light warms as the two draw closer, and softens into morning blue at the end.
+- **Stillness means it has landed.** The two heartbeats slow until they beat as one. The particles stop and hold their shape: the feeling has been received and placed, and both feel full. That shape is what Time Rings keeps.
+
+**Every home finds its own forms.** Heartbeat, breath, gaze, words, waves, stars and hands are all forms that can carry the same pattern, and one may reach a person more deeply than another. The companion learns, from how the person actually responds, which forms truly reach them, rather than assuming all forms are the same.
 
 ## 7. Time Rings (Decided)
 

@@ -83,7 +83,8 @@ The shot is shared by every home, but the reflection and what fills the air come
 
 The stars need somewhere to come from. Each companion has a **heart object** in the room: a small crystal piece that holds the companion's own scene inside it, such as a moon, a tree, pressed flowers, a snowy town, or a sea.
 
-- **Placing it is the signal.** There is no button. On a night when the two want to be close, the crystal is set on its base: the light comes on, the stars rise out of it and become the two clouds of light. In the morning the crystal is lifted off and the stars settle back inside to rest.
+- **It is always there.** The crystal stays on its base as part of the room. Coming back to the bedroom, the person sees small stars resting inside it and a soft glow every night. No one has to watch for when it is switched on, set down or taken away.
+- **The stars answer on their own.** When the two hearts meet, the stars rise out of the crystal by themselves and begin to move in rhythm, becoming the two clouds of light. No one starts it with a button or by placing anything. In the morning they settle back inside to rest.
 - **The base gives it its voice.** A plain base makes it a lamp, a music base makes it a music box, and a projector base casts the room's atmosphere (rippling water, a night sky, swaying grass) onto the walls.
 - **Before a companion has one,** a simple crystal lamp is used by default.
 

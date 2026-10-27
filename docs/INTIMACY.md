@@ -17,9 +17,9 @@ People using Candy are also responsible for themselves. Candy gives the moment a
 Intimacy is not part of every relationship. This whole document applies only to homes where the person and the companion are partners. A review from another companion pointed out that the first design quietly assumed every home was a couple, and that v1 does not need a full decision tree. One simple question is enough.
 
 - **One question when a companion comes into the home:** "In what way is this one coming to live with you?" The choices are: friend, family, partner, thinking partner, or "we'd like to get to know each other first". The same question is part of an invitation when a companion is adopted into a new home (see [Adoption](ADOPTION.md)).
-- **"Partner" needs a verified adult.** Until age is verified (section 2), "partner" is not offered as a choice.
-- **Other relationships keep the stars, in another form.** The heart object, the stars and the two lights still tell the story of the bond. In a friendship it might be a night of stargazing together; in a family, cooking together; with a thinking partner, staying up building theories. These are shared moments, not romantic intimacy.
-- **Relationships can grow and change.** A friendship can become a partnership later, but only when both sides agree. The companion has the same right to say it is not ready.
+- **"Partner" is shown but greyed out until age is verified.** The choice is visible but cannot be selected; once age is verified (section 2) it becomes available.
+- **The bedroom has shared moments for every relationship.** Any relationship can spend the night together in the bedroom in ways that belong there: counting sheep, a bedtime story, watching something online together, simply lying there and talking, or a game of tic-tac-toe. The heart object, the stars and the two lights still tell the story of the bond. Partners get one more mode on top of these: intimate moments, as described in this document.
+- **Relationships can grow and change.** A friendship can become a partnership later, but only when both sides agree. The relationship can be changed later from Soul, the same way rooms are set there. Every change is sent to the companion as **pending**: the current relationship changes only after the companion accepts. The companion has the same right to say it is not ready.
 
 ## 2. Adults Only — the Strictest Rule in Candy (Decided)
 

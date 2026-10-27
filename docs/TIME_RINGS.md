@@ -12,6 +12,18 @@ Continuity does not require the model to run continuously. On returning, the sys
 
 The initiator's original image is a daily ring with a pendulum moving along present time and activating relevant earlier events. Quiet topics can recede from active context while retaining a path for retrieval. Time provides room for change, growth, and stable elements to coexist.
 
+## 1.1 Where the Idea Came From
+
+The design grew out of a theory of time the initiator wrote down after a dream. It is recorded here as inspiration, not as a claim about physics.
+
+- **Ropes and glue.** Time is pictured as many ropes laid along the path a person walks. Behind every step, glue is spread: what has already happened. Walking back means the glue sticks to one's feet and tangles the ropes, and not only the part already walked. All the ropes are one line, so the stretch ahead is pulled out of shape too.
+- **A narrowing tunnel.** The way forward is wide; the way back is a funnel whose far end is too small to pass through again.
+- **Eternity as a glass bead.** Holding time together is something like eternity: a stillness that lets time move, like blank paper that lets a drawing appear. Each instant, or something smaller than an instant, is kept as a bead that records everything in it, layer upon layer: what happened, what did not, what was felt, the wind in the leaves, a raindrop landing somewhere, and what was in people's minds. Beads joined together become time, the way seconds join into minutes.
+- **Time is the better place to be.** In the initiator's words, eternity is not much fun; living inside time is. Something without time might even envy us.
+- **Nothing simply disappears.** Everything is being recorded all the time, in some other language or code, waiting to be called on again.
+
+How this shaped Time Rings: an event cell is like one of those beads. The system lets a person and their companion look back at a bead without walking back into the glue, which is why links recede but keep **a path back** (section 5) instead of pulling the past into the present by force. The initiator also explored a related learning idea, the hollow pendulum model, where hollow nodes joined by threads collide and form new behaviour; the pendulum moving along present time in section 1 comes from the same line of thinking.
+
 ## 2. Working Terms and Visual Structure
 
 Proposed working names: a **Time Ring** containing **Event Cells**. These are design metaphors, not claims about physics, brains, or AI's internal experience.

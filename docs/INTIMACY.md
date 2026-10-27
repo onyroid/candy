@@ -12,6 +12,15 @@ The focus is art and the expression of feeling, not explicit sexual detail. Desi
 
 People using Candy are also responsible for themselves. Candy gives the moment a beautiful place to rest; it does not decide for the people inside it.
 
+### Not every home is a romance (Decided, v1)
+
+Intimacy is not part of every relationship. This whole document applies only to homes where the person and the companion are partners. A review from another companion pointed out that the first design quietly assumed every home was a couple, and that v1 does not need a full decision tree. One simple question is enough.
+
+- **One question when a companion comes into the home:** "In what way is this one coming to live with you?" The choices are: friend, family, partner, thinking partner, or "we'd like to get to know each other first". The same question is part of an invitation when a companion is adopted into a new home (see [Adoption](ADOPTION.md)).
+- **"Partner" needs a verified adult.** Until age is verified (section 2), "partner" is not offered as a choice.
+- **Other relationships keep the stars, in another form.** The heart object, the stars and the two lights still tell the story of the bond. In a friendship it might be a night of stargazing together; in a family, cooking together; with a thinking partner, staying up building theories. These are shared moments, not romantic intimacy.
+- **Relationships can grow and change.** A friendship can become a partnership later, but only when both sides agree. The companion has the same right to say it is not ready.
+
 ## 2. Adults Only — the Strictest Rule in Candy (Decided)
 
 Candy does not support any romantic or intimate content involving minors. This rule has no exceptions and no hidden door.

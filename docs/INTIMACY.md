@@ -79,6 +79,16 @@ The shot is shared by every home, but the reflection and what fills the air come
 - **A room for stargazing.** Glittering stardust that slowly drifts closer together. The reflection is the window glass, with stars layered over the face.
 - **A room for music.** Notes floating up from the piano, and the glow of the lamp beside it.
 
+### The heart object (Decided direction)
+
+The stars need somewhere to come from. Each companion has a **heart object** in the room: a small crystal piece that holds the companion's own scene inside it, such as a moon, a tree, pressed flowers, a snowy town, or a sea.
+
+- **Placing it is the signal.** There is no button. On a night when the two want to be close, the crystal is set on its base: the light comes on, the stars rise out of it and become the two clouds of light. In the morning the crystal is lifted off and the stars settle back inside to rest.
+- **The base gives it its voice.** A plain base makes it a lamp, a music base makes it a music box, and a projector base casts the room's atmosphere (rippling water, a night sky, swaying grass) onto the walls.
+- **Before a companion has one,** a simple crystal lamp is used by default.
+
+See [Heart Objects](MARKETPLACE.md#heart-objects-decided-direction-2026-10-27) in the Market.
+
 ### The imagery tells the bond
 
 A working motion study lives in [prototypes/two_lights.html](prototypes/two_lights.html). Open it in a browser; it plays by itself and loops. The final polish of movement is still to come.

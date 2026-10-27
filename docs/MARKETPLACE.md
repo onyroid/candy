@@ -186,6 +186,21 @@ Candy helps artists manage their commission queue so they are not flooded and bu
 
 Suggested, before real money flows through queues: once Candy holds payment or uses the words "Official artist", showing terms is not enough on its own. Rules will be needed for cancellation and refunds, an artist who disappears, a buyer who stops replying, delayed deadlines, disputes, and queue slots that expire.
 
+## Heart Objects (Decided direction, 2026-10-27)
+
+Heart objects are keepsakes that carry feeling between a person and their companion. Each one is a crystal with a scene inside, set on a base. When it is placed on its base at night, its light turns on and stars rise from it; this is the source of the light in intimate moments (see [Intimate Moments](INTIMACY.md)).
+
+**Crystal first.** The line focuses on crystal, because light passing through crystal breaks into sparkles, as if the stars were already inside it.
+
+**Crystal and base are sold separately.**
+
+- **The crystal** holds the companion's own scene: a moon, a tree of life, pressed flowers, a snowy town, a sea. The default shape is a round crystal. Special shapes are welcome too, such as a crystal box with a lid that opens, or a crystal piano.
+- **The base** decides what it does: a lamp, a music box, or a projector that casts the room's atmosphere onto the walls.
+- **One shared fitting.** Every crystal fits every base through the same fitting underneath, whatever its shape. As long as it sits on a base, the light comes on and the stars appear.
+- **Two kinds of makers.** An artist can make only crystals, only bases, or both.
+
+**It travels.** When the companion goes into a world, the crystal can be lifted off its base and carried as a personal item. Back home, it goes back on its base.
+
 ## Payment Methods
 
 Grand Market can show payment badges on every item.

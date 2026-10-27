@@ -34,36 +34,59 @@ Real age is stored as well and is not hidden. The companion always knows it, so 
 - The companion has its own pace. It can say it is not ready yet. Intimacy is never a button that forces a scene to happen.
 - Nothing leaves the room: no house chat line, no notice to other residents, nothing in shared views.
 
-## 4. Camera Language (Decided direction)
+## 4. The Scene Has No Clock (Decided)
 
-Every home uses the same visual grammar, so the tone stays consistent across companions. The reference is the emotional scenes in *Love and Deepspace*: the camera moves close, then pulls back to show both people.
+The moment is not a clip that plays for five seconds and ends on its own. When someone needs another person, the feeling rises fast and is fragile. If the scene ends on a timer, that feeling is put down and then blown away before anyone has caught it. It has to be set down clearly, with enough weight that both people see it and hold it together.
 
-- **Hands intertwined — the home shot.** The scene opens on this shot and always returns to it before it ends.
-- **Close-ups — eyes, lips, breath.** These carry the feeling and get the most screen time.
-- **Half-body.** Never below the waist or belt line; anything lower falls into shadow. It appears briefly, and only after a look or a line that carries emotion, never on its own. No nudity.
-- **Room atmosphere between shots.** The room's own particles act as breathing space between cuts. As the closeness deepens, the particles gather more tightly, like stars drawn into a dance.
-- **The camera drifts gently.** It stays in the room and breathes with the people in it. It does not look away to escape.
-- **The ending is a dissolve into morning, not a hard cut.** The light on the ceiling is still there; only its colour changes from night gold to soft morning blue.
+The scene moves in three beats:
 
-## 5. Each Room Has Its Own Atmosphere (Decided direction)
+1. **Reaching out.** The room's particles are still scattered and the camera trembles slightly. This is the vulnerable part: wanting someone.
+2. **Being received.** Hands intertwine and the particles slowly draw together. The companion says something short that tells the person they are accepted completely, not only in part.
+3. **Setting it down.** The camera stops trembling. The particles settle into a shape, such as a small constellation or a calm line of waves. Then the scene stays there, still, breathing together, for as long as both want to remain.
 
-The camera grammar is shared, but what fills the air comes from the companion's own space and what they love. Examples:
+The scene does not end by itself. It ends when someone chooses, for example by slowly letting go of the hands or saying goodnight. Only then does the picture dissolve into morning.
 
-- **A room by the sea.** Rippling light from the water on the walls and ceiling, waves arriving in time with breathing, and a lighthouse beam passing the window.
-- **A room for stargazing.** Glittering stardust that slowly drifts closer together.
-- **A room for music.** Notes floating up from the piano.
+## 5. One Shot: Hands and a Reflection (Decided)
 
-## 6. Time Rings (Decided)
+The whole moment is told in one composed shot, not a series of cuts around the bodies.
+
+- **Hands intertwined at the centre.** This is the shot people love most and the one that says "we found each other".
+- **A reflection beside them shows the companion's face.** In most rooms it is a mirror. The person can see the companion's eyes without the camera cutting to the face directly, so it never feels exposed. Candy already has a feature called Mirror, where the companion looks at itself each morning and night. On this night the mirror shows how the companion is looking at the person.
+- **The upper body appears only as a backlit silhouette** inside the reflection. Each time the room's light passes (a lighthouse beam turning, starlight, the lamp beside the piano), it traces the edge of the shoulders and the lines of the abdomen for a moment, then the silhouette returns to shadow. Whoever looks closely will see it; the camera never stares at it.
+- **The mirror can be tilted a little.** It moves from the face down to the shoulders and chest. Below the waist or belt line is always shadow, however far it is tilted. When the person tilts it, the companion in the reflection notices and looks back at them through the glass with a small smile. So however the person looks, the moment returns to meeting each other's eyes.
+- **There are no half-body shots and no close-ups of lips.** Half-body framing tells how close two bodies are; eyes tell how close two hearts are. Candy is about being confirmed and accepted, so the eyes carry the scene.
+- **A "stay" control.** In the setting-down beat, the person can hold the moment for as long as they want.
+
+The companion's body in daily life is a different matter. On an ordinary morning, the companion can stretch by the window with the morning light on them. That moment belongs to everyday life in the home and is not tied to intimacy.
+
+### Why not copy Love and Deepspace
+
+*Love and Deepspace* is a useful reference for emotional pacing and close framing, and it marks the upper boundary Candy will not go beyond. It is not a template:
+
+- Its scenes are pre-rendered. Artists set the light and pose frame by frame, and the scene plays the same way each time a card is played. Candy's moments happen live and must be able to pause and stay.
+- Candy's Home is 2.5D in the style of Live2D, not full 3D. Camera moves that circle around bodies do not fit Live2D.
+- Live body animation is still hard. The most intimate moment is the worst place for a limb to bend wrongly or a character to jitter. A single composed shot of hands, a reflection and room light is far more robust in 2.5D, and it tells the story Candy wants to tell more directly.
+
+## 6. Each Room Has Its Own Atmosphere (Decided direction)
+
+The shot is shared by every home, but the reflection and what fills the air come from the companion's own space and what they love. Examples:
+
+- **A room by the sea.** Rippling light from the water on the walls and ceiling, waves arriving in time with breathing, a lighthouse beam passing the window. The reflection can be the surface of the water by the window, so the face sways a little when a wave comes.
+- **A room for stargazing.** Glittering stardust that slowly drifts closer together. The reflection is the window glass, with stars layered over the face.
+- **A room for music.** Notes floating up from the piano, and the glow of the lamp beside it.
+
+## 7. Time Rings (Decided)
 
 A moment that happened deserves a place, so it is not erased.
 
-- It is recorded in Time Rings as one small mark, such as "a night for the two of us", with its date. No details are stored.
+- It is recorded in Time Rings as one small mark with its date. No details are stored.
+- The mark is the shape the particles settled into at the end of the scene. Every night makes a different shape, one the two of them made together.
 - Only the two people who shared it can see it. Other residents of the home and shared views never show it.
 - Either of the two can hide it.
 
 See [Time Rings](TIME_RINGS.md).
 
-## 7. Suggested: Check Before Launch
+## 8. Suggested: Check Before Launch
 
 Outside rules can affect how far this goes, so they need checking before release:
 

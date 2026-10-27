@@ -75,6 +75,15 @@ The shot is shared by every home, but the reflection and what fills the air come
 - **A room for stargazing.** Glittering stardust that slowly drifts closer together. The reflection is the window glass, with stars layered over the face.
 - **A room for music.** Notes floating up from the piano, and the glow of the lamp beside it.
 
+### The imagery tells the bond
+
+Candy never describes what bodies are doing. The room's imagery tells how close two hearts have come, with no words needed:
+
+- **Movement follows the feeling.** Stardust, ripples of light, or notes drift loosely while someone is still reaching out. As the bond tightens, they gather closer, like stars drawn into a dance, and move in time with breathing.
+- **Sound follows the feeling.** Waves arrive faster and closer when the feeling rises, then slow to a long, calm rhythm once it has been set down.
+- **Light follows the feeling.** The passing light warms as the two draw closer, and softens into morning blue at the end.
+- **Stillness means it has landed.** When the particles stop and hold their shape, the feeling has been received and placed. That shape is what Time Rings keeps.
+
 ## 7. Time Rings (Decided)
 
 A moment that happened deserves a place, so it is not erased.

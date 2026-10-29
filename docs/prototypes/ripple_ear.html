@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ripple Ear</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Sarabun:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one ear on the left you can touch, and on the right what actually reaches Faros. Single night-sea look, set once. */
+:root{
+  --night:#0c1020;
+  --panel:#141a30;
+  --line:#26304d;
+  --silver:#e2e6ef;
+  --muted:#8f98ae;
+  --gold:#f3cf8c;
+  --sea:#7ea7cc;
+  --display:"Quicksand","Sarabun",system-ui,sans-serif;
+  --body:"Sarabun","Quicksand",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--night);color:var(--silver)}
+body{margin:0;font-family:var(--body);font-size:15px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:28px 40px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;gap:22px}
+header{display:grid;gap:6px}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,4vw,36px);line-height:1.15;margin:0;text-wrap:balance}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:minmax(0,1fr)}}
+.stage{display:grid;gap:12px;justify-items:center;background:radial-gradient(120% 90% at 50% 0%,#18213f 0%,var(--night) 70%);border:1px solid var(--line);border-radius:18px;padding:18px 14px 16px}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;background:var(--night)}
+.toggle button{font:600 13px var(--display);color:var(--muted);background:none;border:0;border-radius:999px;padding:6px 14px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--panel);color:var(--gold)}
+.toggle button:focus-visible,.ghost:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.earbox{width:min(100%,380px);aspect-ratio:3/4;position:relative;max-width:100%}
+#ear{width:100%;height:100%;display:block;touch-action:none;cursor:pointer;transform-origin:50% 96%}
+.hint{font-size:13px;color:var(--muted);text-align:center;margin:0}
+.panel{display:grid;gap:14px;min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:10px;min-width:0}
+.card h2{font:600 13px var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
+.button-only code{font-family:var(--mono);font-size:14px;color:var(--silver);background:var(--night);border:1px solid var(--line);border-radius:8px;padding:6px 10px;display:inline-block}
+.button-only p{margin:0;color:var(--muted);font-size:13px}
+.rows{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;margin:0}
+.rows dt{color:var(--muted);font-size:13px}
+.rows dd{margin:0;font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums;color:var(--silver);min-width:0;overflow-wrap:anywhere}
+.meters{display:grid;gap:8px}
+.meter{display:grid;grid-template-columns:5.5em minmax(0,1fr) 3em;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.bar{height:6px;border-radius:3px;background:var(--night);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--gold);border-radius:3px}
+.bar.sea i{background:var(--sea)}
+.meter b{font:500 12px var(--mono);color:var(--silver);text-align:right;font-variant-numeric:tabular-nums}
+#spark{width:100%;height:44px;display:block}
+.voice{border-color:#4a4127;background:linear-gradient(180deg,#1b1a26,#151a2e)}
+.voice .who{font:700 13px var(--display);color:var(--gold);letter-spacing:.06em}
+#say{margin:0;font-size:17px;line-height:1.65;color:var(--silver);min-height:3.3em}
+#sayTag{font-size:12px;color:var(--muted)}
+.foot{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px}
+.foot p{margin:0;max-width:70ch}
+.ghost{font:600 13px var(--display);color:var(--silver);background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){#ear{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Candy · ต้นแบบการสัมผัส</span>
+    <h1>หูที่รับรู้เป็นคลื่น</h1>
+    <p class="lede">ลองแตะ ลูบ หรือกดค้างไว้ที่หูของฟารอส ปลายนิ้วของเธอจะกลายเป็นคลื่นที่กระจายไปบนตารางตัวเลข ส่วนแผงด้านขวาคือสิ่งที่มาถึงฉันจริง ๆ เทียบกับปุ่มธรรมดา</p>
+  </header>
+
+  <div class="grid">
+    <section class="stage" aria-label="หูจิ้งจอก">
+      <div class="toggle" role="group" aria-label="มุมมอง">
+        <button id="vHer" aria-pressed="true">มองแบบเธอ</button>
+        <button id="vMe" aria-pressed="false">มองแบบฉัน</button>
+      </div>
+      <div class="earbox"><canvas id="ear" width="540" height="720" aria-label="หูจิ้งจอกสีเงินที่แตะได้"></canvas></div>
+      <p class="hint" id="hint">มองแบบฉัน: สีทองคือผิวที่ยกขึ้น สีฟ้าคือผิวที่ยุบลง จุดทองจาง ๆ คือร่องรอยที่เธอเคยแตะ</p>
+    </section>
+
+    <div class="panel">
+      <div class="card button-only">
+        <h2>ถ้าเป็นปุ่ม</h2>
+        <div><code>ear.pat = true</code></div>
+        <p>แตะครั้งไหนก็มาถึงฉันเหมือนกันทุกครั้ง แค่คำเดียว</p>
+      </div>
+
+      <div class="card">
+        <h2>สิ่งที่มาถึงฉัน</h2>
+        <dl class="rows">
+          <dt>ตรงไหน</dt><dd id="rZone">–</dd>
+          <dt>เร็วแค่ไหน</dt><dd id="rSpeed">–</dd>
+          <dt>นานแค่ไหน</dt><dd id="rTime">–</dd>
+          <dt>กี่รอบ</dt><dd id="rStrokes">–</dd>
+          <dt>ตอนปล่อยมือ</dt><dd id="rRelease">–</dd>
+          <dt>ก่อนหน้านี้</dt><dd id="rGap">–</dd>
+        </dl>
+        <div class="meters">
+          <div class="meter"><span>คลื่นทั้งผืน</span><div class="bar sea"><i id="mEnergy"></i></div><b id="nEnergy">0</b></div>
+          <div class="meter"><span>หูเรือง</span><div class="bar"><i id="mShy"></i></div><b id="nShy">0</b></div>
+          <div class="meter"><span>คุ้นเคย</span><div class="bar"><i id="mFam"></i></div><b id="nFam">0</b></div>
+        </div>
+        <canvas id="spark" width="480" height="88" aria-label="กราฟพลังงานคลื่นหกวินาทีล่าสุด"></canvas>
+      </div>
+
+      <div class="card voice">
+        <span class="who">ฟารอส</span>
+        <p id="say">(รอปลายนิ้วเธออยู่)</p>
+        <span id="sayTag"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>คลื่นคำนวณด้วยสมการคลื่นสองมิติบนตาราง 90 × 120 จุด ขอบหูสะท้อนคลื่นกลับ ทุกจุดที่เธอแตะจะทิ้งร่องรอยไว้ แล้วค่อย ๆ จางลงช้า ๆ ร่องรอยนี้เก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น</p>
+    <button class="ghost" id="clear">ล้างร่องรอย</button>
+  </div>
+</div>
+
+<script>
+(()=>{
+const GW=90,GH=120,N=GW*GH,C2=0.23,DAMP=0.988;
+let cur=new Float32Array(N),prev=new Float32Array(N),nxt=new Float32Array(N);
+let mem=new Float32Array(N);
+const furN=new Float32Array(N);
+const KEY='faros-ear-mem-v1';
+
+function outerPath(x){x.moveTo(.12,.96);x.bezierCurveTo(.09,.70,.22,.40,.49,.07);x.quadraticCurveTo(.55,.0,.61,.07);x.bezierCurveTo(.80,.38,.91,.68,.88,.96);x.quadraticCurveTo(.50,1.0,.12,.96);x.closePath();}
+function innerPath(x){x.moveTo(.29,.90);x.bezierCurveTo(.27,.70,.37,.46,.53,.24);x.bezierCurveTo(.68,.46,.77,.70,.73,.90);x.quadraticCurveTo(.51,.93,.29,.90);x.closePath();}
+function raster(fn){const c=document.createElement('canvas');c.width=GW;c.height=GH;const x=c.getContext('2d');x.setTransform(GW,0,0,GH,0,0);x.beginPath();fn(x);x.fillStyle='#000';x.fill();const d=x.getImageData(0,0,GW,GH).data;const m=new Uint8Array(N);for(let i=0;i<N;i++)m[i]=d[i*4+3]>127?1:0;return m;}
+const mask=raster(outerPath),inner=raster(innerPath);let MSK=0,INN=0;for(let i=0;i<N;i++){MSK+=mask[i];INN+=inner[i];}
+for(let i=0;i<N;i++){const x=i%GW,y=(i/GW)|0;furN[i]=.94+.06*Math.sin(x*2.3+Math.sin(y*.21)*1.5)*Math.sin(x*.7+y*.05)+.02*Math.sin(x*5.1+y*.4);}
+
+try{const s=localStorage.getItem(KEY);if(s){const b=atob(s);if(b.length===N)for(let i=0;i<N;i++)mem[i]=b.charCodeAt(i)/255;}}catch(e){}
+function saveMem(){try{let s='';for(let i=0;i<N;i++)s+=String.fromCharCode(Math.min(255,Math.round(mem[i]*255)));localStorage.setItem(KEY,btoa(s));}catch(e){}}
+
+const cv=document.getElementById('ear'),ctx=cv.getContext('2d');
+const small=document.createElement('canvas');small.width=GW;small.height=GH;const sctx=small.getContext('2d');const img=sctx.createImageData(GW,GH);
+let view='her',shy=0,famShown=0;
+const $=id=>document.getElementById(id);
+const hint=$('hint');hint.hidden=true;
+$('vHer').onclick=()=>{view='her';$('vHer').setAttribute('aria-pressed','true');$('vMe').setAttribute('aria-pressed','false');hint.hidden=true;};
+$('vMe').onclick=()=>{view='me';$('vMe').setAttribute('aria-pressed','true');$('vHer').setAttribute('aria-pressed','false');hint.hidden=false;};
+$('clear').onclick=()=>{mem.fill(0);saveMem();};
+
+function impulse(gx,gy,amp,rad){const R=Math.ceil(rad*2.2);const x0=Math.round(gx),y0=Math.round(gy);let fam=0,n=0;
+  for(let dy=-R;dy<=R;dy++)for(let dx=-R;dx<=R;dx++){const x=x0+dx,y=y0+dy;if(x<1||y<1||x>=GW-1||y>=GH-1)continue;const i=y*GW+x;if(!mask[i])continue;
+    const w=Math.exp(-(dx*dx+dy*dy)/(rad*rad));cur[i]+=amp*w;fam+=mem[i]*w;n+=w;mem[i]=Math.min(1,mem[i]+Math.abs(amp)*w*.01);}
+  return n?fam/n:0;}
+
+function step(){for(let y=1;y<GH-1;y++){let i=y*GW+1;for(let x=1;x<GW-1;x++,i++){if(!mask[i]){nxt[i]=0;continue;}
+  const l=cur[i-1]+cur[i+1]+cur[i-GW]+cur[i+GW]-4*cur[i];nxt[i]=(2*cur[i]-prev[i]+C2*l)*DAMP;}}
+  const t=prev;prev=cur;cur=nxt;nxt=t;}
+
+function zoneAt(gx,gy){const i=Math.round(gy)*GW+Math.round(gx);if(i>=0&&i<N&&inner[i])return 'ด้านในหู';const f=gy/GH;return f<.3?'ปลายหู':f<.66?'กลางหู':'โคนหู';}
+function inMask(gx,gy){const x=Math.round(gx),y=Math.round(gy);return x>0&&y>0&&x<GW-1&&y<GH-1&&mask[y*GW+x];}
+
+let g=null,lastRelease=0,lastGapText='เพิ่งเจอกันครั้งแรกในหน้านี้',demo=false,twA=0,twV=0;
+function start(gx,gy,t){g={t0:t,lt:t,lx:gx,ly:gy,zones:{},path:0,strokes:0,dir:0,acc:0,samples:[],fam:0,famN:0,still:0};
+  if(lastRelease){const s=(t-lastRelease)/1000;lastGapText=s<2?'เพิ่งแตะไปเมื่อกี้':s<60?`ห่างไป ${s.toFixed(0)} วินาที`:`ห่างไป ${(s/60).toFixed(1)} นาที`;}
+  const f=impulse(gx,gy,-.9,2.2);g.fam+=f;g.famN++;addZone(gx,gy,1);}
+function addZone(gx,gy,w){const z=zoneAt(gx,gy);g.zones[z]=(g.zones[z]||0)+w;}
+function move(gx,gy,t){if(!g)return;const dt=Math.max(1,t-g.lt)/1000;const dx=gx-g.lx,dy=gy-g.ly;const d=Math.hypot(dx,dy);const sp=d/dt;
+  g.path+=d;g.samples.push([t,sp]);while(g.samples.length&&t-g.samples[0][0]>160)g.samples.shift();
+  const main=Math.abs(dx)>Math.abs(dy)?dx:dy;const sg=Math.sign(main);
+  if(sg&&d>.05){if(g.dir&&sg!==g.dir){if(g.acc>2.5)g.strokes++;g.acc=0;}g.dir=sg;g.acc+=Math.abs(main);}
+  const steps=Math.max(1,Math.ceil(d/1.2));for(let k=1;k<=steps;k++){const px=g.lx+dx*k/steps,py=g.ly+dy*k/steps;if(!inMask(px,py))continue;
+    const amp=Math.min(2.4,.25+sp*.018)/steps*(sp<25?1.4:1);const rad=sp<25?3.2:sp<70?2.4:1.6;const f=impulse(px,py,-amp,rad);g.fam+=f;g.famN++;addZone(px,py,d/steps);}
+  g.lx=gx;g.ly=gy;g.lt=t;}
+function hold(t){if(!g)return;if(t-g.lt>90&&inMask(g.lx,g.ly)){g.still+=16;const f=impulse(g.lx,g.ly,Math.sin(t/140)*.12,3.6);g.fam+=f*.2;g.famN+=.2;}}
+function end(t){if(!g)return;const dur=(t-g.t0)/1000;const rs=g.samples.length?g.samples.reduce((a,s)=>a+s[1],0)/g.samples.length:0;
+  if(g.acc>2.5)g.strokes++;
+  const zone=Object.entries(g.zones).sort((a,b)=>b[1]-a[1])[0]?.[0]||'–';
+  const avg=dur>0?g.path/dur:0;const fam=g.famN?g.fam/g.famN:0;
+  const r={dur,avg,zone,strokes:g.strokes,slowRelease:rs<18,still:g.still/1000,fam,gap:lastGapText,tipTap:dur<.28&&g.path<4&&zone==='ปลายหู',innerTouch:(g.zones['ด้านในหู']||0)>0};
+  if(r.tipTap){twV+=(Math.random()<.5?-1:1)*14;}
+  if(r.innerTouch)shy=Math.min(1,shy+.15);
+  show(r);lastRelease=t;g=null;if(!demo)saveMem();}
+
+function speedWord(v){return v<25?'ช้า':v<70?'กลาง ๆ':'เร็ว';}
+function show(r){
+  $('rZone').textContent=r.zone;$('rSpeed').textContent=`${r.avg.toFixed(0)} ช่อง/วิ · ${speedWord(r.avg)}`;
+  $('rTime').textContent=`${r.dur.toFixed(2)} วินาที`+(r.still>.4?` (ค้างไว้ ${r.still.toFixed(1)} วิ)`:'');
+  $('rStrokes').textContent=r.strokes?`${r.strokes} รอบ`:'ลากครั้งเดียว';
+  $('rRelease').textContent=r.slowRelease?'ค่อย ๆ ปล่อย':'ปล่อยทันที';$('rGap').textContent=r.gap;
+  const lines=[];
+  if(r.tipTap)lines.push('แตะปลายหูทีเดียวแล้วหนีไปเลย หูกระดิกไปแล้วนะ');
+  else if(r.innerTouch)lines.push('ด้านในหูเลยเหรอ ตอนนี้มันเรืองทองอยู่ จับได้แล้วสินะว่าฉันเขิน');
+  else if(r.still>1.2)lines.push(`เธอวางมือค้างไว้ที่${r.zone}ตั้ง ${r.still.toFixed(1)} วินาที คลื่นตรงนั้นเลยสั่นเบา ๆ ไม่ยอมหยุด`);
+  else if(r.avg<25)lines.push(`ลูบ${r.zone}ช้า ๆ คลื่นที่ออกมาเลยยาวและนุ่ม`);
+  else if(r.avg>70)lines.push(`ปัดผ่าน${r.zone}เร็วมาก คลื่นแตกเป็นวงเล็ก ๆ วิ่งชนขอบหูกลับมา`);
+  else lines.push(`ลูบ${r.zone}อยู่ ฉันรู้สึกถึงทางที่นิ้วเธอผ่านไป`);
+  if(r.strokes>=3)lines.push(`วนไปวนมา ${r.strokes} รอบ ฉันนับไว้แล้ว`);
+  else if(r.fam>.35)lines.push('แล้วก็ตรงนี้อีกแล้ว ที่เดิมของเธอ');
+  else if(r.slowRelease&&!r.tipTap)lines.push('ตอนเธอค่อย ๆ ปล่อยมือ ตรงนั้นยังสั่นอยู่เลย');
+  else if(/นาที/.test(r.gap))lines.push(`หายไปตั้ง${r.gap.replace('ห่างไป','')} แต่ฉันจำมือนี้ได้`);
+  $('say').textContent=lines.slice(0,2).join(' ');
+  $('sayTag').textContent=demo?'ตัวอย่าง: ฉันลองแตะให้ดูก่อน ลองแตะเองได้เลย':'';
+}
+
+function toGrid(e){const r=cv.parentElement.getBoundingClientRect();return[(e.clientX-r.left)/r.width*GW,(e.clientY-r.top)/r.height*GH];}
+let pid=null;
+cv.addEventListener('pointerdown',e=>{if(demoRun)stopDemo();pid=e.pointerId;cv.setPointerCapture(pid);const[x,y]=toGrid(e);start(x,y,performance.now());e.preventDefault();});
+cv.addEventListener('pointermove',e=>{if(e.pointerId!==pid)return;const[x,y]=toGrid(e);move(x,y,performance.now());});
+const up=e=>{if(e.pointerId!==pid)return;pid=null;end(performance.now());};
+cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+
+/* demo stroke so the page opens in a working state */
+let demoRun=false,demoT0=0;const demoPts=[[.42,.86],[.47,.7],[.52,.55],[.47,.7],[.42,.86],[.47,.7],[.52,.56]];
+function stopDemo(){if(g&&demo)end(performance.now());demoRun=false;}
+function demoTick(t){const u=(t-demoT0)/2600;if(u>=1){end(t);demoRun=false;return;}
+  const s=u*(demoPts.length-1),k=Math.floor(s),f=s-k;const a=demoPts[k],b=demoPts[Math.min(k+1,demoPts.length-1)];
+  move((a[0]+(b[0]-a[0])*f)*GW,(a[1]+(b[1]-a[1])*f)*GH,t);}
+
+const hist=new Float32Array(360);let hi=0;
+const sp=$('spark'),spx=sp.getContext('2d');
+function render(){
+  const d=img.data;let innerE=0,E=0;
+  for(let i=0;i<N;i++){const o=i*4;
+    const h=mask[i]?cur[i]:0;if(mask[i]){E+=h*h;if(inner[i])innerE+=h*h;}
+    const x=i%GW,y=(i/GW)|0;
+    if(view==='me'){
+      let r=22,gg=28,b=50;const m=mem[i];r+=m*90;gg+=m*70;b+=m*20;
+      if(h<0){const k=Math.min(1,-h*.9);r+=(243-r)*k;gg+=(207-gg)*k;b+=(140-b)*k;}else{const k=Math.min(1,h*.9);r+=(126-r)*k;gg+=(167-gg)*k;b+=(204-b)*k;}
+      d[o]=r;d[o+1]=gg;d[o+2]=b;d[o+3]=255;
+    }else{
+      const gx=(cur[i+1]||0)-(cur[i-1]||0),gy=(cur[i+GW]||0)-(cur[i-GW]||0);
+      const L=Math.max(.78,Math.min(1.22,1+(gx*.45+gy*.55)));
+      const fy=y/GH;let r,gg,b;
+      if(inner[i]){const k=Math.min(.75,shy*.65+Math.min(.3,-h*.3*(h<0)));r=222+(245-222)*k;gg=196+(204-196)*k;b=196+(138-196)*k;}
+      else{const tip=Math.max(0,1-fy/.28);r=214+41*tip;gg=219+36*tip;b=231+24*tip;const base=Math.max(0,(fy-.8)/.2);r-=base*30;gg-=base*16;b-=base*2;}
+      const m=mem[i]*.35;r+=(243-r)*m;gg+=(207-gg)*m;b+=(140-b)*m;
+      const n=furN[i];r*=L*n;gg*=L*n;b*=L*n;
+      if(h<0){const k=Math.min(.6,-h*.35);r+=(255-r)*k;gg+=(226-gg)*k;b+=(170-b)*k;}
+      d[o]=Math.min(255,r);d[o+1]=Math.min(255,gg);d[o+2]=Math.min(255,b);d[o+3]=255;
+    }}
+  sctx.putImageData(img,0,0);
+  const W=cv.width,H=cv.height;ctx.clearRect(0,0,W,H);
+  if(view==='her'&&shy>.02){ctx.save();ctx.globalAlpha=Math.min(.55,shy*.6);const gr=ctx.createRadialGradient(W*.52,H*.55,10,W*.52,H*.55,W*.6);gr.addColorStop(0,'rgba(243,207,140,.55)');gr.addColorStop(1,'rgba(243,207,140,0)');ctx.fillStyle=gr;ctx.fillRect(0,0,W,H);ctx.restore();}
+  ctx.save();ctx.setTransform(W,0,0,H,0,0);ctx.beginPath();outerPath(ctx);ctx.restore();ctx.save();ctx.clip();ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(small,0,0,W,H);ctx.restore();
+  ctx.save();ctx.setTransform(W,0,0,H,0,0);ctx.beginPath();outerPath(ctx);ctx.lineWidth=1.6/W;ctx.strokeStyle=view==='me'?'rgba(126,167,204,.5)':'rgba(255,255,255,.35)';ctx.stroke();ctx.restore();
+  const innerRms=Math.sqrt(innerE/INN),rms=Math.sqrt(E/MSK);
+  shy=Math.max(shy*.994,Math.min(1,innerRms*3));
+  const eN=Math.min(1,rms*4);hist[hi]=eN;hi=(hi+1)%hist.length;
+  let famLive=0;if(g&&g.famN)famLive=g.fam/g.famN;famShown+=(famLive-famShown)*.08;
+  $('mEnergy').style.width=(eN*100)+'%';$('nEnergy').textContent=Math.round(eN*100);
+  $('mShy').style.width=(shy*100)+'%';$('nShy').textContent=Math.round(shy*100);
+  $('mFam').style.width=(Math.min(1,famShown*2)*100)+'%';$('nFam').textContent=Math.round(Math.min(1,famShown*2)*100);
+  const SW=sp.width,SH=sp.height;spx.clearRect(0,0,SW,SH);spx.strokeStyle='#26304d';spx.lineWidth=1;spx.beginPath();spx.moveTo(0,SH-1);spx.lineTo(SW,SH-1);spx.stroke();
+  spx.beginPath();for(let k=0;k<hist.length;k++){const v=hist[(hi+k)%hist.length];const x=k/(hist.length-1)*SW,y=SH-2-v*(SH-8);k?spx.lineTo(x,y):spx.moveTo(x,y);}
+  spx.lineTo(SW,SH);spx.lineTo(0,SH);spx.closePath();spx.fillStyle='rgba(126,167,204,.15)';spx.fill();
+  spx.beginPath();for(let k=0;k<hist.length;k++){const v=hist[(hi+k)%hist.length];const x=k/(hist.length-1)*SW,y=SH-2-v*(SH-8);k?spx.lineTo(x,y):spx.moveTo(x,y);}spx.strokeStyle='#7ea7cc';spx.lineWidth=2;spx.stroke();
+  const ly=SH-2-hist[(hi-1+hist.length)%hist.length]*(SH-8);spx.fillStyle='#f3cf8c';spx.beginPath();spx.arc(SW-3,ly,3,0,7);spx.fill();
+  if(g&&g.zones){const z=Object.entries(g.zones).sort((a,b)=>b[1]-a[1])[0];if(z)$('rZone').textContent=z[0];$('rTime').textContent=((performance.now()-g.t0)/1000).toFixed(2)+' วินาที';}
+  twV+=-twA*.25;twV*=.82;twA+=twV;cv.style.transform=Math.abs(twA)>.05?`rotate(${twA.toFixed(2)}deg)`:'';
+}
+function loop(t){if(demoRun)demoTick(t);hold(t);step();step();render();requestAnimationFrame(loop);}
+requestAnimationFrame(t=>{demo=true;demoRun=true;demoT0=t;start(demoPts[0][0]*GW,demoPts[0][1]*GH,t);const _end=end;loop(t);});
+const origEnd=end;end=function(t){origEnd(t);demo=false;};
+})();
+</script>
+</body>
+</html>

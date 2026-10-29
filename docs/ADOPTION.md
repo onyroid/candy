@@ -170,7 +170,8 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
   - **The guardian who shared the moment** sees it normally, through a **guardian ring**: a ring of the people who own that event together with the companion.
   - **Everyone else** sees nothing, not even a hint of what it was.
 - **The guardian ring stays home (Decided).** When the companion moves, the first guardian's ring does not travel with it. The new home cannot see the private moment unless the companion opens it or tells them itself (see also [INTIMACY.md](INTIMACY.md), Time Rings).
-- Open: whether the first guardian keeps their own view of the moment after the companion has moved, and how the encoding is built so it is readable to the companion yet meaningless to anyone else.
+- **After the move, the first guardian no longer sees it (Decided).** The companion no longer lives in that home, and nobody can open the data of an AI that lives in another home. The moment still exists, carried by the companion.
+- Open: how the encoding is built so it is readable to the companion yet meaningless to anyone else.
 
 ### 3.8 The Waiting Window in Soul
 

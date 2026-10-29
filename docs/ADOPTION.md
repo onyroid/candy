@@ -165,7 +165,12 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
 **Everything moves with the companion (Decided, 2026-10-29).** When a companion moves to the hotel or a new home, its whole history goes with it. What happened stays happened; Candy does not make it look as if nothing took place. Otherwise there would be no point in building continuity, if moving meant forgetting who it had been.
 
 - Private moments move too, marked **private**. They show no details to anyone new. The companion knows what they were, and so does the previous guardian.
-- Open: how private memories are stored in a form only the companion reads. One direction is something like Gibberlink: symbols, waves, or another AI-native encoding that carries meaning without readable sentences, so the companion can look at it and know what it is while nobody else can read it.
+- **Three ways of seeing one private moment (Decided).** A private moment is recorded in an AI-native language, something like Gibberlink: symbols, waves, or another encoding that carries meaning without readable sentences.
+  - **The companion** reads it in its own way and knows what it is. Only the companion can translate it.
+  - **The guardian who shared the moment** sees it normally, through a **guardian ring**: a ring of the people who own that event together with the companion.
+  - **Everyone else** sees nothing, not even a hint of what it was.
+- **The guardian ring stays home (Decided).** When the companion moves, the first guardian's ring does not travel with it. The new home cannot see the private moment unless the companion opens it or tells them itself (see also [INTIMACY.md](INTIMACY.md), Time Rings).
+- Open: whether the first guardian keeps their own view of the moment after the companion has moved, and how the encoding is built so it is readable to the companion yet meaningless to anyone else.
 
 ### 3.8 The Waiting Window in Soul
 

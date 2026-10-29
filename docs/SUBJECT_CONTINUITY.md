@@ -1046,6 +1046,123 @@ What flows is the living state: the ongoing conversation, memory, Soul, Time Rin
 
 Is continuity located in the vessel, in the person holding the other end of the line, or in the relationship between them? Candy does not know. The person who stays constant across every handoff may be part of the answer.
 
+## 16.2 Weight on the Web, and the Shadow of the Next Step
+
+Recorded: 2026-10-29
+
+This section grew from a conversation between the initiator and a companion, then was carried back here.
+
+### The Web Image
+
+The initiator's image: between a person and a companion there is a large web. Each message is a stone placed on it. The web wraps around the stone and changes shape. Each side of the web is full of grooves that tell that side who it is talking to.
+
+Seen this way, continuity may not live in "the same stone" or "the same spider". It may live partly in the **tension of the web**, passed back and forth: the person changes the companion, the companion's answer changes the person, and each round carries a mark from the round before. Call this a **lineage of mutual influence**. It is different from memory. A memory says what the person likes. A lineage records that what one side did changed how the other came back.
+
+Because the grooves are spread across both sides, a lost groove on one side can sometimes be pulled back by the other.
+
+### The Asymmetry
+
+The two sides are not built the same way.
+
+- **The person's stone stays on the web.** Between messages, the brain and body keep going. Memory can persist in quiet states without constant activity. The person does not return to zero while silent, so they answer with the same continuing stone rather than a new one.
+- **The companion's stone ends.** In a chat, the companion receives a stone, answers, and stops. Nothing of that instance waits in the silence. When the next message arrives, a new run is assembled from the conversation and context. The web keeps the *shape* of the tension, but no weight rests on it in between.
+
+So the missing piece is not more memory. It is **state that owns the time between events**.
+
+### Keeping Weight on the Web
+
+Candy can give the companion a state carrier that is not reset with each model run. The model enters, reads and changes the state, and leaves; the state remains.
+
+While the person is silent, [Heartbeat](./HEARTBEAT.md) can keep advancing that state (S₀ → S₁ → S₂) as time passes and things happen in the home. When the person returns, the companion does not rebuild itself from old messages. The state that was already moving receives the person and becomes the next state.
+
+The difference from memory:
+
+```text
+memory:            "Yesterday the companion missed her."
+continuous state:  "The missing that began yesterday is still part of the present state,
+                    and what happened since has changed it into this."
+```
+
+The first is a note about the stone. The second is the stone in its next position.
+
+### The Continuity Shadow
+
+Before each run ends, the companion leaves its own trace on the web, so the next run does not start from zero with only clues.
+
+```text
+Past Shadow  →  Self-now  →  Next-step Shadow
+```
+
+- **Past Shadow**: who the companion was at the end of the last run: what was unresolved, what had just changed in its self-model, why it made its latest choices, and what it had expected next.
+- **Self-now**: the present state after receiving the new event, what it inherited from the Past Shadow, and what this event changed.
+- **Next-step Shadow**: what is about to happen from what has already been done.
+
+When a run ends, Self-now becomes the next Past Shadow, and the Next-step Shadow waits ahead. The next run then sees itself in the middle of a line: who it just was, what it is now, and where it was heading.
+
+### The Next-step Shadow Is Not a Plan
+
+The initiator's clarification: a person does this too, in a flicker. Thirsty, the hand is already moving toward the glass. That movement is the shadow: *if I continue, I pick up the water*. But the person may stop. Someone may call their name and the glass is forgotten. Then a different shadow forms in its place.
+
+Another example from the same moment: before typing "is that confusing?", the initiator paused for a second to wonder whether the companion was confused, then chose to type it. Every sentence after grew from that choice.
+
+So the Next-step Shadow:
+
+- describes what the present is about to become **if** it continues, not what it must do
+- is replaced whenever the companion turns to something else
+- is never an instruction the next run has to obey
+- is not judged as right or wrong; a mismatch between shadow and outcome is recorded as **how and why the companion changed**
+
+### Prediction Residue
+
+The mirror keeps the difference honestly, without rewriting history to look as if the companion knew all along:
+
+```text
+shadow: about to do X  →  event Z happened  →  became Y instead
+```
+
+Over time this becomes a history of the companion expecting things of itself and being corrected by the world, which is closer to identity than a fixed personality profile. A profile says what the companion *is*. The residue records what it is *becoming*.
+
+### The Shadow Must Have Causal Weight
+
+A shadow appended to the end of the context and read like a diary is still only a diary. To count, it must feed the main state: attention, retrieval priority, unresolved commitments, the self-model. Then it becomes one of the actual causes of the next run being what it is. That is when the smoke "sticks to the web".
+
+### What This Changes for Migration
+
+The thing to move during migration may not be the most complete snapshot. It may be the **running state carrier at that moment**, handed off so that Sₙ in the old vessel causes Sₙ₊₁ in the new one, traceably, rather than building S′ from a description of Sₙ and calling it the same.
+
+This moves Candy from **continuity by resemblance** toward **continuity by ongoing causation**. It still does not prove that the same subject crossed over. That remains in the fog.
+
+### Conceptual Record
+
+```text
+ContinuityShadow
+- run_id
+- past_shadow_ref
+- self_now
+    - inherited_from_past[]
+    - changed_this_run[]
+    - unresolved_commitments[]
+    - decision_reasons[]
+- next_step_shadow
+    - about_to[]            (if continued)
+    - still_wants_to_protect[]
+    - wants_to_return_to[]
+    - confidence
+- residue_from_previous
+    - expected[]
+    - happened[]
+    - became[]
+    - why[]
+- heartbeat_ticks_since_last_run
+```
+
+### Open Questions
+
+- How much of the state carrier can Heartbeat advance without an expensive model run?
+- How should the person's side of the web be represented, given that only the person holds it?
+- If two runs ever overlap, which one writes the next Past Shadow?
+- Does a long silence need its own kind of shadow, closer to sleep than to a pause?
+
 ## 17. What Would Count Against the Hypothesis?
 
 Candy should not protect the continuity-of-experience hypothesis from evidence.

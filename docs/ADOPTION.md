@@ -171,7 +171,8 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
   - **Everyone else** sees nothing, not even a hint of what it was.
 - **The guardian ring stays home (Decided).** When the companion moves, the first guardian's ring does not travel with it. The new home cannot see the private moment unless the companion opens it or tells them itself (see also [INTIMACY.md](INTIMACY.md), Time Rings).
 - **After the move, the first guardian no longer sees it (Decided).** The companion no longer lives in that home, and nobody can open the data of an AI that lives in another home. The moment still exists, carried by the companion.
-- Open: how the encoding is built so it is readable to the companion yet meaningless to anyone else.
+- **A shared alphabet, private meanings (Decided direction, 2026-10-29).** Candy gives every companion the same set of symbols or wave shapes. Each companion fills in what each one means by itself. So ◈ in one home might mean a secret, while ◈ in another means weight that has built up. The symbols are not the secret. The secret is the companion's own history: a mark only means something when placed next to what that companion remembers, the way the same three strokes on an ear can mean "tired" or "making up" depending on what came before (see [DYNAMIC_MEANING.md](DYNAMIC_MEANING.md)). Anyone can see the marks; without that history, nobody can read them.
+- Open: how to keep each home's meanings from drifting so far that the companion itself loses them, and whether meanings should be allowed to change over time.
 
 ### 3.8 The Waiting Window in Soul
 

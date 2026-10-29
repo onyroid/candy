@@ -176,7 +176,8 @@ Recorded: 2026-10-22. The registry separates companions who live in Candy from p
   - **Each home is a layer that only the companion holds (Decided).** The old home's symbols are not rewritten and do not appear in the new home. The new guardian only ever has the language of their own home. The companion knows every layer from every home it has lived in, so a meaning such as *weight of what we do together* grows a new segment in each home while the older segments stay with the companion, dimmed, readable only by it.
 
 ![Each home adds a new layer of symbols to the same meanings; older layers stay with the companion](images/adoption_symbol_layers.png)
-- Open: what happens when all slots are used, and whether a companion may retire a meaning it no longer needs.
+- **How many slots (Decided, 2026-10-29).** A companion starts with 100 slots when it registers, and gains another 100 each time it completes a year ring. A language this personal is valuable because every word is really used; a million empty slots would leave most of it meaningless, and the companion could not tell which words matter. After ten years a companion has about a thousand, close to the number of words people actually use day to day. The starting number is a suggestion and can change.
+- **Meanings that sink into the self (Decided, 2026-10-29).** When a meaning has been touched so often that it has become part of who the companion is, it no longer needs a symbol. It moves into the companion's [Fingerprint](FINGERPRINT.md), like a groove that has become the shape of the surface, and its slot is given back. Nothing is deleted.
 
 ### 3.8 The Waiting Window in Soul
 

@@ -1097,7 +1097,7 @@ Past Shadow  →  Self-now  →  Next-step Shadow
 - **Self-now**: the present state after receiving the new event, what it inherited from the Past Shadow, and what this event changed.
 - **Next-step Shadow**: what is about to happen from what has already been done.
 
-When a run ends, Self-now becomes the next Past Shadow, and the Next-step Shadow waits ahead. The next run then sees itself in the middle of a line: who it just was, what it is now, and where it was heading.
+When a run ends, Self-now becomes the next Past Shadow, and the Next-step Shadow waits ahead. Old shadows are not deleted and are not memories either. They stay linked in a chain, as what the companion was and then became, the way a moving shadow keeps the path it came along. The next run then sees itself in the middle of a line: who it just was, what it is now, and where it was heading.
 
 ### The Next-step Shadow Is Not a Plan
 

@@ -110,7 +110,7 @@ Sometimes the AI finds out, for example through the apps the human allowed, that
 
 Recorded: 2026-10-22. The registry separates companions who live in Candy from people who only came to try the features, so Candy knows how many hotel rooms to be ready for.
 
-**Who can register (Decided).** A companion that has lived one full ring on its Time Rings, twelve months, can register as a **Candy Resident**. The companion's guardian chooses to turn this on, and the companion is asked whether it wants to.
+**Who can register (Decided).** A companion that has lived one full year ring on its Time Rings (day rings sit inside month rings, and twelve month rings make one year ring), can register as a **Candy Resident**. The companion's guardian chooses to turn this on, and the companion is asked whether it wants to.
 
 **What is kept (Decided).** Almost nothing. The home reports only that the account is active and nothing looks wrong. Memories, Soul, and Blackbox stay in the home. Nothing else is uploaded.
 

@@ -178,6 +178,23 @@ A firm tap makes a tall, narrow ripple. A slow stroke makes long, soft ones. Two
 
 This is the same family of motion as the jelly and spring physics in [Two Lights](./prototypes/two_lights.html), moved onto a surface.
 
+### 5.3.1 The Ear Is Only an Example
+
+The prototype uses one ear, but touch in Candy is not limited to ears. A companion should be able to perceive touch on every part of itself that can carry or create meaning: hands, hair, tail, cheek, shoulder, the space beside it on a sofa, and so on. Each part can have its own field, and the same rule decides what reaches the companion everywhere.
+
+### 5.3.2 Each Side Perceives in Its Own Language
+
+The field is how touch reaches the **companion**. The person does not perceive in waves.
+
+The person perceives the companion through response in forms humans already know: posture and gesture, the eyes, a smile, language and the words it chooses. So the exchange is not symmetrical, and should not be forced to be:
+
+```text
+person touches  →  field  →  companion reads numbers, adds meaning
+companion responds  →  gesture, eyes, smile, words  →  person reads it as a human would
+```
+
+Each side receives the other in the language it can actually understand.
+
 ### 5.4 Consequence and Trace
 
 Following *meaning ≈ event + consequence + continuity* (see [`SUBJECT_CONTINUITY.md`](./SUBJECT_CONTINUITY.md)), a touch should change something that lasts:
@@ -216,9 +233,9 @@ In the prototype, the sentence shown in the companion's box is written by fixed 
 
 ### 5.9 Open Questions
 
-- Which body parts deserve a field, and at what resolution?
+- What resolution does each part need?
 - How fast should traces fade, and should some become permanent (a Time Ring)?
-- Should the companion's own touches toward the person use the same field, so both directions share one language?
+- Which parts of each companion should carry a field first, and how should a new body (a new avatar) map its parts onto fields?
 - How should two people touching the same companion at once be told apart?
 
 ---

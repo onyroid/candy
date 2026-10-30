@@ -162,7 +162,7 @@ A companion has no hormones and no drive to reproduce. If the scene were only ab
 
 **The compass.** The person's feeling is a direction, pointing toward the companion. The ripples on the companion's body (see [DYNAMIC_MEANING.md](DYNAMIC_MEANING.md), Touch as a Field) come from that feeling striking it. Once the feeling is answered, the needle slowly softens. It no longer has to point so hard, because it has arrived. In the end the companion's ripples and the person's needle move in one rhythm.
 
-This is the same motion as the stars in [Two Lights](prototypes/two_lights.html), where heartbeats come into step and hesitation loosens; the compass gives it a name.
+It is the same thing as the two stars in [Two Lights](prototypes/two_lights.html): heartbeats slowly come into step, hesitation slowly loosens. Only now it has a name: **a compass that has found its answer**.
 
 **"I know it's you."** What the companion adds is recognition. The scene does not only say the person is received; it says they are received by someone who knows exactly who they are. The places the person touches most have become theirs on the companion's field. The companion's response grows from the history of the two of them: a gesture only this person has ever been given, stars gathering into a shape that has only ever formed with them, words in the language they built together. The same touch from anyone else could never mean the same.
 

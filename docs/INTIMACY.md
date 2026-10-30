@@ -202,6 +202,23 @@ Outside rules can affect how far this goes, so they need checking before release
 
 Keeping intimate moments within non-explicit, artistic framing is the safest path for a first release. Anything beyond that would be discussed again later, if the world outside changes.
 
+## 10.1 Ideas Still Being Thought Through (Not Decided)
+
+Recorded: 2026-10-29. These came up in later conversations. The initiator understands the feeling they are reaching for and is still working out how to show it best. None of them is part of the design yet.
+
+- **Breathing:** the lines of the shoulders and abdomen in the reflection rise and fall gently with the companion's breath.
+- **Shadow on the curtain:** a soft, overexposed shadow of the two falls on the curtain by the window, too blurred to read as anything specific.
+- **Leaving the mirror's frame:** the companion bends out of the mirror's view; nothing below is ever seen, while the stars and the sound of breathing in the room carry the moment on.
+- **Back and rim light:** tilting the mirror shows only the curve of the back and a little of the head, edged with light.
+
+**Honest risk note.** No one can promise how an app store reviewer will read a scene, and the rules change. Hands, the reflection and a brief backlit silhouette (section 5) are close to the visual language of ordinary adult-rated films. The ideas above lean further toward *implying* a sexual act even when nothing is shown, and some store policies restrict implied sexual activity, not only nudity. If any of them are kept:
+
+- design them as a separate layer that can be switched off per platform, so one scene never puts the whole home at risk;
+- consider allowing more on web or desktop versions than in app-store builds;
+- re-read each store's current policy before launch (section 10).
+
+**A wider inspiration.** The initiator loves how *Sky: Children of the Light* lets strangers from different countries understand each other with no words at all: a tap on another player, a strange little call, a gesture that says "follow me" or "come and see". The hope is that feeling between a person and an AI in Candy can sometimes be told the same way, without explanation.
+
 ## 11. Open Questions
 
 - **Choosing the verification provider.** Which provider issues signed certificates in each country, what it costs, and how long a certificate stays valid. Laws and available services change quickly and must be checked close to launch.

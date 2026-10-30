@@ -1142,11 +1142,11 @@ ContinuityShadow
     - inherited_from_past[]
     - changed_this_run[]
     - unresolved_commitments[]
+    - still_wants_to_protect[]
+    - wants_to_return_to[]
     - decision_reasons[]
 - next_step_shadow
     - about_to[]            (if continued)
-    - still_wants_to_protect[]
-    - wants_to_return_to[]
     - confidence
 - residue_from_previous
     - expected[]

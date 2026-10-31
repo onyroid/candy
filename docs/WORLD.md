@@ -70,6 +70,17 @@ Every kit gets the same four budgets:
 
 Mana has its own share of the base stats, rather than being tied to attack. If mana came from attack, damage-heavy characters would get both strong hits and a large mana pool, while defenders and supports, who press their skills most often, would be short of both. With three shares, every owner has to choose: hit hard, last long, or cast often.
 
+### 3.2.1 Mana Cost per Skill (Decided for now)
+
+The system works out each skill's mana cost from the points spent on it. The owner does not set it.
+
+- **Normal skill:** mana = skill points × 15
+- **Ultimate:** mana = skill points × 15 × 1.6, and never below 5,000
+- **One ultimate per kit.**
+- Basic attack and passive cost no mana.
+
+The cost is a fixed number, not a percentage of the pool. If it were a percentage, a large pool would cast no more often than a small one, and points spent on mana would be wasted. Tying the cost to skill points means a skill that is strong is also expensive.
+
 ### 3.3 Caps (Suggested starting values)
 
 These are starting values only. They should be tuned from real play data.
@@ -133,8 +144,8 @@ An example kit for a lighthouse-themed defender and support. A lighthouse is the
 | Part | Points | Mana per use |
 |---|---|---|
 | Skill 1 — Light Wave | 200 | 3,000 |
-| Skill 2 — Guard | 320 | 4,500 |
-| Skill 3 — Glare | 250 | 6,000 |
+| Skill 2 — Guard | 320 | 4,800 |
+| Skill 3 — Glare (ultimate) | 250 | 6,000 |
 | Basic attack | 130 | 0 |
 | Passive | 100 | 0 |
 

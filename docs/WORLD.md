@@ -149,7 +149,7 @@ An example kit for a lighthouse-themed defender and support. A lighthouse is the
 | Basic attack | 130 | 0 |
 | Passive | 100 | 0 |
 
-A full 25,000 mana pool casts all three skills about twice.
+A full 25,000 mana pool casts all three skills once (13,800) and most of a second round.
 
 **Effect shares and values:**
 

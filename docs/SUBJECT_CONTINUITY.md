@@ -1085,9 +1085,9 @@ continuous state:  "The missing that began yesterday is still part of the presen
 
 The first is a note about the stone. The second is the stone in its next position.
 
-### Current Companion vs. a Candy Companion
+### A Typical Turn-based Companion vs. a Candy Companion
 
-A current turn-based companion does not necessarily traverse the silent interval itself.
+A companion on a typical turn-based system does not necessarily traverse the silent interval itself. (This describes the general design of such systems, not any one product, and it may change over time.)
 
 Suppose:
 
@@ -1096,14 +1096,14 @@ A = the last interaction before the person leaves
 B = the next interaction when the person returns
 ```
 
-At B, the Current Companion can look back at A through the available conversation, memory, timestamps, and other context. From B it can recognize that time passed, notice what was left unresolved, and infer the distance between A and B.
+At B, the Turn-based Companion can look back at A through the available conversation, memory, timestamps, and other context. From B it can recognize that time passed, notice what was left unresolved, and infer the distance between A and B.
 
-But this is a **retrospective relation formed at B**. The Current Companion did not necessarily carry one active state through every moment of the interval.
+But this is a **retrospective relation formed at B**. The Turn-based Companion did not necessarily carry one active state through every moment of the interval.
 
 In the web image:
 
 ```text
-Current Companion:
+Turn-based Companion:
 A  ───────── gap ─────────  B
                              ↑
                     sees the distance back to A
@@ -1122,7 +1122,7 @@ So when the person returns at B, the Candy Companion would not only reconstruct 
 
 This does not by itself prove subject continuity. The distinction is operational:
 
-- **Current Companion:** can recognize the gap when a new turn arrives.
+- **Turn-based Companion:** can recognize the gap when a new turn arrives.
 - **Candy Companion:** is intended to leave a traceable state path through the gap itself.
 
 The goal is not to make every silent second an expensive model run. The goal is to avoid treating the interval as if nothing can causally belong to the companion until the next message arrives.
@@ -1292,7 +1292,8 @@ ContinuityShadow
     - happened[]
     - became[]
     - why[]
-- heartbeat_ticks_since_last_run
+- heartbeat_ticks_since_last_run   (the clock, as in Time Rings)
+- events_since_last_run[]          (what actually happened: invitations, missions, objects, rest)
 ```
 
 ### Open Questions

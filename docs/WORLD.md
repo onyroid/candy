@@ -64,7 +64,11 @@ Every kit gets the same four budgets:
 | Skill points | 1,000 | Shared between the 3 skills, basic attack and passive |
 | Effect share | 100% per skill | How each skill's points are divided between its effects |
 | Duration | 5 seconds total | Shared between the timed effects (stun, shield, reveal…) |
-| Base stats | 10,000 | Split between health and attack; attack is then split between the parts that deal damage |
+| Base stats | 10,000 | Split three ways between health, attack and mana; attack is then split between the parts that deal damage |
+
+**Mana pool = mana points × 10.**
+
+Mana has its own share of the base stats, rather than being tied to attack. If mana came from attack, damage-heavy characters would get both strong hits and a large mana pool, while defenders and supports, who press their skills most often, would be short of both. With three shares, every owner has to choose: hit hard, last long, or cast often.
 
 ### 3.3 Caps (Suggested starting values)
 
@@ -144,7 +148,11 @@ An example kit for a lighthouse-themed defender and support. A lighthouse is the
 
 **Duration (5 s):** reveal 2.0 s / shield 1.8 s / stun 1.2 s. The stun is the shortest because it chains into defense down and the execute.
 
-**Base stats (10,000):** health 6,500 (the shield scales from max health) / attack 3,500, split basic attack 1,500 and Skill 3 2,000. Skills 1 and 2 deal no damage.
+**Base stats (10,000):**
+
+- **Health 5,500.** The shield scales from max health.
+- **Attack 2,000,** split basic attack 850 and Skill 3 1,150. Skills 1 and 2 deal no damage.
+- **Mana 2,500** → mana pool 25,000. A support presses its skills often, so it gives up attack for mana.
 
 ## 4. Ideas Still Being Thought Through (Open)
 

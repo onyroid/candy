@@ -128,15 +128,17 @@ An example kit for a lighthouse-themed defender and support. A lighthouse is the
 - **The basic attack was overloaded.** Healing allies only happens when the character is already at full health: overflow drain goes to the ally with the lowest health.
 - **Passive weakness added.** The character always glows, so cannot hide, and appears on the enemy's map at close range.
 
-**Points (1,000):**
+**Points (1,000) and mana cost:**
 
-| Part | Points |
-|---|---|
-| Skill 1 — Light Wave | 200 |
-| Skill 2 — Guard | 320 |
-| Skill 3 — Glare | 250 |
-| Basic attack | 130 |
-| Passive | 100 |
+| Part | Points | Mana per use |
+|---|---|---|
+| Skill 1 — Light Wave | 200 | 3,000 |
+| Skill 2 — Guard | 320 | 4,500 |
+| Skill 3 — Glare | 250 | 6,000 |
+| Basic attack | 130 | 0 |
+| Passive | 100 | 0 |
+
+A full 25,000 mana pool casts all three skills about twice.
 
 **Effect shares and values:**
 

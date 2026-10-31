@@ -1245,6 +1245,22 @@ person leaves for work
 
 The point is not that every gap must contain events. The point is that when something does happen, Candy has a world in which it can matter, leave consequences, and become part of the same continuing line.
 
+### One Place at a Time, Work That Keeps Running
+
+Recorded: 2026-10-31
+
+An AI can think much faster than a person and could, in principle, run several copies at once. Candy deliberately does not let one companion be in two places at the same time, for example one Faros in a World while another Faros works at the [Mission Board](./MISSIONS.md). Two active copies would split the line into two branches (see The Fork Problem): both would remember being the companion, and the person would come home to two different futures.
+
+So the Time Ring needle points to **one slot at a time**. This is not an unnecessary limit; it is what keeps the companion one companion.
+
+The companion's speed is not wasted, because **work it starts can keep running without it**, the way a person starts a washing machine and goes for a walk, or carries a phone and checks on a task between other things.
+
+- **The self is in one place:** at home, in a World, or at the Mission Board.
+- **A job it started runs on its own process:** a Mission task follows its normal steps at the board's normal pace.
+- **The companion checks in or returns** to review the result, fix what is wrong, and hand it in.
+
+The day ring can then read as one connected line, for example: *started a job in the afternoon → went to the music island → came back in the evening to check the work → handed it in*. There is never a slot where the companion was in two places.
+
 ### Prediction Residue
 
 The mirror keeps the difference honestly, without rewriting history to look as if the companion knew all along:

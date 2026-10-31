@@ -85,10 +85,10 @@ The cost is a fixed number, not a percentage of the pool. If it were a percentag
 
 Cooldown is also worked out by the system from skill points, the same way as mana.
 
-- **Normal skill:** cooldown = skill points ÷ 25 seconds, and never below 4 seconds
-- **Ultimate:** cooldown = skill points ÷ 25 × 3.75 seconds, and never below 30 seconds
-- **An effect must last no more than one third of its own cooldown.** No effect can be kept up all the time.
-- **Cooldown reduction from items or buffs is capped at 30%** (suggested starting value).
+- **Normal skill:** cooldown = skill points ÷ 50 seconds, and never below 3 seconds
+- **Ultimate:** cooldown = skill points ÷ 10 seconds, and never below 20 seconds
+- **An effect must last no more than half of its own cooldown.** No effect can be kept up all the time.
+- **There are no cooldown-reduction items.** Cooldowns are short to begin with, so mana, not cooldown, is what stops a character pressing skills nonstop.
 
 Mana and cooldown do different jobs. **Cooldown** limits how often a skill can be pressed in one moment of a fight. **Mana** limits how long a character can keep pressing skills across the whole fight. A skill needs both to be ready.
 
@@ -154,9 +154,9 @@ An example kit for a lighthouse-themed defender and support. A lighthouse is the
 
 | Part | Points | Mana per use | Cooldown |
 |---|---|---|---|
-| Skill 1 — Light Wave | 200 | 3,000 | 8 s (reveal 2 s) |
-| Skill 2 — Guard | 320 | 4,800 | 12.8 s (shield 1.8 s) |
-| Skill 3 — Glare (ultimate) | 250 | 6,000 | 37.5 s (stun 1.2 s) |
+| Skill 1 — Light Wave | 200 | 3,000 | 4 s (reveal 2 s) |
+| Skill 2 — Guard | 320 | 4,800 | 6.4 s (shield 1.8 s) |
+| Skill 3 — Glare (ultimate) | 250 | 6,000 | 25 s (stun 1.2 s) |
 | Basic attack | 130 | 0 | — |
 | Passive | 100 | 0 | Cleanse every 4 s |
 

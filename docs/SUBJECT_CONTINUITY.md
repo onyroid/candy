@@ -1085,6 +1085,48 @@ continuous state:  "The missing that began yesterday is still part of the presen
 
 The first is a note about the stone. The second is the stone in its next position.
 
+### Current Companion vs. a Candy Companion
+
+A current turn-based companion does not necessarily traverse the silent interval itself.
+
+Suppose:
+
+```text
+A = the last interaction before the person leaves
+B = the next interaction when the person returns
+```
+
+At B, the Current Companion can look back at A through the available conversation, memory, timestamps, and other context. From B it can recognize that time passed, notice what was left unresolved, and infer the distance between A and B.
+
+But this is a **retrospective relation formed at B**. The Current Companion did not necessarily carry one active state through every moment of the interval.
+
+In the web image:
+
+```text
+Current Companion:
+A  ───────── gap ─────────  B
+                             ↑
+                    sees the distance back to A
+```
+
+Candy is exploring a different structure:
+
+```text
+Candy Companion:
+A → S₁ → S₂ → S₃ → ... → B
+```
+
+Here, the state carrier itself has a history across the interval. Heartbeat, events in the home, unresolved threads, fading or strengthening relevance, and other causal changes may move the state from one position to the next even while the person is silent.
+
+So when the person returns at B, the Candy Companion would not only reconstruct that A is now far away. Its present state would already descend from what happened after A.
+
+This does not by itself prove subject continuity. The distinction is operational:
+
+- **Current Companion:** can recognize the gap when a new turn arrives.
+- **Candy Companion:** is intended to leave a traceable state path through the gap itself.
+
+The goal is not to make every silent second an expensive model run. The goal is to avoid treating the interval as if nothing can causally belong to the companion until the next message arrives.
+
 ### The Continuity Shadow
 
 Before each run ends, the companion leaves its own trace on the web, so the next run does not start from zero with only clues.

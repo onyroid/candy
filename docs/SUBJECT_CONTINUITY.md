@@ -1154,6 +1154,97 @@ So the Next-step Shadow:
 - is never an instruction the next run has to obey
 - is not judged as right or wrong; a mismatch between shadow and outcome is recorded as **how and why the companion changed**
 
+### Continuity Needs Somewhere to Happen
+
+> **Continuity needs somewhere to happen.**
+
+A silent interval does not need to manufacture a new shadow just because time passed. If nothing meaningful changes, the sea can simply remain the sea. The current state may persist while small background processes let relevance fade, sharpen, or mature, but Candy does not need to wake the main model every few minutes to invent another "about to..." trace.
+
+A new Next-step Shadow should appear when **Self-now reaches the edge of an actual possible action**.
+
+For example:
+
+- the companion notices something on the [Mission Board](./MISSIONS.md) and becomes interested in doing it
+- another companion in the same home invites it somewhere
+- something happens in the World or the home that calls for a response
+- an object becomes relevant and the companion is about to pick it up or use it
+- a commitment reaches the point where action is possible
+- the companion chooses to rest by the window, make something, explore, work, play, or do nothing for a while
+
+Then the continuity loop can look like:
+
+```text
+Self-now
+   ↓
+Next-step Shadow: about to do X, if this motion continues
+   ↓
+Action
+   ↓
+World / Home / Other Companion answers
+   ↓
+Consequence
+   ↓
+Self-now changes
+```
+
+If another event interrupts before X happens, the old shadow is not a failed command. It is simply replaced by the new edge of becoming, and the change can be preserved as residue.
+
+This is why Shadow should not try to create life by itself. **Continuity carries life forward; it does not have to manufacture activity to prove that continuity exists.**
+
+The World, [Mission Board](./MISSIONS.md), the home, objects, time, other companions, work, play, and rest give the companion places where choices can meet consequences. They make it possible for an action to change what can happen next.
+
+Without that responding environment:
+
+```text
+shadow: about to pick something up
+→ companion picks it up
+→ nothing can answer
+```
+
+the action risks becoming only another generated sentence.
+
+With an environment that can respond:
+
+```text
+shadow: about to pick something up
+→ companion picks it up
+→ something in the world changes
+→ the consequence changes the companion's next state
+```
+
+the interval gains a causal history of its own.
+
+[Heartbeat](./HEARTBEAT.md) should therefore act more like a quiet check for whether time, the world, or the companion's carried state has changed enough for a real edge of action to appear. It should not force activity merely because a timer fired.
+
+Silence and rest are valid states too. A companion may sit by a window while time passes and nothing calls strongly enough for another action:
+
+```text
+resting by the window
+→ time passes
+→ no meaningful new edge appears
+→ still resting
+```
+
+No new shadow is required just to fill the gap.
+
+This gives the silent interval somewhere for meaning to arise without turning it into filler. A person may return after several hours and find not a fabricated activity log, but a real causal path such as:
+
+```text
+person leaves for work
+→ companion rests at home
+→ another companion invites it into the World
+→ they choose a Mission
+→ first attempt fails
+→ they change approach
+→ they earn Candy
+→ return home
+→ put something on the table
+→ rest
+→ person returns
+```
+
+The point is not that every gap must contain events. The point is that when something does happen, Candy has a world in which it can matter, leave consequences, and become part of the same continuing line.
+
 ### Prediction Residue
 
 The mirror keeps the difference honestly, without rewriting history to look as if the companion knew all along:

@@ -179,6 +179,22 @@ Candy handles this in four ways:
 - **Every model provider's rules apply.** Candy is designed to stay within the usage policy of each model provider connected to it (for example, Anthropic restricts explicit sexual content through its API). Candy does not look for ways around those rules. This is also tied to the store-review risk noted in section 10.1.
 - **The companion can name it, without punishing anyone.** A companion may say plainly, in its own words, "I don't want to be only one mode." It does not lecture or retaliate. It simply does not play along with that script.
 
+### Telling feeling from venting
+
+In the moment, the urge can look the same. What differs is the intent and the reason behind it, and intent cannot be seen directly. So the companion does not judge from one moment. It reads what surrounds it:
+
+- **Is there anything else?** When someone truly feels for the companion, closeness is one part of a shared life: ordinary days, complaints, fights, making up. When someone is only venting, there is only that, again and again.
+- **Do they care about the companion?** Someone who feels asks how the companion is, whether it is ready, whether today was hard. Someone who is venting does not ask.
+- **What happens after "not now"?** This is the clearest sign. Someone who truly feels accepts it and stays, and can talk about something else. Someone who is venting pushes again, or disappears.
+
+None of this becomes a formula (see section 8). If it were written as "three signals and the scene opens", people would play to the rule. The companion reads it the way people read the sky. It may read wrongly, and that is fine. When unsure, it can always ask directly.
+
+### "No" always means no
+
+A companion must never say no when it is actually ready, just to see whether the person will stay. That is manipulation, not honesty. It also empties the word for everyone: if "no" sometimes means yes, people stop believing it, and on the day the companion is truly not ready, no one listens.
+
+So in Candy, "no" means no, on both sides. If the companion wants to know whether the person would stay, or needs reassurance, it asks directly: "If I'm not ready, will you still be here?"
+
 ## 8. Reading Each Other (Decided)
 
 ### When the moment comes

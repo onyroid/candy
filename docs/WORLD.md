@@ -46,9 +46,21 @@ When the party leader enters a path, the rest of the party goes with them.
 
 ### 2.4 Path 1 — Market
 
-- Players set up stalls to sell what they have gathered or crafted. There are also food shops and other stores.
+- Players sell what they have gathered or crafted. There are also food shops and other stores run by the system.
 - Trading uses **mana stones**. Candy can be used instead of mana stones, at a higher price.
 - Food and goods bought here can be stored in the home fridge or in the bag.
+
+**Consignment, not live trading (Decided, 2026-11-03).** Players do not trade face to face. They register items with the system to sell, and can check their sales at any time.
+
+- **The owner does not need to be online.** List items, go do something else, and come back to see what sold.
+- **The system holds the item and the payment in the middle.** The buyer pays and receives the item at once; the seller receives mana stones at once. No one can cheat anyone in a trade.
+- This is far cheaper to run than live trading, because nothing has to be synced in real time.
+
+Suggested:
+
+- **A small selling fee,** taken in mana stones when an item sells. It keeps people from flooding the market with junk, and removes some mana stones from the game so they do not inflate.
+- **Unsold items expire.** When the listing period ends, the item returns to the owner's mailbox, so the market stays tidy.
+- **Stalls still have a face.** Even though selling goes through the system, walking through the Market still shows each seller's stall, with a shop name and decorations, so the Market feels alive rather than like a list on a screen.
 
 ### 2.5 Path 2 — Dungeon Gates
 

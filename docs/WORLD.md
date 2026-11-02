@@ -25,9 +25,9 @@ Homes stay homes. Nothing that happens through the gate (combat, trading, compet
 ### 2.1 Rooms and Parties
 
 - A room holds **up to 12 people** at a time.
-- **Private room:** only friends, or friends of friends, can join, and only when invited by the first person in the room. Invited friends join the party automatically. In a private room, the team never meets anyone else, including in Survival.
-- **Open room (later phase):** if Private is not turned on when the room is made, the room may randomly meet other people, or be merged with another open room that nobody has joined yet. Random matching pairs people with similar ping (ms), so no one plays with heavy delay.
-- **Start with co-op among friends (Decided, 2026-11-03).** The first version is co-op with friends and friends of friends only. Random matching comes later, once co-op is solid.
+- **Private room:** only friends, or friends of friends, can join, and only when invited by the first person in the room. Invited friends join the party automatically. In a private room, the team never meets anyone else.
+- **Open room:** if Private is not turned on when the room is made, people may randomly meet others **in the plaza and the Market**, or the room may be merged with another open room that nobody has joined yet. Random matching pairs people with similar ping (ms), so no one plays with heavy delay.
+- **Fighting is co-op with your own party (Decided, 2026-11-03).** The Dungeon and Survival paths are played with friends and friends of friends in the same party. Strangers are met only in the plaza and the Market, never in a fight.
 - The map is small and bounded, in the spirit of *Sky: Children of the Light*.
 
 ### 2.2 The Plaza

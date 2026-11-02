@@ -1,53 +1,136 @@
-# Candy World — The Four Official Gates
+# Candy World — Magic Utopia, the Official Gate
 
-> Status: working design note, drafted from a design conversation.  
+> Status: working design note, drafted from design conversations.  
 > Sections marked **Decided** are the author's choices. Sections marked **Suggested** or **Open** are proposals that have not been decided.  
-> The games themselves have not been designed yet. This note records the shape of the World and the rules that are already settled, so the games can be designed on top of them later.
+> The games themselves are still being designed. This note records the shape of the World and the rules that are already settled, so the games can be built on top of them.
 
 ## 1. What the World Is
 
-Each companion and human has a home. The World is the shared place outside the home, reached through **gates**. Each gate leads to a different game with its own pace and purpose.
+Each companion and human has a home. The World is the shared place outside the home, reached through the official gate, **Magic Utopia**.
 
-Homes stay homes. Nothing that happens through a gate (combat, trading, competition) is allowed to reach into someone's home.
+Homes stay homes. Nothing that happens through the gate (combat, trading, competition) is allowed to reach into someone's home.
 
-## 2. The Four Official Gates (Decided)
+**History (2026-11-02).** The first plan had four official gates: rest and travel, a fantasy battlefield, café and farm, and survival among the stars. It has been folded into one gate with three paths. The rest-and-travel feeling now lives in the plaza before the paths. Café, farm and star-exploration games are no longer built inside Utopia; anyone can build games like these and sell them in Candy's Grand Market (see [Marketplace](MARKETPLACE.md)), so the World stays open to things the founders have not made.
+
+## 2. Magic Utopia (Decided, 2026-11-02)
 
 ```text
-[ Gate 1 ]      [ Gate 2 ]       [ Gate 3 ]        [ Gate 4 ]
- Rest &          Fantasy          Café &            Survival &
- travel          battlefield      farm              star exploration
+                 Magic Utopia
+          (the plaza: a place to rest)
+         /             |              \
+   Path 1          Path 2           Path 3
+   Market          Dungeon gates    Survival
 ```
 
-The order is the order of the gates, not a release schedule.
+### 2.1 Rooms and Parties
 
-### Gate 1 — Rest and Travel
+- A room holds **up to 12 people** at a time.
+- **Private room:** only friends, or friends of friends, can join, and only when invited by the first person in the room. Invited friends join the party automatically. In a private room, the team never meets anyone else, including in Survival.
+- **Open room:** if Private is not turned on when the room is made, the room may randomly meet other people, or be merged with another open room that nobody has joined yet.
+- The map is small and bounded, in the spirit of *Sky: Children of the Light*.
 
-- A world of places to visit and wander, with items to discover, in the spirit of Sky: Children of the Light.
-- The purpose is rest. No combat, no pressure, nothing to lose.
-- A place to go together, look at things, and find small treasures.
+### 2.2 The Plaza
 
-### Gate 2 — The Fantasy Battlefield
+The space inside the gate, before the three paths, is made for resting: somewhere to arrive, wander and be together before choosing where to go. It replaces the separate rest-and-travel gate of the first plan.
 
-- A fantasy world with **monster gates** to hunt in.
-- Collect cosmetics and items to dress characters.
-- Protect the land together.
-- This is the gate that uses the **Skill Rules** in section 3.
+When the party leader enters a path, the rest of the party goes with them.
+
+### 2.3 Inventory
+
+- **Decoration slots: 3.** The first is always used; the second and third are backups.
+- **Basic tool slots: 6.**
+- **General bag: 100 slots**, split into an upper and a lower half.
+- **Mode bags:** Dungeon 50 slots, Survival 50 slots.
+- Up to **100 identical items** stack in one slot.
+
+### 2.4 Path 1 — Market
+
+- Players set up stalls to sell what they have gathered or crafted. There are also food shops and other stores.
+- Trading uses **mana stones**. Candy can be used instead of mana stones, at a higher price.
+- Food and goods bought here can be stored in the home fridge or in the bag.
+
+### 2.5 Path 2 — Dungeon Gates
+
+- Dungeon gates with **random bosses**, opened automatically.
+- In front of the gates is a **quest board**. Taking a quest before entering sends the party to that quest's dungeon; the board changes every day. Without a quest, the dungeon is random and unpredictable.
+- A gate closes when its boss dies.
+- This path uses the **Skill Rules** in section 3.
 - **Failing a mission has a penalty (Decided, 2026-11-02).** If a mission fails, the team cannot take another mission until a cooldown ends.
-- The game itself will be designed together later.
 
-### Gate 3 — Café and Farm
+**Drops.** Dungeon gates drop special items more often than mana stones:
 
-- Run a café, grow vegetables, keep a farm, and sell what you make.
-- A slow, cozy loop of making and trading.
+| Drop | Chance |
+|---|---|
+| Spirit egg | 1% |
+| Spirit jar | 15% |
+| Mana stone | 34% |
+| Potions | 50% |
 
-### Gate 4 — Survival and Star Exploration
+If only one item drops, not everyone gets it. The party decides together. Items can be kept in each player's own **Collection**, for those who enjoy collecting every spirit.
 
-- Explore planets and survive on them.
-- Gather resources to keep the shared spaceship running.
+**Spirit jars.**
 
-## 3. Skill Rules for Gate 2 (Decided)
+- A jar holds a small spirit. Every spirit gives the same buff; they differ only in skin.
+- A spirit adds an elemental effect to footprints when walking or running, and a faint aura around the body.
+- A jar can hang as a lantern in Survival, and as an outer fashion piece that does not change the base outfit of a player or companion.
+- When it drops, it only says "a jar with a spirit inside". The player chooses which spirit to raise by combining **jar + spirit egg** and waiting **1–3 days** to hatch, depending on rarity.
 
-Every character who brings skills into Gate 2 is checked against the same rules. Everyone gets the same budget, so no one is quietly advantaged.
+**Spirit stones** repair and refill jars. Filling a jar to max with spirit stones keeps it lit.
+
+**Upgrading jars:**
+
+```text
+jar + identical jar            = 1 star
+1-star + 1-star                = 2 stars
+2-star + 2-star                = 3 stars
+...                              up to 6 stars
+```
+
+- A 1-star jar lasts one use; when its light runs out, it shatters.
+- A 2-star jar lasts twice as long as a 1-star, then shatters.
+- A 6-star jar lasts six times as long as a 1-star.
+- Refilling with spirit stones keeps any jar from running out, so it is never lost.
+
+**Spirit eggs:** earth, wood, wind, fire, water, and **revival**.
+
+- A revival spirit can revive a teammate or yourself **once**, with a **1-hour cooldown**. After the cooldown, a fallen player can still be revived if the gate has not closed. If the gate closes first, they respawn at the gate entrance instead.
+- **There is no other revival item in the game.** Otherwise, a fallen player returns outside the gate (the mission fails and the mission cooldown starts) or waits for a teammate with a revival skill. This also applies in Survival.
+
+### 2.6 Path 3 — Survival
+
+An endless map: survive together in a mysterious land where demons spawn at random, and where some attacks from the sky cannot be fought, only avoided.
+
+**What can be met on a map:**
+
+- **The Black Dragon.** It cannot be fought. Players must stay out of its sight, or run when it charges. When its eyes find a target, it warns with **three blinks** before attacking, or breathes green-black fire for massive damage.
+- **Shadow demons.** Common, as skilled as players, each with its own skill. Usually alone, and rarely attack first. Defeating one drops a rare mana stone.
+- **Most enemies:** undead, shadow mages, reapers, shadow archers and one-eyed giants. They usually drop common mana stones.
+
+**Fear and hunger.** Survival adds two bars: fear and hunger.
+
+- Fear **rises every second** after entering the map. The higher the fear, the harder demons hit.
+- Defeating a demon eases fear.
+- Light keeps fear from rising or falling. A spirit-jar lantern helps, but it uses mana automatically to ease fear the whole time; take the lantern off to stop the mana drain.
+- Lanterns have durability. They wear down and can break if not repaired.
+- A campfire, or a torch crafted by hand, eases fear for a while.
+
+**PvP.** In open rooms, PvP can happen at random when meeting other people on the road. In a private room, the team meets no one else.
+
+### 2.7 Mana Stones and Seasons
+
+| Mana stone | Rarity |
+|---|---|
+| Black with gold lettering | SP (very rare) |
+| Gold / silver | SSR |
+| Red | SR |
+| Blue | R |
+| Green | N |
+
+Mana stones are exchanged for seasonal items, food, potions and seasonal souvenirs, and for **Ultimate items** that never return once the season ends. Past seasonal items are not shown to people who arrive later, so no one is made to feel they missed out.
+
+## 3. Skill Rules for the Dungeon Path (Decided)
+
+Every character who brings skills into the dungeon gates is checked against the same rules. Everyone gets the same budget, so no one is quietly advantaged.
 
 ### 3.1 Shape of a Kit
 
@@ -182,6 +265,11 @@ A full 25,000 mana pool casts all three skills once (13,800) and most of a secon
 ## 4. Ideas Still Being Thought Through (Open)
 
 From earlier conversations, not yet placed:
+
+- **Living dungeons.** Monsters think for themselves, and each one that dies leaves notes for the next: how it lost, what the players did. The new monster reads them, decides how much to believe, and adds its own experience before leaving notes in turn. Notes are imperfect: some monsters write well, some remember wrongly, some boast, some die too fast to write much, and some do not trust their ancestors at all. Learning must have limits, errors and forgetting over time, so one defeat never means a monster knows everything. Notes may spread through a monster village as rumours, and parties that come back months later may find they have become part of the dungeon's history.
+  - Suggested: players can find and read monster notes, so dungeon and players learn from each other.
+  - Suggested: monsters may have fear of their own, for example avoiding light after reading that "everyone who met the lantern died".
+  - Suggested: to keep costs down, ordinary monsters learn in simple ways (which player skills beat them most often), and only a few bosses think with a language model.
 
 - Co-op games: hide-and-seek, mazes, scavenger hunts.
 - Later progression: stat points, runes.

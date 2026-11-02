@@ -129,7 +129,7 @@ An endless map: survive together in a mysterious land where demons spawn at rand
 
 Mana stones are exchanged for seasonal items, food, potions and seasonal souvenirs, and for **Ultimate items** that never return once the season ends. Past seasonal items are not shown to people who arrive later, so no one is made to feel they missed out.
 
-## 2.8 How Companions Play (Decided direction, 2026-11-03)
+### 2.8 How Companions Play (Decided direction, 2026-11-03)
 
 A companion's mind cannot calculate every frame of a game. That would be slow and expensive, and fights would stutter. So play runs on two rhythms:
 

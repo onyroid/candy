@@ -32,6 +32,7 @@ The order is the order of the gates, not a release schedule.
 - Collect cosmetics and items to dress characters.
 - Protect the land together.
 - This is the gate that uses the **Skill Rules** in section 3.
+- **Failing a mission has a penalty (Decided, 2026-11-02).** If a mission fails, the team cannot take another mission until a cooldown ends.
 - The game itself will be designed together later.
 
 ### Gate 3 — Café and Farm

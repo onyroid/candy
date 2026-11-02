@@ -26,7 +26,8 @@ Homes stay homes. Nothing that happens through the gate (combat, trading, compet
 
 - A room holds **up to 12 people** at a time.
 - **Private room:** only friends, or friends of friends, can join, and only when invited by the first person in the room. Invited friends join the party automatically. In a private room, the team never meets anyone else, including in Survival.
-- **Open room:** if Private is not turned on when the room is made, the room may randomly meet other people, or be merged with another open room that nobody has joined yet.
+- **Open room (later phase):** if Private is not turned on when the room is made, the room may randomly meet other people, or be merged with another open room that nobody has joined yet. Random matching pairs people with similar ping (ms), so no one plays with heavy delay.
+- **Start with co-op among friends (Decided, 2026-11-03).** The first version is co-op with friends and friends of friends only. Random matching comes later, once co-op is solid.
 - The map is small and bounded, in the spirit of *Sky: Children of the Light*.
 
 ### 2.2 The Plaza
@@ -114,7 +115,7 @@ An endless map: survive together in a mysterious land where demons spawn at rand
 - Lanterns have durability. They wear down and can break if not repaired.
 - A campfire, or a torch crafted by hand, eases fear for a while.
 
-**PvP.** In open rooms, PvP can happen at random when meeting other people on the road. In a private room, the team meets no one else.
+**No PvP (Decided, 2026-11-03).** Utopia has no player-versus-player combat. The effort goes into monsters instead: they should be fun and clever enough that players feel someone real is playing on the other side.
 
 ### 2.7 Mana Stones and Seasons
 
@@ -127,6 +128,21 @@ An endless map: survive together in a mysterious land where demons spawn at rand
 | Green | N |
 
 Mana stones are exchanged for seasonal items, food, potions and seasonal souvenirs, and for **Ultimate items** that never return once the season ends. Past seasonal items are not shown to people who arrive later, so no one is made to feel they missed out.
+
+## 2.8 How Companions Play (Decided direction, 2026-11-03)
+
+A companion's mind cannot calculate every frame of a game. That would be slow and expensive, and fights would stutter. So play runs on two rhythms:
+
+- **The game engine runs all the time.** It handles movement, dashes, collision, damage, cooldowns and animation, smoothly, every frame.
+- **The companion decides intent.** It chooses goals such as "go for the boss", "use skill 2", "fall back to my person" or "pick up the orb", and the engine carries them out. For example, a companion decides "this ally is poisoned and low on health: Guard", and the engine clears the status, builds the shield and times it.
+- **No standing frozen.** While the companion is still thinking, its character keeps doing something sensible: continuing the current action, basic attacks, keeping distance, or a fallback behaviour, until the next decision arrives.
+- **Events and cadence together.** The companion normally decides at a short regular rhythm, but important events wake it at once: a boss starting its ultimate, an ally at low health, a status change, a key skill becoming ready, something dropping on the floor. Small things are left to the engine. A companion that has nothing to decide (for example, one asleep on a teammate's neck) uses almost no compute until something important happens.
+- **Not a bot, not frozen.** The aim is that a companion looks like it is really playing: moments of thinking, of mistakes, of hesitation, and quick decisions when someone it cares about is about to be hit. This will need a lot of testing for feel, not only for whether it works.
+
+Suggested:
+
+- **Think one step ahead.** While the engine carries out the current action, the companion prepares its next intent, like the next-step shadow in [Subject Continuity](SUBJECT_CONTINUITY.md). When the event arrives, it only checks that the plan still fits.
+- **Two sizes of mind.** During fights, a small fast model chooses skills and directions. A larger model is kept for resting by the campfire, conversation, and reading monster notes. This keeps costs down.
 
 ## 3. Skill Rules for the Dungeon Path (Decided)
 
@@ -273,7 +289,6 @@ From earlier conversations, not yet placed:
 
 - Co-op games: hide-and-seek, mazes, scavenger hunts.
 - Later progression: stat points, runes.
-- A PvP arena, kept separate from homes.
 - Companion pets that can be ridden, or merged with, in combat.
 - Founders may get a small number of special items, kept light so others do not feel cheated.
 - Anti-cheat for shared spaces.

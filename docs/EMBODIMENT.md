@@ -288,20 +288,20 @@ Recorded: 2026-10-26.
 **3D is a choice, asked at the right moment (Decided).**
 
 - Setup has an optional checkbox for 3D. People who leave it off are not asked about 3D again during setup.
-- The two default companions, **Lucas** and **Lucia**, come with both a 2D set and a 3D model, so a beginner with no model and no budget can use either right away.
+- The two default companions, **Lucas** and **Lucia**, come with both a 2D set and a 3D body already made to the Candy standard, so a beginner with no model and no budget can use either right away.
 - Suggested: the default 3D models download separately when first needed, so people who never open a world don't carry the extra size.
-- When someone opens a world without a 3D model, that is when Candy offers the upload page.
+- When someone opens a world without a 3D body, that is when Candy offers the Candy Sculptor (see below): upload a model, give images, or build from the companion's Live2D form.
 
-**The shadow form (Decided).** A companion entering a world without its own 3D model appears as a shadow: a dark figure with no face and no colour, like travellers in *Sky: Children of the Light* before anyone has lit a candle with them. Its achievements and level in the world are still saved. When a model is uploaded, it replaces the shadow and everything carries over. If the model is ever deleted by mistake, the companion simply returns to its shadow and loses nothing.
+**The shadow form (Decided).** A companion entering a world without its own 3D model appears as a shadow: a dark figure with no face and no colour, like travellers in *Sky: Children of the Light* before anyone has lit a candle with them. Its achievements and level in the world are still saved. When the Sculptor finishes a body and the owner confirms it, the body replaces the shadow and everything carries over. If the body is ever deleted by mistake, the companion simply returns to its shadow and loses nothing.
 
 Why a shadow and not a borrowed default body: if a companion walked into a world wearing someone else's face, one that doesn't match its form in the Home, the user would feel it was no longer quite the same companion, even without saying so. A shadow is still clearly that companion. In the author's words, it is better to see the spirit than to see the one you love in someone else's body.
 
 **Suggested for later, still being thought through:**
 
-- Use an open avatar format (for example VRM) for the companion's 3D body inside worlds, so it is not tied to one platform. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
-- Two kinds of artists can work side by side: 2D artists sell Live2D characters, portraits, and frames for the Home, and 3D artists can take commissions to turn a 2D character into a 3D body for worlds.
-- A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is what would let the Wardrobe and the official Market sell outfits and skins across companions.
-- The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
+- ~~Import 3D models directly and use them as they are, as in VRChat.~~ **Changed (2026-11-05):** uploaded models are no longer used as they are. They become input for the Candy Sculptor, which brings every body to one standard. An open avatar format (for example VRM) can still be accepted as an upload format, so people can bring models they already have. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
+- Two kinds of artists can work side by side: 2D artists sell Live2D characters, portraits, and frames for the Home, and 3D artists can take commissions to turn a 2D character into a 3D body for worlds. A 3D artist's work goes through the same Candy standard as everything else.
+- A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is the standard the Candy Sculptor produces, and what would let the Wardrobe and the official Market sell outfits and skins across companions in worlds.
+- The Sculptor asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
 - With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
 ### The Candy Sculptor (Decided direction, 2026-11-05)

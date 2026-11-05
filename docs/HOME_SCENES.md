@@ -98,8 +98,19 @@ After an import, the Home enters **Edit mode**.
 - Items can be **hidden** instead, for when there are too many and some must be chosen. Hiding is done from the item itself, and the item goes into **Archive Items**.
 - **Duplicates.** When an uploaded item is detected as the same as one already in the Home, the person is always asked whether to replace it or rename the new one.
 
-## 7. Open
+## 7. Touching Things in the Room (Decided, 2026-11-06)
 
+The room itself is the menu. Objects that do something are separate images from the background.
+
+- **They glow softly all the time,** so the person can see what can be touched, on a phone as well as with a mouse.
+- **When tapped or clicked, they pop out a little** and respond to the touch, then open what they lead to.
+- **Example: the storage cabinet** in the living room opens the storage screen.
+- **Example: the bed** shows picture icons instead of words: **zZ** to go to sleep together, **a heart** for intimate moments, and **a TV** to watch TV. Choosing one moves the person into the bedroom scene, with a way back.
+- **The heart is an invitation, not a switch.** The companion answers first. If it does not want to right now, the two can simply lie together instead (see "No always means no" in [Intimate Moments](INTIMACY.md)).
+
+## 8. Open
+
+- **The side panel inside a scene.** Inside the bedroom, the bedroom's choices could sit on the right, so the person can move between sleeping, intimate moments and TV without leaving the room. But each zone has very different activities (the kitchen's icons would replace the bedroom's), so this still needs thought.
 - Which special scenes come first after the kitchen and intimate moments.
 - How the companion's skill for setting an item's function works.
 - How duplicates are detected.

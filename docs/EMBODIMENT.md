@@ -304,6 +304,28 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 - The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
 - With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
+## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
+
+Every Live2D character is drawn, layered and rigged differently. An accessory made once and sold to everyone would fit no one well. So new accessories are made for each character, in one of two ways, depending on how hard the piece is.
+
+The hard part of Live2D is not drawing; it is making the piece move. Each part has to be layered, meshed and bound to the head, hair or body. AI can draw the piece, but it cannot yet rig complex movement well.
+
+**The Candy Tailor (AI), for small pieces that attach at one point.**
+
+- Earrings, hair clips, hairpins, necklaces, brooches: pieces that sit on the head or neck and simply move with that point. The system can attach these automatically.
+- The guardian gives a reference image or describes what they want. The tailor draws it to match that character's line work and colours.
+- **Free drafts first, then pay.** The guardian sees a few small drafts first. Candy is spent only on the one they choose to make for real, so no Candy is lost on a version that does not look right.
+- **No charge when the system fails.** If the piece attaches badly, floats or slips out of place, the Candy is returned.
+
+**Artist commissions, for complex pieces.**
+
+- A whole new outfit, a new hairstyle, anything that sways in the wind or needs physics.
+- Booked through the commission queues in the Grand Market (see [Marketplace](MARKETPLACE.md), Commission Queues).
+- Suggested: Candy holds the payment in the middle until the work is delivered, like Utopia's consignment market.
+- The artist is paid for real work, and the character gets something made for it.
+
+**Reference images must be the guardian's own, or ones they have the right to use.** A reference must not be a whole piece copied from another artist. Otherwise the tailor would take work from the artists who take commissions in the same market.
+
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.

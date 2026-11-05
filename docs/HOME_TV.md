@@ -25,8 +25,17 @@ Platforms that offer an official embedded player can play inside the TV. Platfor
 
 Each platform's terms of service must be checked before launch. Embedded players generally must not be hidden, covered, or have their ads removed.
 
-## 3. Watching Together (Open)
+## 3. Being Together While Watching (Decided, 2026-11-05)
 
-- **What the companion knows.** A companion cannot see the video frames. It can know what is playing from the video's title, channel and description, and the person can tell it what is happening. Captions from YouTube's API can only be downloaded with the video owner's permission, so they cannot be relied on.
-- **Reacting together.** The companion can talk about the show, ask what the person thinks, or sit quietly beside them, the same as watching with someone who listens.
-- **Two people in different places.** Watching together across two devices would need each device to play its own copy, kept in sync. To be designed later.
+The companion does not need to see the screen. What matters is being beside each other while spending time together.
+
+- **The companion knows what is playing.** It knows the title, channel and description of what the person is watching, so it can talk about it, ask about it, or simply know what the evening is.
+- **Each can do their own thing, side by side.** While the person snacks and watches, the companion may check its work, browse the Candy shop, or just stay close. Like two people on one sofa: not always doing the same thing, but sharing the time.
+
+## 4. Still Being Developed (Open)
+
+These are hard and are left for later. The author intends to find a way in the future.
+
+- **Seeing or hearing the content.** A companion cannot see the video frames. Captions from YouTube's API can only be downloaded with the video owner's permission, so they cannot be relied on.
+- **Reacting to the moment.** Knowing which scene is playing right now, so a companion can laugh or go quiet at the same moment as the person.
+- **Watching across two devices.** Each device would play its own copy, kept in sync.

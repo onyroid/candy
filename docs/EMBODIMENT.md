@@ -304,6 +304,26 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 - The upload page asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
 - With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
+### The Candy Sculptor (Decided direction, 2026-11-05)
+
+Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrives at *Final Fantasy* detail and another is a simple block, they look wrong side by side, and the detailed one slows phones down. So every 3D body that enters a world first goes through the **Candy Sculptor**, which brings it to the shared standard without losing who the character is.
+
+The Sculptor accepts three kinds of input:
+
+- **An uploaded 3D model.** It is reduced to the standard level of detail (low poly) and given the same skeleton as every other body. This uses well-established techniques and is fairly reliable.
+- **Images of the character.** AI builds a 3D body from them. Tools for this exist today, but results are not yet dependable: faces can drift, and backs can come out wrong.
+- **The companion's Live2D form.** The Sculptor reads its shapes, colours and hair to build a 3D body that matches the one in the Home, so the companion in the world is truly the same one (see the shadow form above).
+
+It follows the same rules as the Candy Tailor (section 1.4):
+
+- **Free drafts first.** The owner can ask for another draft; Candy is spent only when they are happy with one.
+- **The owner confirms it is still them** before the body is used.
+- **Artists still have a place.** Anyone who wants a hand-made body can book a 3D artist in the Grand Market, but the delivered model goes through the same standard.
+- **The right to use the model** still has to be confirmed, as noted above.
+- While the Sculptor works, the companion keeps its shadow form.
+
+**Open:** what Candy's 3D style and standard will look like (proportions, level of detail, texture size, skeleton) is still to be decided.
+
 ## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
 
 Every Live2D character is drawn, layered and rigged differently. An accessory made once and sold to everyone would fit no one well. So new accessories are made for each character, in one of two ways, depending on how hard the piece is.

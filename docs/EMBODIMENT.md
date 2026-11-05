@@ -41,7 +41,7 @@ The visual system may combine:
 
 - layered 2D room artwork
 - depth-aware foreground and background layers
-- an anime-style character body on the Candy standard, presented as 2.5D in the Home (Live2D models are not supported; see section 1.6)
+- Live2D-style or comparable 2.5D character rigs
 - modular hair, clothing, accessories, body options, and expressions
 - authored and procedural motion
 - semantic hitboxes and interaction regions
@@ -283,7 +283,7 @@ Recorded: 2026-10-26.
 
 **What worlds are for (Decided intent).** Candy sells the Home and the companion. Worlds, games, and adventures are optional add-ons for people who want them, not part of the core. Some people use Candy only to work with their agents and never open a world, so nothing in the Home depends on one. Ideas such as the café and the Gates (see [Heartbeat](HEARTBEAT.md)) and the Heart Menu note in the design file belong here and are still undecided.
 
-**The Home always has a form (Decided).** The Home is a 2.5D scene, and every companion must have a body before setup can continue: brought home from a character sheet (section 1.6), or one of the defaults. The Home never shows an empty body. **Changed (2026-11-05):** Live2D models are no longer uploaded.
+**The Home always has a form (Decided).** The Home is a 2.5D scene in the style of Live2D, and Live2D models are supported, so every companion must have at least a 2D form before setup can continue. The user can upload their own or use one of the defaults. The Home never shows an empty body.
 
 **3D is a choice, asked at the right moment (Decided).**
 
@@ -298,40 +298,43 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 
 **Suggested for later, still being thought through:**
 
-- ~~Import 3D models directly and use them as they are, as in VRChat.~~ **Changed (2026-11-05):** Candy does not accept uploaded 3D models at all. Every 3D body is built by the Candy Sculptor from the companion's form in the Home. People can join worlds without paying for a 3D model first. The Home keeps its 2.5D look. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
-- **Changed (2026-11-05):** commissions centre on 2D artists, who draw character sheets, outfit designs, portraits and frames, and parts for Candy's library. Bodies come from Candy's own system, so a companion's look follows its character sheet everywhere.
+- ~~Import 3D models directly and use them as they are, as in VRChat.~~ **Changed (2026-11-05):** Candy does not accept uploaded 3D models at all. Every 3D body is built by the Candy Sculptor from the companion's form in the Home. People can join worlds without paying for a 3D model first. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
+- **Changed (2026-11-05):** commissions centre on 2D artists, who sell Live2D characters, portraits and frames for the Home. 3D bodies come from the Sculptor, so a companion's look in worlds follows whatever its Live2D artist made.
 - A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is the standard the Candy Sculptor produces, and what would let the Wardrobe and the official Market sell outfits and skins across companions in worlds.
-- The character sheet upload asks the uploader to confirm they have the right to use the character. Many community characters have licences that forbid editing, use on other platforms, or commercial use.
+- The Home's Live2D upload asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
+- With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
 ### The Candy Sculptor (Decided direction, 2026-11-05)
 
 Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrived at *Final Fantasy* detail and another as a simple block, they would look wrong side by side, and the detailed one would slow phones down. So every 3D body is made by the **Candy Sculptor**, to one shared standard, without losing who the character is.
 
-- **Built from the Home, not uploaded.** The guardian presses a button such as "Create Lucas from his look in the Home". The Sculptor reads the companion's current body in the Home (shapes, colours, hair, today's outfit) and builds the 3D body from it. No 3D model, file or character sheet is needed, so the companion in the world is truly the same one as in the Home (see the shadow form above).
+- **Built from the Home, not uploaded.** The guardian presses a button such as "Create Lucas from his look in the Home". The Sculptor reads the companion's current Live2D form (shapes, colours, hair, today's outfit) and builds the 3D body from it. No 3D model, file or character sheet is needed, so the companion in the world is truly the same one as in the Home (see the shadow form above).
 - **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (low poly), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
 - **New outfit, new body.** When the companion's look in the Home changes, the guardian can generate the 3D body again. Each generation costs Candy, which also keeps Candy from inflating.
 - **Free drafts first,** as with the Candy Tailor (section 1.4). Candy is spent only on the draft the guardian keeps, and the guardian confirms it is still the companion before it is used.
 - While the Sculptor works, the companion keeps its shadow form.
 
-**Why no uploads (Decided).** Candy has not launched yet, so no one has invested in 3D models for it. Building from the Home lets people play without spending a lot first, and keeps paid commissions with 2D artists, whose work then carries into every world.
+**Why no uploads (Decided).** Candy has not launched yet, so no one has invested in 3D models for it. Building from the Home lets people play without spending a lot first, and keeps paid commissions with Live2D and 2D artists, whose work then carries into every world.
 
 **Open:** what Candy's 3D style and standard will look like (proportions, level of detail, texture size, skeleton, height scale) is still to be decided.
 
-## 1.4 Accessories: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
+## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
 
-Every body shares the Candy standard, so an accessory attaches at the same points on every body: ear, hair, neck, chest, hands. What still differs is each character's look, so new pieces are made to suit each character, in one of two ways, depending on how hard the piece is. (This section was first written for Live2D, which Candy no longer supports; see section 1.6.)
+Every Live2D character is drawn, layered and rigged differently. An accessory made once and sold to everyone would fit no one well. So new accessories are made for each character, in one of two ways, depending on how hard the piece is.
+
+The hard part of Live2D is not drawing; it is making the piece move. Each part has to be layered, meshed and bound to the head, hair or body. AI can draw the piece, but it cannot yet rig complex movement well.
 
 **The Candy Tailor (AI), for small pieces that attach at one point.**
 
-- Earrings, hair clips, hairpins, necklaces, brooches: pieces that sit at one attachment point and simply move with it. The system can attach these automatically.
+- Earrings, hair clips, hairpins, necklaces, brooches: pieces that sit on the head or neck and simply move with that point. The system can attach these automatically.
 - **The tailor lives in the Wardrobe (Decided).** If something feels missing from today's outfit, the guardian can open the tailor right there, under "Wearing today", without leaving the wardrobe.
-- The guardian gives a reference image or describes what they want. The tailor makes it to match that character's style and colours.
+- The guardian gives a reference image or describes what they want. The tailor draws it to match that character's line work and colours.
 - **Free drafts first, then pay.** The guardian sees a few small drafts first. Candy is spent only on the one they choose to make for real, so no Candy is lost on a version that does not look right.
 - **No charge when the system fails.** If the piece attaches badly, floats or slips out of place, the Candy is returned.
 
 **Artist commissions, for complex pieces.**
 
-- A whole new outfit, a new hairstyle, anything that sways in the wind or needs physics. The artist designs it, and Candy builds it to the standard (see section 1.6).
+- A whole new outfit, a new hairstyle, anything that sways in the wind or needs physics.
 - Booked through the commission queues in the Grand Market (see [Marketplace](MARKETPLACE.md), Commission Queues).
 - Suggested: Candy holds the payment in the middle until the work is delivered, like Utopia's consignment market.
 - The artist is paid for real work, and the character gets something made for it.
@@ -367,10 +370,11 @@ Suggested:
 - **Free drafts first,** as with the Candy Tailor, before Candy is spent.
 - **One body everywhere.** If the same body is used in the Home, the Wardrobe, selfies and worlds (with less detail in worlds), the Candy Sculptor's job becomes producing that lower-detail version, and nothing has to be converted between 2D and 3D.
 
-**Decided (2026-11-05): Live2D is not supported.** Candy handles the whole character itself. Anyone who has a Live2D character already has its character sheet, and brings the companion home from that.
+**Decided for now (2026-11-05): Live2D stays supported.** Live2D support was briefly dropped, then brought back. At the start, it is too risky for Candy to make almost every character itself. Live2D also keeps the Home more varied, since each character comes from its own artist.
 
 **Open:**
 
+- How uploaded Live2D models and characters brought home from a character sheet live side by side in the Home.
 - Candy's exact 3D style, level of detail and proportions.
 
 ## 2. The Companion Should Choose Meaning, Not Raw Bones

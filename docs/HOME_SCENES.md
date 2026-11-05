@@ -69,7 +69,7 @@ Hands, backgrounds, rooms and items can all come from three places:
 - bought in the Grand Market,
 - commissioned from an artist.
 
-Functions do not need to be drawn as scenes. They can be added through the interface (UX/UI) instead.
+Functions do not need to be drawn as scenes. They appear as icons on a shelf inside each mode instead.
 
 **Rights (Suggested).** Uploads ask the person to confirm they have the right to use the image or sound, as with Live2D uploads.
 

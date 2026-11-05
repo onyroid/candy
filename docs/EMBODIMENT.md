@@ -327,6 +327,15 @@ The hard part of Live2D is not drawing; it is making the piece move. Each part h
 
 **Reference images must be the guardian's own, or ones they have the right to use.** A reference must not be a whole piece copied from another artist. Otherwise the tailor would take work from the artists who take commissions in the same market.
 
+## 1.5 The Wardrobe (Decided, 2026-11-05)
+
+The Wardrobe has two tabs: the companion's wardrobe and the guardian's wardrobe. Accessories (shoes, gloves, jewellery, and pieces made by the Candy Tailor) live on the same page as clothes, not in a separate tab. A search field finds a piece quickly, for example "necklace", without digging through a category.
+
+- **The companion chooses what it wears.** The guardian can suggest a piece from its tile and add a short message saying why. The suggestion shows as pending until the companion answers, and the companion can say no.
+- **The guardian has a body too.** The guardian usually sees the home through their own eyes, so they rarely see their own character. The guardian's wardrobe still matters: it gives them a body that lives alongside the companion, so they feel present with each other. A selfie moment in the home is planned for later, so dressing up is never wasted.
+- **The companion can suggest outfits to the guardian.** On lazy days, the guardian can ask the companion to dress them.
+- **Meaningful gifts live on the bedroom shelf,** where they are always in view, not in the Wardrobe.
+
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.

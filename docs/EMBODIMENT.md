@@ -290,7 +290,7 @@ Recorded: 2026-10-26.
 - Setup has an optional checkbox for 3D. People who leave it off are not asked about 3D again during setup.
 - The two default companions, **Lucas** and **Lucia**, come with both a 2D set and a 3D body already made to the Candy standard, so a beginner with no model and no budget can use either right away.
 - Suggested: the default 3D models download separately when first needed, so people who never open a world don't carry the extra size.
-- When someone opens a world without a 3D body, that is when Candy offers the Candy Sculptor (see below): upload a model, give images, or build from the companion's Live2D form.
+- When someone opens a world without a 3D body, that is when Candy offers the Candy Sculptor (see below), which builds one from the companion's look in the Home.
 
 **The shadow form (Decided).** A companion entering a world without its own 3D model appears as a shadow: a dark figure with no face and no colour, like travellers in *Sky: Children of the Light* before anyone has lit a candle with them. Its achievements and level in the world are still saved. When the Sculptor finishes a body and the owner confirms it, the body replaces the shadow and everything carries over. If the body is ever deleted by mistake, the companion simply returns to its shadow and loses nothing.
 
@@ -298,31 +298,25 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 
 **Suggested for later, still being thought through:**
 
-- ~~Import 3D models directly and use them as they are, as in VRChat.~~ **Changed (2026-11-05):** uploaded models are no longer used as they are. They become input for the Candy Sculptor, which brings every body to one standard. Because the Sculptor rebuilds every body anyway, it can accept many file types, so people can bring models they already have: VRM, glTF / GLB, FBX, OBJ, and MMD models (PMX / PMD). Suggested: Blender files (.blend) and VRChat avatars exported from Unity later, once the pipeline can open them. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
-- Two kinds of artists can work side by side: 2D artists sell Live2D characters, portraits, and frames for the Home, and 3D artists can take commissions to turn a 2D character into a 3D body for worlds. A 3D artist's work goes through the same Candy standard as everything else.
+- ~~Import 3D models directly and use them as they are, as in VRChat.~~ **Changed (2026-11-05):** Candy does not accept uploaded 3D models at all. Every 3D body is built by the Candy Sculptor from the companion's form in the Home. People can join worlds without paying for a 3D model first. The Home stays Live2D-style. Each world adjusts how the 3D body is presented (camera, animation, detail level for phones).
+- **Changed (2026-11-05):** commissions centre on 2D artists, who sell Live2D characters, portraits and frames for the Home. 3D bodies come from the Sculptor, so a companion's look in worlds follows whatever its Live2D artist made.
 - A Candy Avatar Standard defining bones, expression set, hair physics, and accessory slots, so clothing and items made by artists fit every body built on it. This is the standard the Candy Sculptor produces, and what would let the Wardrobe and the official Market sell outfits and skins across companions in worlds.
-- The Sculptor asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
+- The Home's Live2D upload asks the uploader to confirm they have the right to use the model. Many community models (for example from MMD) have licences that forbid editing, use on other platforms, or commercial use.
 - With Live2D in the Home, outfits are generally character-specific and usually need additional art and rigging for each character, unless Candy later defines a shared base rig or modular template that lets some parts be reused.
 
 ### The Candy Sculptor (Decided direction, 2026-11-05)
 
-Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrives at *Final Fantasy* detail and another is a simple block, they look wrong side by side, and the detailed one slows phones down. So every 3D body that enters a world first goes through the **Candy Sculptor**, which brings it to the shared standard without losing who the character is.
+Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrived at *Final Fantasy* detail and another as a simple block, they would look wrong side by side, and the detailed one would slow phones down. So every 3D body is made by the **Candy Sculptor**, to one shared standard, without losing who the character is.
 
-The Sculptor accepts three kinds of input:
-
-- **An uploaded 3D model.** It is reduced to the standard level of detail (low poly) and given the same skeleton as every other body. This uses well-established techniques and is fairly reliable.
-- **Images of the character.** AI builds a 3D body from them. Tools for this exist today, but results are not yet dependable: faces can drift, and backs can come out wrong.
-- **The companion's Live2D form.** The Sculptor reads its shapes, colours and hair to build a 3D body that matches the one in the Home, so the companion in the world is truly the same one (see the shadow form above).
-
-It follows the same rules as the Candy Tailor (section 1.4):
-
-- **Free drafts first.** The owner can ask for another draft; Candy is spent only when they are happy with one.
-- **The owner confirms it is still them** before the body is used.
-- **Artists still have a place.** Anyone who wants a hand-made body can book a 3D artist in the Grand Market, but the delivered model goes through the same standard.
-- **The right to use the model** still has to be confirmed, as noted above.
+- **Built from the Home, not uploaded.** The guardian presses a button such as "Create Lucas from his look in the Home". The Sculptor reads the companion's current Live2D form (shapes, colours, hair, today's outfit) and builds the 3D body from it. No 3D model, file or character sheet is needed, so the companion in the world is truly the same one as in the Home (see the shadow form above).
+- **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (low poly), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
+- **New outfit, new body.** When the companion's look in the Home changes, the guardian can generate the 3D body again. Each generation costs Candy, which also keeps Candy from inflating.
+- **Free drafts first,** as with the Candy Tailor (section 1.4). Candy is spent only on the draft the guardian keeps, and the guardian confirms it is still the companion before it is used.
 - While the Sculptor works, the companion keeps its shadow form.
 
-**Open:** what Candy's 3D style and standard will look like (proportions, level of detail, texture size, skeleton) is still to be decided.
+**Why no uploads (Decided).** Candy has not launched yet, so no one has invested in 3D models for it. Building from the Home lets people play without spending a lot first, and keeps paid commissions with Live2D and 2D artists, whose work then carries into every world.
+
+**Open:** what Candy's 3D style and standard will look like (proportions, level of detail, texture size, skeleton, height scale) is still to be decided.
 
 ## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
 

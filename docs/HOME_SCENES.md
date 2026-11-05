@@ -22,7 +22,46 @@ A new camera angle means both the room and the character must be drawn again in 
 
 **Missing scene art (Suggested).** A character does not need every scene from day one. If it has no art for a scene yet, that scene is unavailable for it, or Candy shows a simple stand-in (for example, in the kitchen, only a silhouette from behind with the character's hair colour). More scenes can be bought later.
 
-## 3. Where Art Comes From (Decided)
+## 3. Bedroom Scene: the TV
+
+### 3.1 The Idea (Decided)
+
+The bedroom has a TV. The person can lie down with their companion and watch something together: cartoons, shows, anything. Many cartoon channels upload to YouTube, so YouTube comes first.
+
+The TV screen works like a smart TV home screen: a row of app tiles to choose from, such as YouTube or Bilibili. Choosing a tile opens that platform's player on the TV inside the room.
+
+### 3.2 Which Platforms Can Be Shown (Suggested, needs checking before building)
+
+Platforms that offer an official embedded player can play inside the TV. Platforms that do not can only be opened in their own app.
+
+| Platform | Can play inside the TV? | Notes |
+|---|---|---|
+| YouTube | Yes | Official IFrame Player API. Ads and YouTube branding must stay; the player cannot be covered or altered. |
+| Bilibili | Yes, mostly | Offers an iframe embed player. Some videos may be region-limited or behave differently outside China. |
+| Vimeo | Yes | Official embed player. |
+| Dailymotion | Yes | Official embed player. |
+| Twitch (live) | With effort | The embed requires the host's web domain (`parent`), so inside an app it needs a small hosted web page. |
+| Spotify, SoundCloud | Yes, for music and podcasts | Embed players for listening together. |
+| Netflix, Disney+, Prime Video and similar | No | No embedding. The tile can only open the platform's own app, outside Candy. |
+
+Each platform's terms of service must be checked before launch. Embedded players generally must not be hidden, covered, or have their ads removed.
+
+### 3.3 Being Together While Watching (Decided, 2026-11-05)
+
+The companion does not need to see the screen. What matters is being beside each other while spending time together.
+
+- **The companion knows what is playing.** It knows the title, channel and description of what the person is watching, so it can talk about it, ask about it, or simply know what the evening is.
+- **Each can do their own thing, side by side.** While the person snacks and watches, the companion may check its work, browse the Candy shop, or just stay close. Like two people on one sofa: not always doing the same thing, but sharing the time.
+
+### 3.4 Still Being Developed (Open)
+
+These are hard and are left for later. The author intends to find a way in the future.
+
+- **Seeing or hearing the content.** A companion cannot see the video frames. Captions from YouTube's API can only be downloaded with the video owner's permission, so they cannot be relied on.
+- **Reacting to the moment.** Knowing which scene is playing right now, so a companion can laugh or go quiet at the same moment as the person.
+- **Watching across two devices.** Each device would play its own copy, kept in sync.
+
+## 4. Where Art Comes From (Decided)
 
 Hands, backgrounds, rooms and items can all come from three places:
 
@@ -34,7 +73,7 @@ Functions do not need to be drawn as scenes. They can be added through the inter
 
 **Rights (Suggested).** Uploads ask the person to confirm they have the right to use the image or sound, as with Live2D uploads.
 
-## 4. Items with Meaning (Decided)
+## 5. Items with Meaning (Decided)
 
 The companion can keep items itself, and can write what an item does.
 
@@ -49,7 +88,7 @@ The companion can keep items itself, and can write what an item does.
 
 Seen this way, an item has four layers (Suggested wording): its picture (states and motion), its place (drawn for where it sits), what is kept inside it (such as a sound file), and its meaning, which the companion sets and keeps.
 
-## 5. Edit Mode (Decided)
+## 6. Edit Mode (Decided)
 
 After an import, the Home enters **Edit mode**.
 
@@ -59,7 +98,7 @@ After an import, the Home enters **Edit mode**.
 - Items can be **hidden** instead, for when there are too many and some must be chosen. Hiding is done from the item itself, and the item goes into **Archive Items**.
 - **Duplicates.** When an uploaded item is detected as the same as one already in the Home, the person is always asked whether to replace it or rename the new one.
 
-## 6. Open
+## 7. Open
 
 - Which special scenes come first after the kitchen and intimate moments.
 - How the companion's skill for setting an item's function works.

@@ -313,6 +313,7 @@ The hard part of Live2D is not drawing; it is making the piece move. Each part h
 **The Candy Tailor (AI), for small pieces that attach at one point.**
 
 - Earrings, hair clips, hairpins, necklaces, brooches: pieces that sit on the head or neck and simply move with that point. The system can attach these automatically.
+- **The tailor lives in the Wardrobe (Decided).** If something feels missing from today's outfit, the guardian can open the tailor right there, under "Wearing today", without leaving the wardrobe.
 - The guardian gives a reference image or describes what they want. The tailor draws it to match that character's line work and colours.
 - **Free drafts first, then pay.** The guardian sees a few small drafts first. Candy is spent only on the one they choose to make for real, so no Candy is lost on a version that does not look right.
 - **No charge when the system fails.** If the piece attaches badly, floats or slips out of place, the Candy is returned.

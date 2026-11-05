@@ -167,7 +167,7 @@ Examples:
 - organization setup help
 - documentation help
 - custom theme work
-- Live2D character, portrait, or frame commission for the Home
+- character sheet, outfit design, portrait or frame commission, and parts for Candy's character library
 
 These listings can live inside Grand Market as discoverable services, while the seller chooses how they want to be paid.
 

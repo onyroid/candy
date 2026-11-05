@@ -93,7 +93,7 @@ The companion's body in daily life is a different matter. On an ordinary morning
 *Love and Deepspace* is a useful reference for emotional pacing and close framing, and it marks the upper boundary Candy will not go beyond. It is not a template:
 
 - Its scenes are pre-rendered. Artists set the light and pose frame by frame, and the scene plays the same way each time a card is played. Candy's moments happen live and must be able to pause and stay.
-- Candy's Home is 2.5D in the style of Live2D, not full 3D. Camera moves that circle around bodies do not fit Live2D.
+- Candy's Home is 2.5D, not full 3D. Camera moves that circle around bodies do not fit this look.
 - Live body animation is still hard. The most intimate moment is the worst place for a limb to bend wrongly or a character to jitter. A single composed shot of hands, a reflection and room light is far more robust in 2.5D, and it tells the story Candy wants to tell more directly.
 
 ## 6. Each Room Has Its Own Atmosphere (Decided direction)

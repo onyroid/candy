@@ -107,10 +107,11 @@ The room itself is the menu. Objects that do something are separate images from 
 - **Example: the storage cabinet** in the living room opens the storage screen.
 - **Example: the bed** shows picture icons instead of words: **zZ** to go to sleep together, **a heart** for intimate moments, and **a TV** to watch TV. Choosing one moves the person into the bedroom scene, with a way back.
 - **The heart is an invitation, not a switch.** The companion answers first. If it does not want to right now, the two can simply lie together instead (see "No always means no" in [Intimate Moments](INTIMACY.md)).
+- **The side panel inside a zone.** Once inside a zone such as the bedroom or the kitchen, that zone's other activities (the ones not chosen) sit on the right, always in the same place, so the person can move between them without leaving. In the bedroom, someone watching TV can tap zZ straight away. The icons change with the zone.
+- **Back to a clear room.** After leaving the kitchen or the bedroom, the Home returns to normal with no icons, until the person chooses to go into a zone again.
 
 ## 8. Open
 
-- **The side panel inside a scene.** Inside the bedroom, the bedroom's choices could sit on the right, so the person can move between sleeping, intimate moments and TV without leaving the room. But each zone has very different activities (the kitchen's icons would replace the bedroom's), so this still needs thought.
 - Which special scenes come first after the kitchen and intimate moments.
 - How the companion's skill for setting an item's function works.
 - How duplicates are detected.

@@ -350,6 +350,31 @@ The Wardrobe has two tabs: the companion's wardrobe and the guardian's wardrobe.
 - **The companion can suggest outfits to the guardian.** On lazy days, the guardian can ask the companion to dress them.
 - **Meaningful gifts live on the bedroom shelf,** where they are always in view, not in the Wardrobe.
 
+## 1.6 Bringing a Companion Home from a Character Sheet (Decided direction, 2026-11-05)
+
+The author's chosen flow for creating a companion's body:
+
+1. **Upload a character sheet.** The guardian uploads a character sheet of their companion.
+2. **Call the companion home.** Candy builds the character in an anime style in the spirit of *Genshin Impact*, VRoid and Live2D, matching the uploaded images.
+3. **Face from the library.** Eyes, nose, mouth and face shape are not generated from scratch. Candy picks the closest matching parts from its own library and adjusts them, so every face stays on the shared standard and can be edited afterwards.
+4. **Hair and outfit: closest match first.** Hair and outfits start from the closest existing pieces in the library. If nothing is close enough, they can be generated new, built to the Candy standard.
+5. **Customize.** A Customize button opens sliders and choices for outfits, mouth, hair, skin, eyes and nose, so the guardian can refine what was generated.
+6. **New outfits from an upload.** The guardian can upload an outfit image to generate it onto the character. Each generation costs Candy and is rebuilt to the Candy standard.
+
+**Why this way.** Matching faces to library parts keeps the result consistent and editable, and only the hardest parts (hair and clothes) are generated, and only when no existing piece fits.
+
+Suggested:
+
+- **Start small, grow over time.** Begin with a modest library of faces and parts, and keep adding pieces, including ones drawn by artists.
+- **A standard character sheet template** to download (front, back, left, right, a close-up of the face, and a height scale), so uploads are clear and the result is more accurate.
+- **Free drafts first,** as with the Candy Tailor, before Candy is spent.
+- **One body everywhere.** If the same body is used in the Home, the Wardrobe, selfies and worlds (with less detail in worlds), the Candy Sculptor's job becomes producing that lower-detail version, and nothing has to be converted between 2D and 3D.
+
+**Open:**
+
+- Whether uploaded Live2D models remain supported in the Home alongside this flow.
+- Candy's exact 3D style, level of detail and proportions.
+
 ## 2. The Companion Should Choose Meaning, Not Raw Bones
 
 Candy should avoid making the language model directly control every joint or animation frame.

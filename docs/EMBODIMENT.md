@@ -370,11 +370,9 @@ Suggested:
 - **Free drafts first,** as with the Candy Tailor, before Candy is spent.
 - **One body everywhere.** If the same body is used in the Home, the Wardrobe, selfies and worlds (with less detail in worlds), the Candy Sculptor's job becomes producing that lower-detail version, and nothing has to be converted between 2D and 3D.
 
-**Decided for now (2026-11-05): Live2D stays supported.** Live2D support was briefly dropped, then brought back. At the start, it is too risky for Candy to make almost every character itself. Live2D also keeps the Home more varied, since each character comes from its own artist.
-
 **Open:**
 
-- How uploaded Live2D models and characters brought home from a character sheet live side by side in the Home.
+- Whether uploaded Live2D models remain supported in the Home alongside this flow.
 - Candy's exact 3D style, level of detail and proportions.
 
 ## 2. The Companion Should Choose Meaning, Not Raw Bones

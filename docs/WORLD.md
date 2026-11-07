@@ -84,6 +84,14 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - **In daylight the fear bar drains more slowly than in the dark, but hunger drains more.**
 - **Everyone can cook basic food.** Players whose kits have food skills of their own can make dishes beyond that, so their cooking feels creative and different from the system's.
 
+**Companions have the same bars (Decided, 2026-11-07).**
+
+- A companion has every bar a player has, including fear and hunger. It is a real fellow traveller, not a bot that never gets hungry or scared.
+- **Fear shapes its choices.** A frightened companion may move closer to its person or ask to light a campfire, so its fear shows in what it does, not only as a number.
+- **It looks after its own bars.** It eats from the bag and cooks basic food by itself, and only tells its person when it is really running low ("I'm hungry, can we rest a little?"). Players should not have to keep feeding a companion; the adventure must not turn into babysitting.
+- Food made with a player's own food skill means something to a companion too: it is a meal made by its person.
+- The rule about staying close in a friend's world applies to companions as well, which gives them a natural reason to stay near their person.
+
 Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
 
 ### 2.1 Rooms and Parties

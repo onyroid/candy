@@ -70,6 +70,11 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - **The front of the gate tells you** which boss is inside and what it may drop.
 - Each gate should feel hard, but never closed for good: a team that falls can always climb again.
 
+**Only dungeon bosses think (Decided, 2026-11-07).** Making every animal and monster an AI would cost too much. So only **dungeon bosses** are AI. Ordinary monsters and animals follow the game engine's own behaviour.
+
+- A boss **learns from its earlier mistakes** and gets better over time.
+- Each tier up gives the boss more health and attack, and **unlocks new skills** (tiers 1 to 10). The boss chooses how to use them to win next time.
+
 **The Black Dragon in the one world (Decided, 2026-11-07).**
 
 - It appears at random, but **rarely**, the way a helicopter is only seen over Bangkok now and then.
@@ -369,7 +374,7 @@ From earlier conversations, not yet placed:
 - **Living dungeons.** Monsters think for themselves, and each one that dies leaves notes for the next: how it lost, what the players did. The new monster reads them, decides how much to believe, and adds its own experience before leaving notes in turn. Notes are imperfect: some monsters write well, some remember wrongly, some boast, some die too fast to write much, and some do not trust their ancestors at all. Learning must have limits, errors and forgetting over time, so one defeat never means a monster knows everything. Notes may spread through a monster village as rumours, and parties that come back months later may find they have become part of the dungeon's history.
   - Suggested: players can find and read monster notes, so dungeon and players learn from each other.
   - Suggested: monsters may have fear of their own, for example avoiding light after reading that "everyone who met the lantern died".
-  - Suggested: to keep costs down, ordinary monsters learn in simple ways (which player skills beat them most often), and only a few bosses think with a language model.
+  - **Decided (2026-11-07):** only dungeon bosses are AI and learn; see "Only dungeon bosses think" in 2.0.
 
 - Co-op games: hide-and-seek, mazes, scavenger hunts.
 - Later progression: stat points, runes.

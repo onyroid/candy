@@ -22,6 +22,52 @@ Homes stay homes. Nothing that happens through the gate (combat, trading, compet
    Market          Dungeon gates    Survival
 ```
 
+### 2.0 One World, Generated as You Go (Decided, 2026-11-07)
+
+> This changes the shape above. The three paths and the plaza are folded into **one map**. Where the older subsections below disagree with this one, this one wins.
+
+**One map, never the same twice.** Everything happens in a single map built by **procedural generation**: the system creates new surroundings from rules as the party travels. Walking back the way you came does not give the same place, because the area may be generated again or simply not saved. It is an adventure that keeps going. When the party is tired, it rests along the way.
+
+The core of the game is clear from this: travel, meet a situation, fight, rest, move on. The focus is on excitement and enjoying whatever comes up.
+
+**Shops.**
+
+- **Ordinary shops are an icon.** Pressing it opens the shop to buy and sell at once, wherever the player is.
+- **Seasonal and event items come from wandering merchants** who appear at random along the way. When a player is short of money or of the season's mana stones, there is still the hope of meeting another one.
+
+**The mini map shows:**
+
+- gates,
+- wandering merchants,
+- water,
+- animals,
+- villages and big cities, for buying food,
+- enemies nearby, out to a certain distance, as **red dots only**. It does not say what they are.
+
+**Gates.** Dungeon gates are no longer in one place. They appear at random as **dimensional portals** along the way.
+
+**Worlds and joining.**
+
+- The list shows **Your World**, then friends' worlds by name (for example, **Luna's World**), then other people's **public** worlds lower down.
+- Strangers no longer meet in a shared plaza or Market. A player who opens their world as public may have others join.
+- Joining a friend starts from where that friend last was. When friends join you as host, they start from where you last were.
+- Coming back to your own world continues from your own latest save.
+- **At most 12 people** in one world. No one can join beyond that.
+
+**Items belong to the player, not the world.** Anything gained in a friend's world comes home with the player. Even if a world is deleted and made again, everything already gained stays.
+
+**Leaving during a fight.** When the player comes back, they start a little away from where they left, to avoid the chaos, with **about 5 seconds of invulnerability**. This keeps them safe and guards against loading bugs or anything unexpected.
+
+**Staying together when joined.** In a friend's world, fear and hunger fall faster than usual when a player is far from the others, and faster still when completely alone. This keeps friends from splitting up to farm and using up resources. It applies **only when joined with friends**, not when playing alone. A notice tells players, so they know that staying close helps everyone last longer.
+
+**Open:**
+
+- Whether the player-run consignment Market (2.4) stays, now that ordinary shops are an icon.
+- How the quest board and the mission failure cooldown (2.5) work when gates are random portals.
+- Where the Black Dragon and the other Survival dangers (2.6) sit in the one world: everywhere, or in certain regions.
+
+Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
+
 ### 2.1 Rooms and Parties
 
 - A room holds **up to 12 people** at a time.

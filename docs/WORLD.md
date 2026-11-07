@@ -77,9 +77,12 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - **Following it** gives a chance to find a **dragon's nest or eggs**, which can be sold or cooked.
 - Why: a dragon that only appears and must be avoided, as in *Sky*, is a danger but not a challenge. Following it adds one.
 
-**Open:**
+**Zones, day and night (Decided, 2026-11-07).**
 
-- Where the other Survival dangers (2.6) sit in the one world: everywhere, or in certain regions.
+- The Survival dangers (2.6) appear **by zone**. A snow zone has snow creatures, and so on.
+- **Daytime is less dangerous,** so players can go out to gather ingredients and resources, and stop to rest.
+- **In daylight the fear bar drains more slowly than in the dark, but hunger drains more.**
+- **Everyone can cook.**
 
 Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
 

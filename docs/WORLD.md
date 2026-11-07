@@ -60,11 +60,26 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 
 **Staying together when joined.** In a friend's world, fear and hunger fall faster than usual when a player is far from the others, and faster still when completely alone. This keeps friends from splitting up to farm and using up resources. It applies **only when joined with friends**, not when playing alone. A notice tells players, so they know that staying close helps everyone last longer.
 
+**The Market lives in the shop icon.** The player-run consignment Market (2.4) is inside the same shop icon as the ordinary shops.
+
+**Gate tiers instead of a quest board (Decided, 2026-11-07).** This replaces the quest board and the mission failure cooldown in 2.5.
+
+- Each gate, and each boss, has a tier from **I to X**. The same boss gets harder at a higher tier, and gives more rewards.
+- **Drops follow the gate's tier.** The grade and rarity of spirits also depend on the tier, so a spirit jar lantern can be raised in rarity, even though its buff stays the same.
+- **Losing lowers the tier.** Some bosses drop one tier, others drop by half (losing at X falls to V), depending on the boss's rarity.
+- **The front of the gate tells you** which boss is inside and what it may drop.
+- Each gate should feel hard, but never closed for good: a team that falls can always climb again.
+
+**The Black Dragon in the one world (Decided, 2026-11-07).**
+
+- It appears at random, but **rarely**, the way a helicopter is only seen over Bangkok now and then.
+- Players only have to stay out of its sight.
+- **Following it** gives a chance to find a **dragon's nest or eggs**, which can be sold or cooked.
+- Why: a dragon that only appears and must be avoided, as in *Sky*, is a danger but not a challenge. Following it adds one.
+
 **Open:**
 
-- Whether the player-run consignment Market (2.4) stays, now that ordinary shops are an icon.
-- How the quest board and the mission failure cooldown (2.5) work when gates are random portals.
-- Where the Black Dragon and the other Survival dangers (2.6) sit in the one world: everywhere, or in certain regions.
+- Where the other Survival dangers (2.6) sit in the one world: everywhere, or in certain regions.
 
 Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
 

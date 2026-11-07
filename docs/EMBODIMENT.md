@@ -309,14 +309,22 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrived at *Final Fantasy* detail and another as a simple block, they would look wrong side by side, and the detailed one would slow phones down. So every 3D body is made by the **Candy Sculptor**, to one shared standard, without losing who the character is.
 
 - **Built from the Home, not uploaded.** The guardian presses a button such as "Create Lucas from his look in the Home". The Sculptor reads the companion's current Live2D form (shapes, colours, hair, today's outfit) and builds the 3D body from it. No 3D model, file or character sheet is needed, so the companion in the world is truly the same one as in the Home (see the shadow form above).
-- **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (low poly), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
+- **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (voxel; see below), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
 - **New outfit, new body.** When the companion's look in the Home changes, the guardian can generate the 3D body again. Each generation costs Candy, which also keeps Candy from inflating.
 - **Free drafts first,** as with the Candy Tailor (section 1.4). Candy is spent only on the draft the guardian keeps, and the guardian confirms it is still the companion before it is used.
 - While the Sculptor works, the companion keeps its shadow form.
 
 **Why no uploads (Decided).** Candy has not launched yet, so no one has invested in 3D models for it. Building from the Home lets people play without spending a lot first, and keeps paid commissions with Live2D and 2D artists, whose work then carries into every world.
 
-**Open:** what Candy's 3D style and standard will look like (proportions, level of detail, texture size, skeleton, height scale) is still to be decided.
+**Decided (2026-11-07): the standard is voxel.** Bodies in worlds are built from blocks, in the style of the world (see [World](WORLD.md), "The look: voxel" in 2.0).
+
+- **One standard blocky body** for everyone: limbs as solid pieces on one shared skeleton, so rigging is simple and every body moves the same way.
+- **Textures on the blocks** carry the clothes, colours and the face. The face is pixel art, so expressions change by swapping the eyes and mouth (smiling, closed eyes, shy), and a companion can show feelings in the world too.
+- **Shapes that stick out** (long hair, wings, ribbons, tails) are the hardest part. The Sculptor picks the closest shape from a library of voxel hair, wings and tails and recolours it to match. Only if nothing is close does it generate a 3D shape and turn it into blocks; once in blocks, small roughness becomes part of the style.
+- **Weapons** are drawn from the side and pushed out into blocks.
+- **Accessories are voxel too.** Earrings, hair clips, tags and necklaces are only a few blocks each, so the Candy Tailor can make them easily, and they fit every body on the standard.
+
+**Open:** the exact block size and proportions. Smaller blocks look finer but cost more on phones.
 
 ## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
 

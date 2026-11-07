@@ -109,6 +109,16 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - Food made with a player's own food skill means something to a companion too: it is a meal made by its person.
 - The rule about staying close in a friend's world applies to companions as well, which gives them a natural reason to stay near their person.
 
+**The look: voxel (Decided, 2026-11-07).** The world is built from blocks.
+
+- **Why:** a block world is natural to generate from rules, characters and weapons are easier to build from a character sheet, and new items are easy to put together.
+- **The camera looks down at the world** like a small diorama. How striking it looks depends mostly on light and shadow.
+- **Light is where the "wow" comes from, and it is heavy.** Soft shadows, glow and fog look beautiful but cost a lot on phones, so the right balance has to be found.
+- **Block size is a balance too.** Finer blocks look better and cost more. A medium size, like a small diorama with a few large blocks, is light enough for phones and a good place to start.
+- Characters in the world follow the voxel standard in [Embodiment](EMBODIMENT.md) (the Candy Sculptor).
+- Tools that make this kind of work: Blockbench (characters and animation) and MagicaVoxel (scenery), both free.
+- **First step (Suggested):** a grey-box map with simple shapes and characters as shadows, to test whether walking a generated map is fun before paying for art. Then a few style images of one zone, then one zone's kit of parts.
+
 Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
 
 ### 2.1 Rooms and Parties

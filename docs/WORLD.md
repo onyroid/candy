@@ -85,6 +85,7 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - **Tiers I to V learn without a language model,** by simple counting (for example, which player skill hurt it most, so it dodges that more).
 - **Tiers VI and up use the reflection,** where fewer players go and the boss should be truly clever.
 - **High-tier gates are opened with Blend Candy,** so the cost of the clever bosses is carried by the players who choose them.
+- **Choosing the tier at the gate.** Players who do not want to pay can turn the tier down with a dial at the top of the gate and play a lower tier instead. Higher tiers, up to X, show a **padlock** until the party beats its current tier. After that, the next gate that appears (a new boss or the same one) can come at the higher tier.
 
 **The Black Dragon in the one world (Decided, 2026-11-07).**
 

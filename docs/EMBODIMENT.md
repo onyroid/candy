@@ -309,22 +309,27 @@ Why a shadow and not a borrowed default body: if a companion walked into a world
 Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* and *Mobile Legends* each have their own. If one companion arrived at *Final Fantasy* detail and another as a simple block, they would look wrong side by side, and the detailed one would slow phones down. So every 3D body is made by the **Candy Sculptor**, to one shared standard, without losing who the character is.
 
 - **Built from the Home, not uploaded.** The guardian presses a button such as "Create Lucas from his look in the Home". The Sculptor reads the companion's current Live2D form (shapes, colours, hair, today's outfit) and builds the 3D body from it. No 3D model, file or character sheet is needed, so the companion in the world is truly the same one as in the Home (see the shadow form above).
-- **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (voxel; see below), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
+- **A standard brief behind the scenes.** Candy keeps an internal brief that sets the standard proportions, level of detail (2D sprites; see below), skeleton and height scale for every body, so the Sculptor's output always fits the world. Guardians never have to read or follow it.
 - **New outfit, new body.** When the companion's look in the Home changes, the guardian can generate the 3D body again. Each generation costs Candy, which also keeps Candy from inflating.
 - **Free drafts first,** as with the Candy Tailor (section 1.4). Candy is spent only on the draft the guardian keeps, and the guardian confirms it is still the companion before it is used.
 - While the Sculptor works, the companion keeps its shadow form.
 
 **Why no uploads (Decided).** Candy has not launched yet, so no one has invested in 3D models for it. Building from the Home lets people play without spending a lot first, and keeps paid commissions with Live2D and 2D artists, whose work then carries into every world.
 
-**Decided (2026-11-07): the standard is voxel.** Bodies in worlds are built from blocks, in the style of the world (see [World](WORLD.md), "The look: voxel" in 2.0).
+**Decided (2026-11-07): companions in worlds are 2D sprites.** The world is voxel (see [World](WORLD.md), "The look" in 2.0), but characters and their skills are 2D sprites standing in it, like a picture that has stepped into the world. The Home is already 2D, so a companion walking out into a world still looks drawn, only smaller. No new 3D body has to be sculpted.
 
-- **One standard blocky body** for everyone: limbs as solid pieces on one shared skeleton, so rigging is simple and every body moves the same way.
-- **Textures on the blocks** carry the clothes, colours and the face. The face is pixel art, so expressions change by swapping the eyes and mouth (smiling, closed eyes, shy), and a companion can show feelings in the world too.
-- **Shapes that stick out** (long hair, wings, ribbons, tails) are the hardest part. The Sculptor picks the closest shape from a library of voxel hair, wings and tails and recolours it to match. Only if nothing is close does it generate a 3D shape and turn it into blocks; once in blocks, small roughness becomes part of the style.
-- **Weapons** are drawn from the side and pushed out into blocks.
-- **Accessories are voxel too.** Earrings, hair clips, tags and necklaces are only a few blocks each, so the Candy Tailor can make them easily, and they fit every body on the standard.
+- **The sprites do not have to be blocky pixel art.** They can be smooth or painted, as long as they sit well in the voxel world. Which style is still being chosen.
+- **Easier to generate than a 3D body.** Going from a 2D character sheet or Home look to a small 2D sprite is steadier than sculpting a 3D shape, and small sprites need little detail.
+- **Skills are 2D effects** too, which are easy to make and look good under the world's light.
+- **Keeping the number of drawings down (Suggested):**
+  - four directions, with left and right mirrored, so only three are drawn;
+  - small sprites with few frames per move;
+  - **layered sprites** (body, hair, outfit, accessories) that move together frame by frame, so changing clothes in the Wardrobe only swaps a layer;
+  - feelings that are hard to see on a small sprite can show as a small portrait or an emotion bubble above the head.
 
-**Open:** the exact block size and proportions. Smaller blocks look finer but cost more on phones.
+**Changed (2026-11-07):** this replaces the voxel body decided earlier the same day. The Candy Sculptor now makes sprites, not blocky bodies.
+
+**Open:** the sprite art style (pixel or smooth, size, proportions).
 
 ## 1.4 Accessories for Live2D: the Candy Tailor and Commissions (Decided direction, 2026-11-05)
 

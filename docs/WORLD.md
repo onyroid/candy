@@ -74,6 +74,17 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 
 - A boss **learns from its earlier mistakes** and gets better over time.
 - Each tier up gives the boss more health and attack, and **unlocks new skills** (tiers 1 to 10). The boss chooses how to use them to win next time.
+- **Each world's bosses remember only that world.** A boss in your world learns from you and your friends, not from every player in the game.
+- **Bosses learn players' tells.** A boss can learn which movement or wind-up comes before which skill. When it recognises one, it may react before the skill lands, and players may be surprised that it knows what they are about to do. They then have to change plan: attack together, feint, or find another way.
+
+**Keeping boss learning affordable (Decided, 2026-11-07).**
+
+- **The memory is small.** A boss's notes and tactic weights are a little text and a few numbers, kept in the world's save, like the host's last position.
+- **During a fight, no language model.** The boss runs on game rules with weights it has learned (for example, "if a player lights a lantern, step out of the light first"). This is fast and costs nothing. It follows the same two rhythms as companions (2.8), only slower.
+- **After a fight, one short reflection.** The game keeps a short log of what happened, and a small, inexpensive model reads it once to update the boss's notes and weights. Once per fight, not every second.
+- **Tiers I to V learn without a language model,** by simple counting (for example, which player skill hurt it most, so it dodges that more).
+- **Tiers VI and up use the reflection,** where fewer players go and the boss should be truly clever.
+- **High-tier gates are opened with Blend Candy,** so the cost of the clever bosses is carried by the players who choose them.
 
 **The Black Dragon in the one world (Decided, 2026-11-07).**
 

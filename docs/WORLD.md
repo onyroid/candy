@@ -109,15 +109,35 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - Food made with a player's own food skill means something to a companion too: it is a meal made by its person.
 - The rule about staying close in a friend's world applies to companions as well, which gives them a natural reason to stay near their person.
 
-**The look: voxel (Decided, 2026-11-07).** The world is built from blocks.
+**The look: 2.5D vector, Chinese fantasy painting (Current direction, 2026-11-08).** Characters, plants, rocks and buildings are flat 2D drawings standing in a 3D world, with the camera looking down at an angle, in the way *Don't Starve Together* is built.
 
-- **Why:** a block world is natural to generate from rules, and new items are easy to put together.
-- **The camera looks down at the world** like a small diorama. How striking it looks depends mostly on light and shadow.
-- **Light is where the "wow" comes from, and it is heavy.** Soft shadows, glow and fog look beautiful but cost a lot on phones, so the right balance has to be found.
-- **Block size is a balance too.** Finer blocks look better and cost more. A medium size, like a small diorama with a few large blocks, is light enough for phones and a good place to start.
-- **Characters and skills are 2D sprites** standing in the voxel world, lit by its light, in the style of games like *Octopath Traveler* (Decided, 2026-11-07). The sprites do not have to be blocky pixel art. See [Embodiment](EMBODIMENT.md) (the Candy Sculptor).
-- A free tool for voxel scenery: MagicaVoxel.
+- **Style:** vector art, cute but still able to carry adventure. Not quite a fairy tale; closer to beautiful Chinese fantasy painting: soft gradients, thin gold lines, curling clouds, layered misty mountains, with a faint ink or paper texture laid over the vector shapes. Night and dangerous zones shift the colours darker.
+- **Characters** are drawn from three views (front, back, side, with the side mirrored) and split into parts (head, body, arms, legs) moved by bones, not drawn frame by frame. Outfits follow the same vector style.
+- **Props** (trees, rocks, houses) are single flat images that always face the camera. Ground is a seamless pattern, which suits the generated map.
+- **Light:** 2D art needs a shader so it sits in the world's light at night and by lantern light.
+- **Why:** light enough for ordinary computers and phones, still with depth, and vector parts are easy to recolour and rig.
+- **Changed (2026-11-08):** this replaces the voxel world decided on 2026-11-07. Voxel looked good but becomes heavy when many blocks join, and the 3D or 2.5D choice is still being weighed by the developer for performance.
+- **Search terms for references (Suggested):** `chinese fantasy vector illustration`, `guofeng vector`, `国风插画`.
 - **First step (Suggested):** a grey-box map with simple shapes and characters as shadows, to test whether walking a generated map is fun before paying for art. Then a few style images of one zone, then one zone's kit of parts.
+
+**Characters are imported (Current direction, 2026-11-08).** Players make their character's look outside the game and import it, following Candy's base sprite template. The game does not generate looks itself, so this costs Candy nothing.
+
+- Suggested: the template states the size, the views, the frames per move and where the feet stand, so every imported character sits in the world the same way.
+- Suggested: on import, the game checks the file against the template, asks the player to confirm they have the right to use the image, and screens out unsuitable images.
+
+**Skills come from weapons (Current direction, 2026-11-08).** Players no longer design their own skills. Skills belong to weapons, and Candy designs them.
+
+- **Each weapon has several skill sets** of three skills. A player chooses **one set of three** to use.
+- **Target:** 20 weapons, each with 4 sets (12 skills), 240 skills in all, for variety.
+- **The rules in section 3 still apply,** now as the designers' rules for building each weapon's sets: skill points, mana cost, cooldown and caps. Health, attack and mana are still set by those rules, but per weapon.
+- **Why:** letting players generate their own skills is possible but costs too much to start with.
+- Suggested: launch with fewer weapons and sets (for example 5 to 6 weapons with 2 sets each), see which are played, and add new weapons each season until reaching 240.
+- Suggested: player-designed skills can return later as a special feature, once the game has players and funds.
+
+**A standalone version first (Current direction, 2026-11-08).** The game may first be built as a standalone game on Steam, to gather feedback and raise funds for Candy, before it comes into Candy.
+
+- Suggested: the standalone game must be fun without companions, on the generated map and the thinking bosses alone.
+- Suggested: Steam asks developers to disclose AI-generated content, including content generated live such as thinking bosses, with guardrails. Check Steam's current rules before submitting.
 
 Suggested: this fits the living dungeons idea in section 4. A map that changes every time means a companion's notes about a place are only partly right when it returns.
 
@@ -258,6 +278,8 @@ Suggested:
 ## 3. Skill Rules for the Dungeon Path (Decided)
 
 Every character who brings skills into the dungeon gates is checked against the same rules. Everyone gets the same budget, so no one is quietly advantaged.
+
+> **Changed (2026-11-08):** skills now come from weapons (see "Skills come from weapons" in 2.0). These rules are now what Candy's designers use to build each weapon's skill sets, rather than rules players follow to build their own kits.
 
 ### 3.1 Shape of a Kit
 

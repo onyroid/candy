@@ -318,7 +318,7 @@ Every world needs one standard for 3D bodies, the way Minecraft, Roblox, *Sky* a
 
 **Decided (2026-11-07): companions in worlds are 2D sprites.** Characters and their skills are 2D sprites standing in the world (see [World](WORLD.md), "The look" in 2.0), like a picture that has stepped into the world. The Home is already 2D, so a companion walking out into a world still looks drawn, only smaller. No new 3D body has to be sculpted.
 
-- **The sprites do not have to be blocky pixel art.** They can be smooth or painted, as long as they sit well in the voxel world. Which style is still being chosen.
+- **The sprites do not have to be blocky pixel art.** They can be smooth or painted, as long as they sit well in the world. Current direction: vector, in the Chinese fantasy painting style (see World 2.0).
 - **Easier to generate than a 3D body.** Going from a 2D character sheet or Home look to a small 2D sprite is steadier than sculpting a 3D shape, and small sprites need little detail.
 - **Skills are 2D effects** too, which are easy to make and look good under the world's light.
 - **Keeping the number of drawings down (Suggested):**

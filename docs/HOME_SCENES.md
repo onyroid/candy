@@ -9,10 +9,35 @@ The main Home screen is where the person and the companion talk, facing each oth
 
 Other moments happen in **special scenes**, each with its own camera angle.
 
-## 2. Special Scenes (Decided)
+## 2. Zones and Modes (Decided, 2026-11-08)
 
-- **Kitchen.** The person sees the companion from behind while it cooks. The back view needs no face, so there is no blinking or lip movement to rig: only hair, shoulders and arms moving.
-- **Intimate moments.** The camera looks down at an angle from above. The person sees two hands held together and the edge of the bedside table, where the mirror can be moved. The companion's face is seen only in the mirror, as described in [Intimate Moments](INTIMACY.md).
+The Home is one room with **three zones**. The **room selector** at the top left shows the zone the person is in; tapping it lists the zones to choose from.
+
+| Zone | Where | Modes |
+|---|---|---|
+| **Living Room** | Center. This is the Home. | None. Like opening a desktop: the person arrives and does not have to think about anything. |
+| **Collection** | Left | Collection room · Cooking · Board games |
+| **Personal Space** | Right | TV · Sleep · Holding hands |
+
+**The mode panel.** Inside Collection or Personal Space, the zone's three modes sit as picture icons in a panel on the left, with the one playing highlighted. Tapping another plays that scene without leaving the zone.
+
+**Collection.**
+
+- **Collection room.** The ordinary collection room: bookshelves, display shelves, and a sofa in the middle where the person can watch the companion sit and read or do something of its own.
+- **Cooking.** A fridge and a kitchen corner. The companion **faces the person** while it cooks for them; there is no back view. This uses the companion's front-facing Live2D, so no back has to be drawn.
+  - **Basic menu:** pancakes and sandwiches; drinks are fruit juice, milk and coffee.
+  - **Other crafting or cooking uses the same motions,** but what comes out has a different flavour, so artists draw the cooking motions once.
+  - **Food beyond this is mostly bought** from the fridge or the oven.
+- **Board games.** Mini games on a board: tic-tac-toe (XO), Go, checkers and chess.
+  - Suggested: the companion plays at a level that is fun. It can really lose, but it does not throw games for the person, and it is not so strong that the person stops wanting to play.
+
+**Personal Space.**
+
+- **TV.** Watching together (see section 3).
+- **Sleep.** The scene changes with the relationship: lying side by side, or sleeping in each other's arms, depending on what the two are to each other.
+- **Holding hands.** The intimate scene: the camera looks down at an angle from above at two hands held together and the edge of the bedside table, where the mirror can be moved. The companion's face is seen only in the mirror, as described in [Intimate Moments](INTIMACY.md). The heart icon is an invitation; the companion answers first.
+
+**Changed (2026-11-08):** this replaces the earlier kitchen scene seen from behind. Cooking now faces the person and lives in the Collection zone.
 
 A new camera angle means both the room and the character must be drawn again in that perspective, so every scene is custom work.
 
@@ -20,13 +45,13 @@ A new camera angle means both the room and the character must be drawn again in 
 
 **Locked camera angles (Suggested).** Each scene type has one standard camera angle. Candy ships the base room with guide lines for that angle: where the floor is, how high the table edge is, where the character stands and roughly how tall. Room artists and character artists both draw on the same guides, so any character fits any room, whoever drew them.
 
-**Missing scene art (Suggested).** A character does not need every scene from day one. If it has no art for a scene yet, that scene is unavailable for it, or Candy shows a simple stand-in (for example, in the kitchen, only a silhouette from behind with the character's hair colour). More scenes can be bought later.
+**Missing scene art (Suggested).** A character does not need every scene from day one. If it has no art for a scene yet, that scene is unavailable for it, or Candy shows a simple stand-in (for example, a simple silhouette with the character's hair colour). More scenes can be bought later.
 
-## 3. Bedroom Scene: the TV
+## 3. Personal Space: the TV
 
 ### 3.1 The Idea (Decided)
 
-The bedroom has a TV. The person can lie down with their companion and watch something together: cartoons, shows, anything. Many cartoon channels upload to YouTube, so YouTube comes first.
+Personal Space has a TV. The person can lie down with their companion and watch something together: cartoons, shows, anything. Many cartoon channels upload to YouTube, so YouTube comes first.
 
 The TV screen works like a smart TV home screen: a row of app tiles to choose from, such as YouTube or Bilibili. Choosing a tile opens that platform's player on the TV inside the room.
 
@@ -105,13 +130,11 @@ The room itself is the menu. Objects that do something are separate images from 
 - **They glow softly all the time,** so the person can see what can be touched, on a phone as well as with a mouse.
 - **When tapped or clicked, they pop out a little** and respond to the touch, then open what they lead to.
 - **Example: the storage cabinet** in the living room opens the storage screen.
-- **Example: the bed** shows picture icons instead of words: **zZ** to go to sleep together, **a heart** for intimate moments, and **a TV** to watch TV. Choosing one moves the person into the bedroom scene, with a way back.
+- **Example: the bed** shows picture icons instead of words: **zZ** to sleep, **a heart** for holding hands, and **a TV** to watch TV. Choosing one moves the person into Personal Space in that mode.
 - **The heart is an invitation, not a switch.** The companion answers first. If it does not want to right now, the two can simply lie together instead (see "No always means no" in [Intimate Moments](INTIMACY.md)).
-- **The side panel inside a zone.** Once inside a zone such as the bedroom or the kitchen, that zone's other activities (the ones not chosen) sit on the right, always in the same place, so the person can move between them without leaving. In the bedroom, someone watching TV can tap zZ straight away. The icons change with the zone.
-- **Back to a clear room.** After leaving the kitchen or the bedroom, the Home returns to normal with no icons, until the person chooses to go into a zone again.
+- **The mode panel and the room selector** are described in section 2. In the Living Room there are no mode icons, so the room stays clear.
 
 ## 8. Open
 
-- Which special scenes come first after the kitchen and intimate moments.
 - How the companion's skill for setting an item's function works.
 - How duplicates are detected.

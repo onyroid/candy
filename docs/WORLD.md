@@ -120,6 +120,16 @@ The core of the game is clear from this: travel, meet a situation, fight, rest, 
 - **Search terms for references (Suggested):** `chinese fantasy vector illustration`, `guofeng vector`, `国风插画`.
 - **First step (Suggested):** a grey-box map with simple shapes and characters as shadows, to test whether walking a generated map is fun before paying for art. Then a few style images of one zone, then one zone's kit of parts.
 
+**The first world is a survival world (Decided, 2026-11-10).** The first world is survival in the spirit of *Don't Starve Together*: travelling together, staying alive, and growing stronger, rather than a room just for chatting. The author prefers fighting and the feeling that characters grow.
+
+- Suggested: start from a small core that is truly fun, then add to it:
+  - one zone first (for example, a misty bamboo forest);
+  - day and night: gather by day, stay near fire or a lantern at night;
+  - the hunger and fear bars;
+  - gathering, crafting and cooking (campfire, lantern, basic food);
+  - a few kinds of enemies, with two to four friends playing together.
+- Suggested: boss gates, many weapons and the 240 skills are added season by season, once the core is fun.
+
 **Characters are imported (Current direction, 2026-11-08).** Players make their character's look outside the game and import it, following Candy's base sprite template. The game does not generate looks itself, so this costs Candy nothing.
 
 - Suggested: the template states the size, the views, the frames per move and where the feet stand, so every imported character sits in the world the same way.

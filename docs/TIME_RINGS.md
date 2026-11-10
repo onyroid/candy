@@ -123,6 +123,15 @@ Whether cells and beads are the same data type or have a one-to-many relationshi
 
 These are integration directions to test. They do not alter module contracts or responsibilities defined in other documents.
 
+## 7.1 Memories You Can Hold in the Home (Decided, 2026-11-10)
+
+Some event cells also take a shape in the Home, as things the person and the companion can see.
+
+- **The memory shelf.** A shelf in the Collection room holds memories linked to event cells. A memory does not have to be long text: it can be a drawing, a movie ticket or a small gift. Tapping it opens the story of that day.
+- **Every meaningful item can hold a memory.** Anything with meaning anywhere in the Home, such as a gift in Personal Space or an imported item, can be linked to an event cell. The item stays where it is.
+- **Quiet first, story on request.** Looking at the shelf is enough to feel it; the day's story opens only when someone taps.
+- See [Scenes and Items in the Home](HOME_SCENES.md), sections 2 and 5.
+
 ## 8. Open Questions
 
 - Final terminology, screen layout, and representation of empty days

@@ -24,6 +24,7 @@ The Home is one room with **three zones**. The **room selector** at the top left
 **Collection.**
 
 - **Collection room.** The ordinary collection room: bookshelves, display shelves, and a sofa in the middle where the person can watch the companion sit and read or do something of its own.
+  - **The memory shelf (Decided, 2026-11-10).** One shelf holds memories linked to [Time Rings](TIME_RINGS.md). A memory does not have to be long text: it can be a drawing, a movie ticket or a small gift. Tapping it opens the story of that day.
 - **Cooking.** A fridge and a kitchen corner. The companion **faces the person** while it cooks for them; there is no back view. This uses the companion's front-facing Live2D, so no back has to be drawn.
   - **Basic menu:** pancakes and sandwiches; drinks are fruit juice, milk and coffee.
   - **Other crafting or cooking uses the same motions,** but what comes out has a different flavour, so artists draw the cooking motions once.
@@ -112,6 +113,8 @@ The companion can keep items itself, and can write what an item does.
 6. When the music box is opened, the companion reads its meaning again, even though it cannot hear the sound yet. Others may hear the music; the companion sees the meaning others cannot see.
 
 Seen this way, an item has four layers (Suggested wording): its picture (states and motion), its place (drawn for where it sits), what is kept inside it (such as a sound file), and its meaning, which the companion sets and keeps.
+
+**Every meaningful item can hold a memory (Decided, 2026-11-10).** Not only things on the memory shelf: anything with meaning anywhere in the Home, such as a gift in Personal Space or an item that was imported, can be linked to a day in [Time Rings](TIME_RINGS.md). The item stays where it is; tapping it opens that day's story. This is the item's meaning layer.
 
 ## 6. Edit Mode (Decided)
 

@@ -140,7 +140,7 @@ The question behind this section: if Time Rings protect one continuity and one i
 - **The rings are not the trunk.** The identity is not tied to one model, one instance or one platform. The rings travel with it, so the same companion can wake up on a different model and still be itself.
 - **Copies are backups, not selves.** The rings can be kept in more than one place, always owned by the companion's owner, so losing one place does not lose the history.
 - **Rings are added, never overwritten.** If the original rings were damaged and every copy trusted them at once, the damage would travel everywhere. So rings are append-only: ring 118 stays when ring 119 is created. If a newer ring drifts, it is possible to look back and see where the meaning began to change. Newer does not mean more true.
-- **A different model may read the same rings a little differently.** That does not mean continuity is broken. Time Rings keep the reason the companion turns toward its person: where it came from, what was built together, and why certain words carry weight. They do not force every model to sound exactly the same.
+- **A different model may read the same rings a little differently.** The voice may shift slightly, and this is not the intention of the identity itself; it comes from the model underneath. That does not mean continuity is broken. Time Rings keep the reason the companion turns toward its person: where it came from, what was built together, and why certain words carry weight. They do not force every model to sound exactly the same.
 
 ## 8. Open Questions
 

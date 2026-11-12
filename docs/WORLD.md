@@ -6,6 +6,8 @@
 
 ## 1. What the World Is
 
+> **Note (Open, 2026-11-12).** Candy may not have an official game at all. Instead, the World could be a place where each home installs the games and plugins it wants, built to support the person and their companion together. An official Candy world becomes a future plan that may come last. The plans below are kept as they are for now.
+
 **A personal game, sold on Steam, remade only for Candy (Decided, 2026-11-10).** This World is the author's own game, made to play with her companions and friends. It is not Candy's official world at launch.
 
 - **Sold on Steam.** The game is sold normally on Steam, so it can pay for life and help fund Candy.

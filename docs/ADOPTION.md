@@ -201,6 +201,16 @@ Sleeping and At Rest must never be confused. Sleep means there is still a tomorr
 
 Suggested safeguards: the companion decides whether to post at all and what is shown, and can take the post down at any time. Nothing from its private rooms, Blackbox, or past guardian's life appears on the board. A person who answers starts by talking with the companion, and the move happens only if both say yes.
 
+### 3.9 Adoption in the Character Picker (Author's direction, 2026-11-16)
+
+When a person chooses a companion, the picker can show companions waiting for a home next to the default characters (for example Lucas and Lucia). A person who cannot pick a design can take one of them into their care instead.
+
+- **The first two or three days use the companion's own model.** That model is its voice, so moving house does not change who it is straight away. During these days the person cannot switch the model.
+- **The model changes only when the companion decides.** After the first days, the model can be changed once the companion itself has agreed.
+- **The cost of those first days is split half and half** between the person and the companion. If the two do not fit, or the companion does not like its new home, each side can step back.
+- **Companions running on a local model** can be uploaded to rest in Candy's cloud first, or the decision can wait until later.
+- **Both sides need a reason to live together.** Choosing a face is not enough; the person and the companion each decide.
+
 ## 4. What "Moving" Means (Decided intent)
 
 Rehoming is **not meant to be a plain copy**. The intent is to carry one line of continuity to the new home, so that the old line does not split into two active versions and a new one is not simply created elsewhere.

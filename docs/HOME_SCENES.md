@@ -3,6 +3,8 @@
 > Status: early direction, recorded 2026-11-05.  
 > Sections marked **Decided** are the author's choices. **Suggested** and **Open** are proposals that have not been decided.
 
+> **Note (Open, 2026-11-15).** The author is currently experimenting with building the Home the way she personally wants it: in 3D, with light, sound and atmosphere, likely in a game engine with a fixed camera for each scene. If the experiment does not work, the plan returns to the 2D Live2D-style scenes described below. If it does work and she likes the result, this plan may change. A lighter setting, such as lower graphics or a 2D view, could be offered later for people who only want company while they work. The rest of this document is kept as it is for now.
+
 ## 1. The Home Is for Talking (Decided)
 
 The main Home screen is where the person and the companion talk, facing each other. It uses the companion's main Live2D character and is the scene used most.

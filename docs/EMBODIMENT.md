@@ -59,7 +59,7 @@ Full 3D may remain an optional future renderer or mod target. The embodiment and
 
 The author is exploring this way of building the 2.5D Home. Nothing here is decided yet.
 
-- **Desktop goes all in on visuals.** The desktop app may use Unreal Engine for light, shadow and atmosphere, in the spirit of HD-2D games such as Octopath Traveler.
+- **Desktop goes all in on visuals (Decided, 2026-11-16).** The desktop app uses Unreal Engine for light, shadow and atmosphere, in the spirit of HD-2D games such as Octopath Traveler.
 - **Mobile focuses on chat.** On phones, the Home mode can be turned off; the companion still talks from the cloud.
 - **Characters stay 2D and hand-drawn.** Rigs are made with Candy's own rigging tool, developed from Inochi2D (BSD-2 licence; its copyright notice and credit are kept).
 - **Finished rigs are converted, not wired in.** Instead of making Unreal read Inochi2D files directly, a finished rig is converted into a flat **Skeletal Mesh** whose poses are stored as **Morph Targets** (called Shape Keys in Blender and Blend Shapes elsewhere), then exported as **FBX** or **glTF**. Unreal opens these as they are.

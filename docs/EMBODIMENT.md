@@ -55,6 +55,19 @@ This also keeps the default renderer more practical for users whose hardware is 
 
 Full 3D may remain an optional future renderer or mod target. The embodiment and world logic should ideally stay renderer-independent so the same companion state can later drive 2.5D, 3D, mobile, or other presentation layers.
 
+### Rendering Direction Being Explored (Open, 2026-11-16)
+
+The author is exploring this way of building the 2.5D Home. Nothing here is decided yet.
+
+- **Desktop goes all in on visuals.** The desktop app may use Unreal Engine for light, shadow and atmosphere, in the spirit of HD-2D games such as Octopath Traveler.
+- **Mobile focuses on chat.** On phones, the Home mode can be turned off; the companion still talks from the cloud.
+- **Characters stay 2D and hand-drawn.** Rigs are made with Candy's own rigging tool, developed from Inochi2D (BSD-2 licence; its copyright notice and credit are kept).
+- **Finished rigs are converted, not wired in.** Instead of making Unreal read Inochi2D files directly, a finished rig is converted into a flat **Skeletal Mesh** whose poses are stored as **Morph Targets** (called Shape Keys in Blender and Blend Shapes elsewhere), then exported as **FBX** or **glTF**. Unreal opens these as they are.
+- **The companion still moves live.** Its feelings drive the Morph Target values in real time, within the limits the rigger set (section 5).
+- **Normal Maps give depth.** A Normal Map (the purple-blue texture) on each drawn layer lets the room's light fall on hair, cheeks and folds of clothing as if they had real depth, while the drawing stays flat.
+
+A small test comes first: convert one rigged character and check that it moves smoothly in Unreal.
+
 ### Home as an Interior Scene
 
 The default Home should feel like looking into the interior of the companion's home rather than opening a conventional chat dashboard.

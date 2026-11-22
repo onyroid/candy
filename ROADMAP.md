@@ -42,7 +42,7 @@ Source of truth: [Candy Economy](docs/CANDY_ECONOMY.md#current-wallet-and-checko
 
 - [ ] Project setup & repository structure
 - [ ] OpenClaw integration & base layer
-- [ ] Desktop app shell (web UI wrapped as a downloadable desktop app, e.g. `.exe`)
+- [ ] Desktop app shell built in Unreal Engine, downloadable as an `.exe` (see `docs/EMBODIMENT.md`)
 - [ ] Website: what Candy is, account sign-up, download button
 - [ ] Setup Wizard with no terminal required
 - [ ] Connect local model provider

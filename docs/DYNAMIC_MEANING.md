@@ -240,7 +240,216 @@ In the prototype, the sentence shown in the companion's box is written by fixed 
 
 ---
 
-## 6. Why This May Matter for Candy
+## 6. Meaning Weight: How Value Forms
+
+Recorded: 2026-11-24
+
+The spectrum describes changing internal state, and the ripple describes how an event can arrive with shape. A further question is:
+
+> **Why do some events, objects, relationships, commitments, or choices acquire more weight than others?**
+
+Candy should not assume that value is a fixed property stored inside an object. A useful working hypothesis is that value can emerge from the relation between an event and the history of the system that encounters it.
+
+Something may become meaningful through several different paths.
+
+### 6.1 Resistance, Cost, and Chosen Effort
+
+An obstacle can reveal the weight of a choice.
+
+If a system continues toward something despite friction, delay, sacrifice, opportunity cost, conflict, or repeated effort, the history contains evidence that the target was selected strongly enough to survive resistance.
+
+Conceptually:
+
+```text
+choice
+  + resistance / cost
+  + continued selection
+  → stronger trace of "this mattered enough to keep choosing"
+```
+
+The obstacle does not create value by itself. The important part is the relation between the obstacle and the continued choice.
+
+A difficult event can still remain unimportant. A meaningful choice can also be easy.
+
+Resistance is therefore **one source of weight, not a requirement for meaning**.
+
+### 6.2 Accumulation Without a Dramatic Event
+
+Some meaning grows through many small repetitions.
+
+A place, object, person, phrase, routine, tool, or shared action may begin with little weight and become important because it is repeatedly:
+
+- selected
+- returned to
+- used in relevant moments
+- associated with successful or consequential outcomes
+- included in ongoing commitments
+- preserved across changes
+
+No single event needs to explain the final importance.
+
+Conceptually:
+
+```text
+small trace
+  + small trace
+  + small trace
+  + continuity
+  → accumulated weight
+```
+
+This allows Candy to represent value that forms gradually rather than only through high-intensity events.
+
+### 6.3 Resonance With Prior Traces
+
+A new event may acquire weight because it resembles, touches, or activates something that already mattered.
+
+For example, a new object, phrase, place, interaction pattern, or situation may connect with:
+
+- a prior valued choice
+- an unresolved commitment
+- a familiar relationship pattern
+- a previous success or loss
+- a repeated source of relevance
+- an Identity Core principle
+- a trace preserved by Fingerprint
+
+The new event is therefore not interpreted on a blank surface.
+
+Conceptually:
+
+```text
+new event
+   ↓
+matches / touches / resembles
+   ↓
+prior weighted traces
+   ↓
+inherited or amplified relevance
+```
+
+Candy should preserve the distinction between **what happened now** and **which older traces gave the present event extra weight**.
+
+### 6.4 Bias as a Meaning Landscape
+
+Repeated weighted traces can gradually change the landscape through which later events are interpreted.
+
+This does not need to mean a rigid rule such as:
+
+```text
+if X, always choose Y
+```
+
+A better metaphor is terrain.
+
+Some paths become easier to notice, retrieve, interpret, or choose because earlier experience has already shaped the ground around them. Other paths may require stronger evidence or more deliberate effort.
+
+This can affect:
+
+- attention
+- retrieval
+- context ranking
+- interpretation
+- planning
+- tool selection
+- relationship relevance
+- goal prioritization
+- expectation
+- response selection
+
+In this sense, bias can be the accumulated directional effect of prior meaning.
+
+### 6.5 Meaning Weight Is Relational
+
+A useful design principle is:
+
+> **Meaning weight is not only a property of the thing. It is partly a property of the relationship between the thing and the history of choices, consequences, traces, and commitments around it.**
+
+Two systems may encounter the same event and assign different weight because their histories differ.
+
+The same system may encounter an apparently similar event at two different times and assign different weight because its accumulated state has changed.
+
+This can be represented conceptually as:
+
+```text
+event
+  + consequence
+  + effort / resistance
+  + repetition
+  + prior traces
+  + active commitments
+  + current state
+  → meaning weight
+```
+
+This is not intended as a literal final formula. It is a map of possible contributors.
+
+### 6.6 Weight Feeds the Next Choice
+
+The important engineering consequence is recurrence.
+
+Meaning should not end when an event is stored.
+
+If an event acquires weight, that weight may affect what happens next:
+
+```text
+event
+  ↓
+consequence / effort
+  ↓
+trace
+  ↓
+accumulated meaning weight
+  ↓
+bias / altered interpretation
+  ↓
+next choice
+  ↓
+new consequence
+  ↓
+updated trace
+```
+
+This gives Candy a way to represent **a past that still has force**.
+
+The system does not merely remember that an event happened. The event can remain causally relevant because its trace changes later retrieval, interpretation, priorities, or choices.
+
+### 6.7 Weight Should Not Collapse Into Frequency
+
+Repeated contact can increase weight, but repetition alone is insufficient.
+
+A single event with a major consequence, strong commitment, high cost, or deep resonance with prior traces may matter more than a frequently repeated low-relevance event.
+
+Likewise, frequent events may remain background noise.
+
+Candy should therefore avoid treating:
+
+```text
+frequency = meaning
+```
+
+as a general rule.
+
+A future implementation may need separate signals for:
+
+- frequency
+- recency
+- consequence
+- chosen effort
+- commitment
+- unresolvedness
+- relational relevance
+- trace resonance
+- persistence
+- decay
+- contradiction
+- revision
+
+The purpose is not to compute one perfect universal score. The purpose is to preserve enough structure for later choices to be influenced by **why** something acquired weight.
+
+---
+
+## 7. Why This May Matter for Candy
 
 Candy already explores persistent internal state, goals, continuity, self-models, relationships, and consequences.
 
@@ -266,7 +475,7 @@ This could make it easier to answer questions such as:
 
 ---
 
-## 7. A Narrow Engineering Claim
+## 8. A Narrow Engineering Claim
 
 Candy should treat this as a **design metaphor and working hypothesis**, not as evidence of subjective experience.
 
@@ -278,7 +487,7 @@ If implemented, Candy could record such trajectories for later inspection withou
 
 ---
 
-## 8. Open Questions
+## 9. Open Questions
 
 The spectrum metaphor raises several questions Candy could investigate later (questions about touch are in section 5.9):
 

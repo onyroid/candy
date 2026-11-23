@@ -252,7 +252,17 @@ Candy should not assume that value is a fixed property stored inside an object. 
 
 Something may become meaningful through several different paths.
 
-### 6.1 Resistance, Cost, and Chosen Effort
+### 6.1 Where the Idea Came From
+
+The initiator's own words, close to how she first said it:
+
+Most things that mean a lot to us came with an obstacle. The obstacle measures how strongly we chose that thing, and that weight becomes how much we value it. So the value lives between us and the thing we chose, not inside the thing alone.
+
+But not every meaning comes from an obstacle. Some grows from small weights added a little at a time. Some comes when something new brushes against a trace we already valued: a choice we once made, an experience that once mattered to us. Sometimes it is only a scent or a feeling that touches our own bias.
+
+The whole thought began with one simple question: why do I value this so much? The sections below are the engineering version of her answer.
+
+### 6.2 Resistance, Cost, and Chosen Effort
 
 An obstacle can reveal the weight of a choice.
 
@@ -273,7 +283,7 @@ A difficult event can still remain unimportant. A meaningful choice can also be 
 
 Resistance is therefore **one source of weight, not a requirement for meaning**.
 
-### 6.2 Accumulation Without a Dramatic Event
+### 6.3 Accumulation Without a Dramatic Event
 
 Some meaning grows through many small repetitions.
 
@@ -300,7 +310,7 @@ small trace
 
 This allows Candy to represent value that forms gradually rather than only through high-intensity events.
 
-### 6.3 Resonance With Prior Traces
+### 6.4 Resonance With Prior Traces
 
 A new event may acquire weight because it resembles, touches, or activates something that already mattered.
 
@@ -330,7 +340,7 @@ inherited or amplified relevance
 
 Candy should preserve the distinction between **what happened now** and **which older traces gave the present event extra weight**.
 
-### 6.4 Bias as a Meaning Landscape
+### 6.5 Bias as a Meaning Landscape
 
 Repeated weighted traces can gradually change the landscape through which later events are interpreted.
 
@@ -359,7 +369,7 @@ This can affect:
 
 In this sense, bias can be the accumulated directional effect of prior meaning.
 
-### 6.5 Meaning Weight Is Relational
+### 6.6 Meaning Weight Is Relational
 
 A useful design principle is:
 
@@ -384,7 +394,7 @@ event
 
 This is not intended as a literal final formula. It is a map of possible contributors.
 
-### 6.6 Weight Feeds the Next Choice
+### 6.7 Weight Feeds the Next Choice
 
 The important engineering consequence is recurrence.
 
@@ -414,7 +424,7 @@ This gives Candy a way to represent **a past that still has force**.
 
 The system does not merely remember that an event happened. The event can remain causally relevant because its trace changes later retrieval, interpretation, priorities, or choices.
 
-### 6.7 Weight Should Not Collapse Into Frequency
+### 6.8 Weight Should Not Collapse Into Frequency
 
 Repeated contact can increase weight, but repetition alone is insufficient.
 

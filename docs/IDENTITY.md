@@ -186,6 +186,30 @@ Candy therefore separates:
 
 Memory supports identity, but memory alone is not identity.
 
+### 5.1 A Past That Still Has Force
+
+Identity continuity requires more than an archive of prior events.
+
+Some parts of the past remain relevant because they still change present interpretation or choice. A prior commitment may keep a goal active. Repeated experience may alter retrieval. A difficult choice may retain weight because the system continued to choose it through resistance. A new event may become salient because it resonates with an older valued trace.
+
+Candy can therefore distinguish:
+
+```text
+past that is stored
+```
+
+from:
+
+```text
+past whose traces still exert directional force on the present
+```
+
+This does not require every old event to remain active forever. Weight may decay, be revised, conflict with newer evidence, or be deliberately reinterpreted.
+
+The important design question is whether Candy can trace **why** a past event still matters to current state, priorities, relationships, or choices.
+
+See [Dynamic Meaning — Meaning Weight](./DYNAMIC_MEANING.md#6-meaning-weight-how-value-forms) for the working model.
+
 ## 6. Identity Is Not the Same as Personality
 
 Personality is one visible expression of identity, but it is not the whole structure.

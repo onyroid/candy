@@ -61,6 +61,7 @@ Fingerprint may receive events from:
 - failed attempts
 - successful tasks
 - safety blocks
+- meaning-weight signals derived from consequence, effort, accumulated traces, and resonance
 
 ## Possible Outputs
 
@@ -104,6 +105,16 @@ Output Filter / Logs / Fingerprint Update
   "timestamp": 1770000000
 }
 ```
+
+## Meaning Weight Is Not Frequency
+
+Fingerprint tracks repeated experience, but repeated contact is only one way a trace can become important.
+
+A single event may leave a strong trace because it had a large consequence, required sustained choice through resistance, connected to an existing commitment, or resonated with prior weighted experience. Conversely, a frequent event may remain low-value background.
+
+Fingerprint should therefore be able to receive or reference **meaning weight** rather than infer importance from frequency alone.
+
+See [Dynamic Meaning — Meaning Weight](./DYNAMIC_MEANING.md#6-meaning-weight-how-value-forms) for the working model of resistance, accumulation, trace resonance, bias, and later choice.
 
 ## Early MVP Version
 

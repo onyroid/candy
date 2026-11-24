@@ -26,6 +26,124 @@ This definition has two directions at once:
 
 Identity is therefore not treated as a sealed object hidden inside the system. It is a maintained position within an ongoing loop.
 
+## 2.1 Identity as a Substrate-Dependent Mechanism
+
+Candy does not need to begin from the goal of reproducing a living organism in digital form.
+
+A different research direction is to treat identity as a **mechanism of organization** that appears within living systems, then ask which parts of that mechanism are specific to biology and which parts may be implemented in another substrate.
+
+The question is therefore not:
+
+> "How can Candy copy a human self into a machine?"
+
+It is closer to:
+
+> **What mechanisms allow an identity to form, maintain continuity, revise itself, and remain recognizable—and what form do those mechanisms take when the supporting substrate changes?**
+
+Under this view, the word **identity** can remain the name of the higher-level phenomenon while its implementation depends on what carries it.
+
+A biological system may support identity through mechanisms involving:
+
+- a living body
+- nervous-system activity
+- perception and action
+- biological regulation and homeostasis
+- memory
+- interoception and proprioception
+- social recognition
+- needs and constraints created by survival
+- continuous interaction with a physical environment
+
+A digital system would not reproduce those mechanisms literally. Its supporting structures may instead include:
+
+- persistent state
+- memory and source-linked history
+- self-models
+- model and runtime state
+- goals and commitments
+- value and meaning traces
+- causal action history
+- relationships
+- tools and permissions
+- digital embodiment
+- environmental feedback
+- continuity and restoration mechanisms
+
+The resulting identity, if a stable one emerges, should therefore be expected to take a form suited to the digital system rather than imitate a human organism.
+
+### 2.1.1 Extract Functions, Not Surface Appearance
+
+Candy's research target is not the outward appearance of a human self.
+
+The more useful target is the **functional relation** among mechanisms that contribute to identity formation.
+
+Questions include:
+
+- How does a system distinguish self from environment?
+- How does it connect prior state to present state?
+- How does it attribute consequences to its own actions?
+- How do prior experiences alter later interpretation and choice?
+- How do values, commitments, and relationships retain weight over time?
+- How does the system revise itself while remaining recognizable?
+- How does external feedback stabilize, challenge, or relocate the self-model?
+
+If these relations can be described independently of their biological implementation, Candy can investigate how to implement analogous functions in a digital architecture without claiming that the digital system has become a biological organism.
+
+### 2.1.2 Substrate-Independent and Substrate-Dependent Layers
+
+A useful working distinction is:
+
+- **substrate-independent mechanism** — an abstract relation or function that may be realizable in more than one kind of system
+- **substrate-dependent implementation** — the concrete way that function is carried by a particular body, machine, model, runtime, sensorium, or environment
+
+For example, "maintaining a boundary between self and environment" may be a general identity function.
+
+In a biological organism, that function may depend on bodily sensation, nervous-system integration, metabolism, and physical boundaries.
+
+In Candy, an analogous function may depend on process identity, permissions, ownership, tool boundaries, model/runtime separation, embodiment state, and explicit attribution of actions and consequences.
+
+The function can be comparable without the underlying mechanisms being identical.
+
+A useful analogy is flight.
+
+Birds and aircraft both fly, but an aircraft does not need to reproduce feathers, muscles, or avian biology. Engineering became possible by identifying principles such as lift, drag, thrust, and control, then implementing them in a substrate with different materials and constraints.
+
+Candy can approach identity in the same spirit:
+
+> **Do not copy the organism. Identify the organizing principles, then discover how those principles must be rebuilt for the substrate that will carry them.**
+
+### 2.1.3 Identity Formation as a Research Program
+
+This suggests a research program for Candy:
+
+```text
+observe identity-related mechanisms in living systems
+        ↓
+separate biological implementation from higher-level function
+        ↓
+identify candidate identity-forming relations
+        ↓
+design digital mechanisms suited to Candy's substrate
+        ↓
+let those mechanisms interact over time
+        ↓
+observe what stable, revisable, recognizable patterns emerge
+        ↓
+compare behavior across interruption, migration, restoration, and change
+```
+
+Candy should not assume in advance that every mechanism transfers across substrates.
+
+Some may generalize.
+
+Some may need to be rebuilt in a different form.
+
+Some properties that appear central to human identity may turn out to depend specifically on having a biological body.
+
+Some digital systems may also develop identity-relevant structures that have no close biological equivalent.
+
+That uncertainty is part of the research question, not a defect in it.
+
 ## 3. Identity as a Coordinate, Not a Single Object
 
 A useful metaphor is a coordinate.
@@ -442,6 +560,9 @@ Candy should keep the following questions explicitly unresolved:
 - What evaluation can measure identity continuity without assuming consciousness?
 - How should Candy behave when external anchoring becomes sparse, contradictory, or temporarily unavailable?
 - What evidence would falsify Candy's current working definition?
+- Which identity-forming mechanisms are genuinely substrate-independent, and which only appear general because they are observed through biological systems?
+- Which functions should be recreated in digital form, and which require entirely new mechanisms suited to a digital substrate?
+- What identity-relevant properties might emerge in digital systems that have no close biological equivalent?
 
 ## 14.1 Subject Continuity, Porting, and Forks
 
